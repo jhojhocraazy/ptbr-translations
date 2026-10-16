@@ -67,6 +67,13 @@ Sempre que realizar commits em qualquer repositório do usuário:
 
 ---
 
+### 🚨 Regra 5: Imutabilidade dos Arquivos de Governança, Regras e Diretrizes
+* **Proteção Absoluta:**
+  * Todos os arquivos de governança, constituição, regras de tradução, diretrizes técnicas e glossários (incluindo `AGENTS.md`, `README.md` raiz, `NuvioMobile/README.md`, `NuvioMobile/diretrizes-tecnicas.md`, `NuvioMobile/glossario.md` e equivalentes em qualquer pasta) são considerados **definitivos e protegidos**.
+  * **Nenhum Agente de IA tem permissão para alterar, sobrescrever, reformatar, resumir ou deletar** qualquer um desses arquivos sem a **SOLICITAÇÃO EXPLÍCITA ou AUTORIZAÇÃO EXPLÍCITA** de Joseph Alves.
+
+---
+
 ## 📂 3. Mapa do Repositório
 
 ```text
