@@ -1,0 +1,17 @@
+# Git repositories clones (gerenciados de forma independente)
+NuvioMobile/repo/
+*/repo/
+
+# Sistema Operacional e Editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# Ambientes virtuais e caches
+__pycache__/
+*.py[cod]
+.venv/
+env/
