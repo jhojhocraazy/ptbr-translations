@@ -17,8 +17,17 @@ $env:CROWDIN_TOKEN = 'seu-token'
 $env:WEBLATE_TOKEN = 'seu-token'
 ```
 
+Para manter os dois em um único arquivo local (ignorado pelo Git):
+
+```powershell
+Copy-Item scripts/tokens.example.ps1 scripts/tokens.ps1
+notepad scripts/tokens.ps1
+. .\scripts\tokens.ps1
+```
+
 > Os tokens nunca devem ser commitados. Os scripts leem apenas as variáveis de ambiente
-> `CROWDIN_TOKEN`/`WEBLATE_TOKEN` (ou o parâmetro `-Token`).
+> `CROWDIN_TOKEN`/`WEBLATE_TOKEN` (ou o parâmetro `-Token`). O arquivo real `scripts/tokens.ps1`
+> está no `.gitignore`; apenas o modelo `scripts/tokens.example.ps1` é versionado.
 
 ---
 

@@ -41,9 +41,14 @@ o envio ao produto é responsabilidade da plataforma/mantenedor.
 
 ### 3.1 Preparação
 1. Confirmar **ID do projeto** e **idioma alvo** (`pt-BR`).
-2. Exportar o token para a sessão (nunca versionar):
+2. Carregar o token para a sessão (nunca versionar):
    ```powershell
    $env:CROWDIN_TOKEN = 'seu-token'
+   ```
+   Para carregar Crowdin e Weblate de uma vez, use o arquivo local `scripts/tokens.ps1`
+   (ignorado pelo Git; modelo em `scripts/tokens.example.ps1`):
+   ```powershell
+   . .\scripts\tokens.ps1
    ```
 3. Consultar pendências:
    ```powershell
@@ -219,6 +224,7 @@ Um projeto só é considerado concluído quando **todos** os itens do seu tipo f
 - **Fonte da verdade:** a plataforma (Crowdin/Weblate) ou o repositório oficial — o hub é espelho documental.
 - **Prontidão para atualizações:** ao chegar nova rodada de strings, repetir o ciclo da §3/§4 e atualizar os números.
 - **Segurança:** tokens e credenciais **nunca** entram no repositório; usar `CROWDIN_TOKEN` e
-  `WEBLATE_TOKEN` no ambiente (ou `-Token`), sem versionamento. Apagar scripts e temporários que
-  contenham token ao final da sessão.
+  `WEBLATE_TOKEN` no ambiente (ou `-Token`), sem versionamento. O arquivo local `scripts/tokens.ps1`
+  é ignorado pelo Git; use `scripts/tokens.example.ps1` como modelo. Apagar scripts e temporários
+  que contenham token ao final da sessão.
 - **Commits:** autor `Joseph Alves <jhojhocraazy@gmail.com>`, Conventional Commits, push somente com confirmação.

@@ -2,6 +2,9 @@
 NuvioMobile/repo/
 */repo/
 
+# Tokens locais (nunca versionar)
+scripts/tokens.ps1
+
 # Sistema Operacional e Editores
 .DS_Store
 Thumbs.db
