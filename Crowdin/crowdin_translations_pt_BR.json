@@ -4,7 +4,7 @@
   "target_language": "pt-BR",
   "file_id": 32447,
   "file_name": "src/i18n/locales/en.json",
-  "total_submitted": 351,
+  "total_submitted": 451,
   "translations": {
     "7046447": {
       "source": "GitHub",
@@ -1409,6 +1409,406 @@
     "7048345": {
       "source": "Automated catalog extraction",
       "target": "Extração automatizada de catálogo"
+    },
+    "7048347": {
+      "source": "Automation is the backbone of modern language translations for ecommerce. Crowdin acts as a bridge between your backend and the global market.",
+      "target": "A automação é a espinha dorsal das traduções modernas para e-commerce. O Crowdin atua como uma ponte entre o seu backend e o mercado global."
+    },
+    "7048349": {
+      "source": "How to connect translation tools with your e-commerce platform?",
+      "target": "Como conectar ferramentas de tradução à sua plataforma de e-commerce?"
+    },
+    "7048351": {
+      "source": "Beyond products, we offer a complete e-commerce translation service for your banners, email campaigns, and landing pages. Check out our guide on <a href=\"/blog/ai-localization\" class=\"text-primary underline hover:underline\">AI localization</a> for high-speed marketing.",
+      "target": "Além dos produtos, oferecemos um serviço completo de tradução de e-commerce para seus banners, campanhas de e-mail e páginas de destino (landing pages). Confira nosso guia sobre <a href=\"/blog/ai-localization\" class=\"text-primary underline hover:underline\">localização com IA</a> para marketing de alta velocidade."
+    },
+    "7048353": {
+      "source": "Marketing localization",
+      "target": "Localização de marketing"
+    },
+    "7048355": {
+      "source": "Stop managing spreadsheets and start entering new markets.",
+      "target": "Pare de gerenciar planilhas e comece a conquistar novos mercados."
+    },
+    "7048357": {
+      "source": "Start Your Free Trial",
+      "target": "Comece seu Teste Gratuito"
+    },
+    "7048361": {
+      "source": "A localized \"Buy\" button is not enough. Translate every touchpoint that shapes trust and conversion.",
+      "target": "Um botão \"Comprar\" localizado não é suficiente. Traduza cada ponto de contato que constrói confiança e gera conversão."
+    },
+    "7048363": {
+      "source": "Localize the entire <span class=\"opacity-60\">customer journey</span>",
+      "target": "Localize toda a <span class=\"opacity-60\">jornada do cliente</span>"
+    },
+    "7048365": {
+      "source": "Sync with Mailchimp, HubSpot, or Marketo to localize newsletters and cart recovery flows.",
+      "target": "Sincronize com Mailchimp, HubSpot ou Marketo para localizar newsletters e fluxos de recuperação de carrinho."
+    },
+    "7048367": {
+      "source": "Marketing emails",
+      "target": "E-mails de marketing"
+    },
+    "7048369": {
+      "source": "Clarify checkout flows, legal terms, and currency formats to keep conversions high.",
+      "target": "Deixe claros os fluxos de checkout, termos legais e formatos de moeda para manter as conversões em alta."
+    },
+    "7048371": {
+      "source": "Payment & compliance",
+      "target": "Pagamento e conformidade"
+    },
+    "7048373": {
+      "source": "Automatically translate customer reviews and Q&A so shoppers see social proof in their language.",
+      "target": "Traduza automaticamente avaliações de clientes e perguntas e respostas para que os compradores vejam provas sociais em seu próprio idioma."
+    },
+    "7048377": {
+      "source": "Get answers to common questions about connecting your store to Crowdin.",
+      "target": "Obtenha respostas para perguntas frequentes sobre como conectar sua loja ao Crowdin."
+    },
+    "7048381": {
+      "source": "How to connect e-commerce product descriptions to a localization tool?",
+      "target": "Como conectar descrições de produtos de e-commerce a uma ferramenta de localização?"
+    },
+    "7048385": {
+      "source": "Can I automate translation for Magento stores specifically?",
+      "target": "Posso automatizar a tradução especificamente para lojas Magento?"
+    },
+    "7048387": {
+      "source": "The easiest way is using the Crowdin native apps for Shopify and Magento. Once installed, you can select specific collections or the entire catalog to sync. Every time you add a new product in your store, it automatically appears in Crowdin for translation.",
+      "target": "A maneira mais fácil é usar os aplicativos nativos do Crowdin para Shopify e Magento. Após a instalação, você pode selecionar coleções específicas ou todo o catálogo para sincronizar. Sempre que você adicionar um novo produto à sua loja, ele aparecerá automaticamente no Crowdin para tradução."
+    },
+    "7048389": {
+      "source": "How to integrate a translation platform with Shopify or Magento for product localization?",
+      "target": "Como integrar uma plataforma de tradução com Shopify ou Magento para localização de produtos?"
+    },
+    "7048391": {
+      "source": "Key features include Visual Context (seeing the product layout), Glossaries (to keep brand terms consistent), and Automated Quality Assurance to prevent broken layouts or currency formatting errors. For a deep dive, read our article on <a href=\"/blog/ecommerce-localization\" class=\"text-primary underline hover:underline\">ecommerce localization</a>.",
+      "target": "Os principais recursos incluem Contexto Visual (visualização do layout do produto), Glossários (para manter a consistência dos termos da marca) e Controle de Qualidade Automatizado (QA) para evitar quebras de layout ou erros na formatação de moedas. Para se aprofundar, leia nosso artigo sobre <a href=\"/blog/ecommerce-localization\" class=\"text-primary underline hover:underline\">localização para e-commerce</a>."
+    },
+    "7048393": {
+      "source": "What are the top translation features needed for e-commerce marketing localization?",
+      "target": "Quais são os principais recursos de tradução necessários para a localização de marketing de e-commerce?"
+    },
+    "7048395": {
+      "source": "The automated localization engine for online stores, product catalogs, and user reviews. Ecommerce website translation has never been easier. Launch new products in multiple languages simultaneously and boost your global SEO.",
+      "target": "O mecanismo de localização automatizada para lojas virtuais, catálogos de produtos e avaliações de usuários. Traduzir sites de e-commerce nunca foi tão fácil. Lance novos produtos em vários idiomas simultaneamente e impulsione seu SEO global."
+    },
+    "7048399": {
+      "source": "Whether you are on a hosted platform or custom stack, Crowdin pulls content directly from your database.",
+      "target": "Esteja você em uma plataforma hospedada ou em uma stack personalizada, o Crowdin extrai o conteúdo diretamente do seu banco de dados."
+    },
+    "7048401": {
+      "source": "Connects directly to your <span class=\"opacity-60\">storefront</span>",
+      "target": "Conecta-se diretamente à sua <span class=\"opacity-60\">vitrine virtual</span>"
+    },
+    "7048403": {
+      "source": "And more",
+      "target": "E muito mais"
+    },
+    "7048405": {
+      "source": "BigCommerce",
+      "target": "BigCommerce"
+    },
+    "7048407": {
+      "source": "Magento (Adobe Commerce)",
+      "target": "Magento (Adobe Commerce)"
+    },
+    "7048409": {
+      "source": "PrestaShop",
+      "target": "PrestaShop"
+    },
+    "7048411": {
+      "source": "WooCommerce",
+      "target": "WooCommerce"
+    },
+    "7048413": {
+      "source": "Validate lengths so CTAs and menus do not break layouts.",
+      "target": "Valide o comprimento dos textos para que CTAs e menus não quebrem o layout."
+    },
+    "7048415": {
+      "source": "Placeholder and currency consistency checks to avoid costly errors.",
+      "target": "Verificações de consistência de placeholders e moedas para evitar erros caros."
+    },
+    "7048417": {
+      "source": "Add an LQA step so native speakers approve nuance before publish.",
+      "target": "Adicione uma etapa de LQA para que falantes nativos aprovem as nuances antes da publicação."
+    },
+    "7048421": {
+      "source": "Protect your conversion rate",
+      "target": "Proteja sua taxa de conversão"
+    },
+    "7048423": {
+      "source": "Learn more about QA and LQA Features",
+      "target": "Saiba mais sobre os recursos de QA e LQA"
+    },
+    "7048425": {
+      "source": "Explore more on <span class=\"opacity-60\">our blog</span>",
+      "target": "Explore mais conteúdos em <span class=\"opacity-60\">nosso blog</span>"
+    },
+    "7048427": {
+      "source": "Simplify your online store translation and deliver all your content multilingual. Multi language: SEO, product descriptions, billing, landing pages, everything.",
+      "target": "Simplifique a tradução da sua loja virtual e disponibilize todo o seu conteúdo em vários idiomas. Multilíngue: SEO, descrições de produtos, faturamento, landing pages e muito mais."
+    },
+    "7048429": {
+      "source": "Ecommerce Translation Software for Online Retailers",
+      "target": "Software de Tradução de E-commerce para Varejistas Online"
+    },
+    "7048431": {
+      "source": "Localization, the Enterprise Way",
+      "target": "Localização no Padrão Corporativo"
+    },
+    "7048433": {
+      "source": "Effective teamwork with flexible processes tailored to your organization.",
+      "target": "Trabalho em equipe eficiente com processos flexíveis e adaptados à sua organização."
+    },
+    "7048439": {
+      "source": "Multi-team collaboration",
+      "target": "Colaboração entre múltiplas equipes"
+    },
+    "7048443": {
+      "source": "Collaboration & workflow",
+      "target": "Colaboração e fluxo de trabalho"
+    },
+    "7048445": {
+      "source": "Keep your data safe with enterprise-grade security and advanced access control.",
+      "target": "Mantenha seus dados protegidos com segurança de nível corporativo e controle de acesso avançado."
+    },
+    "7048447": {
+      "source": "ISO 27001 compliance",
+      "target": "Conformidade com a ISO 27001"
+    },
+    "7048449": {
+      "source": "SAML SSO & SCIM provisioning",
+      "target": "SSO SAML e provisionamento SCIM"
+    },
+    "7048451": {
+      "source": "Role-based access control (RBAC)",
+      "target": "Controle de acesso baseado em funções (RBAC)"
+    },
+    "7048453": {
+      "source": "Data residency (US or EU)",
+      "target": "Residência de dados (EUA ou UE)"
+    },
+    "7048455": {
+      "source": "Security & access",
+      "target": "Segurança e acesso"
+    },
+    "7048457": {
+      "source": "Scale confidently with expert help and powerful analytics.",
+      "target": "Escale com confiança contando com suporte especializado e análises avançadas."
+    },
+    "7048459": {
+      "source": "Priority support with SLAs",
+      "target": "Suporte prioritário com SLAs"
+    },
+    "7048461": {
+      "source": "Cost estimation & reporting",
+      "target": "Estimativa de custos e relatórios"
+    },
+    "7048463": {
+      "source": "Global search",
+      "target": "Pesquisa global"
+    },
+    "7048465": {
+      "source": "Advanced QA checks",
+      "target": "Verificações avançadas de QA"
+    },
+    "7048467": {
+      "source": "Support & insights",
+      "target": "Suporte e insights"
+    },
+    "7048469": {
+      "source": "Full control over localization with advanced security, flexible workflows, and AI-driven automation — built to scale with your business.",
+      "target": "Controle total sobre a localização com segurança avançada, fluxos de trabalho flexíveis e automação impulsionada por IA — desenvolvido para escalar com o seu negócio."
+    },
+    "7048471": {
+      "source": "Enterprise-grade translation management software",
+      "target": "Software de gerenciamento de tradução de nível corporativo"
+    },
+    "7048473": {
+      "source": "Trusted by companies worldwide",
+      "target": "Aprovado por empresas no mundo todo"
+    },
+    "7048475": {
+      "source": "Fine-grained user permissions and group management inside your workspace.",
+      "target": "Permissões granulares de usuários e gerenciamento de grupos dentro do seu espaço de trabalho."
+    },
+    "7048481": {
+      "source": "Full visibility and control over all users in your organization.",
+      "target": "Visibilidade e controle completos sobre todos os usuários da sua organização."
+    },
+    "7048485": {
+      "source": "Collaborate with your internal experts and external vendors in a single platform.",
+      "target": "Colabore com seus especialistas internos e fornecedores externos em uma única plataforma."
+    },
+    "7048487": {
+      "source": "Cooperate efficiently",
+      "target": "Coopere com eficiência"
+    },
+    "7048489": {
+      "source": "Connect workflow steps in parallel or sequentially to automate your translation process",
+      "target": "Conecte etapas do fluxo de trabalho em paralelo ou sequencialmente para automatizar seu processo de tradução"
+    },
+    "7048491": {
+      "source": "Automate localization company-wide with your custom workflows in Crowdin Enterprise. Optimize work for all the teams including developers, marketing, product, and localization managers.",
+      "target": "Automatize a localização em toda a empresa com seus fluxos de trabalho personalizados no Crowdin Enterprise. Otimize o trabalho de todas as equipes, incluindo desenvolvedores, marketing, produto e gerentes de localização."
+    },
+    "7048497": {
+      "source": "Powerful tools for <span class=\"opacity-60\">growing teams</span>",
+      "target": "Ferramentas poderosas para <span class=\"opacity-60\">equipes em crescimento</span>"
+    },
+    "7048501": {
+      "source": "Scale localization with total control, <span class=\"opacity-60\">enterprise-grade security, and 2x faster delivery</span>",
+      "target": "Escale a localização com controle total, <span class=\"opacity-60\">segurança de nível corporativo e entrega 2x mais rápida</span>"
+    },
+    "7048503": {
+      "source": "We go beyond ISO 27001 compliance and adopt a beyond zero-trust approach.",
+      "target": "Vamos além da conformidade com a ISO 27001 e adotamos uma abordagem rigorosa de confiança zero (Zero Trust)."
+    },
+    "7048505": {
+      "source": "Our infrastructure is continuously monitored.",
+      "target": "Nossa infraestrutura é monitorada continuamente."
+    },
+    "7048507": {
+      "source": "It's regularly patched and updated.",
+      "target": "Recebe correções e atualizações regularmente."
+    },
+    "7048509": {
+      "source": "Your data stays safe from any threats.",
+      "target": "Seus dados permanecem protegidos contra qualquer ameaça."
+    },
+    "7048511": {
+      "source": "Company Security",
+      "target": "Segurança Corporativa"
+    },
+    "7048517": {
+      "source": "Data residency",
+      "target": "Residência de dados"
+    },
+    "7048527": {
+      "source": "Single sign-on (SSO) integration",
+      "target": "Integração de login único (SSO)"
+    },
+    "7048529": {
+      "source": "Two-factor authentication (2FA)",
+      "target": "Autenticação de dois fatores (2FA)"
+    },
+    "7048531": {
+      "source": "Security is at the heart <span class=\"opacity-60\">of everything we build</span>",
+      "target": "A segurança está no centro <span class=\"opacity-60\">de tudo o que construímos</span>"
+    },
+    "7048533": {
+      "source": "Health Insurance Portability and Accountability Act compliant",
+      "target": "Em conformidade com a Lei de Portabilidade e Responsabilidade de Seguros de Saúde (HIPAA)"
+    },
+    "7048535": {
+      "source": "HIPAA",
+      "target": "HIPAA"
+    },
+    "7048537": {
+      "source": "International standard for information security management",
+      "target": "Padrão internacional para gestão de segurança da informação"
+    },
+    "7048539": {
+      "source": "ISO 27001",
+      "target": "ISO 27001"
+    },
+    "7048541": {
+      "source": "General Data Protection Regulation compliant",
+      "target": "Em conformidade com o Regulamento Geral sobre a Proteção de Dados (GDPR)"
+    },
+    "7048543": {
+      "source": "GDPR",
+      "target": "GDPR"
+    },
+    "7048545": {
+      "source": "You are protected with device verification, SAML SSO, and biometric authentication.",
+      "target": "Você está protegido com verificação de dispositivo, SSO SAML e autenticação biométrica."
+    },
+    "7048547": {
+      "source": "Even if a password is leaked – attackers can't get in.",
+      "target": "Mesmo que uma senha seja vazada, invasores não conseguem entrar."
+    },
+    "7048549": {
+      "source": "Only authorized users can access your data.",
+      "target": "Apenas usuários autorizados podem acessar seus dados."
+    },
+    "7048551": {
+      "source": "Your localization stays safe.",
+      "target": "Sua localização permanece protegida."
+    },
+    "7048553": {
+      "source": "Product Security",
+      "target": "Segurança do Produto"
+    },
+    "7048555": {
+      "source": "We keep your localization workflows clean and safe — from content upload to export.",
+      "target": "Mantemos seus fluxos de trabalho de localização íntegros e seguros — do envio à exportação do conteúdo."
+    },
+    "7048557": {
+      "source": "AI-powered checks analyze translations.",
+      "target": "Verificações com inteligência artificial analisam as traduções."
+    },
+    "7048559": {
+      "source": "They flag suspicious or harmful content.",
+      "target": "Elas sinalizam conteúdos suspeitos ou maliciosos."
+    },
+    "7048561": {
+      "source": "Confidence in every release.",
+      "target": "Confiança em cada lançamento."
+    },
+    "7048563": {
+      "source": "Workflow Security",
+      "target": "Segurança do Fluxo de Trabalho"
+    },
+    "7048565": {
+      "source": "Crowdin - most customizable enterprise translation software. Localize your whole business with top security, {count}+ integrations, advanced AI and QA features.",
+      "target": "Crowdin - o software corporativo de tradução mais personalizável. Localize toda a sua empresa com segurança máxima, mais de {count}+ integrações e recursos avançados de IA e QA."
+    },
+    "7048567": {
+      "source": "Enterprise Translation Software for Advanced Localization",
+      "target": "Software Corporativo de Tradução para Localização Avançada"
+    },
+    "7048569": {
+      "source": "Enterprise clients",
+      "target": "Clientes corporativos"
+    },
+    "7048573": {
+      "source": "Technical support",
+      "target": "Suporte técnico"
+    },
+    "7048581": {
+      "source": "Our support team knows Crowdin inside out, helping you resolve issues, streamline workflows, and get the most out of every feature.",
+      "target": "Nossa equipe de suporte conhece o Crowdin de ponta a ponta, ajudando você a resolver problemas, otimizar fluxos de trabalho e aproveitar ao máximo cada recurso."
+    },
+    "7048583": {
+      "source": "Learn about Crowdin support",
+      "target": "Saiba mais sobre o suporte do Crowdin"
+    },
+    "7048585": {
+      "source": "24/7 priority support",
+      "target": "Suporte prioritário 24/7"
+    },
+    "7048587": {
+      "source": "Business plan",
+      "target": "Plano Business"
+    },
+    "7048589": {
+      "source": "Get updates and collaborate with your team directly in Slack",
+      "target": "Receba atualizações e colabore com sua equipe diretamente no Slack"
+    },
+    "7048593": {
+      "source": "Personal point of contact for your entire organization",
+      "target": "Ponto de contato dedicado para toda a sua organização"
+    },
+    "7048595": {
+      "source": "Dedicated Success Manager",
+      "target": "Gerente de Sucesso Dedicado"
+    },
+    "7048597": {
+      "source": "Explore prices",
+      "target": "Explorar preços"
     }
   }
 }
