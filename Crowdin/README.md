@@ -12,9 +12,10 @@
 | **Plataforma Tecnológica** | Crowdin Enterprise / Modern Web UI (React, TypeScript, JSON, PHP/Blade) |
 | **Projeto Oficial** | [Crowdin Translations (ID: 31)](https://crowdin.com/project/crowdin) |
 | **Idioma Alvo** | Português do Brasil (`pt-BR`) |
-| **Volume Total do Projeto** | **17.154 frases** (116.959 palavras) |
-| **Entregas Submetidas (pt-BR)** | **1.642 strings** (Todos os 17 lotes de `en.json` — `201 Created` via API v2) |
-| **Foco Estratégico Atual** | Interface Moderna Web (`src/i18n/locales/en.json` — ID: 32447 — **100% Concluído**) |
+| **Volume Total do Projeto** | **17.169 strings visíveis** (117.078 palavras; 18.092 no total, 923 ocultas) |
+| **Entregas Submetidas (pt-BR)** | **17.169 strings** — 0 pendentes em 214 arquivos |
+| **Cobertura** | 🟢 **100%** (auditoria de placeholders e ICU com 0 divergências) |
+| **Foco Estratégico Atual** | Projeto completo: `en.json`, `editor.csv`, `dynamic.csv`, `backend.csv`, `frontend.csv`, escopos/permissões, MFA, log de segurança e e-mails — **100% Concluído** |
 | **Integração Técnica** | Crowdin REST API v2 (`https://api.crowdin.com/api/v2/`) |
 
 ---
@@ -42,6 +43,7 @@ A localização oficial do Crowdin visa proporcionar uma experiência completame
 
 ```text
 Crowdin/
+├── crowdin_translations_pt_BR.json  # Backup da Web UI + metadados de cobertura
 ├── diretrizes-tecnicas.md     # Padrões de interpolação, sintaxe ICU e regras de qualidade
 ├── glossario.md               # Terminologia especializada em TMS, i18n e l10n
 └── README.md                  # Este documento
