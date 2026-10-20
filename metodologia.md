@@ -85,15 +85,64 @@ o envio ao produto é responsabilidade da plataforma/mantenedor.
 
 O ciclo é o mesmo, com a ferramenta `weblate-sync.ps1`:
 
-1. Consultar a cobertura: `-Action Status -Project <projeto>`
-2. Exportar as pendentes: `-Action Export -Component <componente> -Tsv ...`
+1. Consultar a cobertura: `-Action Status -Project <projeto>` (traduzidas/total, pendentes e checks falhando).
+2. Exportar as pendentes em TSV: `-Action Export -Project <projeto> -Component <componente> -Tsv ...`.
+   Se houver plurais (ou for preciso revisar tudo), exportar em JSON:
+   `-Action Export -Project <projeto> -Component <componente> -All -Format json -OutFile unidades.json`
+   — o JSON preserva `source` e `target` como arrays.
 3. Traduzir em lotes, preservando placeholders, ICU e tags.
-4. Enviar: `-Action Push -Component <componente> -Tsv lote.tsv`
-5. Auditar: `-Action Check -Component <componente>` (critério: **0 divergências**).
-6. Confirmar `-Action Status` (**0 pendentes**) e atualizar o backup com `-Action Backup`.
+4. Enviar strings de forma única com
+   `-Action Push -Project <projeto> -Component <componente> -Tsv lote.tsv`.
+   Plurais (arrays) vão por
+   `-Action PushJson -Project <projeto> -Component <componente> -Json lote.json`.
+5. Auditar: `-Action Check -Project <projeto> -Component <componente>` (placeholders/ICU/chaves;
+   critério: **0 divergências**) e `-Action Checks -Project <projeto> -Component <componente>`
+   (checks nativos do Weblate; revisar `has_failing_check`).
+6. Confirmar `-Action Status -Project <projeto>` (**0 pendentes**), baixar o backup com
+   `-Action Backup -Project <projeto> -Component <componente> -OutFile ...` e validá-lo antes de
+   commitar (ver §3.5.1).
 
-Token via `$env:WEBLATE_TOKEN`. O Weblate pode estar atrás do Anubis; o script já envia
+Token via `$env:WEBLATE_TOKEN` (ou `-Token`). O Weblate pode estar atrás do Anubis; o script já envia
 um User-Agent de navegador, mas a API ainda pode exigir ajuste de acesso na instância.
+
+### 3.5.1 Armadilhas específicas do Weblate
+
+**Escape é responsabilidade do exportador, não do envio.**
+- O `target` da API é **texto cru**: envie `d'água`, não `d\'água`. Nunca escape `'`/`"` manualmente no payload.
+- O exportador Android do Weblate adiciona `\'`/`\"` ao gerar o XML. O XML final deve ter escapes
+  simples; `\\'`/`\\\"` é **over-escaping** e defeito.
+- `\n`/`\t` podem ser literais no target. Se a fonte usa uma quebra de linha real, envie newline
+  real para satisfazer o check `Mismatched \n`.
+
+**Plurais são arrays, não texto concatenado.**
+- O `target` de uma unidade plural é um array (`one`/`many`/`other`). Não juntar formas com `/`, `|` ou vírgula.
+- Exportar com `-Format json`, editar o array e enviar com `-Action PushJson -Json lote.json`.
+- Se o Weblate exigir três formas, preencher `many` com o mesmo conteúdo de `other`.
+- `-Action Push -Tsv` só aceita forma única e **recusa** unidades plurais — nesse caso, usar `PushJson`.
+
+**Read-only não é falha.**
+- `state=100`, target vazio e `PATCH` retornando `403` indicam unidade somente leitura. Elas são
+  omitidas do backup; não tratar como pendência nem como erro.
+- No Android, o app usa o fallback da fonte. Exemplos no YTDLnis: `trendingPlaylist`, `unfound_file`, `ytdlp`.
+
+**Checks nativos ≠ auditoria de integridade.**
+- `Status` mostra a contagem de checks falhando.
+- `Check` valida placeholders, ICU e chaves (0 divergências é o critério).
+- `Checks` lista as unidades com `has_failing_check`, incluindo os checks nativos do Weblate.
+- Falsos positivos conhecidos: `multiple_capital` para `JSON`/`Info-JSONs` e `same` para `Nightly`.
+  Editar/ignorar flags exige permissão na instância e pode não estar disponível; nesse caso,
+  documentar a justificativa no `README.md` do projeto.
+
+**Backup só termina depois da validação.**
+1. Baixar o arquivo nativo com `-Action Backup -OutFile ...`.
+2. Validar o XML/JSON e escanear `\\'`/`\\\"` (escape duplicado).
+3. Conferir placeholders e tags contra a fonte.
+4. Procurar strings vazias.
+5. Conferir a contagem de contextos e a ausência esperada das unidades read-only.
+
+**Token.**
+- Usar `$env:WEBLATE_TOKEN` ou `-Token`; nunca versionar.
+- Apagar scripts/temporários que contenham token ao final da sessão.
 
 ---
 
@@ -147,6 +196,9 @@ Um projeto só é considerado concluído quando **todos** os itens do seu tipo f
 **Plataforma (Crowdin/Weblate):**
 - [ ] 0 strings pendentes no idioma alvo
 - [ ] Auditoria de placeholders/ICU/chaves com 0 divergências
+- [ ] Checks nativos revisados (`Checks`) e falsos positivos documentados
+- [ ] Backup baixado e validado (over-escape `\\'`/`\\\"`, placeholders, tags, strings vazias, read-only)
+- [ ] Lote de refinamentos conferido
 - [ ] Backup/snapshot atualizado no hub
 - [ ] `README.md` do projeto atualizado
 - [ ] Dashboard do `README.md` raiz atualizado
@@ -166,5 +218,7 @@ Um projeto só é considerado concluído quando **todos** os itens do seu tipo f
 - **Backups:** cada projeto de plataforma mantém snapshot local em sua pasta.
 - **Fonte da verdade:** a plataforma (Crowdin/Weblate) ou o repositório oficial — o hub é espelho documental.
 - **Prontidão para atualizações:** ao chegar nova rodada de strings, repetir o ciclo da §3/§4 e atualizar os números.
-- **Segurança:** tokens e credenciais **nunca** entram no repositório; usar `CROWDIN_TOKEN` no ambiente.
+- **Segurança:** tokens e credenciais **nunca** entram no repositório; usar `CROWDIN_TOKEN` e
+  `WEBLATE_TOKEN` no ambiente (ou `-Token`), sem versionamento. Apagar scripts e temporários que
+  contenham token ao final da sessão.
 - **Commits:** autor `Joseph Alves <jhojhocraazy@gmail.com>`, Conventional Commits, push somente com confirmação.

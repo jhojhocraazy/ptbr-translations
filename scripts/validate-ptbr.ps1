@@ -1,4 +1,3 @@
-#Requires -Version 7.0
 <#
 .SYNOPSIS
     Validador de traduções pt-BR do hub ptbr-translations.
@@ -9,6 +8,7 @@
       - placeholders ausentes/divergentes (%1$s, {var}, {{var}}, $VAR$)
       - placeholders desconhecidos (não existem na fonte)
       - escapes obrigatórios no Android (apóstrofo e aspas) no perfil "android"
+      - escape duplicado no Android (\\' / \\" — over-escaping vindo do Weblate)
       - chaves duplicadas em XML
       - BOM / encoding
 
@@ -18,6 +18,7 @@
 .EXAMPLE
     ./scripts/validate-ptbr.ps1 -Path NuvioMobile/NuvioMobile_strings_pt_BR.xml -Source NuvioMobile/repo/app/src/main/res/values/strings.xml -Escape cmp
 #>
+#Requires -Version 7.0
 [CmdletBinding()]
 param(
     [Parameter(Mandatory = $true, Position = 0)][string]$Path,
@@ -105,7 +106,7 @@ function Get-Bundle([string]$file, [string]$fmt) {
 
 function Get-Placeholders([string]$text) {
     $set = [System.Collections.Generic.HashSet[string]]::new()
-    if (-not $text) { return $set }
+    if (-not $text) { return , $set }
     foreach ($m in [regex]::Matches($text, '%\d+\$[a-zA-Z]')) { [void]$set.Add($m.Value) }
     foreach ($m in [regex]::Matches($text, '%[a-zA-Z]')) { [void]$set.Add($m.Value) }
     foreach ($m in [regex]::Matches($text, '\{\{[A-Za-z0-9_]+\}\}')) { [void]$set.Add($m.Value) }
@@ -115,7 +116,7 @@ function Get-Placeholders([string]$text) {
     foreach ($m in [regex]::Matches($text, '\{([A-Za-z0-9_]+)\}')) {
         if ($text.Contains("{{$($m.Groups[1].Value)}}")) { [void]$set.Remove($m.Value) }
     }
-    return $set
+    return , $set
 }
 
 # ---------- checks de arquivo ----------
@@ -182,6 +183,12 @@ foreach ($key in $target.Keys) {
     }
     if ($Escape -eq 'android' -and $value -match '(?<!\\)"') {
         Add-Finding $key 'escape' ('aspas duplas não escapadas (use \"): ' + $value)
+    }
+    # over-escaping: duas barras invertidas antes de aspa simples/dupla (\\' ou \\").
+    # Ocorre quando o target do Weblate já chega escapado e o exportador Android escapa de novo.
+    # Um único \' ou \" (correto) e \\ antes de letra (barra literal legítima) não entram aqui.
+    if ($Escape -eq 'android' -and $value -match '\\\\[\x27"]') {
+        Add-Finding $key 'escape' "escape duplicado (provável over-escaping do Weblate; envie texto cru ao Weblate): $value"
     }
 }
 

@@ -30,6 +30,18 @@ No Android XML, todo apóstrofo deve ser escapado como `\'`:
 * Exemplo: `Checked %1$s` ➔ `Verificado %1$s`.
 * Exemplo de versão: `%1$s \u2192 %2$s` (com seta Unicode de transição entre versões).
 
+### 2.4. Envio ao Weblate vs XML final
+
+O Weblate e o XML final têm responsabilidades diferentes:
+
+* **No Weblate, envie texto cru:** não escape `'`/`"` manualmente no target. O valor enviado é o texto que o usuário verá.
+* **O exportador Android do Weblate adiciona `\'`/`\"`** ao gerar o XML. O arquivo final deve ter escapes simples; `\\'`/`\\\"` indica over-escaping. Valide com `validate-ptbr.ps1 -Format xml -Escape android`.
+* **Plurais:** o target é um array (`one`/`many`/`other`). Use `weblate-sync.ps1 -Action PushJson -Project ytdlnis -Component strings -Json lote.json`; não concatene formas nem use `Push -Tsv` para plurais. Quando o Weblate exigir três formas, preencha `many` com `other`.
+* **3 strings read-only** (`trendingPlaylist`, `unfound_file`, `ytdlp`) não são editáveis no Weblate; o Android usa o fallback da fonte.
+* **5 checks falsos positivos** já documentados no `README.md`: `multiple_capital` em `JSON`/`Info-JSONs` e `same` em `Nightly`.
+
+> Regra prática: o escape é do exportador; o envio é texto cru.
+
 ---
 
 ## 3. 🛡️ Telas de Boas-Vindas & Permissões do Android (`welcome_*`)
@@ -58,8 +70,12 @@ O YTDLnis integra com a API aberta do **lrclib.net** para embutir letras diretam
 
 ## 5. 🧪 Checklist de Validação Pré-Submissão no Weblate
 
-- [ ] Todos os apóstrofos simples estão escapados como `\'`?
+- [ ] O texto enviado ao Weblate está cru (sem `\'`/`\"`)?
+- [ ] No XML final, todos os apóstrofos simples estão escapados como `\'`?
 - [ ] O E comercial solto (`&`) foi substituído por `&amp;`?
 - [ ] Todas as variáveis (`%1$s`, `%2$s`, `%d`) estão presentes e na posição gramatical correta?
 - [ ] O vocabulário segue os padrões do **Glossário Técnico de Mídia e yt-dlp**?
 - [ ] As regras de plural (`quantity="one"` e `quantity="other"`) foram respeitadas?
+- [ ] As formas plurais foram enviadas como array (`PushJson`)?
+- [ ] O backup oficial foi baixado e escaneado para `\\'`/`\\\"`?
+- [ ] Os checks nativos foram revisados e os falsos positivos documentados?

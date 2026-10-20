@@ -10,13 +10,15 @@ para projetos em Crowdin/Weblate a entrega termina na plataforma
 
 - PowerShell 7+
 - Token pessoal da API do Crowdin (apenas para `crowdin-sync.ps1`)
+- Token pessoal da API do Weblate (apenas para `weblate-sync.ps1`)
 
 ```powershell
 $env:CROWDIN_TOKEN = 'seu-token'
+$env:WEBLATE_TOKEN = 'seu-token'
 ```
 
-> O token nunca deve ser commitado. Os scripts leem apenas a variável de ambiente
-> `CROWDIN_TOKEN` (ou o parâmetro `-Token`).
+> Os tokens nunca devem ser commitados. Os scripts leem apenas as variáveis de ambiente
+> `CROWDIN_TOKEN`/`WEBLATE_TOKEN` (ou o parâmetro `-Token`).
 
 ---
 
@@ -104,17 +106,35 @@ Saída: traduzidas/total, pendentes, checagens falhando e última alteração.
 ```powershell
 ./scripts/weblate-sync.ps1 -Action Export -Project elowry -Component dnstoggle-strings -Tsv strings.tsv
 ./scripts/weblate-sync.ps1 -Action Export -Project elowry -Component dnstoggle-strings -All -Tsv todas.tsv
+./scripts/weblate-sync.ps1 -Action Export -Project ytdlnis -Component strings -All -Format json -OutFile unidades.json
 ```
 
-Gera TSV com `id<TAB>contexto<TAB>fonte<TAB>destino`. Sem `-All`, exporta apenas pendentes.
+TSV (padrão) gera `id<TAB>contexto<TAB>fonte<TAB>destino`. Sem `-All`, exporta apenas pendentes.
+JSON preserva `source` e `target` como arrays — necessário para plurais.
 
-### Push — envio de traduções
+### Push — envio de strings de forma única
 
 ```powershell
 ./scripts/weblate-sync.ps1 -Action Push -Project elowry -Component dnstoggle-strings -Tsv lote.tsv
 ```
 
 Formato: `id<TAB>texto` (2 colunas). `\n` literal vira quebra de linha. Saída: `OK=n FALHAS=0`.
+Aceita apenas strings de forma única: **recusa unidades plurais** e orienta usar `PushJson`.
+
+### PushJson — envio de plurais e lotes em JSON
+
+```json
+[
+  { "id": 197849591, "context": "every_days", "target": ["Todo dia", "A cada %d dias", "A cada %d dias"] }
+]
+```
+
+```powershell
+./scripts/weblate-sync.ps1 -Action PushJson -Project ytdlnis -Component strings -Json lote.json
+```
+
+O payload aceita `id`, `context` (opcional) e `target` como string ou array. O `context` ajuda a
+conferir a unidade. Preencha `many` com o mesmo conteúdo de `other` quando o Weblate exigir três formas.
 
 ### Check — auditoria de integridade
 
@@ -124,27 +144,58 @@ Formato: `id<TAB>texto` (2 colunas). `\n` literal vira quebra de linha. Saída: 
 
 Compara placeholders, argumentos ICU e balanceamento de chaves. Critério: `divergências: 0`.
 
+### Checks — checks nativos do Weblate
+
+```powershell
+./scripts/weblate-sync.ps1 -Action Checks -Project ytdlnis -Component strings -Tsv checks.tsv
+```
+
+Lista as unidades com `has_failing_check` e grava TSV. Use para revisar falsos positivos;
+não substitui o `Check` de placeholders/ICU/chaves.
+
 ### Backup — arquivo traduzido
 
 ```powershell
 ./scripts/weblate-sync.ps1 -Action Backup -Project elowry -Component dnstoggle-strings -OutFile DNSToggle/dnstoggle_strings_pt_BR.xml
 ```
 
-Baixa o arquivo no formato nativo do componente (XML/JSON/etc.).
+Baixa o arquivo no formato nativo do componente (XML/JSON/etc.). Unidades read-only podem ser
+omitidas do arquivo — isso é esperado. Após baixar, escaneie escapes duplicados (`\\'`/`\\\"`)
+e valide antes de commitar.
 
 ### Parâmetros comuns
 
 | Parâmetro | Padrão | Descrição |
 | :--- | :--- | :--- |
 | `-Project` | — | Slug do projeto (ex.: `elowry`) |
-| `-Component` | — | Slug do componente (obrigatório em Export/Check/Backup) |
+| `-Component` | — | Slug do componente (obrigatório em Export/Push/PushJson/Check/Checks/Backup) |
 | `-Language` | `pt_BR` | Código do idioma no Weblate |
-| `-Tsv` | — | Entrada (Push) ou saída (Status/Export/Check) |
+| `-Format` | `tsv` | Formato do Export (`tsv` ou `json`) |
+| `-Tsv` | — | Entrada (Push) ou saída (Status/Export/Check/Checks) |
+| `-Json` | — | Entrada do PushJson (arquivo JSON) |
+| `-OutFile` | — | Saída do Export JSON e do Backup |
 | `-All` | — | Exporta também unidades já traduzidas |
+| `-Force` | — | Em `PushJson`, permite divergência na quantidade de formas plurais |
 | `-DelayMs` | `150` | Intervalo entre envios |
 
 > O Weblate pode estar atrás do Anubis. O script usa um User-Agent de navegador;
 > se ainda assim a API retornar HTML, verifique o token e o acesso à instância.
+
+---
+
+## ⚠️ Armadilhas
+
+- **Target cru:** o Weblate recebe texto cru. Não envie `\'`/`\"` manualmente; o exportador
+  Android adiciona os escapes e o XML final deve ter escapes simples.
+- **Plurais:** `target` é array; não concatenar formas. Use `Export -Format json` + `PushJson`;
+  `Push -Tsv` recusa plurais.
+- **Read-only:** `state=100`, target vazio e `PATCH 403` são esperados; a unidade é omitida do
+  backup e o Android usa o fallback da fonte.
+- **Over-escape:** `\\'`/`\\\"` no XML final é defeito; escaneie o backup antes de commitar.
+- **Checks falsos positivos:** `multiple_capital` (`JSON`/`Info-JSONs`) e `same` (`Nightly`) podem
+  permanecer; documente a justificativa no `README.md` do projeto.
+- **Token:** use `WEBLATE_TOKEN`/`CROWDIN_TOKEN` ou `-Token`; nunca versionar e apagar temporários
+  que contenham token.
 
 ---
 
@@ -159,6 +210,11 @@ Validador local para arquivos já traduzidos (fora de plataforma ou snapshots).
 
 Verifica strings vazias, placeholders ausentes/desconhecidos, escapes Android,
 duplicatas em XML, BOM e strings idênticas à fonte.
+
+No modo Android (`-Format xml -Escape android`), também detecta escapes duplicados
+(`\\'`/`\\\"`), que indicam over-escaping. As 2 aspas externas de `downloaded` e
+`process_downloads_background` no YTDLnis são falsos positivos intencionais (as aspas fazem
+parte do texto exibido) e não devem ser "corrigidas".
 
 Saída: `OK` (exit 0) ou `FALHA` (exit 1) com a lista de achados.
 
@@ -177,7 +233,7 @@ Status  ->  Export  ->  traduzir em lotes  ->  Push  ->  Check  ->  Status (0 pe
 **Weblate:**
 
 ```text
-Status  ->  Export  ->  traduzir em lotes  ->  Push  ->  Check  ->  Status (0 pendentes)
-                                                                    |
-                                                          Backup + READMEs + commit
+Status  ->  Export (TSV ou JSON)  ->  traduzir em lotes  ->  Push / PushJson  ->  Check + Checks  ->  Status (0 pendentes)
+                                                                                                          |
+                                                                                         Backup + validação + READMEs + commit
 ```
