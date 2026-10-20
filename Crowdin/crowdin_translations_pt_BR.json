@@ -16,7 +16,7 @@
     },
     "7046701": {
       "source": "TM Pre-translation",
-      "target": "Pré-tradução via MT"
+      "target": "Pré-tradução via TM"
     },
     "7046705": {
       "source": "Remove file",
@@ -48,7 +48,7 @@
     },
     "7046721": {
       "source": "Show TM and AI savings to finance with clear before/after numbers.",
-      "target": "Apresente a economia obtida com MT e IA ao setor financeiro com números claros de antes e depois."
+      "target": "Apresente a economia obtida com TM e IA ao setor financeiro com números claros de antes e depois."
     },
     "7046723": {
       "source": "Savings summary",
@@ -604,7 +604,7 @@
     },
     "7047619": {
       "source": "Project TM",
-      "target": "MT do Projeto"
+      "target": "TM do Projeto"
     },
     "7047621": {
       "source": "SAVE",
@@ -848,7 +848,7 @@
     },
     "7047987": {
       "source": "Crowdin supports over {count}+ file formats. Whether you have PDFs or Markdown guides, we preserve the layout. This feature lets translators see exactly how their text fits on the page.",
-      "target": "O Crowdin oferece suporte a mais de {count}+ formatos de arquivo. Seja em arquivos PDF ou guias em Markdown, nós preservamos o layout. Esse recurso permite que os tradutores vejam exatamente como o texto se ajusta à página."
+      "target": "O Crowdin oferece suporte a mais de {count} formatos de arquivo. Seja em arquivos PDF ou guias em Markdown, nós preservamos o layout. Esse recurso permite que os tradutores vejam exatamente como o texto se ajusta à página."
     },
     "7047989": {
       "source": "PDFs, Docs, and Guides – all covered",
@@ -1328,7 +1328,7 @@
     },
     "7048303": {
       "source": "Manually exporting CSVs for {count}+ products leads to pricing errors and missing descriptions.",
-      "target": "Exportar arquivos CSV manualmente para mais de {count}+ produtos gera erros de precificação e descrições ausentes."
+      "target": "Exportar arquivos CSV manualmente para mais de {count} produtos gera erros de precificação e descrições ausentes."
     },
     "7048305": {
       "source": "Manual Updates",
@@ -1764,7 +1764,7 @@
     },
     "7048565": {
       "source": "Crowdin - most customizable enterprise translation software. Localize your whole business with top security, {count}+ integrations, advanced AI and QA features.",
-      "target": "Crowdin - o software corporativo de tradução mais personalizável. Localize toda a sua empresa com segurança máxima, mais de {count}+ integrações e recursos avançados de IA e QA."
+      "target": "Crowdin - o software corporativo de tradução mais personalizável. Localize toda a sua empresa com segurança máxima, mais de {count} integrações e recursos avançados de IA e QA."
     },
     "7048567": {
       "source": "Enterprise Translation Software for Advanced Localization",
@@ -1968,7 +1968,7 @@
     },
     "7048707": {
       "source": "Connect your tech stack with {count}+ integrations.",
-      "target": "Conecte sua stack de tecnologia com mais de {count}+ integrações."
+      "target": "Conecte sua stack de tecnologia com mais de {count} integrações."
     },
     "7048711": {
       "source": "Control every detail, from AI workflows to strict QA checks.",
@@ -2004,7 +2004,7 @@
     },
     "7048793": {
       "source": "Discover why innovative teams choose Crowdin. Explore our ecosystem of {count}+ integrations, advanced AI localization, and enterprise-grade security.",
-      "target": "Descubra por que equipes inovadoras escolhem o Crowdin. Explore nosso ecossistema com mais de {count}+ integrações, localização avançada com IA e segurança de nível corporativo."
+      "target": "Descubra por que equipes inovadoras escolhem o Crowdin. Explore nosso ecossistema com mais de {count} integrações, localização avançada com IA e segurança de nível corporativo."
     },
     "7048795": {
       "source": "Why Crowdin? Platform Features & Benefits",
@@ -2016,7 +2016,7 @@
     },
     "7048835": {
       "source": "Translate Figma designs in clicks. Optimize your workflow with live content sync, text extraction automation, and testing layouts in {count}+ languages without leaving Figma.",
-      "target": "Traduza designs do Figma em poucos cliques. Otimize seu fluxo de trabalho com sincronização de conteúdo em tempo real, automação de extração de texto e testes de layout em mais de {count}+ idiomas sem sair do Figma."
+      "target": "Traduza designs do Figma em poucos cliques. Otimize seu fluxo de trabalho com sincronização de conteúdo em tempo real, automação de extração de texto e testes de layout em mais de {count} idiomas sem sair do Figma."
     },
     "7048837": {
       "source": "Free Figma Translation Plugin",
@@ -2188,7 +2188,7 @@
     },
     "7049073": {
       "source": "Seamless game translation into {count}+ languages. Translate in-game text, voice-over and UI with AI automation features. We localized Minecraft, CS2, and more.",
-      "target": "Tradução contínua de jogos para mais de {count}+ idiomas. Traduza textos dentro do jogo, dublagens e interfaces com recursos de automação por IA. Já localizamos Minecraft, CS2 e muito mais."
+      "target": "Tradução contínua de jogos para mais de {count} idiomas. Traduza textos dentro do jogo, dublagens e interfaces com recursos de automação por IA. Já localizamos Minecraft, CS2 e muito mais."
     },
     "7049075": {
       "source": "#1 Game Translation Software for All Types of Games",
@@ -2228,7 +2228,7 @@
     },
     "7049099": {
       "source": "We support {count}+ languages so you enter new markets quickly and grow your player base worldwide.",
-      "target": "Oferecemos suporte a mais de {count}+ idiomas para que você entre rapidamente em novos mercados e expanda sua base de jogadores no mundo todo."
+      "target": "Oferecemos suporte a mais de {count} idiomas para que você entre rapidamente em novos mercados e expanda sua base de jogadores no mundo todo."
     },
     "7049101": {
       "source": "Scale to any market",
@@ -2284,7 +2284,7 @@
     },
     "7049143": {
       "source": "You have content in {count}+ disconnected tools (GitHub, Figma, CMS). Manually extracting text from all those places is slow and expensive.",
-      "target": "Você tem conteúdo espalhado em mais de {count}+ ferramentas desconectadas (GitHub, Figma, CMS). Extrair textos manualmente de todos esses lugares é lento e caro."
+      "target": "Você tem conteúdo espalhado em mais de {count} ferramentas desconectadas (GitHub, Figma, CMS). Extrair textos manualmente de todos esses lugares é lento e caro."
     },
     "7049149": {
       "source": "Translation without a system is a real nightmare",
@@ -2320,7 +2320,7 @@
     },
     "7049175": {
       "source": "{count}+ apps and integrations",
-      "target": "Mais de {count}+ aplicativos e integrações"
+      "target": "Mais de {count} aplicativos e integrações"
     },
     "7049177": {
       "source": "Crowdin store:",
@@ -2512,7 +2512,7 @@
     },
     "7049409": {
       "source": "Cook Book",
-      "target": "Livro de Receitas"
+      "target": "Guia Prático (Cookbook)"
     },
     "7049415": {
       "source": "From code to designs to live apps - give your translators all the visual context they need to deliver perfect translations every time.",
@@ -2592,7 +2592,7 @@
     },
     "7049457": {
       "source": "This e-book includes our own experience and tips from {count}+ localization experts, including translators and heads of localization departments. Learn from their experience and see how you can automate content updates and have all the translations ready for the next release in time.",
-      "target": "Este e-book reúne nossa própria experiência e dicas de mais de {count}+ especialistas em localização, incluindo tradutores e líderes de departamentos de localização. Aprenda com a experiência deles e veja como você pode automatizar atualizações de conteúdo e ter todas as traduções prontas a tempo para o próximo lançamento."
+      "target": "Este e-book reúne nossa própria experiência e dicas de mais de {count} especialistas em localização, incluindo tradutores e líderes de departamentos de localização. Aprenda com a experiência deles e veja como você pode automatizar atualizações de conteúdo e ter todas as traduções prontas a tempo para o próximo lançamento."
     },
     "7049455": {
       "source": "Best fit for...",
@@ -2988,7 +2988,7 @@
     },
     "7049865": {
       "source": "Crowdin Store – <span class=\"opacity-60\">{count}+ apps & integrations</span>",
-      "target": "Crowdin Store – <span class=\"opacity-60\">mais de {count}+ aplicativos e integrações</span>"
+      "target": "Crowdin Store · <span class=\"opacity-60\">mais de {count} aplicativos e integrações</span>"
     },
     "7049869": {
       "source": "Marketing content translation within one platform – from banners, newsletters and Google Ads to YouTube videos and social media posts.",
@@ -4952,7 +4952,7 @@
     },
     "7051391": {
       "source": "Incoming Projects: Your agency receives your tasks in their own specialized workspace (\"Incoming Projects\" tab).",
-      "target": "Projetos Recebidos: Sua agência recebe suas tarefas em seu próprio espaço de trabalho especializado (aba \"Incoming Projects\")."
+      "target": "Projetos Recebidos: Sua agência recebe suas tarefas em seu próprio espaço de trabalho especializado (aba \"Projetos Recebidos\")."
     },
     "7051393": {
       "source": "Granular Permissions: You decide if they can edit the glossary, view screenshots, or just translate text.",
