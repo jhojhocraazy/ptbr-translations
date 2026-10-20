@@ -486,36 +486,36 @@
     <string name="not_enough_listening">Pouco histórico de escuta</string>
     <string name="not_enough_this_month">Toque mais algumas músicas este mês para desbloquear seu Replay.</string>
     <string name="pinned">Fixado</string>
-    <string name="replay_across"> em </string>
-    <string name="replay_album_end"> prendeu sua atenção.</string>
-    <string name="replay_album_focus">Um álbum</string>
-    <string name="replay_album_start">Desta vez, </string>
-    <string name="replay_artist_end"> continuou voltando.</string>
-    <string name="replay_artist_focus">Um artista</string>
-    <string name="replay_artist_start">Todo o mês, </string>
+    <string name="replay_across">Em</string>
+    <string name="replay_album_end">prendeu sua atenção.</string>
+    <string name="replay_album_focus">um álbum</string>
+    <string name="replay_album_start">Desta vez,</string>
+    <string name="replay_artist_end">não saiu do repeat.</string>
+    <string name="replay_artist_focus">um artista</string>
+    <string name="replay_artist_start">O mês todo,</string>
     <string name="replay_empty_description">Ouça um pouco mais e o BitChord criará um Replay.</string>
-    <string name="replay_genre_end"> moldaram seu som.</string>
-    <string name="replay_genre_focus">Seus gêneros</string>
-    <string name="replay_genre_start">Juntos, </string>
-    <string name="replay_habits_middle"> de </string>
-    <string name="replay_habits_start">Você explorou </string>
+    <string name="replay_genre_end">moldaram seu som.</string>
+    <string name="replay_genre_focus">seus gêneros</string>
+    <string name="replay_genre_start">Juntos,</string>
+    <string name="replay_habits_middle">de</string>
+    <string name="replay_habits_start">Você explorou</string>
     <string name="replay_hours_across">%1$s horas</string>
-    <string name="replay_intro_end"> está pronto.</string>
-    <string name="replay_intro_start">Seu </string>
-    <string name="replay_minutes_end"> ouvindo música.</string>
-    <string name="replay_minutes_start">Você passou </string>
+    <string name="replay_intro_end">está pronto.</string>
+    <string name="replay_intro_start">Seu</string>
+    <string name="replay_minutes_end">ouvindo música.</string>
+    <string name="replay_minutes_start">Você passou</string>
     <string name="replay_minutes_value">%1$s</string>
     <plurals name="replay_minutes_unit">
         <item quantity="one">%1$s minuto</item>
         <item quantity="other">%1$s minutos</item>
     </plurals>
     <string name="replay_mostly_around">%1$s</string>
-    <string name="replay_private_counting">Construído de forma privada usando seu histórico local</string>
-    <string name="replay_share_card_description">Um cartão polido com seus destaques.</string>
-    <string name="replay_share_summary_description">Um panorama completo com músicas, artistas e mais.</string>
-    <string name="replay_songs_end"> preencheram seu mês.</string>
-    <string name="replay_songs_start">No total, </string>
-    <string name="replay_summary_start">Seu Replay de </string>
+    <string name="replay_private_counting">Gerado de forma privada a partir do seu histórico de audição neste dispositivo.</string>
+    <string name="replay_share_card_description">Um cartão caprichado com seus destaques.</string>
+    <string name="replay_share_summary_description">Um panorama completo com músicas, artistas, gêneros e hábitos.</string>
+    <string name="replay_songs_end">deram o tom do seu mês.</string>
+    <string name="replay_songs_start">No total,</string>
+    <string name="replay_summary_start">Sua</string>
     <string name="saved">Salvo</string>
     <string name="saved_bang">Salvo!</string>
     <string name="share_my_replay">Compartilhar meu Replay</string>
@@ -592,9 +592,9 @@
     <string name="advanced_automix_subtitle">Mixa como um DJ: mantém as batidas alinhadas, faz cada mudança no tempo e corta entre músicas que não combinam. Sem processamento extra.</string>
     <string name="no_lyrics_sources_enabled">Nenhuma. As letras não serão baixadas.</string>
     <string name="song_cache_large_subtitle">Mantém até %1$s de áudio em disco. Isso pode usar bastante espaço.</string>
-    <string name="song_cache_limit_subtitle">Mantém áudio em disco para navegação instantânea e replays</string>
+    <string name="song_cache_limit_subtitle">Mantém o áudio baixado em disco para busca instantânea e repetições.</string>
     <string name="replay_genres_enabled_subtitle">Pede os gêneros de um artista ao Last.fm. Apenas o nome do artista é enviado.</string>
-    <string name="replay_genres_disabled_subtitle">O gráfico de gêneros do Replay ficará oculto</string>
+    <string name="replay_genres_disabled_subtitle">O gráfico de gêneros do Replay fica oculto enquanto esta opção estiver desativada.</string>
     <string name="swipe_plays_next">Deslizar uma música toca em seguida</string>
     <string name="swipe_adds_to_queue">Quando desativado, deslizar adiciona ao fim da fila</string>
     <string name="import_backup_warning">Isso substituirá os dados deste dispositivo. Exporte seus dados atuais se quiser mantê-los.</string>
@@ -909,7 +909,7 @@
 
     <string name="selected_account">Conta selecionada</string>
 
-    <string name="shelf_100_on_repeat">100% no repeat</string>
+    <string name="shelf_100_on_repeat">100% no repeteco</string>
 
     <string name="shelf_artists_on_the_rise">Artistas em ascensão</string>
 
@@ -1311,8 +1311,8 @@
     <string name="show_queue_history">Mostrar histórico da fila</string>
     <string name="show_queue_history_subtitle">Mostra até 25 músicas já tocadas acima de «Tocando agora» na fila</string>
     <string name="not_enough_this_week">Ouça mais algumas músicas esta semana para desbloquear seu Replay.</string>
-    <string name="replay_artist_start_week">A semana toda, </string>
-    <string name="replay_songs_end_week"> preencheram sua semana.</string>
+    <string name="replay_artist_start_week">Esta semana,</string>
+    <string name="replay_songs_end_week">deram o tom da sua semana.</string>
     <string name="replay_summary_end_week">semana</string>
     <string name="replay_this_week">Esta semana</string>
     <string name="onboarding_title">Milhões de músicas, em streaming no BitChord</string>
