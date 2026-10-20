@@ -116,7 +116,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 <summary><b>🔍 Ver Detalhes do Projeto Better Lyrics</b></summary>
 <br/>
 
-* **Sincronização Upstream:** `_locales/pt_BR/messages.json` entregue pelos PRs automáticos do Crowdin #1001 e #1010, mesclados em 15/10 e 20/10/2026.
+* **Sincronização Upstream:** automática pela integração GitHub do Crowdin (`_locales/pt_BR/messages.json`); PRs do bot #1001 e #1010 já mesclados pelo mantenedor (15/10 e 20/10/2026), sem PR manual do hub.
 * **Sincronização Contínua:** Atualização via API oficial do Crowdin, com validação de placeholders (`$VAR$`), tags e termos protegidos antes de cada envio.
 * **Terminologia Musical:** Preservação de termos como *Unison*, *Time-synced*, *Romanization*, *Furigana* e *Picture-in-Picture*.
 </details>
@@ -212,10 +212,29 @@ ptbr-translations/
 │   ├── glossario.md
 │   ├── README.md
 │   └── ytdlnis_strings_pt_BR.xml
+├── 📁 scripts/               # Ferramentas de tradução e validação
+│   ├── crowdin-sync.ps1      # Status, Export, Push, Check e Backup (Crowdin API v2)
+│   ├── validate-ptbr.ps1     # Validador local de placeholders, escapes e XML
+│   └── README.md             # Guia de uso das ferramentas
 ├── .gitignore                # Isolamento de compilações e repositórios aninhados
 ├── AGENTS.md                 # Diretrizes e governança do repositório
+├── metodologia.md            # Metodologia de entrega e definição de pronto
 └── README.md                 # Documentação e portfólio oficial
 ```
+
+---
+
+## 🧭 Metodologia & Ferramentas
+
+A regra é simples: **a entrega termina onde a tradução vive**.
+
+| Onde o projeto está | Nossa entrega | GitHub é nosso escopo? |
+| :--- | :--- | :---: |
+| **Crowdin / Weblate** | 100% traduzido na plataforma, no idioma alvo | ❌ Não |
+| **Sem plataforma de tradução** | Tradução no repositório + Pull Request | ✅ Sim |
+
+* 📘 [**Metodologia completa**](./metodologia.md) — classificação, ciclo de trabalho, regras de qualidade e definição de pronto.
+* 🛠️ [**Ferramentas**](./scripts/README.md) — `crowdin-sync.ps1` (`Status` / `Export` / `Push` / `Check` / `Backup`) e `validate-ptbr.ps1`.
 
 ---
 
