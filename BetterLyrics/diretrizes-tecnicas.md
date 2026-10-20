@@ -1,7 +1,7 @@
 # 📘 Diretrizes Técnicas de Localização — Better Lyrics
 
 > **Manual de Engenharia de Tradução, ICU MessageFormat e Integração com a API Crowdin v2.**  
-> Aplicado à localização em Português do Brasil (`pt-BR`) do aplicativo [Better Lyrics](https://github.com/khanhas/better-lyrics).
+> Aplicado à localização em Português do Brasil (`pt-BR`) da extensão [Better Lyrics](https://github.com/better-lyrics/better-lyrics) para YouTube Music.
 
 ---
 
@@ -96,10 +96,10 @@ O Better Lyrics permite manutenção contínua e instantânea utilizando a API R
 
 ---
 
-## 5. 🖥️ Adaptação de Interface Desktop (Spotify / Apple Music)
+## 5. 🖥️ Adaptação de Interface da Extensão (YouTube Music)
 
-O Better Lyrics funciona como um widget overlay flutuante ou janela dedicada:
-* **Espaço de Overlay:** Telas de overlay musical exigem termos ultra-compactos para não cobrir a arte do álbum ou o vídeo de fundo (**Canvas**).
+O Better Lyrics se apresenta em dois contextos: o painel de configurações da extensão e o overlay de letras sobre o player (incluindo a janela Picture-in-Picture):
+* **Espaço de Overlay:** o dock do Unison e a janela PiP exigem termos ultra-compactos para não cobrir a arte do álbum nem os controles do player.
 * **Consistência de Menu:** Utilizar verbos no infinitivo para ações do usuário (*"Sincronizar"*, *"Fixar no topo"*, *"Alternar modo compacto"*).
 * **Padrão Sentence Case:** No português, manter apenas a primeira letra maiúscula nos itens de menu e botões (*"Ajustar tamanho da fonte"* em vez de *"Ajustar Tamanho Da Fonte"*).
 
@@ -109,6 +109,6 @@ O Better Lyrics funciona como um widget overlay flutuante ou janela dedicada:
 
 - [ ] Todas as variáveis `{nome}` estão com o nome exatamente igual ao original em inglês?
 - [ ] As aspas duplas foram devidamente escapadas como `\"`?
-- [ ] O texto segue as diretrizes do **Glossário Musical** para termos como *Canvas*, *Time-synced* e *Furigana*?
-- [ ] O significado do comando condiz com o ecossistema de tocadores de música de desktop?
-- [ ] O status de aprovação foi aplicado para que a tradução seja incluída no próximo PR upstream?
+- [ ] O texto segue as diretrizes do **Glossário Musical** para termos como *Unison*, *Time-synced* e *Furigana*?
+- [ ] O significado do comando condiz com a interface de uma extensão do YouTube Music (não com um aplicativo desktop)?
+- [ ] O texto vigente no Crowdin é o mais recente e está alinhado ao glossário? (a aprovação formal depende de permissão de *proofreader*; o bot sincroniza o texto vigente)

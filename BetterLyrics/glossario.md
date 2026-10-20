@@ -7,25 +7,25 @@
 
 ## 📌 Introdução
 
-O Better Lyrics atua no nicho de utilitários musicais, tocadores de streaming e exibição visual de letras.  
-Este glossário estabelece o que deve ser mantido no termo internacional consagrado e como traduzir os termos específicos de áudio e sincronização.
+O Better Lyrics é a extensão de navegador para **YouTube Music** (organização [better-lyrics](https://github.com/better-lyrics)) que exibe letras sincronizadas, romanização, tradução e temas personalizados.  
+Este glossário estabelece o que deve ser mantido no termo internacional consagrado e como traduzir os termos específicos de áudio, sincronização e interface. Cobre as **637 strings** do catálogo atual (projeto Crowdin 863186).
 
 ---
 
 ## 1. 🚫 Termos que NUNCA Devem Ser Traduzidos
 
-Estes termos são recursos proprietários de plataformas (Spotify/Apple), conceitos fonéticos universais ou tecnologias musicais consolidadas:
+Estes termos são nomes de produto, marcas do ecossistema de letras ou conceitos fonéticos universais:
 
 | Termo em Inglês | Tradução no Better Lyrics | Justificativa / Contexto |
 | :--- | :--- | :--- |
-| **Canvas** | `Canvas` | Recurso oficial do Spotify de vídeo em loop de fundo. Traduzir estraga o reconhecimento do recurso. |
+| **Better Lyrics** | `Better Lyrics` | Nome do produto. Verificado por `tooling/check-i18n-brand.ts` — nunca traduzir nem transliterar. |
+| **Unison** | `Unison` | Acervo colaborativo de letras da extensão (votação, dock de ações). Também protegido pelo checador de marca. |
 | **Furigana** | `Furigana` | Sistema japonês de escrita fonética em kana sobre kanjis para indicar pronúncia. Termo linguístico padrão. |
-| **Romanization / Romaji** | `Romanização` / `Romaji` | Transliteração de escrita japonesa/coreana/chinesa para o alfabeto latino. |
+| **Romanization / Romaji** | `Romanização` / `Romaji` | Transliteração de escrita japonesa/coreana/chinesa para o alfabeto latino (chave `options_language_romanization`). |
 | **Karaoke** | `Karaokê` (com acento) | Modo de exibição de letras sincronizadas sílaba por sílaba com efeito de preenchimento. |
-| **Spotify / Apple Music / YouTube Music** | *Manter nome exato* | Provedores e serviços de streaming de música. |
-| **Spicetify** | `Spicetify` | Framework de personalização do cliente desktop do Spotify. |
-| **Scrobble / Scrobbling** | `Scrobble` / `Scrobbling` | Ação de registrar a reprodução de faixas em perfis sociais (Last.fm, ListenBrainz). |
-| **Picture-in-Picture (PiP)** | `Picture-in-Picture (PiP)` | Recurso de mini-janela flutuante do sistema operacional. |
+| **YouTube Music** | *Manter nome exato* | Plataforma hospedeira da extensão. |
+| **Picture-in-Picture (PiP)** | `Picture-in-Picture (PiP)` | Janela flutuante de letras do sistema operacional (inclui `picture_in_picture_fitWindow`). |
+| **Playground** | `Playground` | Área de testes de estilos do editor. Mantido em inglês por ser termo consagrado entre desenvolvedores. |
 
 ---
 

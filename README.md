@@ -35,7 +35,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 | [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.610** | 🟢 **Lançado** (`v0.6.1-beta`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**BitChord**](#2-bitchord) | Android / Desktop / Wear OS | GitHub PRs / XML | **+1.250** | 🚀 **Em Análise** ([PR #952](https://github.com/kushagrasinghx/BitChord/pull/952)) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **681** | 🟢 **100% Traduzido** (Sugestões Ativas) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**Better Lyrics**](#4-better-lyrics) | Desktop / Spotify / Apple Music | Crowdin (863186) | **637** | 🟢 **Lançado** (`v3.0.0`) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **637** | 🟢 **Sincronizado** (PR #1010) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**Crowdin Platform**](#5-crowdin-platform) | TMS / Modern Web UI | Crowdin API (31) | **17.154** (**1.642** Web UI 100%) | 🟢 **Interface Moderna 100%** | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**TizenTube & Cobalt**](#6-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **197** | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718)) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Weblate / GitHub | **100%** | 🟢 **Integrado** (`main`) | ![100%](https://geps.dev/progress/100?color=00c853) |
@@ -105,20 +105,20 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 ---
 
 ### 4. Better Lyrics
-> Utilitário de letras sincronizadas em tempo real para Spotify, Apple Music e tocadores de desktop.
+> Extensão para YouTube Music com letras sincronizadas em tempo real, romanização, tradução e temas personalizados.
 
-* **Repositório Oficial:** [`khanhas/better-lyrics`](https://github.com/khanhas/better-lyrics)
+* **Repositório Oficial:** [`better-lyrics/better-lyrics`](https://github.com/better-lyrics/better-lyrics)
 * **Plataforma de Tradução:** [Crowdin — Projeto 863186](https://crowdin.com/project/better-lyrics/pt-BR)
-* **Status:** 🟢 **100% Concluído** (637 frases / 2.498 palavras traduzidas e aprovadas).
+* **Status:** 🟢 **100% Traduzido** (637 frases / 2.498 palavras) — revisão formal pendente no Crowdin.
 * **Diretório Local:** [`BetterLyrics/`](./BetterLyrics/)
 
 <details>
 <summary><b>🔍 Ver Detalhes do Projeto Better Lyrics</b></summary>
 <br/>
 
-* **Release Oficial:** Incorporado integralmente no lançamento oficial **v3.0.0** via Pull Request upstream #1001.
-* **Sincronização:** Atualização em tempo real via API oficial do Crowdin.
-* **Terminologia Musical:** Preservação cuidadosa de termos como *Canvas*, *Time-synced*, *Romanization* e *Furigana*.
+* **Sincronização Upstream:** `_locales/pt_BR/messages.json` entregue pelo bot do Crowdin nos PRs #1001 (15/10/2026) e #1010 (20/10/2026).
+* **Sincronização Contínua:** Atualização via API oficial do Crowdin, com validação de placeholders (`$VAR$`), tags e termos protegidos antes de cada envio.
+* **Terminologia Musical:** Preservação de termos como *Unison*, *Time-synced*, *Romanization*, *Furigana* e *Picture-in-Picture*.
 </details>
 
 ---
@@ -185,6 +185,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 ```text
 ptbr-translations/
 ├── 📁 BetterLyrics/          # Backups JSON e recursos do Crowdin
+│   ├── better_lyrics_messages_en.json   # Snapshot da fonte EN (upstream)
 │   └── better_lyrics_messages_pt_BR.json
 ├── 📁 BitChord/              # Recursos XML e clone do repositório
 │   └── 📁 repo/              # Repositório Git conectado ao fork e upstream
