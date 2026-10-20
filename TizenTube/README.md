@@ -11,9 +11,10 @@
 | :--- | :--- |
 | **Ecossistema Tecnológico** | JavaScript (ESM / Rollup) + Cobalt C++ Container (Chromium/Starboard) |
 | **Dispositivos Suportados** | Smart TVs Samsung (Tizen OS), Android TV, Google TV e Amazon Fire TV |
-| **Cobertura Geral** | 🟢 **100% Traduzido** (197 strings revisadas e traduzidas) |
+| **Cobertura Geral** | 🟢 **100% Traduzido & Refinado** (197 strings revisadas; 96 refinadas em 20/10/2026) |
 | **Repositórios Oficiais** | [`reisxd/TizenTube`](https://github.com/reisxd/TizenTube) & [`reisxd/TizenTubeCobalt`](https://github.com/reisxd/TizenTubeCobalt) |
 | **Branch de Trabalho** | `i18n/portuguese-complete-pt-br` |
+| **Pull Request** | [#718](https://github.com/reisxd/TizenTube/pull/718) — aberto e mergeable (3 commits) |
 
 ---
 
@@ -36,7 +37,7 @@ A tradução central do projeto está concentrada no repositório core `reisxd/T
 
 | Arquivo de Tradução | Strings Totais | Strings Iniciais em Inglês | Status Atual pt-BR |
 | :--- | :---: | :---: | :---: |
-| [`mods/translations/resources/pt-BR.json`](./tizentube_pt_BR.json) | **197** | 92 (~47%) | 🟢 **100% Traduzido & Polido** |
+| [`mods/translations/resources/pt-BR.json`](./tizentube_pt_BR.json) | **197** | 92 (~47%) | 🟢 **100% Traduzido & Refinado** (96 ajustes) |
 
 ---
 
@@ -47,6 +48,7 @@ A tradução central do projeto está concentrada no repositório core `reisxd/T
 3. **Módulo de Atualização do Cobalt:** Tradução completa dos diálogos de verificação de atualização, download e notas de versão.
 4. **Preservação Absoluta de Placeholders:** Variáveis como `{{count}}`, `{{version}}`, `{{latestVersion}}`, `{{currentVersion}}`, `{{name}}` e `{{date}}` foram rigorosamente mantidas.
 5. **Reconhecimento nos Créditos:** Atualizado o array oficial `__contributors` com a inclusão de **Joseph Alves**.
+6. **Refinamento de Qualidade (20/10/2026):** 96 strings ajustadas para Sentence Case, ergonomia de controle remoto (*selecione* em vez de *clique*), leitura de QR Code, naturalidade e precisão terminológica (ex.: *cartões*, *abrir em*, *preferencialmente*), preservando 100% dos placeholders e as 5 strings intencionalmente idênticas ao inglês.
 
 ---
 

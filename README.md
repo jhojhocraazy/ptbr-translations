@@ -149,7 +149,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Cliente avançado de streaming sem anúncios com suporte nativo a SponsorBlock, DeArrow e controle de taxa de quadros (AFR) para Smart TVs Samsung (Tizen OS) e Android TV / Google TV / Fire TV (Cobalt).
 
 * **Repositórios Oficiais:** [`reisxd/TizenTube`](https://github.com/reisxd/TizenTube) (+2.800 stars) e [`reisxd/TizenTubeCobalt`](https://github.com/reisxd/TizenTubeCobalt)
-* **Status:** 🟢 **100% Traduzido** (197 strings revisadas e traduzidas).
+* **Status:** 🟢 **100% Traduzido & Refinado** (197 strings; 96 refinadas em 20/10/2026).
 * **Diretório Local:** [`TizenTube/`](./TizenTube/)
 
 <details>
@@ -159,6 +159,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 * **PR #718:** [feat(i18n): complete Portuguese (pt-BR) localization and translate missing strings](https://github.com/reisxd/TizenTube/pull/718)
   * **Status:** 🚀 **OPEN / IN REVIEW**
   * **Destaques:** Tradução completa de 92 strings que estavam em inglês (barra lateral, relógio em tela, menus de vídeo, atualizador do Cobalt e controle de velocidade).
+  * **Refinamento:** 96 strings ajustadas (Sentence Case, ergonomia de TV, leitura de QR Code e naturalidade), com 0 divergências de placeholders e 5 strings mantidas intencionalmente em inglês.
   * **Multiplataforma:** A tradução atende simultaneamente Smart TVs Samsung (TizenBrew/Tizen OS) e dispositivos Android TV/Fire TV via TizenTube Cobalt.
   * **Créditos Oficiais:** Inclusão de Joseph Alves no arquivo oficial `pt-BR.json` (`__contributors`).
 </details>
