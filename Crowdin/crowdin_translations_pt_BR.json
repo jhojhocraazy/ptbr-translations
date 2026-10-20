@@ -6574,5 +6574,13 @@
       "source": "Limited to 1 year.",
       "target": "Limitado a 1 ano."
     }
-  }
+  },
+  "project_total_strings": 18092,
+  "project_visible_strings": 17169,
+  "project_translated_strings": 17169,
+  "project_hidden_strings": 923,
+  "project_pending_strings": 0,
+  "project_files": 214,
+  "project_coverage_percent": 100,
+  "project_last_checked": "2026-10-20T15:38:43-03:00"
 }
