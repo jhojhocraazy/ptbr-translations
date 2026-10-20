@@ -32,7 +32,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 | Projeto | Ecossistema | Plataforma | Strings | Status Oficial | Progresso |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.610** | 🟢 **Lançado** (`v0.6.1-beta`) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.632** | 🟢 **Lançado** (`v0.6.1-beta`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**BitChord**](#2-bitchord) | Android / Desktop / Wear OS | GitHub PRs / XML | **+1.250** | 🚀 **Em Análise** ([PR #952](https://github.com/kushagrasinghx/BitChord/pull/952)) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **681** | 🟢 **100% Traduzido** (Sugestões Ativas) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **637** | 🟢 **Sincronizado** (PR #1010) | ![100%](https://geps.dev/progress/100?color=00c853) |
@@ -48,7 +48,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Aplicativo moderno de streaming de mídia e entretenimento desenvolvido em **Kotlin Multiplatform (Compose Multiplatform)** para Android e iOS.
 
 * **Repositório Oficial:** [`NuvioMedia/NuvioMobile`](https://github.com/NuvioMedia/NuvioMobile)
-* **Status:** 🟢 **100% Traduzido** (+2.610 strings em 7 arquivos modulares).
+* **Status:** 🟢 **100% Traduzido** (2.632 entradas em 7 arquivos modulares).
 * **Diretório Local:** [`NuvioMobile/`](./NuvioMobile/)
 
 <details>
@@ -60,8 +60,9 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
   * **Publicação:** Lançado oficialmente nas versões estáveis `v0.6.0-beta` e `v0.6.1-beta`.
   * **Volume:** 2.410 strings + 4 plurais.
 * **PR #2288:** [Adiciona tradução dos 5 novos módulos](https://github.com/NuvioMedia/NuvioMobile/pull/2288)
-  * **Status:** 🧪 **CI PASSED** (`Build fullDebug APK: SUCCESS`).
-  * **Módulos:** `strings_party.xml` (74 strings), `strings_servers.xml` (60 strings), `strings_mdblist.xml` (52 strings), `autosync_strings.xml` (10 strings), `autosync_toast_strings.xml` (4 strings).
+  * **Status:** ✅ **CI PASSED** (`Build fullDebug APK: SUCCESS`, 6m49s).
+  * **Módulos:** `strings_party.xml` (82 entradas), `strings_servers.xml` (60 entradas), `strings_mdblist.xml` (52 entradas), `autosync_strings.xml` (10 entradas), `autosync_toast_strings.xml` (4 entradas).
+  * **Refinamento:** 92 entradas revisadas (terminologia do glossário, Sentence Case, miniaturas, provedores de streaming e mensagens de download).
 </details>
 
 ---

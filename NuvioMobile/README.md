@@ -11,9 +11,10 @@
 | :--- | :--- |
 | **Plataforma Tecnológica** | Kotlin Multiplatform (KMP) + Compose Multiplatform (CMP) |
 | **Sistemas Alvo** | Android e iOS |
-| **Cobertura Geral** | 🟢 **100% Traduzido** (+2.610 strings em 7 arquivos) |
+| **Cobertura Geral** | 🟢 **100% Traduzido** (2.632 entradas em 7 arquivos) |
+| **Refinamento de Qualidade** | 🟢 **92 entradas revisadas** (terminologia, Sentence Case e naturalidade) |
 | **Última Versão Estável** | `v0.6.1-beta` (com traduções oficiais ativas) |
-| **Último Pull Request** | [**PR #2288**](https://github.com/NuvioMedia/NuvioMobile/pull/2288) (5 novos módulos — CI Passou) |
+| **Último Pull Request** | [**PR #2288**](https://github.com/NuvioMedia/NuvioMobile/pull/2288) (5 novos módulos + refinamento — CI validado) |
 
 ---
 
@@ -22,11 +23,11 @@
 No Compose Multiplatform, as strings residem em `composeApp/src/commonMain/composeResources/values-pt-rBR/`.  
 O projeto divide as strings em **7 arquivos modulares**:
 
-| Arquivo XML | Descrição do Domínio | Strings | Status |
+| Arquivo XML | Descrição do Domínio | Entradas | Status |
 | :--- | :--- | :---: | :---: |
-| [`strings.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings.xml) | Módulo Principal: Catálogos, Player, Configurações, Debrid e Stremio | 2.410 + 4 plurais | 🟢 Merged (PR #2234) |
-| [`strings_pip.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_pip.xml) | Picture-in-Picture: Controles flutuantes e mini-player | 12 | 🟢 Merged |
-| [`strings_party.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_party.xml) | Watch Party: Sessões em grupo, sincronia, salas e chat | 74 | 🟢 Em Análise (PR #2288) |
+| [`strings.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings.xml) | Módulo Principal: Catálogos, Player, Configurações, Debrid e Stremio | 2.423 | 🟢 Merged (PR #2234) + refinado no #2288 |
+| [`strings_pip.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_pip.xml) | Picture-in-Picture: Controles flutuantes e mini-player | 1 | 🟢 Merged + refinado no #2288 |
+| [`strings_party.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_party.xml) | Watch Party: Sessões em grupo, sincronia, salas e chat | 82 | 🟢 Em Análise (PR #2288) |
 | [`strings_servers.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_servers.xml) | Servidores Remotos: Endereços, conexão, portas e latência | 60 | 🟢 Em Análise (PR #2288) |
 | [`strings_mdblist.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_mdblist.xml) | Integração MDBList: Filtros avançados, listas e notas de avaliação | 52 | 🟢 Em Análise (PR #2288) |
 | [`autosync_strings.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/autosync_strings.xml) | AutoSync: Sincronização em segundo plano e agendamento | 10 | 🟢 Em Análise (PR #2288) |
@@ -43,10 +44,12 @@ O projeto divide as strings em **7 arquivos modulares**:
 
 ### 2. [Pull Request #2288](https://github.com/NuvioMedia/NuvioMobile/pull/2288) — Módulos da Versão 0.7+
 * **Branch:** `i18n/pt-br-modules`
-* **Volume:** 200 novas strings divididas nos 5 novos módulos arquiteturais.
+* **Volume:** 208 novas entradas nos 5 novos módulos arquiteturais, além do refinamento de 92 entradas no módulo principal e no PiP.
+* **Refinamento:** terminologia do glossário (`Continuar assistindo`, `Lista de interesses`, `Picture-in-Picture (PiP)`), Sentence Case, miniaturas, provedores de streaming e mensagens de download.
+* **Cobertura validada:** 2.632/2.632 entradas, 0 faltando e 0 divergências de placeholders.
 * **Status da Pipeline CI/CD:**
   * ✅ `PR Template Check` (`validate_pr_body`): **SUCCESS**
-  * ✅ `PR Full Debug Build` (`Build fullDebug APK`): **SUCCESS** (APK Android compilou 100% liso).
+  * ✅ `PR Full Debug Build` (`Build fullDebug APK`): **SUCCESS** (6m49s)
 
 ---
 
