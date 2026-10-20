@@ -4,7 +4,7 @@
   "target_language": "pt-BR",
   "file_id": 32447,
   "file_name": "src/i18n/locales/en.json",
-  "total_submitted": 251,
+  "total_submitted": 351,
   "translations": {
     "7046447": {
       "source": "GitHub",
@@ -1009,6 +1009,406 @@
     "7048075": {
       "source": "Media protected",
       "target": "Mídia protegida"
+    },
+    "7048077": {
+      "source": "WYSIWYG Preview",
+      "target": "Pré-visualização WYSIWYG"
+    },
+    "7048081": {
+      "source": "Ready to Go Global?",
+      "target": "Pronto para se Tornar Global?"
+    },
+    "7048083": {
+      "source": "Companies and people making their products multilingual with Crowdin",
+      "target": "Empresas e pessoas que tornam seus produtos multilíngues com o Crowdin"
+    },
+    "7048085": {
+      "source": "Join thousands of companies making their products multilingual. Discover why global brands choose Crowdin for their localization and reach new markets.",
+      "target": "Junte-se a milhares de empresas que estão tornando seus produtos multilíngues. Descubra por que marcas globais escolhem o Crowdin para sua localização e alcance novos mercados."
+    },
+    "7048087": {
+      "source": "Trusted by Thousands: Localization Case Studies with Crowdin",
+      "target": "Aprovado por Milhares: Estudos de Caso de Localização com o Crowdin"
+    },
+    "7048089": {
+      "source": "Explore Crowdin",
+      "target": "Explorar o Crowdin"
+    },
+    "7048091": {
+      "source": "Automate localization with CLI, API, and integrations. Perfect for dev teams starting their automation journey.",
+      "target": "Automatize a localização com CLI, API e integrações. Perfeito para equipes de desenvolvimento que estão iniciando sua jornada de automação."
+    },
+    "7048093": {
+      "source": "Script any workflow",
+      "target": "Crie scripts para qualquer fluxo de trabalho"
+    },
+    "7048095": {
+      "source": "CLI and RESTful API",
+      "target": "CLI e API RESTful"
+    },
+    "7048097": {
+      "source": "Push translations to devices",
+      "target": "Envie traduções diretamente para os dispositivos"
+    },
+    "7048099": {
+      "source": "Over-the-Air delivery SDKs",
+      "target": "SDKs de entrega Over-the-Air (OTA)"
+    },
+    "7048101": {
+      "source": "Sync repos automatically",
+      "target": "Sincronize repositórios automaticamente"
+    },
+    "7048103": {
+      "source": "GitHub, GitLab, Bitbucket integrations",
+      "target": "Integrações com GitHub, GitLab e Bitbucket"
+    },
+    "7048107": {
+      "source": "Pick the workspace that fits your team size and automation needs.",
+      "target": "Escolha o espaço de trabalho que melhor se adapta ao tamanho da sua equipe e às suas necessidades de automação."
+    },
+    "7048109": {
+      "source": "Explore Crowdin Enterprise",
+      "target": "Explorar o Crowdin Enterprise"
+    },
+    "7048111": {
+      "source": "Advanced automation with workflow engine, custom integrations, and enterprise security.",
+      "target": "Automação avançada com mecanismo de fluxo de trabalho, integrações personalizadas e segurança corporativa."
+    },
+    "7048113": {
+      "source": "Build complex pipelines",
+      "target": "Construa pipelines complexos"
+    },
+    "7048115": {
+      "source": "Custom workflow automation",
+      "target": "Automação de fluxo de trabalho personalizado"
+    },
+    "7048117": {
+      "source": "Implementation assistance",
+      "target": "Assistência na implementação"
+    },
+    "7048119": {
+      "source": "Dedicated support",
+      "target": "Suporte dedicado"
+    },
+    "7048121": {
+      "source": "Enterprise-grade security",
+      "target": "Segurança de nível corporativo"
+    },
+    "7048123": {
+      "source": "SSO and advanced permissions",
+      "target": "SSO e permissões avançadas"
+    },
+    "7048127": {
+      "source": "Choose <span class=\"opacity-60\">your Crowdin</span>",
+      "target": "Escolha <span class=\"opacity-60\">o seu Crowdin</span>"
+    },
+    "7048129": {
+      "source": "Set up once, sync forever.",
+      "target": "Configure uma vez, sincronize para sempre."
+    },
+    "7048131": {
+      "source": "View Documentation",
+      "target": "Ver Documentação"
+    },
+    "7048133": {
+      "source": "Ready to automate your localization?",
+      "target": "Pronto para automatizar a sua localização?"
+    },
+    "7048135": {
+      "source": "Full-featured API to create projects, upload files, download translations, and manage teams programmatically.",
+      "target": "API completa para criar projetos, enviar arquivos, baixar traduções e gerenciar equipes de forma programática."
+    },
+    "7048141": {
+      "source": "Manage your source files and translations without leaving the terminal.",
+      "target": "Gerencie seus arquivos de origem e traduções sem sair do terminal."
+    },
+    "7048143": {
+      "source": "Automate the process of updating your source files in your Crowdin project;",
+      "target": "Automatize o processo de atualização dos seus arquivos de origem no seu projeto do Crowdin;"
+    },
+    "7048145": {
+      "source": "Download translations from Crowdin and automatically save them in the correct locations;",
+      "target": "Baixe traduções do Crowdin e salve-as automaticamente nos locais corretos;"
+    },
+    "7048147": {
+      "source": "upload all your existing translations to Crowdin in minutes;",
+      "target": "envie todas as suas traduções existentes para o Crowdin em minutos;"
+    },
+    "7048149": {
+      "source": "Manage your localization resources without leaving the terminal;",
+      "target": "Gerencie seus recursos de localização sem sair do terminal;"
+    },
+    "7048151": {
+      "source": "Integrate Crowdin CLI with <a href=\"ghActionsLink\" class=\"underline underline-offset-4 decoration-zinc-500 dark:decoration-zinc-600\" target=\"_blank\">GitHub</a>, GitLab, Jenkins, CircleCI, and other software.",
+      "target": "Integre o Crowdin CLI com <a href=\"ghActionsLink\" class=\"underline underline-offset-4 decoration-zinc-500 dark:decoration-zinc-600\" target=\"_blank\">GitHub</a>, GitLab, Jenkins, CircleCI e outros softwares."
+    },
+    "7048153": {
+      "source": "Crowdin CLI",
+      "target": "Crowdin CLI"
+    },
+    "7048155": {
+      "source": "We built a developer-first toolkit so you can script your own pipelines and stay in your flow.",
+      "target": "Criamos um conjunto de ferramentas focado no desenvolvedor para que você possa programar seus próprios pipelines sem interromper seu fluxo de trabalho."
+    },
+    "7048157": {
+      "source": "Automate your workflow from the terminal",
+      "target": "Automatize seu fluxo de trabalho pelo terminal"
+    },
+    "7048161": {
+      "source": "Trigger external actions like Slack notifications or JIRA ticket updates when specific events happen in Crowdin.",
+      "target": "Acione ações externas, como notificações no Slack ou atualizações de tickets no Jira, quando eventos específicos acontecerem no Crowdin."
+    },
+    "7048165": {
+      "source": "View Developer Documentation",
+      "target": "Ver Documentação para Desenvolvedores"
+    },
+    "7048169": {
+      "source": "Automatic localization synchronization",
+      "target": "Sincronização automática de localização"
+    },
+    "7048171": {
+      "source": "No need to update the application in Google Play Store every time there is a new localization version. Crowdin SDK allows delivering new translations from the Crowdin project to your application immediately.",
+      "target": "Não é necessário atualizar o aplicativo na Google Play Store toda vez que houver uma nova versão de localização. O SDK do Crowdin permite entregar novas traduções do projeto do Crowdin para o seu aplicativo imediatamente."
+    },
+    "7048177": {
+      "source": "Translators can see their work live inside a version of the app as they type.",
+      "target": "Os tradutores podem ver seu trabalho ao vivo dentro de uma versão do aplicativo enquanto digitam."
+    },
+    "7048185": {
+      "source": "Receives translations instantly via OTA plus preview and screenshot tooling.",
+      "target": "Recebe traduções instantaneamente via OTA, além de ferramentas de pré-visualização e capturas de tela."
+    },
+    "7048189": {
+      "source": "Mobile SDK options",
+      "target": "Opções de SDK Mobile"
+    },
+    "7048191": {
+      "source": "Delivers new translations over-the-air with real-time preview and screenshots.",
+      "target": "Entrega novas traduções Over-the-Air (OTA) com pré-visualização em tempo real e capturas de tela."
+    },
+    "7048195": {
+      "source": "Explore QA Features",
+      "target": "Explorar Recursos de QA"
+    },
+    "7048197": {
+      "source": "Length limits validation",
+      "target": "Validação de limites de comprimento"
+    },
+    "7048199": {
+      "source": "Placeholder validation",
+      "target": "Validação de placeholders"
+    },
+    "7048201": {
+      "source": "Terminology consistency",
+      "target": "Consistência terminológica"
+    },
+    "7048203": {
+      "source": "Format string checks",
+      "target": "Verificações de formatação de strings"
+    },
+    "7048205": {
+      "source": "Before syncing translations back to your repo, Crowdin runs automated QA checks to ensure the localized files won't break your build.",
+      "target": "Antes de sincronizar as traduções de volta para o seu repositório, o Crowdin executa verificações automatizadas de QA para garantir que os arquivos localizados não quebrem a sua compilação."
+    },
+    "7048207": {
+      "source": "Protect your code from bad data",
+      "target": "Proteja seu código contra dados inválidos"
+    },
+    "7048211": {
+      "source": "Automated Localization Data Sync: CLI, API & VCS",
+      "target": "Sincronização Automatizada de Dados de Localização: CLI, API e VCS"
+    },
+    "7048213": {
+      "source": "Connect Azure Repos to automate source and translation updates",
+      "target": "Conecte o Azure Repos para automatizar atualizações de arquivos de origem e traduções"
+    },
+    "7048223": {
+      "source": "GitHub",
+      "target": "GitHub"
+    },
+    "7048227": {
+      "source": "GitLab",
+      "target": "GitLab"
+    },
+    "7048235": {
+      "source": "No more manual file uploads",
+      "target": "Chega de envio manual de arquivos"
+    },
+    "7048237": {
+      "source": "Try Crowdin Interactive Demo",
+      "target": "Experimentar a Demonstração Interativa do Crowdin"
+    },
+    "7048241": {
+      "source": "Crowdin Interactive Demo",
+      "target": "Demonstração Interativa do Crowdin"
+    },
+    "7048243": {
+      "source": "Interactive demo",
+      "target": "Demonstração interativa"
+    },
+    "7048245": {
+      "source": "Watch 4-min recorded video",
+      "target": "Assistir ao vídeo gravado de 4 min"
+    },
+    "7048249": {
+      "source": "Crowdin Demo Recording",
+      "target": "Gravação de Demonstração do Crowdin"
+    },
+    "7048251": {
+      "source": "Demo recording",
+      "target": "Gravação da demonstração"
+    },
+    "7048257": {
+      "source": "Why <span class=\"opacity-60\">companies</span> choose Crowdin?",
+      "target": "Por que <span class=\"opacity-60\">as empresas</span> escolhem o Crowdin?"
+    },
+    "7048259": {
+      "source": "Crowdin help you to save time by using <span class=\"opacity-60\">the latest technology</span>",
+      "target": "O Crowdin ajuda você a economizar tempo usando <span class=\"opacity-60\">a tecnologia mais recente</span>"
+    },
+    "7048261": {
+      "source": "Looking for alternatives? <a href=\"#alternative-demo-methods\" class=\"font-medium text-gray-900 dark:text-gray-100 hover:underline\">View other demo options</a>",
+      "target": "Procurando alternativas? <a href=\"#alternative-demo-methods\" class=\"font-medium text-gray-900 dark:text-gray-100 hover:underline\">Veja outras opções de demonstração</a>"
+    },
+    "7048265": {
+      "source": "Get a personalized demo of Crowdin.com – explore core features and learn how to manage translations with your team.",
+      "target": "Obtenha uma demonstração personalizada do Crowdin.com – explore os principais recursos e aprenda como gerenciar traduções com sua equipe."
+    },
+    "7048267": {
+      "source": "Crowdin.com demo",
+      "target": "Demonstração do Crowdin.com"
+    },
+    "7048271": {
+      "source": "Schedule demo and see how Crowdin makes localization easy",
+      "target": "Agende uma demonstração e veja como o Crowdin facilita a localização"
+    },
+    "7048273": {
+      "source": "Close interactive demo",
+      "target": "Fechar demonstração interativa"
+    },
+    "7048277": {
+      "source": "Quick Start Guide: AI Translation + Human Review",
+      "target": "Guia de Início Rápido: Tradução por IA + Revisão Humana"
+    },
+    "7048279": {
+      "source": "Interactive Demo - Crowdin.com",
+      "target": "Demonstração Interativa - Crowdin.com"
+    },
+    "7048281": {
+      "source": "Schedule a free personalized demo with our growth manager. Learn how to optimize your content localization with our online translation management tool.",
+      "target": "Agende uma demonstração personalizada gratuita com nosso gerente de crescimento. Aprenda como otimizar a localização do seu conteúdo com nossa ferramenta online de gerenciamento de tradução."
+    },
+    "7048285": {
+      "source": "Source professional vendors from the Crowdin Marketplace for campaigns and legal content.",
+      "target": "Contrate fornecedores profissionais no Crowdin Marketplace para campanhas e conteúdos jurídicos."
+    },
+    "7048289": {
+      "source": "Ideal for high-volume, low-impact text like specs or reviews. Fast and cost-effective.",
+      "target": "Ideal para textos de alto volume e baixo impacto, como especificações técnicas ou avaliações. Rápido e econômico."
+    },
+    "7048291": {
+      "source": "AI translation",
+      "target": "Tradução por IA"
+    },
+    "7048293": {
+      "source": "You do not need a human to translate \"Size: Medium,\" but you do for your homepage campaign. Mix methods without losing control.",
+      "target": "Você não precisa de um humano para traduzir \"Tamanho: Médio\", mas precisa para a campanha da sua página inicial. Combine métodos sem perder o controle."
+    },
+    "7048295": {
+      "source": "Balance cost and quality for <span class=\"opacity-60\">maximum ROI</span>",
+      "target": "Equilibre custo e qualidade para <span class=\"opacity-60\">o máximo ROI</span>"
+    },
+    "7048299": {
+      "source": "Your team",
+      "target": "Sua equipe"
+    },
+    "7048301": {
+      "source": "E-commerce catalogs change daily. Managing them manually is brittle and costly.",
+      "target": "Catálogos de e-commerce mudam diariamente. Gerenciá-los manualmente é frágil e caro."
+    },
+    "7048303": {
+      "source": "Manually exporting CSVs for {count}+ products leads to pricing errors and missing descriptions.",
+      "target": "Exportar arquivos CSV manualmente para mais de {count}+ produtos gera erros de precificação e descrições ausentes."
+    },
+    "7048305": {
+      "source": "Manual Updates",
+      "target": "Atualizações Manuais"
+    },
+    "7048307": {
+      "source": "Poorly managed translations hurt your ranking in local search engines.",
+      "target": "Traduções mal gerenciadas prejudicam o seu posicionamento nos mecanismos de busca locais."
+    },
+    "7048309": {
+      "source": "SEO Failures",
+      "target": "Falhas de SEO"
+    },
+    "7048311": {
+      "source": "New collections sit waiting for translation while trends fade.",
+      "target": "Novas coleções ficam paradas aguardando tradução enquanto as tendências passam."
+    },
+    "7048313": {
+      "source": "Slow Time-to-Market",
+      "target": "Lançamento Lento no Mercado"
+    },
+    "7048315": {
+      "source": "The spreadsheet nightmare",
+      "target": "O pesadelo das planilhas"
+    },
+    "7048317": {
+      "source": "Is your catalog trapped in spreadsheets?",
+      "target": "Seu catálogo está preso em planilhas?"
+    },
+    "7048319": {
+      "source": "QA checks preview",
+      "target": "Pré-visualização das verificações de QA"
+    },
+    "7048321": {
+      "source": "Keep your tone aligned from Homepage banner to Checkout button.",
+      "target": "Mantenha seu tom de voz alinhado desde o banner da página inicial até o botão de finalizar compra."
+    },
+    "7048323": {
+      "source": "Brand Consistency",
+      "target": "Consistência da Marca"
+    },
+    "7048325": {
+      "source": "Crowdin detects new products the moment you add them to your store.",
+      "target": "O Crowdin detecta novos produtos no exato momento em que você os adiciona à sua loja."
+    },
+    "7048327": {
+      "source": "Continuous Sync",
+      "target": "Sincronização Contínua"
+    },
+    "7048331": {
+      "source": "String-Based Precision",
+      "target": "Precisão Baseada em Strings"
+    },
+    "7048333": {
+      "source": "Automated commerce",
+      "target": "Comércio automatizado"
+    },
+    "7048335": {
+      "source": "A store that translates itself",
+      "target": "Uma loja que se traduz sozinha"
+    },
+    "7048337": {
+      "source": "The catalog chaos problem",
+      "target": "O problema do caos nos catálogos"
+    },
+    "7048339": {
+      "source": "Whether you need to integrate a translation platform with Shopify or Magento, our native apps allow for one-click synchronization.",
+      "target": "Seja para integrar uma plataforma de tradução com Shopify ou Magento, nossos aplicativos nativos permitem a sincronização com um único clique."
+    },
+    "7048341": {
+      "source": "API & connectors",
+      "target": "API e conectores"
+    },
+    "7048343": {
+      "source": "Connect e-commerce product descriptions to a localization tool without manual exports. Crowdin scans your store for new SKUs and sends them to the translation pipeline instantly.",
+      "target": "Conecte descrições de produtos de e-commerce a uma ferramenta de localização sem exportações manuais. O Crowdin verifica sua loja em busca de novos SKUs e os envia para o pipeline de tradução instantaneamente."
+    },
+    "7048345": {
+      "source": "Automated catalog extraction",
+      "target": "Extração automatizada de catálogo"
     }
   }
 }
