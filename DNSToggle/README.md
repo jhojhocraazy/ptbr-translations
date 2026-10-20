@@ -10,10 +10,11 @@
 | Métrica | Status Oficial |
 | :--- | :--- |
 | **Repositório Oficial** | [`ELowry/DNSToggle`](https://github.com/ELowry/DNSToggle) |
-| **Plataforma de Tradução** | Weblate / GitHub |
-| **Branch de Tradução Upstream** | `translation` |
-| **Componentes Mapeados** | 🟢 **5/5 Componentes 100% Traduzidos** |
-| **Status de Integração** | 🟢 **Commits Oficiais Atribuídos e Mesclados** |
+| **Plataforma de Tradução** | [Weblate — projeto `elowry`](https://hosted.weblate.org/projects/elowry/) |
+| **Componentes** | `dnstoggle-strings` + `dnstoggle-metadata` |
+| **Cobertura pt-BR** | 🟢 **176/176 strings · 36/36 metadados (100%)** |
+| **Pendências** | 🟢 **0 strings pendentes** |
+| **Última revisão** | 20/10/2026 — naturalidade (14 ajustes) |
 
 ---
 
@@ -23,27 +24,28 @@ O **DNSToggle** é um utilitário open source essencial para Android desenvolvid
 
 ---
 
-## 🗂️ Os 5 Componentes de Localização
+## 🗂️ Componentes no Weblate
 
-A tradução do DNSToggle é estruturada em 5 domínios fundamentais:
+A tradução do DNSToggle está organizada em dois componentes oficiais:
 
-| Componente | Domínio / Função | Status pt-BR |
+| Componente | Conteúdo | Cobertura pt-BR |
 | :--- | :--- | :---: |
-| **1. `app`** | Interface Principal: Telas de seleção de provedor, alternância manual e ajustes | 🟢 100% Traduzido |
-| **2. `tiles`** | Blocos das Configurações Rápidas: Títulos curtos, subtítulos e estados (*Ativo*, *Inativo*, *Alternando*) | 🟢 100% Traduzido |
-| **3. `notifications`** | Serviços em Segundo Plano: Alertas de serviço ativo e avisos de falha de conexão | 🟢 100% Traduzido |
-| **4. `dialogs`** | Permissões & Segurança: Instruções de permissão `WRITE_SECURE_SETTINGS` via ADB e Shizuku | 🟢 100% Traduzido |
-| **5. `metadata`** | Metadados de Lojas: Título, descrição curta, descrição completa e changelogs para F-Droid e Play Store | 🟢 100% Traduzido |
+| **`dnstoggle-strings`** | Interface principal, Blocos das Configurações Rápidas, notificações, diálogos e permissões | 🟢 176/176 (100%) |
+| **`dnstoggle-metadata`** | Título, descrição curta, descrição completa e changelogs das lojas | 🟢 36/36 (100%) |
+
+> Os cinco domínios funcionais (app, tiles, notifications, dialogs e metadata) são cobertos por esses dois componentes.
+
+> **Qualidade:** revisão de naturalidade aplicada em 20/10/2026 (14 ajustes). Restam 2 avisos automáticos de consistência — gênero em “Desativado/Desativada” e termo repetido — ambos intencionais.
 
 ---
 
-## 🚀 Histórico de Contribuições & Git Workflow
+## 🚀 Fluxo de Entrega
 
-Diferente do Nuvio (PRs de código) e do Better Lyrics (Crowdin API), o DNSToggle opera com uma esteira híbrida entre **Weblate e Git**:
+O DNSToggle é um projeto de plataforma: a entrega termina no Weblate.
 
-1. As strings são traduzidas e revisadas por Joseph Alves na instância oficial do Weblate.
-2. O Weblate sincroniza automaticamente as alterações gerando commits assinados diretamente na branch `translation` do repositório upstream.
-3. O mantenedor `ELowry` mescla periodicamente a branch `translation` no tronco principal para gerar as novas compilações oficiais.
+1. As strings são traduzidas e revisadas no projeto `elowry`, idioma `pt_BR`.
+2. O critério de conclusão é **100% traduzido e 0 pendências** nos dois componentes.
+3. A entrega termina na plataforma; a publicação no repositório upstream é responsabilidade do Weblate e do mantenedor.
 
 ---
 
@@ -53,7 +55,8 @@ Diferente do Nuvio (PRs de código) e do Better Lyrics (Crowdin API), o DNSToggl
 DNSToggle/
 ├── README.md               # Este documento (Visão geral e status dos componentes)
 ├── diretrizes-tecnicas.md  # Regras de limite de caracteres para Tiles e alinhamento com Android OS
-└── glossario.md            # Dicionário de redes, DNS, segurança Android e permissões
+├── glossario.md            # Dicionário de redes, DNS, segurança Android e permissões
+└── dnstoggle_strings_pt_BR.xml  # Snapshot do componente de strings (Weblate)
 ```
 
 ---
