@@ -244,23 +244,23 @@
     "description": "Toggle label, shown inside the floating lyrics window settings, for playing the music video in the floating window while YouTube Music is in video mode"
   },
   "options_display_shadersPromo": {
-    "message": "Mostrar link de Shaders para Better Lyrics",
+    "message": "Mostrar link para o Better Lyrics Shaders",
     "description": "Toggle label for the Shaders companion link shown in the lyrics footer"
   },
   "options_display_unisonActions": {
-    "message": "Controle de letras",
+    "message": "Painel de controles de letras",
     "description": "Display-section row label for the lyrics controls dock modal trigger"
   },
   "options_unisonModal_title": {
-    "message": "Controle de letras",
+    "message": "Painel de controles de letras",
     "description": "Title of the lyrics controls dock settings modal"
   },
   "options_unisonModal_showPinned": {
-    "message": "Mostrar painel de controle",
+    "message": "Mostrar painel de controles",
     "description": "Toggle label inside the lyrics controls dock modal for showing the floating dock"
   },
   "options_unisonModal_showPinned_hint": {
-    "message": "Painel flutuante para mudar fonte, ativar tradução e romanização, sincronizar e votar em letras de Unison",
+    "message": "Painel flutuante para mudar a fonte, alternar tradução e romanização, ajustar a sincronização e votar em letras do Unison",
     "description": "Hint text under the Show controls dock toggle"
   },
   "options_unisonModal_autoHide": {
@@ -424,7 +424,7 @@
     "description": "Button to open the style editor"
   },
   "options_themes_marketplace": {
-    "message": "Loja de temas",
+    "message": "Marketplace de temas",
     "description": "Theme marketplace button label"
   },
   "options_themes_installedThemes": {
@@ -580,7 +580,7 @@
     "description": "Cache clear failed message"
   },
   "options_alert_nothingToClear": {
-    "message": "Nada para limpar!",
+    "message": "Nada para limpar :/",
     "description": "Nothing to clear message"
   },
   "options_alert_exportFailed": {
@@ -588,7 +588,7 @@
     "description": "Export identity failed message"
   },
   "options_alert_fileSaveDialogOpened": {
-    "message": "Diálogo de salvamento aberto.",
+    "message": "Caixa de diálogo para salvar arquivo de identidade aberta.",
     "description": "File save dialog opened message"
   },
   "options_alert_fileSaveFailed": {
@@ -882,11 +882,11 @@
     "description": "Shader import suffix text before Better Lyrics Shaders link"
   },
   "marketplace_pageTitle": {
-    "message": "Loja de temas Better Lyrics",
+    "message": "Marketplace de temas do Better Lyrics",
     "description": "Page title"
   },
   "marketplace_title": {
-    "message": "Loja de temas",
+    "message": "Marketplace de temas",
     "description": "Header title"
   },
   "marketplace_subtitle": {
@@ -1038,7 +1038,7 @@
     "description": "URL permission explanation title"
   },
   "marketplace_urlPermissionDesc": {
-    "message": "Instalar temas de URLs personalizadas do GitHub requer um acesso mais amplo do que a loja. Isso permite que Better Lyrics:",
+    "message": "Instalar temas de URLs personalizadas do GitHub requer um acesso mais amplo do que o Marketplace. Isso permite que o Better Lyrics:",
     "description": "URL permission description"
   },
   "marketplace_urlPermissionItem1": {
@@ -1054,7 +1054,7 @@
     "description": "URL permission list item 3"
   },
   "marketplace_urlPermissionNote": {
-    "message": "Esta permissão só é usada ao instalar temas via URL. Temas da loja não precisam dela.",
+    "message": "Esta permissão só é usada ao instalar temas via URL. Temas do Marketplace não precisam dela.",
     "description": "URL permission note"
   },
   "marketplace_shortcutsTitle": {
@@ -1070,7 +1070,7 @@
     "description": "Search shortcut label"
   },
   "marketplace_shortcutsRefresh": {
-    "message": "Atualizar loja",
+    "message": "Atualizar Marketplace",
     "description": "Refresh shortcut label"
   },
   "marketplace_shortcutsInstallUrl": {
@@ -1472,7 +1472,7 @@
     }
   },
   "editor_pageTitle": {
-    "message": "Editor CSS Better Lyrics",
+    "message": "Editor de estilos do Better Lyrics",
     "description": "Standalone editor page title"
   },
   "editor_importFromFile": {
@@ -1492,7 +1492,7 @@
     "description": "Styling guide button"
   },
   "editor_tip": {
-    "message": "Dica: Esta aba independente pode ser movida para uma janela separada ou usada em tela dividida junto com YouTube Music para ver suas alterações em tempo real. Para mais informações, visite o",
+    "message": "Dica: Esta aba independente pode ser movida para uma janela separada ou usada em tela dividida junto com o YouTube Music para ver suas alterações em tempo real. Para mais informações, visite o",
     "description": "Editor tip text"
   },
   "editor_poweredBy": {
@@ -1520,7 +1520,7 @@
     "description": "Footer button text linking to the Better Lyrics Shaders companion extension"
   },
   "lyrics_searching": {
-    "message": "Better Lyrics está buscando letras...",
+    "message": "O Better Lyrics está buscando letras...",
     "description": "Loading message while searching for lyrics"
   },
   "lyrics_stillSearching": {
@@ -1528,7 +1528,7 @@
     "description": "Loading message while still searching"
   },
   "lyrics_noSyncedLyrics": {
-    "message": "Better Lyrics não conseguiu encontrar letras sincronizadas",
+    "message": "O Better Lyrics não conseguiu encontrar letras sincronizadas",
     "description": "Message when no synced lyrics found"
   },
   "lyrics_adPlaying": {
@@ -1690,7 +1690,7 @@
     }
   },
   "options_language_exclusionsTitle": {
-    "message": "Exclusões de Idioma",
+    "message": "Exclusões de idioma",
     "description": "Modal title for language exclusions"
   },
   "options_romanization_tab": {
@@ -1836,7 +1836,7 @@
     "description": "Button text for submitting lyrics to Unison"
   },
   "auth_pageTitle": {
-    "message": "Entrar com Better Lyrics",
+    "message": "Entrar com o Better Lyrics",
     "description": "Browser tab title for the auth consent popup"
   },
   "auth_consentHeading": {
@@ -3046,5 +3046,9 @@
   "options_display_videoQualityApplyHint": {
     "message": "As alterações de reprodução em alta resolução são aplicadas no próximo vídeo ou após recarregar a página. A qualidade preferida usa a resolução inferior mais próxima disponível.",
     "description": "Tooltip explaining when video playback changes take effect and how unavailable resolutions fall back."
+  },
+  "picture_in_picture_fitWindow": {
+    "message": "Ajustar janela",
+    "description": "Tooltip and accessible label for the selected song/video button in the Picture-in-Picture lyrics window when the window size no longer matches its content; clicking it resizes the window to fit"
   }
 }
