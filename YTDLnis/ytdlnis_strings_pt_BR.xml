@@ -11,7 +11,7 @@
     <string name="directories">Pastas</string>
     <string name="music_directory">Pasta de áudio</string>
     <string name="video_directory">Pasta de vídeos</string>
-    <string name="updating">Atualização</string>
+    <string name="updating">Atualizando</string>
     <string name="ytdl_update_hint">Dica útil ao baixar atualizações</string>
     <string name="update_ytdl">Atualizar yt-dlp para a nova versão</string>
     <string name="about">Sobre</string>
@@ -22,7 +22,7 @@
     <string name="download_notification_channel_description">Mostrar notificações do progresso de download dos arquivos</string>
     <string name="you_are_in_latest_version">Você já possui a atualização mais recente</string>
     <string name="ytld_update_success">Nova versão do yt-dlp instalada</string>
-    <string name="ytdl_already_updating">Instalando nova do yt-dlp versão</string>
+    <string name="ytdl_already_updating">Instalando nova versão do yt-dlp</string>
     <string name="ytdl_updating_started">Fazendo o download da nova versão do yt-dlp</string>
     <string name="Remove">Remover</string>
     <string name="ok">OK</string>
@@ -46,7 +46,7 @@
     <string name="limit_rate">Limite de conexão</string>
     <string name="limit_rate_summary">Taxa máxima de download (em bytes por segundo), ex. 50k ou 4.2M</string>
     <string name="aria2_summary">Usar aria2c como provedor de download padrão</string>
-    <string name="processing">Processamento</string>
+    <string name="processing">Processando</string>
     <string name="embed_subs_summary">Adicionar legendas aos vídeos</string>
     <string name="embed_thumb">Incluir miniatura</string>
     <string name="embed_thumb_summary">Usar miniatura como capa de áudio</string>
@@ -100,9 +100,9 @@
     <string name="sponsorblock_outro">Cartões finais e créditos</string>
     <string name="sponsorblock_promos">Autopromoções</string>
     <string name="sponsorblock_previews">Pré-visualizações</string>
-    <string name="sponsorblock_fillers">Enchimentos</string>
+    <string name="sponsorblock_fillers">Assuntos paralelos</string>
     <string name="sponsorblock_reminders">Lembrete de inscrição</string>
-    <string name="select_sponsorblock_filtering">Selecionar filtros de anúncios</string>
+    <string name="select_sponsorblock_filtering">Selecionar filtros do SponsorBlock</string>
     <string name="unfound_file">/404.404</string>
     <string name="save_dir">Salvar no diretório</string>
     <string name="new_template">Novo modelo</string>
@@ -193,7 +193,7 @@
     <string name="ignore_battery_optimization">Desativar \'Otimização da Bateria\'</string>
     <string name="cut">Cortar</string>
     <string name="new_cut">Novo corte</string>
-    <string name="crop">Cortar</string>
+    <string name="crop">Recortar</string>
     <string name="required">Obrigatório</string>
     <string name="crop_validation_exceeds_w">X+W excede %d</string>
     <string name="crop_validation_exceeds_h">Y+H excede %d</string>
@@ -205,7 +205,7 @@
     <string name="new_cookie">Novo Cookie</string>
     <string name="get_cookies">Obter Cookies</string>
     <string name="delete_all_cookies">Excluir Cookies</string>
-    <string name="confirm_delete_cookies_desc">Todas os Cookies serão excluídos</string>
+    <string name="confirm_delete_cookies_desc">Todos os cookies serão excluídos permanentemente</string>
     <string name="download_over_metered_networks">Download via dados móveis</string>
     <string name="download_over_metered_networks_summary">Faça o download usando qualquer tipo de rede. Caso contrário, espera por uma rede Wi-Fi</string>
     <string name="metered_network_download_start_info">O download começará assim que você estiver conectado a uma rede Wi-Fi</string>
@@ -233,7 +233,7 @@
     <string name="system">Sistema</string>
     <string name="accents">Cor de destaque</string>
     <string name="high_contrast">Alto contraste</string>
-    <string name="pure_theme_summary">Tema branco/preto natural</string>
+    <string name="pure_theme_summary">Tema preto / branco puro</string>
     <string name="material_you">Material You</string>
     <string name="blue">Azul</string>
     <string name="red">Vermelho</string>
@@ -253,7 +253,7 @@
     <string name="preferred_format_id">ID do formato preferido</string>
     <string name="download_now">Baixar agora</string>
     <string name="download_already_exists">O download já existe</string>
-    <string name="preferred_locale">Local preferido</string>
+    <string name="preferred_locale">Região/idioma preferido</string>
     <string name="pause">Pausar</string>
     <string name="resume">Continuar</string>
     <string name="updating_download_data">Atualizando os dados do item de download</string>
@@ -298,7 +298,7 @@
     <string name="subtitle_format">Formato da legenda</string>
     <string name="hide_thumbnails">Ocultar miniaturas</string>
     <string name="show_terminal">Mostrar \'terminal\' no menu de compartilhamento</string>
-    <string name="saved">Salvou</string>
+    <string name="saved">Salvos</string>
     <string name="clear_saved">Limpar downloads salvos</string>
     <string name="save_for_later">Salvar download para mais tarde?</string>
     <string name="write_description">Salvar descrição</string>
@@ -327,7 +327,7 @@
     <string name="length">Comprimento</string>
     <string name="security">Segurança</string>
     <string name="license">Licença</string>
-    <string name="download_already_exists_summary">Você ainda quer fazer o download\?</string>
+    <string name="download_already_exists_summary">Você ainda deseja fazer o download?</string>
     <string name="schedule">Agendar</string>
     <string name="ignore">Ignorar</string>
     <string name="modify_download_card">Modificar página de download</string>
@@ -340,7 +340,7 @@
     <string name="source">Origem</string>
     <string name="app">Aplicativo</string>
     <string name="cut_unavailable_please_update_item">É necessário atualizar os dados do item para poder utilizar a função de corte</string>
-    <string name="crop_unavailable_please_update_item">Você precisa atualizar os dados do item para poder usar o recurso de corte</string>
+    <string name="crop_unavailable_please_update_item">Você precisa atualizar os dados do item para poder usar o recurso de recorte</string>
     <string name="changed_path_for_everyone_to">Caminho de download de cada item alterado para:</string>
     <string name="dismiss">Descartar</string>
     <string name="all">Todos</string>
@@ -446,7 +446,7 @@
     <string name="other_youtube_extractor_args">Outros argumentos do YouTube Extractor</string>
     <string name="items">itens</string>
     <string name="socket_timeout">Tempo limite de Socket</string>
-    <string name="socket_timeout_description">Tempo de esperar antes de desistir, em segundos</string>
+    <string name="socket_timeout_description">Tempo de espera antes de desistir, em segundos</string>
     <string name="advanced">Avançado</string>
     <string name="data_fetching_extra_command">Comando extra para busca de dados</string>
     <string name="thumbnail">Miniatura</string>
@@ -504,7 +504,7 @@
     <string name="prefer_drc_audio">Preferir áudio DRC</string>
     <string name="potoken_gvs">Chave de acesso PO (GVS)</string>
     <string name="potoken_player">Chave de acesso PO (Player)</string>
-    <string name="potoken_subs">Chave de acesso PO (inscrições)</string>
+    <string name="potoken_subs">Chave de acesso PO (Legendas)</string>
     <string name="visitor_data">Dados do visitante</string>
     <string name="get_data_sync_id">Obter ID de sincronização de dados</string>
     <string name="desktop">Computador</string>
@@ -546,9 +546,9 @@
     <string name="height">Altura</string>
     <string name="player_client_not_empty">Tag do Player Client não deve ser vazia</string>
     <string name="player_client_already_created">Player Client já foi criado</string>
-    <string name="write_atleast_one_potoken">Você deve escrever a o menos um PO token</string>
+    <string name="write_atleast_one_potoken">Você deve inserir ao menos uma chave de acesso PO</string>
     <string name="version_ready_to_download">A versão %s está pronta para download</string>
-    <string name="package_version_ready_to_download">Pacote %1$s com a versão %2$s está pronta para download</string>
+    <string name="package_version_ready_to_download">O pacote %1$s (versão %2$s) está pronto para download</string>
     <plurals name="updates_available_summary">
         <item quantity="one">%d atualização disponível</item>
         <item quantity="other">%d atualizações disponíveis</item>
@@ -564,9 +564,9 @@
         <item quantity="many">Concluído · %d execuções</item>
         <item quantity="other">Concluído · %d execuções</item>
     </plurals>
-    <string name="reset_state">Estado de reinício</string>
-    <string name="rescan_from_scratch">Re-escaneie do zero</string>
-    <string name="rescan_from_scratch_desc">Esqueça os itens processados e reinstale tudo que não está salvo</string>
+    <string name="reset_state">Redefinir estado</string>
+    <string name="rescan_from_scratch">Verificar novamente do zero</string>
+    <string name="rescan_from_scratch_desc">Esquecer itens processados e baixar novamente tudo o que ainda não estiver salvo</string>
     <string name="skip_backlog">Pule o backlog atual</string>
     <string name="skip_backlog_desc">Marque tudo o que está atualmente na fonte como concluído — baixe apenas novos envios</string>
     <string name="unskip_ignored">Incluir novamente uploads ignorados</string>
@@ -588,7 +588,7 @@
         <item quantity="other">A cada %d minutos</item>
     </plurals>
     <string name="bgutils_info">Um provedor de token de prova de origem (POT) para yt-dlp.\nCom ele ativado, o YTDLnis hospeda o servidor HTTP que gera o POT e instala o plugin relacionado que o yt-dlp utiliza.</string>
-    <string name="bgutils_pot_generation_script">Gerando script</string>
+    <string name="bgutils_pot_generation_script">Script de geração</string>
     <string name="bgutils_pot_generation_server">Servidor HTTP</string>
     <string name="bgutils_pot_generation_script_summary">Cada chamada do yt-dlp acarreta a sobrecarga de iniciar um novo processo de tempo de execução (runtime) de JS para executar o script. Este método não é recomendado para cenários de alta concorrência.</string>
     <string name="bgutils_pot_server_summary">Este é um servidor HTTP em JavaScript, na porta 4416. Se estiver inativo, ele inicia automaticamente quando a fila de downloads começa a ser executada ou quando a verificação de fontes é agendada. Para encerrá-lo, é preciso fazê-lo manualmente através das notificações!</string>
@@ -614,7 +614,7 @@
         <item quantity="other">A cada %d horas</item>
     </plurals>
     <plurals name="every_days">
-        <item quantity="one">Todo os dias</item>
+        <item quantity="one">Todos os dias</item>
         <item quantity="many">A cada %d dias</item>
         <item quantity="other">A cada %d dias</item>
     </plurals>
@@ -645,7 +645,7 @@
     <string name="custom_channels">Canais personalizados</string>
     <string name="custom_channels_summary">Atualize a partir de seus próprios repositórios de lançamento do yt-dlp</string>
     <string name="channel_stable">Estável</string>
-    <string name="channel_nightly">Beta</string>
+    <string name="channel_nightly">Nightly</string>
     <string name="channel_master">Principal</string>
     <string name="channel_beta">Beta</string>
     <string name="ytdlp">yt-dlp</string>
@@ -654,7 +654,7 @@
     <string name="unfinished_downloads">Downloads não concluídos</string>
     <string name="unfinished_downloads_summary">Arquivos parciais de downloads interrompidos ou que falharam, mantidos para que possam ser retomados</string>
     <string name="info_jsons">Info-JSONs</string>
-    <string name="info_jsons_summary">Salvou os metadados do vídeo para que o yt-dlp não precise buscá-los novamente</string>
+    <string name="info_jsons_summary">Metadados de vídeo salvos para que o yt-dlp não precise buscá-los novamente</string>
     <string name="ytdlp_cache">Cache do yt-dlp</string>
     <string name="ytdlp_cache_summary">Dados que o yt-dlp reutiliza entre execuções, como assinaturas do player do YouTube</string>
     <string name="temporary_configurations">Configurações temporárias</string>
@@ -662,7 +662,7 @@
     <string name="downloaded_apks">APKs baixados</string>
     <string name="downloaded_apks_summary">APKs baixados para atualizações de aplicativos e pacotes</string>
     <string name="clear_everything">Limpar tudo</string>
-    <string name="clear_temporary_files_confirm">Excluir %1$s arquivo(s)? Esta ação não pode ser desfeita.</string>
+    <string name="clear_temporary_files_confirm">Excluir %1$s em arquivos? Esta ação não pode ser desfeita.</string>
     <string name="failed_to_fetch">Falha ao buscar</string>
     <string name="failed_to_fetch_summary">Não foi possível recuperar estes itens. Tente novamente ou baixe-os sem os dados recuperados.</string>
     <plurals name="items_failed_to_fetch">
@@ -671,7 +671,7 @@
         <item quantity="other">Falha ao buscar %d itens</item>
     </plurals>
     <string name="retry">Tentar novamente</string>
-    <string name="retry_all">Tentar novamente tudo</string>
+    <string name="retry_all">Tentar todos novamente</string>
     <string name="download_anyway">Baixar mesmo assim</string>
     <string name="write_ytdlp_terminal">Inserir yt-dlp automaticamente no terminal</string>
     <string name="clear">Limpar</string>
@@ -715,5 +715,5 @@
     <string name="lyrics_plain">Texto simples</string>
     <string name="embed_lyrics_summary">Obter letras do lrclib.net e embuti-las nos downloads de áudio</string>
     <string name="save_lrc_file_summary">Salvar letras sincronizadas como um arquivo .lrc junto aos downloads de áudio</string>
-    <string name="crop_unsupported">O corte não está disponível para este item</string>
+    <string name="crop_unsupported">O recorte não está disponível para este item</string>
 </resources>
