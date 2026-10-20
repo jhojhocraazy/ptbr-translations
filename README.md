@@ -34,7 +34,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.632** | 🟢 **Lançado** (`v0.6.1-beta`) + PR #2288 | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**BitChord**](#2-bitchord) | Android / Desktop / Wear OS | GitHub PRs / XML | **+1.250** | 🚀 **Em Análise** ([PR #952](https://github.com/kushagrasinghx/BitChord/pull/952)) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **681** | 🟢 **100% Traduzido** (Sugestões Ativas) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **681** | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **637** | 🟢 **Sincronizado** (PR #1010) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **17.169** (214 arquivos) | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**TizenTube & Cobalt**](#6-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **197** | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718)) | ![100%](https://geps.dev/progress/100?color=00c853) |
@@ -91,14 +91,16 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 * **Repositório Oficial:** [`deniscerri/ytdlnis`](https://github.com/deniscerri/ytdlnis) (+10.600 stars)
 * **Plataforma de Tradução:** [Hosted Weblate — YTDLnis pt_BR](https://hosted.weblate.org/projects/ytdlnis/-/pt_BR/)
-* **Status:** 🟢 **100% Traduzido** (681 strings e plurais revisados).
+* **Status:** 🟢 **100% Traduzido** (681 unidades; 0 pendentes no Weblate).
 * **Diretório Local:** [`YTDLnis/`](./YTDLnis/)
 
 <details>
 <summary><b>🔍 Ver Detalhes do Projeto YTDLnis</b></summary>
 <br/>
 
-* **Cobertura Completa:** 672 strings + 9 plurais traduzidos e validados.
+* **Cobertura Completa:** 669 strings + 9 plurais traduzidos e validados; 3 strings read-only não editáveis no Weblate.
+* **Última Sincronização:** 20/10/2026 18:05 GMT-3 — 107 refinamentos, 0 pendentes e backup oficial atualizado.
+* **Checks Remanescentes:** 5 falsos positivos justificados (4 `multiple_capital` por `JSON`/`Info-JSONs`; 1 `same` por `Nightly`).
 * **Escopo da Tradução:** Telas de boas-vindas (*welcome onboarding*), integração com lrclib.net para letras sincronizadas, corte e recorte de mídia, agendamento de downloads e configurações avançadas do yt-dlp.
 * **Rigor e Qualidade:** 100% de integridade em tags de escape (`\'`, `\"`, `&amp;`) e placeholders de sistema (`%1$s`, `%2$d`).
 </details>

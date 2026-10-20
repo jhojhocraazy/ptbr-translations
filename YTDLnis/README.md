@@ -11,8 +11,13 @@
 | :--- | :--- |
 | **Repositório Oficial** | [`deniscerri/ytdlnis`](https://github.com/deniscerri/ytdlnis) (+10.600 stars) |
 | **Plataforma de Tradução** | [Hosted Weblate — YTDLnis pt-BR](https://hosted.weblate.org/projects/ytdlnis/-/pt_BR/) |
-| **Cobertura Geral** | 🟢 **100% Traduzido** (672 strings + 9 plurais) |
+| **Cobertura Geral** | 🟢 **100% Traduzido** (681 unidades: 669 strings + 9 plurais + 3 strings read-only) |
+| **Pendências** | 🟢 **0 pendentes** no Weblate (20/10/2026 18:05 GMT-3) |
+| **Checks Ativos** | 🟡 **5 falsos positivos** (4 `multiple_capital` em `JSON`/`Info-JSONs`; 1 `same` em `Nightly`) |
+| **Refinamentos** | 107 strings revisadas e aplicadas nesta rodada |
 | **Status Upstream** | Sincronização direta via Pull Requests automáticos do Weblate |
+
+> **Nota:** as 3 strings read-only (`trendingPlaylist`, `unfound_file`, `ytdlp`) não são editáveis no Weblate e não entram no XML exportado; o Android usa o fallback da fonte. Os 5 checks restantes são falsos positivos: `JSON`/`Info-JSONs` são termos protegidos pelo glossário e `Nightly` é o nome próprio do canal.
 
 ---
 
@@ -33,7 +38,7 @@ O aplicativo oferece:
 
 ```text
 YTDLnis/
-├── ytdlnis_strings_pt_BR.xml # Backup local 100% completo com todas as strings traduzidas
+├── ytdlnis_strings_pt_BR.xml # Backup oficial do Weblate (669 strings + 9 plurais; 3 read-only não exportadas)
 ├── README.md                 # Este documento (Visão geral e status do projeto)
 ├── diretrizes-tecnicas.md    # Regras técnicas de XML, permissões Android e integração com Weblate
 └── glossario.md              # Dicionário especializado de yt-dlp, FFmpeg, codecs e formatos de mídia
