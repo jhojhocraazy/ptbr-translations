@@ -4,7 +4,7 @@
   "target_language": "pt-BR",
   "file_id": 32447,
   "file_name": "src/i18n/locales/en.json",
-  "total_submitted": 151,
+  "total_submitted": 251,
   "translations": {
     "7046447": {
       "source": "GitHub",
@@ -609,6 +609,406 @@
     "7047621": {
       "source": "SAVE",
       "target": "SALVAR"
+    },
+    "7047623": {
+      "source": "SOURCE STRING",
+      "target": "STRING DE ORIGEM"
+    },
+    "7047625": {
+      "source": "Tm suggestions",
+      "target": "Sugestões da TM"
+    },
+    "7047627": {
+      "source": "2 mins ago",
+      "target": "Há 2 min"
+    },
+    "7047633": {
+      "source": "Leverage smart routing with multiple LLMs like OpenAI and Gemini to automatically select the best engine for each context. The result? Up to 95% of translations are ready to publish immediately, matching human-level quality.",
+      "target": "Aproveite o roteamento inteligente com múltiplos LLMs, como OpenAI e Gemini, para selecionar automaticamente o melhor mecanismo para cada contexto. O resultado? Até 95% das traduções ficam prontas para publicação imediata, alcançando qualidade de nível humano."
+    },
+    "7047655": {
+      "source": "Company logo",
+      "target": "Logotipo da empresa"
+    },
+    "7047663": {
+      "source": "Effortless localization with powerful integrations",
+      "target": "Localização descomplicada com integrações poderosas"
+    },
+    "7047667": {
+      "source": "User-Friendly Localization Platform",
+      "target": "Plataforma de Localização Fácil de Usar"
+    },
+    "7047671": {
+      "source": "Comprehensive Localization Solution",
+      "target": "Solução Completa de Localização"
+    },
+    "7047675": {
+      "source": "Streamlined Translation Management",
+      "target": "Gerenciamento de Tradução Simplificado"
+    },
+    "7047679": {
+      "source": "Simple and Effective Translation Platform",
+      "target": "Plataforma de Tradução Simples e Eficiente"
+    },
+    "7047687": {
+      "source": "Time for a coffee break?",
+      "target": "Hora de uma pausa para o café?"
+    },
+    "7047689": {
+      "source": "Category:",
+      "target": "Categoria:"
+    },
+    "7047693": {
+      "source": "Search VCS integration...",
+      "target": "Pesquisar integração VCS..."
+    },
+    "7047695": {
+      "source": "View all {category} integrations",
+      "target": "Ver todas as integrações de {category}"
+    },
+    "7047697": {
+      "source": "Get Started Now",
+      "target": "Comece Agora"
+    },
+    "7047701": {
+      "source": "Ask contextual questions like \"Is this a noun or a verb?\" and get answers from devs and PMs.",
+      "target": "Faça perguntas contextuais como \"Isto é um substantivo ou um verbo?\" e obtenha respostas de desenvolvedores e gerentes de produto."
+    },
+    "7047703": {
+      "source": "Threaded comments",
+      "target": "Comentários em tópicos"
+    },
+    "7047705": {
+      "source": "See how translations render in DOCX, HTML, Markdown, mobile, or web views without leaving the editor.",
+      "target": "Veja como as traduções são renderizadas em visualizações DOCX, HTML, Markdown, mobile ou web sem sair do editor."
+    },
+    "7047707": {
+      "source": "WYSIWYG preview",
+      "target": "Pré-visualização WYSIWYG"
+    },
+    "7047709": {
+      "source": "View tagged UI captures right beside the source string to remove guesswork.",
+      "target": "Visualize capturas de tela da interface marcadas com tags ao lado da string de origem para eliminar suposições."
+    },
+    "7047711": {
+      "source": "Screenshots with tags",
+      "target": "Capturas de tela com tags"
+    },
+    "7047713": {
+      "source": "Threaded",
+      "target": "Em tópicos"
+    },
+    "7047715": {
+      "source": "Just now",
+      "target": "Agora mesmo"
+    },
+    "7047717": {
+      "source": "Mention teammates, attach references, and resolve threads once the answer is applied.",
+      "target": "Mencione colegas de equipe, anexe referências e resolva os tópicos assim que a resposta for aplicada."
+    },
+    "7047721": {
+      "source": "Product Manager",
+      "target": "Gerente de Produto"
+    },
+    "7047723": {
+      "source": "Is \"Log in\" used as a verb here? Need to confirm casing rules.",
+      "target": "\"Log in\" é usado como verbo aqui? Preciso confirmar as regras de maiúsculas e minúsculas."
+    },
+    "7047725": {
+      "source": "Sarah Chen",
+      "target": "Sarah Chen"
+    },
+    "7047727": {
+      "source": "2m ago",
+      "target": "Há 2m"
+    },
+    "7047731": {
+      "source": "Live preview",
+      "target": "Pré-visualização ao vivo"
+    },
+    "7047733": {
+      "source": "DOCX / HTML / MD",
+      "target": "DOCX / HTML / MD"
+    },
+    "7047735": {
+      "source": "File: release-notes.docx",
+      "target": "Arquivo: release-notes.docx"
+    },
+    "7047737": {
+      "source": "Fit to screen",
+      "target": "Ajustar à tela"
+    },
+    "7047741": {
+      "source": "On-screen preview",
+      "target": "Pré-visualização na tela"
+    },
+    "7047743": {
+      "source": "Real-time UI layout preview",
+      "target": "Pré-visualização do layout da interface em tempo real"
+    },
+    "7047745": {
+      "source": "Tagged UI",
+      "target": "Interface com tags"
+    },
+    "7047747": {
+      "source": "Header CTA • tagged",
+      "target": "CTA do cabeçalho • com tag"
+    },
+    "7047749": {
+      "source": "Click the camera icon to open the exact UI capture linked to this key.",
+      "target": "Clique no ícone da câmera para abrir a captura exata da interface vinculada a esta chave."
+    },
+    "7047751": {
+      "source": "Jump from string to screenshot",
+      "target": "Vá direto da string para a captura de tela"
+    },
+    "7047753": {
+      "source": "Screenshot preview",
+      "target": "Pré-visualização da captura de tela"
+    },
+    "7047755": {
+      "source": "Reference multiple screenshots for different platforms in one view.",
+      "target": "Consulte várias capturas de tela para diferentes plataformas em uma única visualização."
+    },
+    "7047757": {
+      "source": "Side-by-side comparison",
+      "target": "Comparação lado a lado"
+    },
+    "7047759": {
+      "source": "See overflows and line breaks before shipping to production.",
+      "target": "Identifique textos cortados e quebras de linha antes de enviar para produção."
+    },
+    "7047761": {
+      "source": "Spot truncation early",
+      "target": "Detecte cortes de texto antecipadamente"
+    },
+    "7047807": {
+      "source": "Explore blog",
+      "target": "Explorar o blog"
+    },
+    "7047813": {
+      "source": "Connect community",
+      "target": "Conectar-se à comunidade"
+    },
+    "7047825": {
+      "source": "Discover features",
+      "target": "Descobrir recursos"
+    },
+    "7047831": {
+      "source": "<span class=\"opacity-60\">Looking for</span> one of these?",
+      "target": "<span class=\"opacity-60\">Procurando por</span> algum destes?"
+    },
+    "7047957": {
+      "source": "No migration needed—keep your stack.",
+      "target": "Sem necessidade de migração — mantenha a sua stack."
+    },
+    "7047961": {
+      "source": "Markdown, Docusaurus, or any static docs repo.",
+      "target": "Markdown, Docusaurus ou qualquer repositório de documentação estática."
+    },
+    "7047963": {
+      "source": "Docs-as-Code",
+      "target": "Docs-as-Code"
+    },
+    "7047965": {
+      "source": "Keep tickets, macros, and articles in sync.",
+      "target": "Mantenha tickets, macros e artigos sincronizados."
+    },
+    "7047969": {
+      "source": "Speed up documentation translation with tools built for volume. We combine AI speed with human accuracy to effectively handle thousands of articles.",
+      "target": "Acelere a tradução de documentações com ferramentas criadas para alto volume. Combinamos a velocidade da IA com a precisão humana para lidar com milhares de artigos de forma eficaz."
+    },
+    "7047971": {
+      "source": "Scale your support without scaling costs",
+      "target": "Escale seu suporte sem aumentar os custos"
+    },
+    "7047973": {
+      "source": "Answers to common questions about automating customer support localization.",
+      "target": "Respostas para perguntas frequentes sobre a automação da localização de suporte ao cliente."
+    },
+    "7047975": {
+      "source": "The best place to find automation tools is the Crowdin Marketplace. We offer pre-built connectors for major help desks like Zendesk, Intercom, and Freshdesk that automate the entire content sync process.",
+      "target": "O melhor lugar para encontrar ferramentas de automação é o Crowdin Marketplace. Oferecemos conectores prontos para as principais plataformas de suporte, como Zendesk, Intercom e Freshdesk, que automatizam todo o processo de sincronização de conteúdo."
+    },
+    "7047977": {
+      "source": "Where do I find automation for customer support localization?",
+      "target": "Onde encontro automação para localização de suporte ao cliente?"
+    },
+    "7047981": {
+      "source": "How to localize in-app help or support content in a web SaaS tool?",
+      "target": "Como localizar conteúdos de ajuda ou suporte dentro do aplicativo em uma ferramenta SaaS web?"
+    },
+    "7047983": {
+      "source": "Yes, through our API and specialized integrations, you can implement real-time customer support chat translation, allowing your support team to serve a global audience from a single centralized hub.",
+      "target": "Sim, por meio da nossa API e integrações especializadas, você pode implementar a tradução de chat de suporte ao cliente em tempo real, permitindo que sua equipe de atendimento atenda um público global a partir de uma única central."
+    },
+    "7047985": {
+      "source": "Does Crowdin support customer support chat translation?",
+      "target": "O Crowdin oferece suporte à tradução de chat de atendimento ao cliente?"
+    },
+    "7047987": {
+      "source": "Crowdin supports over {count}+ file formats. Whether you have PDFs or Markdown guides, we preserve the layout. This feature lets translators see exactly how their text fits on the page.",
+      "target": "O Crowdin oferece suporte a mais de {count}+ formatos de arquivo. Seja em arquivos PDF ou guias em Markdown, nós preservamos o layout. Esse recurso permite que os tradutores vejam exatamente como o texto se ajusta à página."
+    },
+    "7047989": {
+      "source": "PDFs, Docs, and Guides – all covered",
+      "target": "PDFs, Documentos e Guias – cobertura completa"
+    },
+    "7047991": {
+      "source": "Reduce support tickets and increase customer satisfaction today.",
+      "target": "Reduza os tickets de suporte e aumente a satisfação dos clientes hoje mesmo."
+    },
+    "7047993": {
+      "source": "Support your users in every language",
+      "target": "Ofereça suporte aos seus usuários em todos os idiomas"
+    },
+    "7047995": {
+      "source": "Stop manual copy-pasting. Crowdin’s customer support translation software syncs your knowledge base, chat, and tickets together. Deliver international customer support translation that closes tickets and helps users in any language.",
+      "target": "Pare de copiar e colar manualmente. O software de tradução de suporte ao cliente do Crowdin sincroniza sua base de conhecimento, chat e tickets. Ofereça um atendimento ao cliente internacional traduzido que resolve chamados e ajuda usuários em qualquer idioma."
+    },
+    "7047997": {
+      "source": "Automate your global customer support translation",
+      "target": "Automatize a tradução do seu suporte ao cliente global"
+    },
+    "7047999": {
+      "source": "You don't need to change your CMS. Crowdin integrates with all popular solutions, it pulls content for translation and syncs it back when ready.",
+      "target": "Você não precisa mudar o seu CMS. O Crowdin se integra a todas as soluções populares, importando o conteúdo para tradução e sincronizando-o de volta quando estiver pronto."
+    },
+    "7048003": {
+      "source": "Integrate with the tools you use daily",
+      "target": "Integre com as ferramentas que você usa diariamente"
+    },
+    "7048005": {
+      "source": "Broken links",
+      "target": "Links quebrados"
+    },
+    "7048007": {
+      "source": "Don't let a typo confuse your customers. Crowdin automatically checks for broken links, missing variables, and punctuation errors before you publish.",
+      "target": "Não deixe que um erro de digitação confunda seus clientes. O Crowdin verifica automaticamente links quebrados, variáveis ausentes e erros de pontuação antes de você publicar."
+    },
+    "7048009": {
+      "source": "Publish with confidence",
+      "target": "Publique com confiança"
+    },
+    "7048015": {
+      "source": "3 warnings",
+      "target": "3 avisos"
+    },
+    "7048017": {
+      "source": "Learn more about multilingual support",
+      "target": "Saiba mais sobre o suporte multilíngue"
+    },
+    "7048019": {
+      "source": "Translate your whole customer support with AI in minutes. Localize your tickets, emails, FAQs, and help docs within one translation management platform.",
+      "target": "Traduza todo o seu suporte ao cliente com IA em minutos. Localize seus tickets, e-mails, perguntas frequentes (FAQs) e documentos de ajuda em uma única plataforma de gerenciamento de tradução."
+    },
+    "7048021": {
+      "source": "Customer Support Translation: A Platform for Businesses",
+      "target": "Tradução de Suporte ao Cliente: Uma Plataforma para Empresas"
+    },
+    "7048023": {
+      "source": "Support managers babysit spreadsheets instead of improving deflection.",
+      "target": "Gerentes de suporte perdem tempo cuidando de planilhas em vez de melhorar a resolução autônoma de chamados."
+    },
+    "7048025": {
+      "source": "Translators break code blocks, links, and formatting in your Docs. Support managers babysit spreadsheets instead of improving deflection.",
+      "target": "Tradutores quebram blocos de código, links e formatação nos seus documentos. Gerentes de suporte perdem tempo cuidando de planilhas em vez de melhorar a resolução autônoma de chamados."
+    },
+    "7048027": {
+      "source": "Broken formatting",
+      "target": "Formatação quebrada"
+    },
+    "7048029": {
+      "source": "Manually exporting articles to Word/Excel for translators is slow and unproductive.",
+      "target": "Exportar artigos manualmente para Word/Excel para os tradutores é lento e improdutivo."
+    },
+    "7048031": {
+      "source": "Copy-Pasting waists time",
+      "target": "Copiar e colar desperdiça tempo"
+    },
+    "7048033": {
+      "source": "By the time a translation is finished, the original English article has already changed again.",
+      "target": "Quando uma tradução finalmente fica pronta, o artigo original em inglês já mudou novamente."
+    },
+    "7048035": {
+      "source": "Outdated answers",
+      "target": "Respostas desatualizadas"
+    },
+    "7048037": {
+      "source": "Without Crowdin",
+      "target": "Sem o Crowdin"
+    },
+    "7048039": {
+      "source": "Manual documentation is a full-time job",
+      "target": "Manter a documentação manualmente é um trabalho em tempo integral"
+    },
+    "7048041": {
+      "source": "Connect Your Help Center",
+      "target": "Conecte sua Central de Ajuda"
+    },
+    "7048043": {
+      "source": "Start in minutes",
+      "target": "Comece em minutos"
+    },
+    "7048045": {
+      "source": "New articles are detected automatically and new translations are deployed without the need for development.",
+      "target": "Novos artigos são detectados automaticamente e novas traduções são publicadas sem necessidade de desenvolvimento."
+    },
+    "7048049": {
+      "source": "Translators work on text only. Your HTML structure, images, and Zendesk macros remain perfect.",
+      "target": "Os tradutores trabalham apenas no texto. Sua estrutura HTML, imagens e macros do Zendesk permanecem perfeitas."
+    },
+    "7048051": {
+      "source": "Formatting protection",
+      "target": "Proteção de formatação"
+    },
+    "7048053": {
+      "source": "Make sure \"Reset Password\" in your help center matches \"Reset Password\" in your app UI.",
+      "target": "Garanta que \"Redefinir senha\" na sua central de ajuda corresponda exatamente a \"Redefinir senha\" na interface do seu aplicativo."
+    },
+    "7048055": {
+      "source": "Unified terminology",
+      "target": "Terminologia unificada"
+    },
+    "7048057": {
+      "source": "With Crowdin",
+      "target": "Com o Crowdin"
+    },
+    "7048059": {
+      "source": "Help center synced with localization software",
+      "target": "Central de ajuda sincronizada com o software de localização"
+    },
+    "7048061": {
+      "source": "Support teams need less copy-paste and more automation",
+      "target": "Equipes de suporte precisam de menos cópia manual e mais automação"
+    },
+    "7048063": {
+      "source": "See the document structure while translating to ensure text length fits the page and code blocks stay untouched.",
+      "target": "Veja a estrutura do documento enquanto traduz para garantir que o comprimento do texto caiba na página e os blocos de código permaneçam intactos."
+    },
+    "7048065": {
+      "source": "Lists, code snippets, and anchors stay locked. Translators can work freely without accidentally deleting a tag.",
+      "target": "Listas, trechos de código e âncoras permanecem bloqueados. Os tradutores podem trabalhar livremente sem excluir uma tag acidentalmente."
+    },
+    "7048067": {
+      "source": "HTML preserved",
+      "target": "HTML preservado"
+    },
+    "7048069": {
+      "source": "Spot overflow before publishing so layouts never break.",
+      "target": "Identifique excessos de texto antes de publicar para que os layouts nunca quebrem."
+    },
+    "7048071": {
+      "source": "Length checks",
+      "target": "Verificações de comprimento"
+    },
+    "7048073": {
+      "source": "Images, diagrams, and links keep their original paths.",
+      "target": "Imagens, diagramas e links mantêm seus caminhos originais."
+    },
+    "7048075": {
+      "source": "Media protected",
+      "target": "Mídia protegida"
     }
   }
 }

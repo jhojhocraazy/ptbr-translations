@@ -13,7 +13,7 @@
 | **Projeto Oficial** | [Crowdin Translations (ID: 31)](https://crowdin.com/project/crowdin) |
 | **Idioma Alvo** | Português do Brasil (`pt-BR`) |
 | **Volume Total do Projeto** | **17.154 frases** (116.959 palavras) |
-| **Entregas Submetidas (pt-BR)** | **151 strings** (Lotes 1 e 2 — `201 Created` via API v2) |
+| **Entregas Submetidas (pt-BR)** | **251 strings** (Lotes 1 a 3 — `201 Created` via API v2) |
 | **Foco Estratégico Atual** | Interface Moderna Web (`src/i18n/locales/en.json` — ID: 32447) |
 | **Integração Técnica** | Crowdin REST API v2 (`https://api.crowdin.com/api/v2/`) |
 
