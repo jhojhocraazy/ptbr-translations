@@ -12,7 +12,7 @@
 | **Plataforma de Tradução** | [Crowdin — Projeto 863186 (`better-lyrics`)](https://crowdin.com/project/better-lyrics/pt-BR) |
 | **Status no Crowdin** | 🟢 **100% Traduzido** (637 frases / 2.498 palavras) |
 | **Status de Aprovação** | 🟡 **0% Aprovado** (nenhuma revisão formal registrada — a conta não tem permissão de *proofreader*) |
-| **Entrega Upstream** | Sincronizado em `_locales/pt_BR/messages.json` via PR #1001 (15/10/2026) e PR #1010 (20/10/2026) |
+| **Entrega Upstream** | Sincronizado em `_locales/pt_BR/messages.json` pelos PRs automáticos #1001 (mesclado em 15/10/2026) e #1010 (mesclado em 20/10/2026) |
 
 ---
 
@@ -31,7 +31,7 @@ O **Better Lyrics** é uma extensão de navegador para o **YouTube Music**, mant
 * **Pull Request Upstream #1001:** O arquivo completo de localização (`_locales/pt_BR/messages.json`) foi incorporado ao repositório upstream em 15/10/2026, tornando o português brasileiro parte das línguas distribuídas com a extensão.
 
 ### 2. Manutenção Contínua & Atualizações
-* **Sincronização mais recente:** PR #1010, gerado pelo bot do Crowdin em 20/10/2026, já contemplando as 637 strings vigentes.
+* **Sincronização mais recente:** PR #1010, aberto pelo bot do Crowdin em 16/10/2026 e mesclado em 20/10/2026, cobrindo as 637 strings vigentes naquele momento.
 * **Strings Recentes:** `picture_in_picture_fitWindow` ("Fit window" ➔ "Ajustar à janela") traduzida conforme o glossário (linha 51). Uma submissão de 20/10 havia regredido a string para "Ajustar janela"; a versão correta foi restaurada no Crowdin em 20/10/2026.
 * **Revisão:** o catálogo está 100% traduzido, mas **0% aprovado** — a conta usada no projeto não possui permissão de *proofreader*, portanto a aprovação formal depende do mantenedor.
 

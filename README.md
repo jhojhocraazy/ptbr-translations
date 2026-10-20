@@ -116,7 +116,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 <summary><b>🔍 Ver Detalhes do Projeto Better Lyrics</b></summary>
 <br/>
 
-* **Sincronização Upstream:** `_locales/pt_BR/messages.json` entregue pelo bot do Crowdin nos PRs #1001 (15/10/2026) e #1010 (20/10/2026).
+* **Sincronização Upstream:** `_locales/pt_BR/messages.json` entregue pelos PRs automáticos do Crowdin #1001 e #1010, mesclados em 15/10 e 20/10/2026.
 * **Sincronização Contínua:** Atualização via API oficial do Crowdin, com validação de placeholders (`$VAR$`), tags e termos protegidos antes de cada envio.
 * **Terminologia Musical:** Preservação de termos como *Unison*, *Time-synced*, *Romanization*, *Furigana* e *Picture-in-Picture*.
 </details>
