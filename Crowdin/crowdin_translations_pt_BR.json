@@ -1,0 +1,214 @@
+{
+  "project_id": 31,
+  "project_name": "Crowdin Translations",
+  "target_language": "pt-BR",
+  "file_id": 32447,
+  "file_name": "src/i18n/locales/en.json",
+  "total_submitted": 51,
+  "translations": {
+    "7046447": {
+      "source": "GitHub",
+      "target": "GitHub"
+    },
+    "7046451": {
+      "source": "GitLab",
+      "target": "GitLab"
+    },
+    "7046701": {
+      "source": "TM Pre-translation",
+      "target": "Pré-tradução via MT"
+    },
+    "7046705": {
+      "source": "Remove file",
+      "target": "Remover arquivo"
+    },
+    "7046707": {
+      "source": "File \"{name}\" exceeds the maximum size of 8 MB",
+      "target": "O arquivo \"{name}\" excede o tamanho máximo de 8 MB"
+    },
+    "7046709": {
+      "source": "You can upload up to {count} files.",
+      "target": "Você pode enviar até {count} arquivos."
+    },
+    "7046711": {
+      "source": "Failed to upload file",
+      "target": "Falha ao enviar arquivo"
+    },
+    "7046713": {
+      "source": "Failed to upload file. Please try again.",
+      "target": "Falha ao enviar o arquivo. Por favor, tente novamente."
+    },
+    "7046717": {
+      "source": "Generate pre-work quotes with vendor rates and currency-aware totals.",
+      "target": "Gere orçamentos prévios com taxas de fornecedores e valores totais por moeda."
+    },
+    "7046719": {
+      "source": "Cost estimate",
+      "target": "Estimativa de custo"
+    },
+    "7046721": {
+      "source": "Show TM and AI savings to finance with clear before/after numbers.",
+      "target": "Apresente a economia obtida com MT e IA ao setor financeiro com números claros de antes e depois."
+    },
+    "7046723": {
+      "source": "Savings summary",
+      "target": "Resumo de economia"
+    },
+    "7046725": {
+      "source": "Track spend by language and vendor to keep budgets predictable.",
+      "target": "Acompanhe os gastos por idioma e fornecedor para manter os orçamentos previsíveis."
+    },
+    "7046727": {
+      "source": "Translation cost",
+      "target": "Custo de tradução"
+    },
+    "7046729": {
+      "source": "Real-time translation progress",
+      "target": "Progresso de tradução em tempo real"
+    },
+    "7046731": {
+      "source": "Cost estimation and tracking",
+      "target": "Estimativa e acompanhamento de custos"
+    },
+    "7046733": {
+      "source": "Translator productivity metrics",
+      "target": "Métricas de produtividade dos tradutores"
+    },
+    "7046735": {
+      "source": "Customizable reports",
+      "target": "Relatórios personalizáveis"
+    },
+    "7046737": {
+      "source": "Monitor translation progress, analyze costs, and measure team productivity with comprehensive dashboards.",
+      "target": "Monitore o progresso da tradução, analise custos e avalie a produtividade da equipe com painéis completos."
+    },
+    "7046739": {
+      "source": "Analytics & reporting",
+      "target": "Análise e relatórios"
+    },
+    "7046741": {
+      "source": "Track progress in real-time",
+      "target": "Acompanhe o progresso em tempo real"
+    },
+    "7046743": {
+      "source": "Two-way sync with version control systems",
+      "target": "Sincronização bidirecional com sistemas de controle de versão"
+    },
+    "7046745": {
+      "source": "Automatic content updates on push",
+      "target": "Atualizações automáticas de conteúdo a cada push"
+    },
+    "7046747": {
+      "source": "Pull requests for translations",
+      "target": "Pull requests para traduções"
+    },
+    "7046751": {
+      "source": "Connect Crowdin seamlessly with GitHub, GitLab, Bitbucket, Figma, and more. Automate your workflow with continuous localization.",
+      "target": "Conecte o Crowdin perfeitamente ao GitHub, GitLab, Bitbucket, Figma e muito mais. Automatize seu fluxo de trabalho com localização contínua."
+    },
+    "7046755": {
+      "source": "Use your favorite tools",
+      "target": "Use suas ferramentas favoritas"
+    },
+    "7046773": {
+      "source": "Find vendors on Crowdin Store",
+      "target": "Encontre fornecedores na Crowdin Store"
+    },
+    "7046775": {
+      "source": "Invite community translators",
+      "target": "Convide tradutores da comunidade"
+    },
+    "7046777": {
+      "source": "Combine different teams",
+      "target": "Combine diferentes equipes"
+    },
+    "7046779": {
+      "source": "Work exclusively with an agency you trust, find a vendor on Crowdin, or combine translations from different teams. Invite them all to your Crowdin project.",
+      "target": "Trabalhe exclusivamente com uma agência de sua confiança, encontre um fornecedor no Crowdin ou combine traduções de diferentes equipes. Convide todos para o seu projeto no Crowdin."
+    },
+    "7046851": {
+      "source": "Want to grow your business faster? Make your content multilingual to reach a wider audience.",
+      "target": "Quer expandir seus negócios mais rápido? Torne seu conteúdo multilíngue para alcançar um público maior."
+    },
+    "7046855": {
+      "source": "Localize your content with Crowdin",
+      "target": "Localize seu conteúdo com o Crowdin"
+    },
+    "7046857": {
+      "source": "Thanks for your message. We'll get back to you soon.",
+      "target": "Agradecemos sua mensagem. Responderemos em breve."
+    },
+    "7046873": {
+      "source": "Oops! Unable to send your message. Please try again or contact us at {email}",
+      "target": "Ops! Não foi possível enviar sua mensagem. Por favor, tente novamente ou entre em contato pelo e-mail {email}"
+    },
+    "7046881": {
+      "source": "Campaigns",
+      "target": "Campanhas"
+    },
+    "7046887": {
+      "source": "New arrivals",
+      "target": "Novidades"
+    },
+    "7046889": {
+      "source": "Translating to French",
+      "target": "Traduzindo para o francês"
+    },
+    "7046891": {
+      "source": "WORLD SHIPPING",
+      "target": "ENTREGA MUNDIAL"
+    },
+    "7046931": {
+      "source": "Loading team members...",
+      "target": "Carregando membros da equipe..."
+    },
+    "7046935": {
+      "source": "Pre-translate, draft, add context, run translation quality checks with AI and Agents. Bring your own keys to any LLM of your choice within the platform without any additional costs.",
+      "target": "Pré-traduza, rascunhe, adicione contexto e realize verificações de qualidade de tradução com IA e Agentes. Traga suas próprias chaves para qualquer LLM de sua preferência dentro da plataforma sem custos adicionais."
+    },
+    "7046937": {
+      "source": "AI-powered translation",
+      "target": "Tradução com inteligência artificial"
+    },
+    "7046939": {
+      "source": "Connect your preferred AI provider to Crowdin",
+      "target": "Conecte seu provedor de IA preferido ao Crowdin"
+    },
+    "7046947": {
+      "source": "Crowdin In-Context provides an overlay for your application. Translators and proofreaders can preview their translations on the live page.",
+      "target": "O Crowdin In-Context oferece uma sobreposição para sua aplicação. Tradutores e revisores podem pré-visualizar suas traduções diretamente na página em tempo real."
+    },
+    "7046981": {
+      "source": "Based on <a href=\"{g2Link}\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-muted-foreground underline hover:text-foreground\">{count, number} reviews on G2</a>",
+      "target": "Com base em <a href=\"{g2Link}\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-muted-foreground underline hover:text-foreground\">{count, number} avaliações no G2</a>"
+    },
+    "7046983": {
+      "source": "AI Automation Features",
+      "target": "Recursos de automação com IA"
+    },
+    "7046985": {
+      "source": "Supported file formats",
+      "target": "Formatos de arquivo suportados"
+    },
+    "7046989": {
+      "source": "Built-in QA Checks",
+      "target": "Verificações de controle de qualidade integradas"
+    },
+    "7046991": {
+      "source": "Recognized by industry leaders",
+      "target": "Reconhecido por líderes do setor"
+    },
+    "7047039": {
+      "source": "You have already subscribed.",
+      "target": "Você já está inscrito."
+    },
+    "7047041": {
+      "source": "Please provide a valid email address.",
+      "target": "Por favor, insira um endereço de e-mail válido."
+    },
+    "7047043": {
+      "source": "Your work email",
+      "target": "Seu e-mail profissional"
+    }
+  }
+}

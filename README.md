@@ -5,14 +5,14 @@
 
 <!-- Efeito de Digitação Animado -->
 <a href="https://github.com/jhojhocraazy/ptbr-translations">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=22C55E&center=true&vCenter=true&width=620&lines=Central+de+Localiza%C3%A7%C3%A3o+Open+Source+%F0%9F%87%A7%F0%9F%87%B7;Mais+de+5.300+strings+traduzidas+para+pt-BR;Nuvio+%E2%80%A2+BitChord+%E2%80%A2+TizenTube+%E2%80%A2+YTDLnis;100%25+Compat%C3%ADvel+com+Placeholders+%26+Tags;Qualidade%2C+Fluidez+e+Consist%C3%AAncia+Terminol%C3%B3gica" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=22C55E&center=true&vCenter=true&width=620&lines=Central+de+Localiza%C3%A7%C3%A3o+Open+Source+%F0%9F%87%A7%F0%9F%87%B7;Mais+de+5.350+strings+traduzidas+para+pt-BR;Nuvio+%E2%80%A2+BitChord+%E2%80%A2+Crowdin+%E2%80%A2+TizenTube+%E2%80%A2+YTDLnis;100%25+Compat%C3%ADvel+com+Placeholders+%26+Tags;Qualidade%2C+Fluidez+e+Consist%C3%AAncia+Terminol%C3%B3gica" alt="Typing SVG" />
 </a>
 
 <br/><br/>
 
 <!-- Badges Principais Estilizadas -->
 [![pt-BR](https://img.shields.io/badge/Portugu%C3%AAs%20(Brasil)-pt--BR-009739?style=for-the-badge&logo=brazil&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
-[![Strings](https://img.shields.io/badge/Strings-+5.300-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
+[![Strings](https://img.shields.io/badge/Strings-+5.350-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Cobertura](https://img.shields.io/badge/Cobertura-100%25-brightgreen?style=for-the-badge&logo=checkmarx)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Autor](https://img.shields.io/badge/Mantido%20por-Joseph%20Alves-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jhojhocraazy)
 
@@ -36,8 +36,9 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 | [**BitChord**](#2-bitchord) | Android / Desktop / Wear OS | GitHub PRs / XML | **+1.250** | 🚀 **Em Análise** ([PR #952](https://github.com/kushagrasinghx/BitChord/pull/952)) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **681** | 🟢 **100% Traduzido** (Sugestões Ativas) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**Better Lyrics**](#4-better-lyrics) | Desktop / Spotify / Apple Music | Crowdin (863186) | **637** | 🟢 **Lançado** (`v3.0.0`) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**TizenTube & Cobalt**](#5-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **197** | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718)) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**DNSToggle**](#6-dnstoggle) | Android Quick Settings | Weblate / GitHub | **100%** | 🟢 **Integrado** (`main`) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Crowdin Platform**](#5-crowdin-platform) | TMS / Modern Web UI | Crowdin API (31) | **17.154** (51 Lote 1) | 🚀 **Em Andamento** (Oficial) | ![69%](https://geps.dev/progress/69?color=00c853) |
+| [**TizenTube & Cobalt**](#6-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **197** | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718)) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Weblate / GitHub | **100%** | 🟢 **Integrado** (`main`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 
 ---
 
@@ -122,7 +123,26 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 ---
 
-### 5. TizenTube & TizenTube Cobalt
+### 5. Crowdin Platform
+> A principal plataforma global de gerenciamento contínuo de localização e tradução baseada em nuvem para equipes de engenharia e produto.
+
+* **Projeto Oficial:** [Crowdin Translations (ID: 31)](https://crowdin.com/project/crowdin)
+* **Plataforma de Tradução:** Crowdin API v2
+* **Status:** 🚀 **Em Andamento Oficial** (Lote 1 submetido — 51 strings da interface moderna).
+* **Diretório Local:** [`Crowdin/`](./Crowdin/)
+
+<details>
+<summary><b>🔍 Ver Detalhes do Projeto Crowdin Platform</b></summary>
+<br/>
+
+* **Módulo Focado:** Interface Moderna Web (`src/i18n/locales/en.json` — ID: 32447).
+* **Entregas do Lote 1:** Estimativas de custo (*Cost estimates*), resumos de economia com MT e IA (*Savings summary*), relatórios de produtividade, mensagens de upload e conexões com GitHub/GitLab.
+* **Integração:** Submissão direta e atribuída oficialmente a Joseph Alves (`@jhojhocraazy`) via API v2.
+</details>
+
+---
+
+### 6. TizenTube & TizenTube Cobalt
 > Cliente avançado de streaming sem anúncios com suporte nativo a SponsorBlock, DeArrow e controle de taxa de quadros (AFR) para Smart TVs Samsung (Tizen OS) e Android TV / Google TV / Fire TV (Cobalt).
 
 * **Repositórios Oficiais:** [`reisxd/TizenTube`](https://github.com/reisxd/TizenTube) (+2.800 stars) e [`reisxd/TizenTubeCobalt`](https://github.com/reisxd/TizenTubeCobalt)
@@ -142,7 +162,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 ---
 
-### 6. DNSToggle
+### 7. DNSToggle
 > Aplicativo Android open source para alternar rapidamente servidores DNS privados e perfis de rede via Quick Settings Tiles.
 
 * **Repositório Oficial:** [`ELowry/DNSToggle`](https://github.com/ELowry/DNSToggle)
@@ -168,6 +188,11 @@ ptbr-translations/
 │   └── better_lyrics_messages_pt_BR.json
 ├── 📁 BitChord/              # Recursos XML e clone do repositório
 │   └── 📁 repo/              # Repositório Git conectado ao fork e upstream
+├── 📁 Crowdin/               # Recursos da plataforma Crowdin e backup JSON
+│   ├── crowdin_translations_pt_BR.json
+│   ├── diretrizes-tecnicas.md
+│   ├── glossario.md
+│   └── README.md
 ├── 📁 DNSToggle/             # Documentação e recursos do Weblate
 │   └── README.md
 ├── 📁 NuvioMobile/           # Backups XML e clone do repositório
