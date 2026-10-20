@@ -3048,7 +3048,7 @@
     "description": "Tooltip explaining when video playback changes take effect and how unavailable resolutions fall back."
   },
   "picture_in_picture_fitWindow": {
-    "message": "Ajustar janela",
+    "message": "Ajustar à janela",
     "description": "Tooltip and accessible label for the selected song/video button in the Picture-in-Picture lyrics window when the window size no longer matches its content; clicking it resizes the window to fit"
   }
 }
