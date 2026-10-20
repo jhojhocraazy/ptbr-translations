@@ -4,7 +4,7 @@
   "target_language": "pt-BR",
   "file_id": 32447,
   "file_name": "src/i18n/locales/en.json",
-  "total_submitted": 51,
+  "total_submitted": 151,
   "translations": {
     "7046447": {
       "source": "GitHub",
@@ -209,6 +209,406 @@
     "7047043": {
       "source": "Your work email",
       "target": "Seu e-mail profissional"
+    },
+    "7047045": {
+      "source": "Something went wrong. Please try again later.",
+      "target": "Algo deu errado. Por favor, tente novamente mais tarde."
+    },
+    "7047065": {
+      "source": "Enter license name",
+      "target": "Insira o nome da licença"
+    },
+    "7047079": {
+      "source": "Your organization name",
+      "target": "Nome da sua organização"
+    },
+    "7047081": {
+      "source": "e.g. my-organization",
+      "target": "ex.: minha-organizacao"
+    },
+    "7047083": {
+      "source": "Your organization URL:",
+      "target": "URL da sua organização:"
+    },
+    "7047089": {
+      "source": "Tell us about your project, its purpose, community, and why you need localization...",
+      "target": "Conte-nos sobre o seu projeto, seu propósito, sua comunidade e por que você precisa de localização..."
+    },
+    "7047103": {
+      "source": "Select a license",
+      "target": "Selecione uma licença"
+    },
+    "7047107": {
+      "source": "Thank you for your request. Our team will review it and get back to you soon.",
+      "target": "Agradecemos sua solicitação. Nossa equipe irá analisá-la e entrará em contato em breve."
+    },
+    "7047119": {
+      "source": "Raw Report App",
+      "target": "App de Dados Brutos de Relatório"
+    },
+    "7047121": {
+      "source": "Export granular logs for Tableau or Excel to build custom velocity models.",
+      "target": "Exporte registros detalhados para o Tableau ou Excel para criar modelos personalizados de velocidade."
+    },
+    "7047123": {
+      "source": "Contribution Raw Data",
+      "target": "Dados Brutos de Contribuição"
+    },
+    "7047125": {
+      "source": "Before (optional)",
+      "target": "Antes de (opcional)"
+    },
+    "7047127": {
+      "source": "Before date",
+      "target": "Data anterior a"
+    },
+    "7047131": {
+      "source": "Source text created after (optional)",
+      "target": "Texto de origem criado após (opcional)"
+    },
+    "7047133": {
+      "source": "Created after date",
+      "target": "Criado após a data"
+    },
+    "7047143": {
+      "source": "Raw Report Data",
+      "target": "Dados Brutos do Relatório"
+    },
+    "7047145": {
+      "source": "Units",
+      "target": "Unidades"
+    },
+    "7047149": {
+      "source": "Enter user handle",
+      "target": "Insira o nome de usuário"
+    },
+    "7047153": {
+      "source": "Track exact hours per file to calculate hourly ROI and unblock bottlenecks.",
+      "target": "Acompanhe as horas exatas por arquivo para calcular o ROI por hora e eliminar gargalos."
+    },
+    "7047157": {
+      "source": "Identify most productive translators and proofreaders with approval ratios.",
+      "target": "Identifique os tradutores e revisores mais produtivos com base nas taxas de aprovação."
+    },
+    "7047161": {
+      "source": "and more",
+      "target": "e muito mais"
+    },
+    "7047163": {
+      "source": "View Developer Docs",
+      "target": "Ver Documentação para Desenvolvedores"
+    },
+    "7047165": {
+      "source": "Comprehensive set of tools designed specifically for developers to integrate localization seamlessly into their workflow",
+      "target": "Conjunto completo de ferramentas projetado especificamente para desenvolvedores integrarem a localização perfeitamente ao seu fluxo de trabalho"
+    },
+    "7047167": {
+      "source": "Git-based workflow, CLI tools, comprehensive APIs, support for {count, number}+ file formats, automated quality assurance, and continuous localization integration.",
+      "target": "Fluxo de trabalho baseado em Git, ferramentas de CLI, APIs abrangentes, suporte para mais de {count, number} formatos de arquivo, controle de qualidade automatizado e integração de localização contínua."
+    },
+    "7047169": {
+      "source": "Developer tools",
+      "target": "Ferramentas para desenvolvedores"
+    },
+    "7047171": {
+      "source": "Security Overview",
+      "target": "Visão Geral de Segurança"
+    },
+    "7047173": {
+      "source": "Enterprise-grade security features to protect your content and ensure compliance with industry standards",
+      "target": "Recursos de segurança de nível corporativo para proteger seu conteúdo e garantir a conformidade com os padrões do setor"
+    },
+    "7047175": {
+      "source": "Keep your data secure with SOC 2 compliance, GDPR compliance, SSO integration, role-based access control, logs audits, and advanced encryption.",
+      "target": "Mantenha seus dados seguros com conformidade SOC 2 e GDPR, integração SSO, controle de acesso baseado em funções, auditoria de registros e criptografia avançada."
+    },
+    "7047179": {
+      "source": "Explore AI Features",
+      "target": "Explorar Recursos de IA"
+    },
+    "7047181": {
+      "source": "An AI-powered online translation editor that helps translators deliver consistent, high-quality results faster and with less effort",
+      "target": "Um editor de tradução online com IA que ajuda os tradutores a entregar resultados consistentes e de alta qualidade com mais rapidez e menos esforço"
+    },
+    "7047183": {
+      "source": "Our advanced translation editor provides real-time suggestions, context-aware translations, and seamless integration with your workflow. Features include translation memory, glossaries, and collaborative editing tools.",
+      "target": "Nosso editor de tradução avançado oferece sugestões em tempo real, traduções sensíveis ao contexto e integração perfeita com seu fluxo de trabalho. Os recursos incluem memória de tradução, glossários e ferramentas de edição colaborativa."
+    },
+    "7047187": {
+      "source": "See Collaboration Tools",
+      "target": "Ver Ferramentas de Colaboração"
+    },
+    "7047189": {
+      "source": "Enable teams to work together efficiently with real-time updates, comments, and collaborative translation features",
+      "target": "Permita que as equipes trabalhem juntas com eficiência por meio de atualizações em tempo real, comentários e recursos de tradução colaborativa"
+    },
+    "7047191": {
+      "source": "Keep everyone updated and productive with live editing, instant notifications, team chat, workflows review, and project management tools.",
+      "target": "Mantenha todos atualizados e produtivos com edição ao vivo, notificações instantâneas, chat em equipe, revisão de fluxos de trabalho e ferramentas de gerenciamento de projetos."
+    },
+    "7047193": {
+      "source": "Real-time collaboration",
+      "target": "Colaboração em tempo real"
+    },
+    "7047195": {
+      "source": "View Analytics",
+      "target": "Ver Análises"
+    },
+    "7047197": {
+      "source": "Gain insights into your localization process with comprehensive analytics and reporting tools",
+      "target": "Obtenha insights sobre o seu processo de localização com ferramentas completas de análise e relatórios"
+    },
+    "7047199": {
+      "source": "Optimize your localization workflow with progress tracking, quality and productivity analytics, bottlenecks identification, and data-driven decisions.",
+      "target": "Otimize seu fluxo de trabalho de localização com acompanhamento de progresso, análises de qualidade e produtividade, identificação de gargalos e decisões baseadas em dados."
+    },
+    "7047201": {
+      "source": "Smart Analytics",
+      "target": "Análises Inteligentes"
+    },
+    "7047203": {
+      "source": "Editor",
+      "target": "Editor"
+    },
+    "7047205": {
+      "source": "Review the records of previously generated reports to analyze historical data for insights and track project progress.",
+      "target": "Consulte os registros de relatórios gerados anteriormente para analisar dados históricos, obter insights e acompanhar o progresso do projeto."
+    },
+    "7047213": {
+      "source": "Review accuracy of your pre-translations",
+      "target": "Analise a precisão das suas pré-traduções"
+    },
+    "7047217": {
+      "source": "Explore detailed statistics on task creation, workload, progress, and performance.",
+      "target": "Explore estatísticas detalhadas sobre criação de tarefas, carga de trabalho, progresso e desempenho."
+    },
+    "7047219": {
+      "source": "Task usage",
+      "target": "Uso de tarefas"
+    },
+    "7047221": {
+      "source": "Calculate the real cost of work based on time spent to pay your contributors.",
+      "target": "Calcule o custo real do trabalho com base no tempo dedicado para remunerar seus colaboradores."
+    },
+    "7047223": {
+      "source": "Time spent",
+      "target": "Tempo dedicado"
+    },
+    "7047225": {
+      "source": "Generate a list of translators based on a specific period of time to see who contributed the most to your project's translation.",
+      "target": "Gere uma lista de tradutores com base em um período específico para ver quem mais contribuiu para a tradução do seu projeto."
+    },
+    "7047237": {
+      "source": "Add New",
+      "target": "Adicionar Novo"
+    },
+    "7047239": {
+      "source": "Umbrella/Reports",
+      "target": "Umbrella/Relatórios"
+    },
+    "7047241": {
+      "source": "Content for {title}",
+      "target": "Conteúdo para {title}"
+    },
+    "7047245": {
+      "source": "+{price}/mo",
+      "target": "+{price}/mês"
+    },
+    "7047257": {
+      "source": "{price}/mo",
+      "target": "{price}/mês"
+    },
+    "7047269": {
+      "source": "Choose Crowdin if you're an individual developer or have a small in-house team working with you. You'll get everything to start with agile localization: Glossary, Translation Memory, integrations, online translation editor, basic reports, and more. Choose Crowdin Enterprise if you need to have a private organization for all your localization projects. You'll be able to streamline and scale localization for multiple products with workflows, teams, enterprise-level security and flexibility, and more.",
+      "target": "Escolha o Crowdin se você for um desenvolvedor individual ou tiver uma pequena equipe interna trabalhando com você. Você terá tudo para começar com a localização ágil: Glossário, Memória de Tradução, integrações, editor de tradução online, relatórios básicos e muito mais. Escolha o Crowdin Enterprise se precisar de uma organização privada para todos os seus projetos de localização. Você poderá otimizar e escalar a localização para múltiplos produtos com fluxos de trabalho, equipes, segurança e flexibilidade de nível corporativo e muito mais."
+    },
+    "7047277": {
+      "source": "You can upgrade or downgrade your plan at any time. If you upgrade or downgrade in the middle of the monthly billing cycle, your account will be instantly switched to the new plan, and starting the next month, the charge will be taken for the chosen plan.",
+      "target": "Você pode fazer upgrade ou downgrade do seu plano a qualquer momento. Se fizer a alteração no meio do ciclo de faturamento mensal, sua conta será migrada instantaneamente para o novo plano e, a partir do mês seguinte, a cobrança será feita de acordo com o plano escolhido."
+    },
+    "7047287": {
+      "source": "You can use an internatiocommnal wire transfer only for purchasing an Annual Subscription. Please contact us to get wire transfer details.",
+      "target": "Você pode usar uma transferência bancária internacional apenas para adquirir uma Assinatura Anual. Entre em contato conosco para obter os dados para transferência."
+    },
+    "7047295": {
+      "source": "Open Source License",
+      "target": "Licença Open Source"
+    },
+    "7047297": {
+      "source": "Academic License",
+      "target": "Licença Acadêmica"
+    },
+    "7047305": {
+      "source": "No, any paid subscription plan allows you to invite an unlimited number of translators and proofreaders to your projects.",
+      "target": "Não, qualquer plano de assinatura pago permite convidar um número ilimitado de tradutores e revisores para os seus projetos."
+    },
+    "7047313": {
+      "source": "Annual billing only ({amountWithCurrency})",
+      "target": "Apenas faturamento anual ({amountWithCurrency})"
+    },
+    "7047319": {
+      "source": "Billed annually ({amountWithCurrency}/year)",
+      "target": "Faturado anualmente ({amountWithCurrency}/ano)"
+    },
+    "7047343": {
+      "source": "For organizations",
+      "target": "Para organizações"
+    },
+    "7047345": {
+      "source": "Feature information",
+      "target": "Informações sobre o recurso"
+    },
+    "7047349": {
+      "source": "Client↔Vendor collaboration",
+      "target": "Colaboração Cliente↔Fornecedor"
+    },
+    "7047359": {
+      "source": "Developer / Translation Requestor role",
+      "target": "Função de Desenvolvedor / Solicitante de Tradução"
+    },
+    "7047373": {
+      "source": "1 integration",
+      "target": "1 integração"
+    },
+    "7047383": {
+      "source": "SCIM user provisioning",
+      "target": "Provisionamento de usuários SCIM"
+    },
+    "7047413": {
+      "source": "*Users on a free plan donate translations to Crowdin's translation memory.",
+      "target": "*Usuários no plano gratuito doam traduções para a memória de tradução do Crowdin."
+    },
+    "7047417": {
+      "source": "from {price}/mo",
+      "target": "a partir de {price}/mês"
+    },
+    "7047419": {
+      "source": "{words} hosted words",
+      "target": "{words} palavras hospedadas"
+    },
+    "7047421": {
+      "source": "Hosted words info",
+      "target": "Informações sobre palavras hospedadas"
+    },
+    "7047429": {
+      "source": "{count} managers",
+      "target": "{count} gerentes"
+    },
+    "7047431": {
+      "source": "{count} managers included",
+      "target": "{count} gerentes incluídos"
+    },
+    "7047435": {
+      "source": "mo",
+      "target": "mês"
+    },
+    "7047439": {
+      "source": "No pricing plans available at the moment.",
+      "target": "Nenhum plano de preços disponível no momento."
+    },
+    "7047469": {
+      "source": "Unable to process subscription. Please try again or contact support.",
+      "target": "Não foi possível processar a assinatura. Tente novamente ou entre em contato com o suporte."
+    },
+    "7047475": {
+      "source": "Developer / Translation Requestor is included in the total number of available managers.",
+      "target": "O Desenvolvedor / Solicitante de Tradução está incluído no número total de gerentes disponíveis."
+    },
+    "7047489": {
+      "source": "Contact Support Team",
+      "target": "Contatar Equipe de Suporte"
+    },
+    "7047493": {
+      "source": "Contact our team to learn about trial options",
+      "target": "Entre em contato com nossa equipe para conhecer as opções de avaliação"
+    },
+    "7047531": {
+      "source": "Track typos, placeholders, and formatting errors per locale.",
+      "target": "Acompanhe erros de digitação, placeholders e falhas de formatação por idioma."
+    },
+    "7047533": {
+      "source": "QA issues trend",
+      "target": "Tendência de problemas de QA"
+    },
+    "7047535": {
+      "source": "Approve vs correction ratios by linguist and reviewer.",
+      "target": "Taxas de aprovação vs. correção por linguista e revisor."
+    },
+    "7047541": {
+      "source": "Let's create a private channel in our Slack workspace where you can get help from our support team.",
+      "target": "Vamos criar um canal privado em nosso workspace do Slack onde você poderá receber ajuda da nossa equipe de suporte."
+    },
+    "7047547": {
+      "source": "Oops! Unable to send your request. Please email us at {email}",
+      "target": "Ops! Não foi possível enviar sua solicitação. Envie um e-mail para {email}"
+    },
+    "7047553": {
+      "source": "Requesting...",
+      "target": "Solicitando..."
+    },
+    "7047555": {
+      "source": "Request Private Support in Slack",
+      "target": "Solicitar Suporte Privado no Slack"
+    },
+    "7047557": {
+      "source": "Download our step-by-step guide made by industry professionals.",
+      "target": "Baixe nosso guia passo a passo elaborado por profissionais do setor."
+    },
+    "7047573": {
+      "source": "directly on the string.",
+      "target": "diretamente na string."
+    },
+    "7047575": {
+      "source": "Translators can ask,",
+      "target": "Os tradutores podem perguntar:"
+    },
+    "7047577": {
+      "source": "\"Is this 'run' a command or a sprint?\"",
+      "target": "\"Este 'run' é um comando ou uma corrida?\""
+    },
+    "7047579": {
+      "source": "Real-time comments",
+      "target": "Comentários em tempo real"
+    },
+    "7047583": {
+      "source": "Screenshot tagging",
+      "target": "Marcação em capturas de tela"
+    },
+    "7047585": {
+      "source": "Integrate YouTube, Vimeo, or MP4 files directly into the Editor sidebar. Translators can play, pause, and seek the video to match the text they are translating.",
+      "target": "Integre vídeos do YouTube, Vimeo ou arquivos MP4 diretamente na barra lateral do Editor. Os tradutores podem reproduzir, pausar e avançar o vídeo para acompanhar o texto que estão traduzindo."
+    },
+    "7047587": {
+      "source": "Video dubbing app",
+      "target": "App de dublagem de vídeo"
+    },
+    "7047589": {
+      "source": "at",
+      "target": "em"
+    },
+    "7047593": {
+      "source": "Use Glossaries to ensure your help guides use the same terminology and names as your product.",
+      "target": "Use Glossários para garantir que seus guias de ajuda utilizem a mesma terminologia e nomes do seu produto."
+    },
+    "7047595": {
+      "source": "TERMINOLOGY",
+      "target": "TERMINOLOGIA"
+    },
+    "7047613": {
+      "source": "just now",
+      "target": "agora mesmo"
+    },
+    "7047615": {
+      "source": "MASTER",
+      "target": "PRINCIPAL"
+    },
+    "7047619": {
+      "source": "Project TM",
+      "target": "MT do Projeto"
+    },
+    "7047621": {
+      "source": "SAVE",
+      "target": "SALVAR"
     }
   }
 }
