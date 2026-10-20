@@ -86,6 +86,68 @@ Gera `{ source, target }` por string + metadados (projeto, arquivo, idioma, data
 
 ---
 
+## `weblate-sync.ps1`
+
+Ciclo completo de um projeto Weblate: status, exportação, envio, auditoria e backup.
+
+### Status — cobertura por componente
+
+```powershell
+./scripts/weblate-sync.ps1 -Action Status -Project elowry
+./scripts/weblate-sync.ps1 -Action Status -Project elowry -Component dnstoggle-strings
+```
+
+Saída: traduzidas/total, pendentes, checagens falhando e última alteração.
+
+### Export — unidades de um componente
+
+```powershell
+./scripts/weblate-sync.ps1 -Action Export -Project elowry -Component dnstoggle-strings -Tsv strings.tsv
+./scripts/weblate-sync.ps1 -Action Export -Project elowry -Component dnstoggle-strings -All -Tsv todas.tsv
+```
+
+Gera TSV com `id<TAB>contexto<TAB>fonte<TAB>destino`. Sem `-All`, exporta apenas pendentes.
+
+### Push — envio de traduções
+
+```powershell
+./scripts/weblate-sync.ps1 -Action Push -Project elowry -Component dnstoggle-strings -Tsv lote.tsv
+```
+
+Formato: `id<TAB>texto` (2 colunas). `\n` literal vira quebra de linha. Saída: `OK=n FALHAS=0`.
+
+### Check — auditoria de integridade
+
+```powershell
+./scripts/weblate-sync.ps1 -Action Check -Project elowry -Component dnstoggle-strings -Tsv divergencias.tsv
+```
+
+Compara placeholders, argumentos ICU e balanceamento de chaves. Critério: `divergências: 0`.
+
+### Backup — arquivo traduzido
+
+```powershell
+./scripts/weblate-sync.ps1 -Action Backup -Project elowry -Component dnstoggle-strings -OutFile DNSToggle/dnstoggle_strings_pt_BR.xml
+```
+
+Baixa o arquivo no formato nativo do componente (XML/JSON/etc.).
+
+### Parâmetros comuns
+
+| Parâmetro | Padrão | Descrição |
+| :--- | :--- | :--- |
+| `-Project` | — | Slug do projeto (ex.: `elowry`) |
+| `-Component` | — | Slug do componente (obrigatório em Export/Check/Backup) |
+| `-Language` | `pt_BR` | Código do idioma no Weblate |
+| `-Tsv` | — | Entrada (Push) ou saída (Status/Export/Check) |
+| `-All` | — | Exporta também unidades já traduzidas |
+| `-DelayMs` | `150` | Intervalo entre envios |
+
+> O Weblate pode estar atrás do Anubis. O script usa um User-Agent de navegador;
+> se ainda assim a API retornar HTML, verifique o token e o acesso à instância.
+
+---
+
 ## `validate-ptbr.ps1`
 
 Validador local para arquivos já traduzidos (fora de plataforma ou snapshots).
@@ -102,7 +164,17 @@ Saída: `OK` (exit 0) ou `FALHA` (exit 1) com a lista de achados.
 
 ---
 
-## Fluxo resumido (Crowdin)
+## Fluxos resumidos
+
+**Crowdin:**
+
+```text
+Status  ->  Export  ->  traduzir em lotes  ->  Push  ->  Check  ->  Status (0 pendentes)
+                                                                    |
+                                                          Backup + READMEs + commit
+```
+
+**Weblate:**
 
 ```text
 Status  ->  Export  ->  traduzir em lotes  ->  Push  ->  Check  ->  Status (0 pendentes)

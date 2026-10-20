@@ -37,7 +37,7 @@ o envio ao produto é responsabilidade da plataforma/mantenedor.
 
 ---
 
-## 3. Ciclo de trabalho — projeto em plataforma (Crowdin)
+## 3. Ciclo de trabalho — projeto em plataforma
 
 ### 3.1 Preparação
 1. Confirmar **ID do projeto** e **idioma alvo** (`pt-BR`).
@@ -80,6 +80,20 @@ o envio ao produto é responsabilidade da plataforma/mantenedor.
 3. Commitar no hub com identidade e padrão definidos no `AGENTS.md`.
 
 > O commit no hub é **documentação**, não entrega do projeto. Ele não substitui nem antecede a plataforma.
+
+### 3.5 Projeto em Weblate
+
+O ciclo é o mesmo, com a ferramenta `weblate-sync.ps1`:
+
+1. Consultar a cobertura: `-Action Status -Project <projeto>`
+2. Exportar as pendentes: `-Action Export -Component <componente> -Tsv ...`
+3. Traduzir em lotes, preservando placeholders, ICU e tags.
+4. Enviar: `-Action Push -Component <componente> -Tsv lote.tsv`
+5. Auditar: `-Action Check -Component <componente>` (critério: **0 divergências**).
+6. Confirmar `-Action Status` (**0 pendentes**) e atualizar o backup com `-Action Backup`.
+
+Token via `$env:WEBLATE_TOKEN`. O Weblate pode estar atrás do Anubis; o script já envia
+um User-Agent de navegador, mas a API ainda pode exigir ajuste de acesso na instância.
 
 ---
 

@@ -38,7 +38,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 | [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **637** | 🟢 **Sincronizado** (PR #1010) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **17.169** (214 arquivos) | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**TizenTube & Cobalt**](#6-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **197** | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718)) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Weblate / GitHub | **100%** | 🟢 **Integrado** (`main`) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Hosted Weblate | **176 + 36** | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
 
 ---
 
@@ -168,16 +168,16 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Aplicativo Android open source para alternar rapidamente servidores DNS privados e perfis de rede via Quick Settings Tiles.
 
 * **Repositório Oficial:** [`ELowry/DNSToggle`](https://github.com/ELowry/DNSToggle)
-* **Plataforma de Tradução:** Weblate / GitHub
-* **Status:** 🟢 **100% Traduzido** em todos os 5 componentes oficiais.
+* **Plataforma de Tradução:** Hosted Weblate — projeto `elowry`
+* **Status:** 🟢 **100% Traduzido** nos dois componentes (`dnstoggle-strings` e `dnstoggle-metadata`), com 0 pendentes.
 * **Diretório Local:** [`DNSToggle/`](./DNSToggle/)
 
 <details>
 <summary><b>🔍 Ver Detalhes do DNSToggle</b></summary>
 <br/>
 
-* **Componentes Traduzidos:** Interface do Usuário, Quick Settings Tiles, Descrições de Notificação, Diálogos de Permissão e Metadados do App.
-* **Integração:** Commits diretos atribuídos e mesclados na branch oficial `translation`.
+* **Componentes Traduzidos:** 176/176 strings (interface, Quick Settings Tiles, notificações e diálogos) + 36/36 metadados (título, descrições e changelogs).
+* **Qualidade:** revisão de naturalidade aplicada em 20/10/2026, com 14 ajustes de vocabulário Android e fluidez.
 </details>
 
 ---
@@ -197,7 +197,10 @@ ptbr-translations/
 │   ├── glossario.md
 │   └── README.md
 ├── 📁 DNSToggle/             # Documentação e recursos do Weblate
-│   └── README.md
+│   ├── README.md
+│   ├── diretrizes-tecnicas.md
+│   ├── glossario.md
+│   └── dnstoggle_strings_pt_BR.xml
 ├── 📁 NuvioMobile/           # Backups XML e clone do repositório
 │   ├── NuvioMobile_strings_pt_BR.xml
 │   └── 📁 repo/              # Repositório Git conectado ao fork e upstream
@@ -214,6 +217,7 @@ ptbr-translations/
 │   └── ytdlnis_strings_pt_BR.xml
 ├── 📁 scripts/               # Ferramentas de tradução e validação
 │   ├── crowdin-sync.ps1      # Status, Export, Push, Check e Backup (Crowdin API v2)
+│   ├── weblate-sync.ps1      # Status, Export, Push, Check e Backup (Weblate API)
 │   ├── validate-ptbr.ps1     # Validador local de placeholders, escapes e XML
 │   └── README.md             # Guia de uso das ferramentas
 ├── .gitignore                # Isolamento de compilações e repositórios aninhados
@@ -234,7 +238,7 @@ A regra é simples: **a entrega termina onde a tradução vive**.
 | **Sem plataforma de tradução** | Tradução no repositório + Pull Request | ✅ Sim |
 
 * 📘 [**Metodologia completa**](./metodologia.md) — classificação, ciclo de trabalho, regras de qualidade e definição de pronto.
-* 🛠️ [**Ferramentas**](./scripts/README.md) — `crowdin-sync.ps1` (`Status` / `Export` / `Push` / `Check` / `Backup`) e `validate-ptbr.ps1`.
+* 🛠️ [**Ferramentas**](./scripts/README.md) — `crowdin-sync.ps1` e `weblate-sync.ps1` (`Status` / `Export` / `Push` / `Check` / `Backup`) + `validate-ptbr.ps1`.
 
 ---
 

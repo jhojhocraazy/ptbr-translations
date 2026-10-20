@@ -135,7 +135,7 @@ function Get-Tokens([string]$Text) {
     foreach ($m in [regex]::Matches($Text, '(\$\{[^}]+\})')) { $set.Add($m.Value) }
     foreach ($m in [regex]::Matches($Text, '(@string/[A-Za-z0-9_.]+)')) { $set.Add($m.Value) }
     foreach ($m in [regex]::Matches($Text, '(?<![\w]):[A-Za-z_][A-Za-z0-9_]*')) { $set.Add($m.Value) }
-    return (($set | Sort-Object) -join ' ')
+    return (($set | Sort-Object -Unique) -join ' ')
 }
 
 switch ($Action) {
