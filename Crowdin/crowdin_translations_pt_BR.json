@@ -4,7 +4,7 @@
   "target_language": "pt-BR",
   "file_id": 32447,
   "file_name": "src/i18n/locales/en.json",
-  "total_submitted": 451,
+  "total_submitted": 551,
   "translations": {
     "7046447": {
       "source": "GitHub",
@@ -1809,6 +1809,406 @@
     "7048597": {
       "source": "Explore prices",
       "target": "Explorar preços"
+    },
+    "7048599": {
+      "source": "<span class=\"opacity-60\">Enterprise localization</span> with Crowdin",
+      "target": "<span class=\"opacity-60\">Localização corporativa</span> com o Crowdin"
+    },
+    "7048601": {
+      "source": "Why <span class=\"opacity-60\">companies</span> choose Crowdin Enterprise?",
+      "target": "Por que <span class=\"opacity-60\">as empresas</span> escolhem o Crowdin Enterprise?"
+    },
+    "7048605": {
+      "source": "Try <span class=\"opacity-60\">Enterprise localization</span> with Crowdin",
+      "target": "Experimente a <span class=\"opacity-60\">localização corporativa</span> com o Crowdin"
+    },
+    "7048607": {
+      "source": "Book a Crowdin Enterprise demo — manage projects at scale, set up workflows, and collaborate securely across teams.",
+      "target": "Agende uma demonstração do Crowdin Enterprise — gerencie projetos em escala, configure fluxos de trabalho e colabore com segurança entre equipes."
+    },
+    "7048609": {
+      "source": "Crowdin Enterprise demo",
+      "target": "Demonstração do Crowdin Enterprise"
+    },
+    "7048613": {
+      "source": "Schedule demo and explore Crowdin Enterprise in action",
+      "target": "Agende uma demonstração e explore o Crowdin Enterprise em ação"
+    },
+    "7048615": {
+      "source": "Trusted by companies worldwide.",
+      "target": "Aprovado por empresas no mundo todo."
+    },
+    "7048617": {
+      "source": "Schedule a free personalized demo of Crowdin Enterprise with our growth manager. Learn how to optimize your enterprise content localization with our advanced translation management tool.",
+      "target": "Agende uma demonstração personalizada gratuita do Crowdin Enterprise com nosso gerente de crescimento. Aprenda como otimizar a localização de conteúdo corporativo com nossa ferramenta avançada de gerenciamento de tradução."
+    },
+    "7048619": {
+      "source": "Get a Free Enterprise Demo. Enterprise Translation Management Software Crowdin",
+      "target": "Obtenha uma Demonstração Corporativa Gratuita. Software Corporativo de Gerenciamento de Tradução Crowdin"
+    },
+    "7048623": {
+      "source": "Start your localization journey with Crowdin today and take your product global in no time.",
+      "target": "Comece sua jornada de localização com o Crowdin hoje mesmo e leve seu produto para o mundo rapidamente."
+    },
+    "7048633": {
+      "source": "Crowdin editor themes",
+      "target": "Temas do editor do Crowdin"
+    },
+    "7048635": {
+      "source": "Editor themes",
+      "target": "Temas do editor"
+    },
+    "7048637": {
+      "source": "ICU message syntax",
+      "target": "Sintaxe de mensagens ICU"
+    },
+    "7048639": {
+      "source": "Crowdin spell check",
+      "target": "Verificador ortográfico do Crowdin"
+    },
+    "7048641": {
+      "source": "Live spell check",
+      "target": "Verificação ortográfica em tempo real"
+    },
+    "7048643": {
+      "source": "Crowdin term editor",
+      "target": "Editor de termos do Crowdin"
+    },
+    "7048645": {
+      "source": "Terms helper",
+      "target": "Assistente de terminologia"
+    },
+    "7048647": {
+      "source": "Crowdin WYSIWYG preview",
+      "target": "Pré-visualização WYSIWYG do Crowdin"
+    },
+    "7048651": {
+      "source": "Optimize the localization of your product's UI, app, website, marketing, and support content with Crowdin",
+      "target": "Otimize a localização da interface do seu produto, aplicativo, site, marketing e conteúdo de suporte com o Crowdin"
+    },
+    "7048653": {
+      "source": "Go to editor",
+      "target": "Ir para o editor"
+    },
+    "7048655": {
+      "source": "8 languages",
+      "target": "8 idiomas"
+    },
+    "7048657": {
+      "source": "Translation quality index is equal to 95%!",
+      "target": "O índice de qualidade da tradução é igual a 95%!"
+    },
+    "7048659": {
+      "source": "Shows that translations are highly accurate",
+      "target": "Mostra que as traduções são altamente precisas"
+    },
+    "7048661": {
+      "source": "Try Crowdin Enterprise instead",
+      "target": "Experimente o Crowdin Enterprise"
+    },
+    "7048663": {
+      "source": "Why innovative teams choose Crowdin",
+      "target": "Por que equipes inovadoras escolhem o Crowdin"
+    },
+    "7048665": {
+      "source": "Translation progress",
+      "target": "Progresso da tradução"
+    },
+    "7048667": {
+      "source": "Plan and track translation costs with detailed budget estimates and spending reports.",
+      "target": "Planeje e acompanhe os custos de tradução com estimativas detalhadas de orçamento e relatórios de gastos."
+    },
+    "7048671": {
+      "source": "Estimate costs and plan your localization budget",
+      "target": "Estime custos e planeje seu orçamento de localização"
+    },
+    "7048673": {
+      "source": "Monitor translation expenses in real-time and optimize your localization budget.",
+      "target": "Monitore as despesas de tradução em tempo real e otimize seu orçamento de localização."
+    },
+    "7048677": {
+      "source": "Monitor and control translation expenses",
+      "target": "Monitore e controle as despesas de tradução"
+    },
+    "7048679": {
+      "source": "Identify your best-performing team members and track translator productivity metrics.",
+      "target": "Identifique os membros de melhor desempenho da sua equipe e acompanhe as métricas de produtividade dos tradutores."
+    },
+    "7048683": {
+      "source": "View top contributors and their performance",
+      "target": "Veja os principais colaboradores e seu desempenho"
+    },
+    "7048685": {
+      "source": "Get a clear overview of completed, in-progress, and pending tasks, so you always know the current state of your localization efforts.",
+      "target": "Obtenha uma visão geral clara das tarefas concluídas, em andamento e pendentes para sempre saber o status atual dos seus esforços de localização."
+    },
+    "7048689": {
+      "source": "Track translation progress across all languages",
+      "target": "Acompanhe o progresso da tradução em todos os idiomas"
+    },
+    "7048691": {
+      "source": "Use our API, CDL, SDKs, and Webhooks to automate localization, sync content in real time, and adapt workflows to your team's specific needs",
+      "target": "Use nossa API, CLI, SDKs e Webhooks para automatizar a localização, sincronizar conteúdo em tempo real e adaptar os fluxos de trabalho às necessidades específicas da sua equipe"
+    },
+    "7048693": {
+      "source": "API, CDN, SDKs and Webhooks",
+      "target": "API, CDN, SDKs e Webhooks"
+    },
+    "7048701": {
+      "source": "With Crowdin, translators and proofreaders become more efficient and provide better translations. They can collaborate online with other translators and managers.",
+      "target": "Com o Crowdin, tradutores e revisores tornam-se mais eficientes e entregam traduções melhores, podendo colaborar online com outros tradutores e gerentes."
+    },
+    "7048703": {
+      "source": "Great editor features you'll love",
+      "target": "Ótimos recursos do editor que você vai adorar"
+    },
+    "7048705": {
+      "source": "Flexibility for every <span class=\"opacity-60\">translation workflow</span>",
+      "target": "Flexibilidade para cada <span class=\"opacity-60\">fluxo de trabalho de tradução</span>"
+    },
+    "7048707": {
+      "source": "Connect your tech stack with {count}+ integrations.",
+      "target": "Conecte sua stack de tecnologia com mais de {count}+ integrações."
+    },
+    "7048711": {
+      "source": "Control every detail, from AI workflows to strict QA checks.",
+      "target": "Controle cada detalhe, desde fluxos de trabalho com IA até verificações rigorosas de QA."
+    },
+    "7048713": {
+      "source": "Technical <span class=\"opacity-60\">onboarding</span>",
+      "target": "<span class=\"opacity-60\">Integração</span> técnica"
+    },
+    "7048717": {
+      "source": "Save time by using the latest technology and <span class=\"opacity-60\">providing context</span>",
+      "target": "Economize tempo usando a tecnologia mais recente e <span class=\"opacity-60\">fornecendo contexto</span>"
+    },
+    "7048719": {
+      "source": "Your Product, Company, and Processes — <span class=\"opacity-60\">Secured</span>",
+      "target": "Seu Produto, Empresa e Processos — <span class=\"opacity-60\">Protegidos</span>"
+    },
+    "7048721": {
+      "source": "Enterprise-grade security with ISO 27001, GDPR, and HIPAA compliance",
+      "target": "Segurança de nível corporativo em conformidade com ISO 27001, GDPR e HIPAA"
+    },
+    "7048729": {
+      "source": "Personal expert to guide your localization journey",
+      "target": "Especialista dedicado para guiar sua jornada de localização"
+    },
+    "7048733": {
+      "source": "Get help when you need it from localization experts who know the platform inside out",
+      "target": "Obtenha ajuda sempre que precisar com especialistas em localização que conhecem a plataforma de ponta a ponta"
+    },
+    "7048737": {
+      "source": "<span class=\"opacity-60\">View progress</span> in real time and get reports",
+      "target": "<span class=\"opacity-60\">Visualize o progresso</span> em tempo real e obtenha relatórios"
+    },
+    "7048793": {
+      "source": "Discover why innovative teams choose Crowdin. Explore our ecosystem of {count}+ integrations, advanced AI localization, and enterprise-grade security.",
+      "target": "Descubra por que equipes inovadoras escolhem o Crowdin. Explore nosso ecossistema com mais de {count}+ integrações, localização avançada com IA e segurança de nível corporativo."
+    },
+    "7048795": {
+      "source": "Why Crowdin? Platform Features & Benefits",
+      "target": "Por que o Crowdin? Recursos e Benefícios da Plataforma"
+    },
+    "7048823": {
+      "source": "Figma translation plugin for multilingual designs with Crowdin",
+      "target": "Plugin de tradução do Figma para designs multilíngues com o Crowdin"
+    },
+    "7048835": {
+      "source": "Translate Figma designs in clicks. Optimize your workflow with live content sync, text extraction automation, and testing layouts in {count}+ languages without leaving Figma.",
+      "target": "Traduza designs do Figma em poucos cliques. Otimize seu fluxo de trabalho com sincronização de conteúdo em tempo real, automação de extração de texto e testes de layout em mais de {count}+ idiomas sem sair do Figma."
+    },
+    "7048837": {
+      "source": "Free Figma Translation Plugin",
+      "target": "Plugin Gratuito de Tradução para Figma"
+    },
+    "7048849": {
+      "source": "Read the guide about how to use Figma plugin",
+      "target": "Leia o guia sobre como usar o plugin do Figma"
+    },
+    "7048851": {
+      "source": "Why Crowdin's Figma localization plugin?",
+      "target": "Por que usar o plugin de localização para Figma do Crowdin?"
+    },
+    "7048857": {
+      "source": "Install Plugin",
+      "target": "Instalar Plugin"
+    },
+    "7048865": {
+      "source": "Case Studies",
+      "target": "Estudos de Caso"
+    },
+    "7048887": {
+      "source": "Sub-processors",
+      "target": "Subprocessadores"
+    },
+    "7048891": {
+      "source": "Apps and Integrations",
+      "target": "Aplicativos e Integrações"
+    },
+    "7048911": {
+      "source": "Products",
+      "target": "Produtos"
+    },
+    "7048919": {
+      "source": "Join thousands of developers making their games accessible to players worldwide.",
+      "target": "Junte-se a milhares de desenvolvedores que estão tornando seus jogos acessíveis para jogadores do mundo inteiro."
+    },
+    "7048921": {
+      "source": "Ready to take your game global?",
+      "target": "Pronto para levar seu jogo para o mundo?"
+    },
+    "7048923": {
+      "source": "Smart merge and publication decisions",
+      "target": "Decisões inteligentes de mesclagem e publicação"
+    },
+    "7048925": {
+      "source": "Seamless integration with development workflows",
+      "target": "Integração perfeita com fluxos de trabalho de desenvolvimento"
+    },
+    "7048927": {
+      "source": "Continuous localization pipeline",
+      "target": "Pipeline de localização contínua"
+    },
+    "7048929": {
+      "source": "Automated content synchronization",
+      "target": "Sincronização automatizada de conteúdo"
+    },
+    "7048935": {
+      "source": "Professional translation agencies",
+      "target": "Agências de tradução profissionais"
+    },
+    "7048937": {
+      "source": "Community-driven localization",
+      "target": "Localização impulsionada pela comunidade"
+    },
+    "7048939": {
+      "source": "Interactive feedback and discussions",
+      "target": "Feedback interativo e discussões"
+    },
+    "7048941": {
+      "source": "Internal team collaboration",
+      "target": "Colaboração da equipe interna"
+    },
+    "7048947": {
+      "source": "Comprehensive glossaries and terminology",
+      "target": "Glossários e terminologia abrangentes"
+    },
+    "7048949": {
+      "source": "Translation memory for consistency",
+      "target": "Memória de tradução para consistência"
+    },
+    "7048951": {
+      "source": "Advanced QA and custom quality checks",
+      "target": "QA avançado e verificações de qualidade personalizadas"
+    },
+    "7048953": {
+      "source": "Visual context with screenshots",
+      "target": "Contexto visual com capturas de tela"
+    },
+    "7048959": {
+      "source": "Direct string and asset localization",
+      "target": "Localização direta de strings e recursos (assets)"
+    },
+    "7048961": {
+      "source": "Native Unity integration",
+      "target": "Integração nativa com Unity"
+    },
+    "7048963": {
+      "source": "Real-time content updates",
+      "target": "Atualizações de conteúdo em tempo real"
+    },
+    "7048965": {
+      "source": "Seamless translation downloads",
+      "target": "Downloads contínuos de traduções"
+    },
+    "7048973": {
+      "source": "Everspace",
+      "target": "Everspace"
+    },
+    "7048979": {
+      "source": "Rust",
+      "target": "Rust"
+    },
+    "7048981": {
+      "source": "Optimize the localization workflow for PlayStation, Xbox, and Nintendo Switch titles.",
+      "target": "Otimize o fluxo de trabalho de localização para títulos de PlayStation, Xbox e Nintendo Switch."
+    },
+    "7048987": {
+      "source": "Localize <span class=\"text-muted-foreground\">any type of game</span> with Crowdin",
+      "target": "Localize <span class=\"text-muted-foreground\">qualquer tipo de jogo</span> com o Crowdin"
+    },
+    "7048993": {
+      "source": "Expand your player base by offering your PC games in multiple languages.",
+      "target": "Expanda sua base de jogadores oferecendo seus jogos de PC em vários idiomas."
+    },
+    "7048997": {
+      "source": "Make your web-based games accessible to players worldwide.",
+      "target": "Torne seus jogos de navegador acessíveis para jogadores do mundo todo."
+    },
+    "7048999": {
+      "source": "Web / Browser",
+      "target": "Web / Navegador"
+    },
+    "7049001": {
+      "source": "Are you ready to take your game to the next level? Effectively translate your game into multiple languages, and ensure worldwide players can enjoy your creation.",
+      "target": "Você está pronto para levar seu jogo para o próximo nível? Traduza seu jogo com eficiência para vários idiomas e garanta que jogadores do mundo todo possam aproveitar sua criação."
+    },
+    "7049003": {
+      "source": "Video game localization & translation software",
+      "target": "Software de localização e tradução de jogos"
+    },
+    "7049005": {
+      "source": "Games you love, localized with Crowdin",
+      "target": "Jogos que você ama, localizados com o Crowdin"
+    },
+    "7049007": {
+      "source": "Try for Free",
+      "target": "Experimente Grátis"
+    },
+    "7049011": {
+      "source": "How Crowdin can help you <span class=\"text-muted-foreground\">launch your game translation</span>",
+      "target": "Como o Crowdin pode ajudar você a <span class=\"text-muted-foreground\">lançar a tradução do seu jogo</span>"
+    },
+    "7049013": {
+      "source": "Explore game localization on our blog",
+      "target": "Explore localização de jogos em nosso blog"
+    },
+    "7049031": {
+      "source": "Enterprise-grade security with ISO 27001, GDPR, and HIPAA compliance",
+      "target": "Segurança de nível corporativo em conformidade com ISO 27001, GDPR e HIPAA"
+    },
+    "7049051": {
+      "source": "Your Product, Company, and Processes — <span class=\"opacity-60\">Secured</span>",
+      "target": "Seu Produto, Empresa e Processos — <span class=\"opacity-60\">Protegidos</span>"
+    },
+    "7049055": {
+      "source": "Even if a password is leaked — attackers can't get in.",
+      "target": "Mesmo que uma senha seja vazada — invasores não conseguem entrar."
+    },
+    "7049073": {
+      "source": "Seamless game translation into {count}+ languages. Translate in-game text, voice-over and UI with AI automation features. We localized Minecraft, CS2, and more.",
+      "target": "Tradução contínua de jogos para mais de {count}+ idiomas. Traduza textos dentro do jogo, dublagens e interfaces com recursos de automação por IA. Já localizamos Minecraft, CS2 e muito mais."
+    },
+    "7049075": {
+      "source": "#1 Game Translation Software for All Types of Games",
+      "target": "O Software Nº 1 de Tradução de Jogos para Todos os Tipos de Jogos"
+    },
+    "7049077": {
+      "source": "Work in parallel with development. Update translations as soon as you change the source code.",
+      "target": "Trabalhe em paralelo com o desenvolvimento. Atualize as traduções assim que alterar o código-fonte."
+    },
+    "7049079": {
+      "source": "Agile friendly",
+      "target": "Compatível com metodologias ágeis"
+    },
+    "7049085": {
+      "source": "Engage your community in translating your game. Use moderation tools to manage and verify contributions.",
+      "target": "Engaje sua comunidade na tradução do seu jogo. Use ferramentas de moderação para gerenciar e verificar as contribuições."
+    },
+    "7049087": {
+      "source": "Community engagement",
+      "target": "Engajamento da comunidade"
     }
   }
 }
