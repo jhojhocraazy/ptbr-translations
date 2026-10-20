@@ -11,7 +11,7 @@
 | :--- | :--- |
 | **Plataforma Tecnológica** | Kotlin Multiplatform (KMP) + Compose Multiplatform (CMP) |
 | **Sistemas Alvo** | Android e iOS |
-| **Cobertura Geral** | 🟢 **100% Traduzido** (2.632 entradas em 7 arquivos) |
+| **Cobertura Geral** | 🟢 **100% Traduzido** (2.632 entradas em 7 arquivos; 208 novas no PR #2288) |
 | **Refinamento de Qualidade** | 🟢 **92 entradas revisadas** (terminologia, Sentence Case e naturalidade) |
 | **Última Versão Estável** | `v0.6.1-beta` (com traduções oficiais ativas) |
 | **Último Pull Request** | [**PR #2288**](https://github.com/NuvioMedia/NuvioMobile/pull/2288) (5 novos módulos + refinamento — CI validado) |
