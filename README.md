@@ -5,14 +5,14 @@
 
 <!-- Efeito de Digitação Animado -->
 <a href="https://github.com/jhojhocraazy/ptbr-translations">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=22C55E&center=true&vCenter=true&width=620&lines=Central+de+Localiza%C3%A7%C3%A3o+Open+Source+%F0%9F%87%A7%F0%9F%87%B7;Mais+de+4.400+strings+traduzidas+para+pt-BR;Nuvio+%E2%80%A2+BitChord+%E2%80%A2+Better+Lyrics+%E2%80%A2+DNSToggle;100%25+Compat%C3%ADvel+com+Placeholders+%26+Tags;Qualidade%2C+Fluidez+e+Consist%C3%AAncia+Terminol%C3%B3gica" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=22C55E&center=true&vCenter=true&width=620&lines=Central+de+Localiza%C3%A7%C3%A3o+Open+Source+%F0%9F%87%A7%F0%9F%87%B7;Mais+de+5.100+strings+traduzidas+para+pt-BR;Nuvio+%E2%80%A2+BitChord+%E2%80%A2+YTDLnis+%E2%80%A2+Better+Lyrics;100%25+Compat%C3%ADvel+com+Placeholders+%26+Tags;Qualidade%2C+Fluidez+e+Consist%C3%AAncia+Terminol%C3%B3gica" alt="Typing SVG" />
 </a>
 
 <br/><br/>
 
 <!-- Badges Principais Estilizadas -->
 [![pt-BR](https://img.shields.io/badge/Portugu%C3%AAs%20(Brasil)-pt--BR-009739?style=for-the-badge&logo=brazil&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
-[![Strings](https://img.shields.io/badge/Strings-+4.400-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
+[![Strings](https://img.shields.io/badge/Strings-+5.100-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Cobertura](https://img.shields.io/badge/Cobertura-100%25-brightgreen?style=for-the-badge&logo=checkmarx)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Autor](https://img.shields.io/badge/Mantido%20por-Joseph%20Alves-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jhojhocraazy)
 
@@ -34,8 +34,9 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.610** | 🟢 **Lançado** (`v0.6.1-beta`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**BitChord**](#2-bitchord) | Android / Desktop / Wear OS | GitHub PRs / XML | **+1.250** | 🚀 **Em Análise** ([PR #952](https://github.com/kushagrasinghx/BitChord/pull/952)) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**Better Lyrics**](#3-better-lyrics) | Desktop / Spotify / Apple Music | Crowdin (863186) | **637** | 🟢 **Lançado** (`v3.0.0`) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**DNSToggle**](#4-dnstoggle) | Android Quick Settings | Weblate / GitHub | **100%** | 🟢 **Integrado** (`main`) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **681** | 🟢 **100% Traduzido** (Revisado) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Better Lyrics**](#4-better-lyrics) | Desktop / Spotify / Apple Music | Crowdin (863186) | **637** | 🟢 **Lançado** (`v3.0.0`) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**DNSToggle**](#5-dnstoggle) | Android Quick Settings | Weblate / GitHub | **100%** | 🟢 **Integrado** (`main`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 
 ---
 
@@ -82,7 +83,26 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 ---
 
-### 3. Better Lyrics
+### 3. YTDLnis
+> Poderoso gerenciador e baixador de áudio e vídeo para Android com suporte a mais de 1.000 sites via yt-dlp.
+
+* **Repositório Oficial:** [`deniscerri/ytdlnis`](https://github.com/deniscerri/ytdlnis) (+10.600 stars)
+* **Plataforma de Tradução:** [Hosted Weblate — YTDLnis pt_BR](https://hosted.weblate.org/projects/ytdlnis/-/pt_BR/)
+* **Status:** 🟢 **100% Traduzido** (681 strings e plurais revisados).
+* **Diretório Local:** [`YTDLnis/`](./YTDLnis/)
+
+<details>
+<summary><b>🔍 Ver Detalhes do Projeto YTDLnis</b></summary>
+<br/>
+
+* **Cobertura Completa:** 672 strings + 9 plurais traduzidos e validados.
+* **Escopo da Tradução:** Telas de boas-vindas (*welcome onboarding*), integração com lrclib.net para letras sincronizadas, corte e recorte de mídia, agendamento de downloads e configurações avançadas do yt-dlp.
+* **Rigor e Qualidade:** 100% de integridade em tags de escape (`\'`, `\"`, `&amp;`) e placeholders de sistema (`%1$s`, `%2$d`).
+</details>
+
+---
+
+### 4. Better Lyrics
 > Utilitário de letras sincronizadas em tempo real para Spotify, Apple Music e tocadores de desktop.
 
 * **Repositório Oficial:** [`khanhas/better-lyrics`](https://github.com/khanhas/better-lyrics)
@@ -101,7 +121,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 ---
 
-### 4. DNSToggle
+### 5. DNSToggle
 > Aplicativo Android open source para alternar rapidamente servidores DNS privados e perfis de rede via Quick Settings Tiles.
 
 * **Repositório Oficial:** [`ELowry/DNSToggle`](https://github.com/ELowry/DNSToggle)
@@ -132,6 +152,11 @@ ptbr-translations/
 ├── 📁 NuvioMobile/           # Backups XML e clone do repositório
 │   ├── NuvioMobile_strings_pt_BR.xml
 │   └── 📁 repo/              # Repositório Git conectado ao fork e upstream
+├── 📁 YTDLnis/               # Backup XML completo e documentação
+│   ├── diretrizes-tecnicas.md
+│   ├── glossario.md
+│   ├── README.md
+│   └── ytdlnis_strings_pt_BR.xml
 ├── .gitignore                # Isolamento de compilações e repositórios aninhados
 ├── AGENTS.md                 # Diretrizes e governança do repositório
 └── README.md                 # Documentação e portfólio oficial
