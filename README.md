@@ -12,7 +12,7 @@
 
 <!-- Badges Principais Estilizadas -->
 [![pt-BR](https://img.shields.io/badge/Portugu%C3%AAs%20(Brasil)-pt--BR-009739?style=for-the-badge&logo=brazil&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
-[![Strings](https://img.shields.io/badge/Strings-+22.544-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
+[![Strings](https://img.shields.io/badge/Strings-+22.550-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Cobertura](https://img.shields.io/badge/Cobertura-100%25-brightgreen?style=for-the-badge&logo=checkmarx)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Autor](https://img.shields.io/badge/Mantido%20por-Joseph%20Alves-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jhojhocraazy)
 
@@ -32,7 +32,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 | Projeto | Ecossistema | Plataforma | Strings | Status Oficial | Progresso |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.632** | 🟢 **Lançado** (`v0.6.1-beta`) + PR #2288 | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.638** | 🟢 **Lançado** (`v0.6.3-beta`) + PR #2338 em análise | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**BitChord**](#2-bitchord) | Android / Desktop / Wear OS | GitHub PRs / XML | **+1.250** | 🚀 **Em Análise** ([PR #952](https://github.com/kushagrasinghx/BitChord/pull/952)) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **681** | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **637** | 🟢 **Sincronizado** (PR #1010) | ![100%](https://geps.dev/progress/100?color=00c853) |
@@ -48,7 +48,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Aplicativo moderno de streaming de mídia e entretenimento desenvolvido em **Kotlin Multiplatform (Compose Multiplatform)** para Android e iOS.
 
 * **Repositório Oficial:** [`NuvioMedia/NuvioMobile`](https://github.com/NuvioMedia/NuvioMobile)
-* **Status:** 🟢 **100% Traduzido** (2.632 entradas em 7 arquivos modulares; 208 novas no PR #2288).
+* **Status:** 🟢 **100% Traduzido** (2.638 entradas em 7 arquivos modulares; 208 novas no PR #2288 + 6 novas no PR #2338).
 * **Diretório Local:** [`NuvioMobile/`](./NuvioMobile/)
 
 <details>
@@ -60,9 +60,14 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
   * **Publicação:** Lançado oficialmente nas versões estáveis `v0.6.0-beta` e `v0.6.1-beta`.
   * **Volume:** 2.410 strings + 4 plurais.
 * **PR #2288:** [Adiciona tradução dos 5 novos módulos](https://github.com/NuvioMedia/NuvioMobile/pull/2288)
-  * **Status:** ✅ **CI PASSED** (`Build fullDebug APK: SUCCESS`, 6m49s).
+  * **Status:** ✅ **MERGED** — incorporado na versão `v0.6.3-beta` (`Build fullDebug APK: SUCCESS`, 6m49s).
   * **Módulos:** `strings_party.xml` (82 entradas), `strings_servers.xml` (60 entradas), `strings_mdblist.xml` (52 entradas), `autosync_strings.xml` (10 entradas), `autosync_toast_strings.xml` (4 entradas).
   * **Refinamento:** 92 entradas revisadas (terminologia do glossário, Sentence Case, miniaturas, provedores de streaming e mensagens de download).
+* **PR #2338:** [Adiciona traduções das novas strings do player e da watch party](https://github.com/NuvioMedia/NuvioMobile/pull/2338)
+  * **Status:** 🚀 **OPEN / MERGEABLE**.
+  * **Volume:** 6 novas entradas (4 em `strings.xml`, 2 em `strings_party.xml`).
+  * **Cobertura:** 2.638/2.638 entradas, 0 pendentes e 0 divergências de placeholders.
+  * **CI:** ✅ `PR Template Check` + ✅ `Build fullDebug APK` (4m42s).
 </details>
 
 ---

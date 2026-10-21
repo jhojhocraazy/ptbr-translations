@@ -11,10 +11,10 @@
 | :--- | :--- |
 | **Plataforma Tecnológica** | Kotlin Multiplatform (KMP) + Compose Multiplatform (CMP) |
 | **Sistemas Alvo** | Android e iOS |
-| **Cobertura Geral** | 🟢 **100% Traduzido** (2.632 entradas em 7 arquivos; 208 novas no PR #2288) |
+| **Cobertura Geral** | 🟢 **100% Traduzido** (2.638 entradas em 7 arquivos; 208 novas no PR #2288 + 6 novas no PR #2338) |
 | **Refinamento de Qualidade** | 🟢 **92 entradas revisadas** (terminologia, Sentence Case e naturalidade) |
-| **Última Versão Estável** | `v0.6.1-beta` (com traduções oficiais ativas) |
-| **Último Pull Request** | [**PR #2288**](https://github.com/NuvioMedia/NuvioMobile/pull/2288) (5 novos módulos + refinamento — CI validado) |
+| **Última Versão Estável** | `v0.6.3-beta` (traduções principais ativas; novas strings no PR #2338) |
+| **Último Pull Request** | [**PR #2338**](https://github.com/NuvioMedia/NuvioMobile/pull/2338) (6 novas strings do player e watch party — CI validado) |
 
 ---
 
@@ -25,13 +25,13 @@ O projeto divide as strings em **7 arquivos modulares**:
 
 | Arquivo XML | Descrição do Domínio | Entradas | Status |
 | :--- | :--- | :---: | :---: |
-| [`strings.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings.xml) | Módulo Principal: Catálogos, Player, Configurações, Debrid e Stremio | 2.423 | 🟢 Merged (PR #2234) + refinado no #2288 |
+| [`strings.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings.xml) | Módulo Principal: Catálogos, Player, Configurações, Debrid e Stremio | 2.427 | 🟢 Merged + 4 novas no #2338 (em análise) |
 | [`strings_pip.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_pip.xml) | Picture-in-Picture: Controles flutuantes e mini-player | 1 | 🟢 Merged + refinado no #2288 |
-| [`strings_party.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_party.xml) | Watch Party: Sessões em grupo, sincronia, salas e chat | 82 | 🟢 Em Análise (PR #2288) |
-| [`strings_servers.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_servers.xml) | Servidores Remotos: Endereços, conexão, portas e latência | 60 | 🟢 Em Análise (PR #2288) |
-| [`strings_mdblist.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_mdblist.xml) | Integração MDBList: Filtros avançados, listas e notas de avaliação | 52 | 🟢 Em Análise (PR #2288) |
-| [`autosync_strings.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/autosync_strings.xml) | AutoSync: Sincronização em segundo plano e agendamento | 10 | 🟢 Em Análise (PR #2288) |
-| [`autosync_toast_strings.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/autosync_toast_strings.xml) | Notificações Rápidas: Mensagens voláteis de sucesso/erro | 4 | 🟢 Em Análise (PR #2288) |
+| [`strings_party.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_party.xml) | Watch Party: Sessões em grupo, sincronia, salas e chat | 84 | 🟢 Merged (PR #2288) + 2 novas no #2338 (em análise) |
+| [`strings_servers.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_servers.xml) | Servidores Remotos: Endereços, conexão, portas e latência | 60 | 🟢 Merged (PR #2288) |
+| [`strings_mdblist.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_mdblist.xml) | Integração MDBList: Filtros avançados, listas e notas de avaliação | 52 | 🟢 Merged (PR #2288) |
+| [`autosync_strings.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/autosync_strings.xml) | AutoSync: Sincronização em segundo plano e agendamento | 10 | 🟢 Merged (PR #2288) |
+| [`autosync_toast_strings.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/autosync_toast_strings.xml) | Notificações Rápidas: Mensagens voláteis de sucesso/erro | 4 | 🟢 Merged (PR #2288) |
 
 ---
 
@@ -42,14 +42,24 @@ O projeto divide as strings em **7 arquivos modulares**:
 * **Volume:** 2.410 strings e 4 blocos de plurais (`<plurals>`).
 * **Resultado:** Incorporado oficialmente no código-fonte principal pelo mantenedor `Nayif` e disponibilizado para os usuários finais nas versões oficiais `0.6.0-beta` e `0.6.1-beta`.
 
-### 2. [Pull Request #2288](https://github.com/NuvioMedia/NuvioMobile/pull/2288) — Módulos da Versão 0.7+
+### 2. [Pull Request #2288](https://github.com/NuvioMedia/NuvioMobile/pull/2288) — Módulos Adicionais (Watch Party, Servers, MDBList e AutoSync)
 * **Branch:** `i18n/pt-br-modules`
 * **Volume:** 208 novas entradas nos 5 novos módulos arquiteturais, além do refinamento de 92 entradas no módulo principal e no PiP.
 * **Refinamento:** terminologia do glossário (`Continuar assistindo`, `Lista de interesses`, `Picture-in-Picture (PiP)`), Sentence Case, miniaturas, provedores de streaming e mensagens de download.
 * **Cobertura validada:** 2.632/2.632 entradas, 0 faltando e 0 divergências de placeholders.
+* **Status:** ✅ **MERGED** — incorporado na versão `0.6.3-beta`.
 * **Status da Pipeline CI/CD:**
   * ✅ `PR Template Check` (`validate_pr_body`): **SUCCESS**
   * ✅ `PR Full Debug Build` (`Build fullDebug APK`): **SUCCESS** (6m49s)
+
+### 3. [Pull Request #2338](https://github.com/NuvioMedia/NuvioMobile/pull/2338) — Strings do Player e Watch Party
+* **Branch:** `i18n/pt-br-player-badges`
+* **Volume:** 6 novas entradas — 4 em `strings.xml` (emblemas no player e troca de motor) e 2 em `strings_party.xml` (chat companion e saída de dispositivo).
+* **Cobertura validada:** 2.638/2.638 entradas, 0 faltando e 0 divergências de placeholders.
+* **Status:** 🚀 **OPEN / MERGEABLE**.
+* **Status da Pipeline CI/CD:**
+  * ✅ `PR Template Check` (`validate_pr_body`): **SUCCESS**
+  * ✅ `PR Full Debug Build` (`Build fullDebug APK`): **SUCCESS** (4m42s)
 
 ---
 
