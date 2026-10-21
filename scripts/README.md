@@ -9,8 +9,8 @@ para projetos em Crowdin/Weblate a entrega termina na plataforma
 ## Requisitos
 
 - PowerShell 7+
-- Token pessoal da API do Crowdin (apenas para `crowdin-sync.ps1`)
-- Token pessoal da API do Weblate (apenas para `weblate-sync.ps1`)
+- Token pessoal da API do Crowdin (para `crowdin-sync.ps1` e `check-updates.ps1`)
+- Token pessoal da API do Weblate (para `weblate-sync.ps1` e `check-updates.ps1`)
 
 ```powershell
 $env:CROWDIN_TOKEN = 'seu-token'
@@ -189,6 +189,71 @@ e valide antes de commitar.
 
 > O Weblate pode estar atrás do Anubis. O script usa um User-Agent de navegador;
 > se ainda assim a API retornar HTML, verifique o token e o acesso à instância.
+
+---
+
+## `check-updates.ps1`
+
+Rotina **somente leitura** para descobrir o que mudou desde a última consulta. Cobre:
+
+- Crowdin: projeto `31` e Better Lyrics (`863186`);
+- Weblate: YTDLnis (`ytdlnis/strings`) e os dois componentes do DNSToggle;
+- GitHub: Nuvio Mobile, BitChord e TizenTube & Cobalt.
+
+Não envia nada para as plataformas, não exporta arquivos e não faz commits. A saída é apenas
+no console e mostra o **texto das strings**, nunca chaves, contextos ou IDs.
+
+### Primeira execução
+
+```powershell
+./scripts/check-updates.ps1
+```
+
+A primeira execução cria a linha de base em `scripts/.state/check-updates.json`
+(ignorado pelo Git). Se houver strings ainda sem tradução, elas são listadas para orientar
+a próxima rodada, mas não contam como novidade.
+
+### Execuções seguintes
+
+```powershell
+./scripts/check-updates.ps1
+```
+
+O changelog mostra:
+
+- novas strings na fonte, com indicação de “para traduzir” ou “já traduzida”;
+- strings removidas da fonte;
+- textos que mudaram na fonte (antes → depois);
+- strings que continuam sem tradução;
+- traduções que sobraram no `pt-BR` (órfãs);
+- mudanças de pendências e de checks nativos.
+
+Códigos de saída: `0` sem novidades, `2` novidades encontradas, `1` erro. Projetos com
+pendências antigas continuam mostrando a lista de “sem tradução”, mas o código `0` indica
+que não houve mudança na fonte.
+
+### Parâmetros úteis
+
+| Parâmetro | Descrição |
+| :--- | :--- |
+| `-Project <texto>` | Executa apenas projetos cujo nome/chave contenha o texto (ex.: `Nuvio`, `YTDLnis`, `Crowdin`). |
+| `-NoFetch` | Não executa `git fetch`; usa a última referência upstream disponível. |
+| `-ResetState` | Apaga o estado e cria uma nova linha de base. |
+| `-NoSave` | Não grava o estado ao final (testes). |
+| `-Quiet` | Mostra apenas projetos com novidades ou erros. |
+| `-AllDetails` | Mostra todas as strings das listas. |
+| `-MaxItems <n>` | Limita cada lista (padrão: 20). |
+
+Exemplos:
+
+```powershell
+./scripts/check-updates.ps1 -Project Nuvio
+./scripts/check-updates.ps1 -Project "Crowdin Platform" -AllDetails
+./scripts/check-updates.ps1 -ResetState
+```
+
+> O estado local guarda IDs internos apenas para comparação. Eles nunca são impressos no
+> console; a saída usa o texto legível de cada string.
 
 ---
 

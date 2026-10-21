@@ -228,3 +228,24 @@ Um projeto só é considerado concluído quando **todos** os itens do seu tipo f
   é ignorado pelo Git; use `scripts/tokens.example.ps1` como modelo. Apagar scripts e temporários
   que contenham token ao final da sessão.
 - **Commits:** autor `Joseph Alves <jhojhocraazy@gmail.com>`, Conventional Commits, push somente com confirmação.
+
+### 7.1 Consulta de atualizações (somente leitura)
+
+Antes de iniciar uma nova rodada, execute:
+
+```powershell
+./scripts/check-updates.ps1
+```
+
+A rotina consulta Crowdin (`31` e `863186`), Weblate (YTDLnis e componentes do DNSToggle)
+e os projetos mantidos apenas no GitHub (Nuvio Mobile, BitChord e TizenTube & Cobalt).
+Ela compara com a execução anterior e mostra no console o texto das strings novas,
+removidas, alteradas, ainda sem tradução e órfãs.
+
+- A primeira execução cria a linha de base em `scripts/.state/check-updates.json`,
+  ignorado pelo Git; as seguintes mostram as diferenças e a lista de pendências.
+- Use `-Project <texto>` para consultar um projeto específico, `-AllDetails` para ver todas
+  as strings e `-NoFetch` para não atualizar as referências dos clones locais.
+- A rotina não envia alterações, não exporta arquivos e não faz commits. Tokens continuam
+  vindo de `scripts/tokens.ps1` ou das variáveis de ambiente.
+- Códigos de saída: `0` sem novidades, `2` novidades encontradas, `1` erro.

@@ -5,6 +5,9 @@ NuvioMobile/repo/
 # Tokens locais (nunca versionar)
 scripts/tokens.ps1
 
+# Estado local da rotina de consulta de atualizações
+scripts/.state/
+
 # Sistema Operacional e Editores
 .DS_Store
 Thumbs.db
