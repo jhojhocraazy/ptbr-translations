@@ -12,7 +12,7 @@
 
 <!-- Badges Principais Estilizadas -->
 [![pt-BR](https://img.shields.io/badge/Portugu%C3%AAs%20(Brasil)-pt--BR-009739?style=for-the-badge&logo=brazil&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
-[![Strings](https://img.shields.io/badge/Strings-+22.554-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
+[![Strings](https://img.shields.io/badge/Strings-+22.720-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Cobertura](https://img.shields.io/badge/Cobertura-100%25-brightgreen?style=for-the-badge&logo=checkmarx)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Autor](https://img.shields.io/badge/Mantido%20por-Joseph%20Alves-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jhojhocraazy)
 
@@ -36,7 +36,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 | [**BitChord**](#2-bitchord) | Android / Desktop / Wear OS | GitHub PRs / XML | **+1.250** | 🚀 **Em Análise** ([PR #952](https://github.com/kushagrasinghx/BitChord/pull/952)) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **681** | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **Sincronizado** (PR #1010) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **17.169** (214 arquivos) | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **17.335** (214 arquivos) | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**TizenTube & Cobalt**](#6-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **197** | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718)) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Hosted Weblate | **176 + 36** | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
 
@@ -136,17 +136,18 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 * **Projeto Oficial:** [Crowdin Translations (ID: 31)](https://crowdin.com/project/crowdin)
 * **Plataforma de Tradução:** Crowdin API v2
-* **Status:** 🟢 **100% Traduzido** (**17.169 strings** / 117.078 palavras em 214 arquivos — 0 pendentes).
+* **Status:** 🟢 **100% Traduzido** (**17.335 strings** / 118.956 palavras em 214 arquivos — 0 pendentes).
 * **Diretório Local:** [`Crowdin/`](./Crowdin/)
 
 <details>
 <summary><b>🔍 Ver Detalhes do Projeto Crowdin Platform</b></summary>
 <br/>
 
-* **Cobertura Total (100%):** 17.169 strings visíveis traduzidas, 923 strings ocultas e **0 pendentes** em 214 arquivos, cobrindo web app, backend, e-mails e templates.
-* **Interface Moderna Web:** 1.642 strings de `src/i18n/locales/en.json` (ID: 32447) concluídas.
+* **Cobertura Total (100%):** 17.335 strings visíveis traduzidas, 923 strings ocultas e **0 pendentes** em 214 arquivos, cobrindo web app, backend, e-mails e templates.
+* **Interface Moderna Web:** 3.629 strings visíveis de `src/i18n/locales/en.json` (ID: 32447) concluídas.
+* **Atualização 22/10/2026:** 286 novas strings traduzidas — 157 em `en.json`, 110 em `editor.csv`, 12 em `backend.csv` e 7 em `dynamic.csv` — e 8 divergências antigas de placeholders corrigidas; auditoria completa em 17.335 strings com 0 divergências.
 * **Escopo Completo:** Editor (`editor.csv`), Aplicação Web (`dynamic.csv`), Backend/Relatórios (`backend.csv`), Frontend (`frontend.csv`), permissões e escopos, MFA, log de segurança, autenticação e modelos de e-mail.
-* **Qualidade:** 100% de integridade em placeholders (`{project}`, `%s`, `{{mustache}}`), argumentos ICU (`plural`/`select`), tags HTML e escapes — auditoria final com **0 divergências**. 21 traduções anteriores corrigidas (placeholders perdidos, HTML escapado e textos truncados).
+* **Qualidade:** 100% de integridade em placeholders (`{project}`, `%s`, `{{mustache}}`), argumentos ICU (`plural`/`select`), tags HTML e escapes — auditoria final com **0 divergências**. 29 traduções anteriores corrigidas (placeholders perdidos, HTML escapado e textos truncados).
 * **Integração:** Submissão direta e atribuída oficialmente a Joseph Alves (`@jhojhocraazy`) via API v2.
 </details>
 
