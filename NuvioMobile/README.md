@@ -11,10 +11,10 @@
 | :--- | :--- |
 | **Plataforma Tecnológica** | Kotlin Multiplatform (KMP) + Compose Multiplatform (CMP) |
 | **Sistemas Alvo** | Android e iOS |
-| **Cobertura Geral** | 🟢 **100% Traduzido** (2.638 entradas em 7 arquivos; 208 novas no PR #2288 + 6 novas no PR #2338) |
+| **Cobertura Geral** | 🟢 **100% Traduzido** (2.641 entradas em 7 arquivos; 208 novas no PR #2288 + 9 novas no PR #2338) |
 | **Refinamento de Qualidade** | 🟢 **92 entradas revisadas** (terminologia, Sentence Case e naturalidade) |
 | **Última Versão Estável** | `v0.6.3-beta` (traduções principais ativas; novas strings no PR #2338) |
-| **Último Pull Request** | [**PR #2338**](https://github.com/NuvioMedia/NuvioMobile/pull/2338) (6 novas strings do player e watch party — CI validado) |
+| **Último Pull Request** | [**PR #2338**](https://github.com/NuvioMedia/NuvioMobile/pull/2338) (9 novas strings do player e watch party — CI validado) |
 
 ---
 
@@ -25,7 +25,7 @@ O projeto divide as strings em **7 arquivos modulares**:
 
 | Arquivo XML | Descrição do Domínio | Entradas | Status |
 | :--- | :--- | :---: | :---: |
-| [`strings.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings.xml) | Módulo Principal: Catálogos, Player, Configurações, Debrid e Stremio | 2.427 | 🟢 Merged + 4 novas no #2338 (em análise) |
+| [`strings.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings.xml) | Módulo Principal: Catálogos, Player, Configurações, Debrid e Stremio | 2.430 | 🟢 Merged + 7 novas no #2338 (em análise) |
 | [`strings_pip.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_pip.xml) | Picture-in-Picture: Controles flutuantes e mini-player | 1 | 🟢 Merged + refinado no #2288 |
 | [`strings_party.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_party.xml) | Watch Party: Sessões em grupo, sincronia, salas e chat | 84 | 🟢 Merged (PR #2288) + 2 novas no #2338 (em análise) |
 | [`strings_servers.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_servers.xml) | Servidores Remotos: Endereços, conexão, portas e latência | 60 | 🟢 Merged (PR #2288) |
@@ -54,12 +54,12 @@ O projeto divide as strings em **7 arquivos modulares**:
 
 ### 3. [Pull Request #2338](https://github.com/NuvioMedia/NuvioMobile/pull/2338) — Strings do Player e Watch Party
 * **Branch:** `i18n/pt-br-player-badges`
-* **Volume:** 6 novas entradas — 4 em `strings.xml` (emblemas no player e troca de motor) e 2 em `strings_party.xml` (chat companion e saída de dispositivo).
-* **Cobertura validada:** 2.638/2.638 entradas, 0 faltando e 0 divergências de placeholders.
+* **Volume:** 9 novas entradas — 7 em `strings.xml` (emblemas no player, pacote de emblemas e troca de motor) e 2 em `strings_party.xml` (chat companion e saída de dispositivo), além de 1 descrição atualizada.
+* **Cobertura validada:** 2.641/2.641 entradas, 0 faltando e 0 divergências de placeholders.
 * **Status:** 🚀 **OPEN / MERGEABLE**.
 * **Status da Pipeline CI/CD:**
   * ✅ `PR Template Check` (`validate_pr_body`): **SUCCESS**
-  * ✅ `PR Full Debug Build` (`Build fullDebug APK`): **SUCCESS** (4m42s)
+  * ✅ `PR Full Debug Build` (`Build fullDebug APK`): **SUCCESS** (4m3s)
 
 ---
 

@@ -109,6 +109,10 @@
     "message": "Mostrar controles de reprodução em tela cheia",
     "description": "Toggle label for the playback controls strip (progress bar, transport, like and dislike) shown under the album art in the fullscreen lyrics view"
   },
+  "options_display_fullscreenControlsTooltipStates": {
+    "message": "Automático oculta os controles enquanto a barra do player estiver visível. Ligado mantém os controles visíveis.",
+    "description": "Tooltip for the fullscreen player controls three-way switch, explaining the Auto and On states"
+  },
   "options_display_stylizedAnimations": {
     "message": "Mostrar animações estilizadas",
     "description": "Show stylized animations setting label"

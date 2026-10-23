@@ -12,7 +12,7 @@
 
 <!-- Badges Principais Estilizadas -->
 [![pt-BR](https://img.shields.io/badge/Portugu%C3%AAs%20(Brasil)-pt--BR-009739?style=for-the-badge&logo=brazil&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
-[![Strings](https://img.shields.io/badge/Strings-+22.550-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
+[![Strings](https://img.shields.io/badge/Strings-+22.554-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Cobertura](https://img.shields.io/badge/Cobertura-100%25-brightgreen?style=for-the-badge&logo=checkmarx)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Autor](https://img.shields.io/badge/Mantido%20por-Joseph%20Alves-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jhojhocraazy)
 
@@ -32,10 +32,10 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 | Projeto | Ecossistema | Plataforma | Strings | Status Oficial | Progresso |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.638** | 🟢 **Lançado** (`v0.6.3-beta`) + PR #2338 em análise | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.641** | 🟢 **Lançado** (`v0.6.3-beta`) + PR #2338 em análise | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**BitChord**](#2-bitchord) | Android / Desktop / Wear OS | GitHub PRs / XML | **+1.250** | 🚀 **Em Análise** ([PR #952](https://github.com/kushagrasinghx/BitChord/pull/952)) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **681** | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **637** | 🟢 **Sincronizado** (PR #1010) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **Sincronizado** (PR #1010) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **17.169** (214 arquivos) | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**TizenTube & Cobalt**](#6-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **197** | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718)) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Hosted Weblate | **176 + 36** | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
@@ -48,7 +48,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Aplicativo moderno de streaming de mídia e entretenimento desenvolvido em **Kotlin Multiplatform (Compose Multiplatform)** para Android e iOS.
 
 * **Repositório Oficial:** [`NuvioMedia/NuvioMobile`](https://github.com/NuvioMedia/NuvioMobile)
-* **Status:** 🟢 **100% Traduzido** (2.638 entradas em 7 arquivos modulares; 208 novas no PR #2288 + 6 novas no PR #2338).
+* **Status:** 🟢 **100% Traduzido** (2.641 entradas em 7 arquivos modulares; 208 novas no PR #2288 + 9 novas no PR #2338).
 * **Diretório Local:** [`NuvioMobile/`](./NuvioMobile/)
 
 <details>
@@ -65,9 +65,9 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
   * **Refinamento:** 92 entradas revisadas (terminologia do glossário, Sentence Case, miniaturas, provedores de streaming e mensagens de download).
 * **PR #2338:** [Adiciona traduções das novas strings do player e da watch party](https://github.com/NuvioMedia/NuvioMobile/pull/2338)
   * **Status:** 🚀 **OPEN / MERGEABLE**.
-  * **Volume:** 6 novas entradas (4 em `strings.xml`, 2 em `strings_party.xml`).
-  * **Cobertura:** 2.638/2.638 entradas, 0 pendentes e 0 divergências de placeholders.
-  * **CI:** ✅ `PR Template Check` + ✅ `Build fullDebug APK` (4m42s).
+  * **Volume:** 9 novas entradas (7 em `strings.xml`, 2 em `strings_party.xml`) + 1 descrição atualizada.
+  * **Cobertura:** 2.641/2.641 entradas, 0 pendentes e 0 divergências de placeholders.
+  * **CI:** ✅ `PR Template Check` + ✅ `Build fullDebug APK` (4m3s).
 </details>
 
 ---
@@ -117,7 +117,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 * **Repositório Oficial:** [`better-lyrics/better-lyrics`](https://github.com/better-lyrics/better-lyrics)
 * **Plataforma de Tradução:** [Crowdin — Projeto 863186](https://crowdin.com/project/better-lyrics/pt-BR)
-* **Status:** 🟢 **100% Traduzido** (637 frases / 2.498 palavras) — revisão formal pendente no Crowdin.
+* **Status:** 🟢 **100% Traduzido** (638 frases / 2.511 palavras) — revisão formal pendente no Crowdin.
 * **Diretório Local:** [`BetterLyrics/`](./BetterLyrics/)
 
 <details>
