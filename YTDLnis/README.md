@@ -11,9 +11,9 @@
 | :--- | :--- |
 | **Repositório Oficial** | [`deniscerri/ytdlnis`](https://github.com/deniscerri/ytdlnis) (+10.600 stars) |
 | **Plataforma de Tradução** | [Hosted Weblate — YTDLnis pt-BR](https://hosted.weblate.org/projects/ytdlnis/-/pt_BR/) |
-| **Cobertura Geral** | 🟢 **100% Traduzido** (681 unidades: 669 strings + 9 plurais + 3 strings read-only) |
-| **Pendências** | 🟢 **0 pendentes** no Weblate (20/10/2026 18:05 GMT-3) |
-| **Checks Ativos** | 🟡 **5 falsos positivos** (4 `multiple_capital` em `JSON`/`Info-JSONs`; 1 `same` em `Nightly`) |
+| **Cobertura Geral** | 🟢 **100% Traduzido** (682 unidades, 0 pendentes e 0 avisos de qualidade) |
+| **Pendências** | 🟢 **0 pendentes** no Weblate (24/10/2026) |
+| **Checks Ativos** | 🟢 **0 avisos** — os 5 falsos positivos anteriores foram resolvidos/suprimidos na plataforma |
 | **Refinamentos** | 107 strings revisadas e aplicadas nesta rodada |
 | **Status Upstream** | Sincronização direta via Pull Requests automáticos do Weblate |
 

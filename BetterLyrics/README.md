@@ -12,7 +12,7 @@
 | **Plataforma de Tradução** | [Crowdin — Projeto 863186 (`better-lyrics`)](https://crowdin.com/project/better-lyrics/pt-BR) |
 | **Status no Crowdin** | 🟢 **100% Traduzido** (638 frases / 2.511 palavras) |
 | **Status de Aprovação** | 🟡 **0% Aprovado** (nenhuma revisão formal registrada — a conta não tem permissão de *proofreader*) |
-| **Entrega Upstream** | Sincronizado em `_locales/pt_BR/messages.json` pelos PRs automáticos #1001 (mesclado em 15/10/2026) e #1010 (mesclado em 20/10/2026); nova string aguardando o próximo PR do Crowdin |
+| **Entrega Upstream** | Sincronizado em `_locales/pt_BR/messages.json` pelos PRs automáticos #1001 (mesclado em 15/10/2026) e #1010 (mesclado em 20/10/2026); PR de sync #1019 está aberto com 638 chaves. A fonte EN já tem 640 — 2 chaves novas aguardam o próximo sync do Crowdin. |
 
 ---
 
@@ -34,6 +34,7 @@ O **Better Lyrics** é uma extensão de navegador para o **YouTube Music**, mant
 * **Sincronização mais recente:** PR #1010, aberto pelo bot do Crowdin em 16/10/2026 e mesclado em 20/10/2026, cobrindo as 637 strings vigentes naquele momento.
 * **Strings Recentes:** `picture_in_picture_fitWindow` ("Fit window" ➔ "Ajustar à janela") traduzida conforme o glossário (linha 51). Uma submissão de 20/10 havia regredido a string para "Ajustar janela"; a versão correta foi restaurada no Crowdin em 20/10/2026.
 * **Atualização 22/10/2026:** `options_display_fullscreenControlsTooltipStates` traduzida no Crowdin ("Automático oculta os controles enquanto a barra do player estiver visível. Ligado mantém os controles visíveis."). Catálogo em **638/638 strings**, 0 pendentes e 0 divergências de placeholders.
+* **Pendência 26/10/2026:** a fonte upstream cresceu para **640 chaves** (`unison_detectedFromLyrics` e `unison_detectedUse`). O projeto Crowdin 863186 ainda reporta 638 strings, então as duas traduções só podem ser enviadas depois que o bot sincronizar a fonte.
 * **Revisão:** o catálogo está 100% traduzido, mas **0% aprovado** — a conta usada no projeto não possui permissão de *proofreader*, portanto a aprovação formal depende do mantenedor.
 
 ---

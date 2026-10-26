@@ -12,13 +12,15 @@
 | **Plataforma Tecnológica** | Crowdin Enterprise / Modern Web UI (React, TypeScript, JSON, PHP/Blade) |
 | **Projeto Oficial** | [Crowdin Translations (ID: 31)](https://crowdin.com/project/crowdin) |
 | **Idioma Alvo** | Português do Brasil (`pt-BR`) |
-| **Volume Total do Projeto** | **17.335 strings visíveis** (118.956 palavras; 18.258 no total, 923 ocultas) |
-| **Entregas Submetidas (pt-BR)** | **17.335 strings** — 0 pendentes em 214 arquivos |
+| **Volume Total do Projeto** | **17.380 strings visíveis** (119.205 palavras; 18.303 no total, 923 ocultas) |
+| **Entregas Submetidas (pt-BR)** | **17.380 strings** — 0 pendentes em 214 arquivos |
 | **Cobertura** | 🟢 **100%** (auditoria de placeholders e ICU com 0 divergências) |
 | **Foco Estratégico Atual** | Projeto completo: `en.json`, `editor.csv`, `dynamic.csv`, `backend.csv`, `frontend.csv`, escopos/permissões, MFA, log de segurança e e-mails — **100% Concluído** |
 | **Integração Técnica** | Crowdin REST API v2 (`https://api.crowdin.com/api/v2/`) |
 
-> **Última atualização (22/10/2026):** 286 novas strings traduzidas e 8 divergências antigas de placeholders corrigidas. Auditoria completa em 17.335 strings com **0 divergências**.
+> **Última atualização (26/10/2026):** 51 novas strings traduzidas (18 em `backend.csv`, 14 em `auth.php`, 7 em `dynamic.csv`, 7 em `workspace.php` e 5 em `scopes.php`). Auditoria completa em 17.380 strings com **0 divergências**.
+>
+> **Atualização anterior (22/10/2026):** 286 novas strings traduzidas e 8 divergências antigas de placeholders corrigidas.
 
 ---
 

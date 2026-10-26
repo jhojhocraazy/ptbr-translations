@@ -104,10 +104,7 @@ $GitHubProjects = @(
         Branch = 'main'
         Files  = @(
             @{ Module = 'android'; Source = 'app/src/main/res/values/strings.xml'; Target = 'app/src/main/res/values-pt/strings.xml' }
-            @{ Module = 'desktop'; Source = 'desktopApp/src/main/resources/strings/en.xml'; Target = 'desktopApp/src/main/resources/strings/pt.xml' }
-            @{ Module = 'desktop_extra'; Source = 'desktopApp/src/main/resources/strings/desktop-en.xml'; Target = 'desktopApp/src/main/resources/strings/desktop-pt.xml' }
             @{ Module = 'shared_ui'; Source = 'sharedUi/src/commonMain/composeResources/values/strings.xml'; Target = 'sharedUi/src/commonMain/composeResources/values-pt/strings.xml' }
-            @{ Module = 'desktop_ui'; Source = 'desktopUi/src/commonMain/composeResources/values/strings.xml'; Target = 'desktopUi/src/commonMain/composeResources/values-pt/strings.xml' }
             @{ Module = 'wearos'; Source = 'wearos/src/main/res/values/strings.xml'; Target = 'wearos/src/main/res/values-pt/strings.xml' }
         )
     }
