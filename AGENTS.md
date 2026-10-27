@@ -74,6 +74,20 @@ Sempre que realizar commits em qualquer repositório do usuário:
 
 ---
 
+### 🚨 Regra 6: Mensagens, PRs, Issues e Commits via CLI (Markdown Seguro)
+* **Corpo de texto sempre em arquivo:**
+  * Todo texto com Markdown (corpo de PR, comentário, issue, descrição de release ou commit multi-linha) deve ser gravado em um arquivo `.md` e passado por `--body-file` ou `gh api -F body=@arquivo`.
+  * **Nunca** montar Markdown inline em string de shell, especialmente no PowerShell.
+* **Crase e `\n` são proibidos em string PowerShell:**
+  * A crase (`` ` ``) é caractere de escape no PowerShell: `` `a `` vira BEL (0x07), `` `n `` vira quebra de linha e crases de Markdown desaparecem.
+  * `\n` não é interpretado pelo PowerShell e é publicado como texto literal.
+* **Aspas simples ou here-string quando inevitável:**
+  * Se o texto for realmente curto e de uma linha, usar aspas simples (`'...'`) ou here-string (`@' ... '@`), nunca aspas duplas com crases.
+* **Verificação obrigatória após publicar:**
+  * Reler o texto publicado (`gh pr view`, `gh api ... --jq '.body'`) e corrigir imediatamente qualquer escape, caractere de controle ou Markdown quebrado.
+
+---
+
 ## 📂 3. Mapa do Repositório
 
 ```text
