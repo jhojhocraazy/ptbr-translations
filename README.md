@@ -12,7 +12,7 @@
 
 <!-- Badges Principais Estilizadas -->
 [![pt-BR](https://img.shields.io/badge/Portugu%C3%AAs%20(Brasil)-pt--BR-009739?style=for-the-badge&logo=brazil&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
-[![Strings](https://img.shields.io/badge/Strings-+22.792-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
+[![Strings](https://img.shields.io/badge/Strings-+23.002-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Cobertura](https://img.shields.io/badge/Cobertura-100%25-brightgreen?style=for-the-badge&logo=checkmarx)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Autor](https://img.shields.io/badge/Mantido%20por-Joseph%20Alves-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jhojhocraazy)
 
@@ -32,11 +32,11 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 | Projeto | Ecossistema | Plataforma | Strings | Status Oficial | Progresso |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.639** | 🟢 **No ar** (`v0.6.4-beta`) + PR #2402 na fila | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**BitChord**](#2-bitchord) | Android / Wear OS | GitHub PRs / XML | **+1.336** | 🚀 **Em Análise** ([PR #952](https://github.com/kushagrasinghx/BitChord/pull/952)) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.655** | 🟢 **No ar** (`v0.6.5-beta`) + PR #2435 na fila | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**BitChord**](#2-bitchord) | Android / Wear OS | GitHub PRs / XML | **+1.456** | 🚀 **Em Análise** ([PR #1204](https://github.com/kushagrasinghx/BitChord/pull/1204), base `v1.8.2`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **682** | 🟢 **100% Traduzido** (0 pendentes; aguarda release) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **Sincronizado** (PR #1019 aberto; 2 chaves novas na fonte) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **17.380** (214 arquivos) | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **17.444** (214 arquivos) | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**TizenTube & Cobalt**](#6-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **197** | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718)) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Hosted Weblate | **176 + 37** | 🟢 **No ar** (`v3.0.6`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 
@@ -48,7 +48,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Aplicativo moderno de streaming de mídia e entretenimento desenvolvido em **Kotlin Multiplatform (Compose Multiplatform)** para Android e iOS.
 
 * **Repositório Oficial:** [`NuvioMedia/NuvioMobile`](https://github.com/NuvioMedia/NuvioMobile)
-* **Status:** 🟢 **100% Traduzido** (2.639 entradas em 7 arquivos modulares; lotes #2288, #2338 e #2402).
+* **Status:** 🟢 **100% Traduzido** (2.655 entradas em 7 arquivos modulares; lotes #2288, #2338, #2402 e #2435).
 * **Diretório Local:** [`NuvioMobile/`](./NuvioMobile/)
 
 <details>
@@ -68,9 +68,13 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
   * **Volume:** 9 novas entradas (7 em `strings.xml`, 2 em `strings_party.xml`) + 1 descrição atualizada.
   * **Cobertura:** 2.641/2.641 entradas na época, 0 pendentes e 0 divergências de placeholders.
 * **PR #2402:** [Traduz resolução de renderização das legendas e avaliações no destaque](https://github.com/NuvioMedia/NuvioMobile/pull/2402)
-  * **Status:** 🚀 **OPEN / MERGEABLE** (aguardando revisão).
+  * **Status:** 🚀 **MERGED** em 26/10/2026 e publicado na versão **`v0.6.5-beta`**.
   * **Volume:** 4 novas entradas (`settings_mdb_show_on_hero`, `settings_mdb_show_on_hero_description`, `settings_playback_render_scale`, `settings_playback_render_scale_description`).
   * **Cobertura:** 2.424/2.424 entradas no módulo principal, paridade exata de chaves com a fonte EN e 0 divergências de placeholders.
+* **PR #2435:** [Traduz modos de renderização ASS, capítulos e troca automática de motor](https://github.com/NuvioMedia/NuvioMobile/pull/2435)
+  * **Status:** 🚀 **OPEN / MERGEABLE** — CI bloqueado por erro pré-existente na base (`updateAssMargins`).
+  * **Volume:** 10 novas entradas (`settings_playback_render_mode*`, `settings_playback_auto_switch_engine_on_error*`, `player_engine_switching_automatic_message`) + 1 descrição atualizada.
+  * **Cobertura:** 2.440/2.440 entradas no módulo principal, paridade exata de chaves com a fonte EN e 0 divergências de placeholders.
 </details>
 
 ---
@@ -79,17 +83,22 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Cliente moderno de YouTube Music com estética inspirada no Apple Music desenvolvido em **Kotlin Multiplatform (KMP)** para Android e Wear OS.
 
 * **Repositório Oficial:** [`kushagrasinghx/BitChord`](https://github.com/kushagrasinghx/BitChord) (+3.700 stars)
-* **Status:** 🟢 **100% Traduzido** (+1.336 strings nos 3 módulos ativos: Android, Shared UI e Wear OS).
+* **Status:** 🟢 **100% Traduzido** (+1.456 strings nos 3 módulos ativos: Android, Shared UI e Wear OS).
 * **Diretório Local:** [`BitChord/`](./BitChord/)
 
 <details>
 <summary><b>🔍 Ver Histórico de Entregas & Detalhes do BitChord</b></summary>
 <br/>
 
+* **PR #1204:** [loc(pt): complete Portuguese (pt-BR) localization for v1.8.2](https://github.com/kushagrasinghx/BitChord/pull/1204)
+  * **Status:** 🚀 **OPEN / MERGEABLE**, base `v1.8.2` conforme o `CONTRIBUTING.md`.
+  * **Módulos:** Android (1.120 entradas traduzíveis), Shared UI (249) e Wear OS (40, arquivo criado do zero).
+  * **Volume:** 145 chaves novas, 115 entradas que ainda estavam em inglês corrigidas e 4 textos removidos acompanhados.
+  * **Validação:** 0 problemas de placeholder/XML nos três módulos; paridade exata de chaves com a fonte EN.
 * **PR #952:** [loc(pt): complete Portuguese (pt-BR) localization and fix untranslated strings across all modules](https://github.com/kushagrasinghx/BitChord/pull/952)
-  * **Status:** 🚀 **OPEN / MERGEABLE** — branch refeita sobre a nova estrutura do upstream em 26/10/2026.
-  * **Reestruturação Upstream:** os módulos `desktopApp/` e `desktopUi/` foram removidos do repositório e a UI passou para `sharedUi/`. A PR antiga ficou em conflito e foi reconstruída.
-  * **Módulos Abrangidos:** Android Core (1.070 strings traduzíveis), Shared UI (179 strings) e Wear OS (40 strings, arquivo criado do zero).
+  * **Status:** 🔒 **FECHADA** — apontava para `main`; o trabalho foi refeito em #1204 na branch do ciclo de release.
+  * **Histórico:** chegou a ser reconstruída sobre a estrutura nova do `main` (26/10), mas o `CONTRIBUTING.md` exige a branch do ciclo de release (`v1.8.2`).
+  * **Módulos Abrangidos:** Android Core, Shared UI e Wear OS.
   * **Destaques:** Tradução completa das telas do Android Auto, predefinições do equalizador paramétrico, pipeline de áudio DSP, informações da música, períodos do Replay e módulo para smartwatches Wear OS.
 </details>
 
@@ -141,16 +150,17 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 * **Projeto Oficial:** [Crowdin Translations (ID: 31)](https://crowdin.com/project/crowdin)
 * **Plataforma de Tradução:** Crowdin API v2
-* **Status:** 🟢 **100% Traduzido** (**17.380 strings** / 119.205 palavras em 214 arquivos — 0 pendentes).
+* **Status:** 🟢 **100% Traduzido** (**17.444 strings** / 119.674 palavras em 214 arquivos — 0 pendentes).
 * **Diretório Local:** [`Crowdin/`](./Crowdin/)
 
 <details>
 <summary><b>🔍 Ver Detalhes do Projeto Crowdin Platform</b></summary>
 <br/>
 
-* **Cobertura Total (100%):** 17.380 strings visíveis traduzidas, 923 strings ocultas e **0 pendentes** em 214 arquivos, cobrindo web app, backend, e-mails e templates.
+* **Cobertura Total (100%):** 17.444 strings visíveis traduzidas, 923 strings ocultas e **0 pendentes** em 214 arquivos, cobrindo web app, backend, e-mails e templates.
 * **Interface Moderna Web:** 3.629 strings visíveis de `src/i18n/locales/en.json` (ID: 32447) concluídas.
-* **Atualização 26/10/2026:** 51 novas strings traduzidas — 18 em `backend.csv`, 14 em `auth.php`, 7 em `dynamic.csv`, 7 em `workspace.php` e 5 em `scopes.php` — com auditoria completa em 17.380 strings e **0 divergências**.
+* **Atualização 28/10/2026:** 55 novas strings traduzidas — 27 em `dynamic.csv`, 19 em `backend.csv`, 7 em `en.json` e 2 em `scopes.php` — cobrindo limites de gastos de aplicativos, transações, discussões de projeto e gerentes; auditoria completa em 17.444 strings com **0 divergências**.
+* **Atualização 26/10/2026:** 51 novas strings traduzidas — 18 em `backend.csv`, 14 em `auth.php`, 7 em `dynamic.csv`, 7 em `workspace.php` e 5 em `scopes.php`.
 * **Atualização 22/10/2026:** 286 novas strings traduzidas — 157 em `en.json`, 110 em `editor.csv`, 12 em `backend.csv` e 7 em `dynamic.csv` — e 8 divergências antigas de placeholders corrigidas.
 * **Escopo Completo:** Editor (`editor.csv`), Aplicação Web (`dynamic.csv`), Backend/Relatórios (`backend.csv`), Frontend (`frontend.csv`), permissões e escopos, MFA, log de segurança, autenticação e modelos de e-mail.
 * **Qualidade:** 100% de integridade em placeholders (`{project}`, `%s`, `{{mustache}}`), argumentos ICU (`plural`/`select`), tags HTML e escapes — auditoria final com **0 divergências**. 29 traduções anteriores corrigidas (placeholders perdidos, HTML escapado e textos truncados).

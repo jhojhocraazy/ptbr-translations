@@ -4,8 +4,8 @@
   "target_language": "pt-BR",
   "file_id": 32447,
   "file_name": "en.json",
-  "total_submitted": 3629,
-  "generated_at": "2026-10-26T19:29:15-03:00",
+  "total_submitted": 3637,
+  "generated_at": "2026-10-28T23:16:32-03:00",
   "translations": {
     "7045051": {
       "source": "Go to homepage",
@@ -14522,6 +14522,38 @@
     "7061060": {
       "source": "Never miss a new post",
       "target": "Nunca perca uma nova publicação"
+    },
+    "7061264": {
+      "source": "Book a call",
+      "target": "Agendar uma conversa"
+    },
+    "7061266": {
+      "source": "Enter your email in the form to book a call.",
+      "target": "Informe seu e-mail no formulário para agendar uma conversa."
+    },
+    "7061268": {
+      "source": "Pick a time to talk with our team, see Crowdin Enterprise in action and get your questions answered. This step is optional.",
+      "target": "Escolha um horário para conversar com nossa equipe, ver o Crowdin Enterprise em ação e tirar suas dúvidas. Esta etapa é opcional."
+    },
+    "7061270": {
+      "source": "Prefer to talk?",
+      "target": "Prefere conversar?"
+    },
+    "7061272": {
+      "source": "Product",
+      "target": "Produto"
+    },
+    "7061274": {
+      "source": "Yes. Crowdin is available on AWS Marketplace, so you can pay through your AWS account and use your existing AWS credits and infrastructure.",
+      "target": "Sim. O Crowdin está disponível no AWS Marketplace, então você pode pagar pela sua conta AWS e usar seus créditos e sua infraestrutura AWS existentes."
+    },
+    "7061276": {
+      "source": "View on AWS Marketplace",
+      "target": "Ver no AWS Marketplace"
+    },
+    "7061278": {
+      "source": "Can I buy Crowdin through AWS Marketplace?",
+      "target": "Posso comprar o Crowdin pelo AWS Marketplace?"
     }
   }
 }

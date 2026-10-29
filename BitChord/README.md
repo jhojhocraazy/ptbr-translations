@@ -11,9 +11,9 @@
 | :--- | :--- |
 | **Plataforma Tecnológica** | Kotlin Multiplatform (KMP) + Jetpack Compose / Compose Multiplatform |
 | **Sistemas Alvo** | Android e Wear OS (o módulo Desktop foi removido do upstream em 26/10/2026) |
-| **Cobertura Geral** | 🟢 **100% Traduzido** (+1.336 strings nos 3 módulos ativos: Android, Shared UI e Wear OS) |
+| **Cobertura Geral** | 🟢 **100% Traduzido** (+1.456 strings nos 3 módulos ativos: Android, Shared UI e Wear OS) |
 | **Repositório Upstream** | [`kushagrasinghx/BitChord`](https://github.com/kushagrasinghx/BitChord) (+3.700 stars) |
-| **Branch de Trabalho** | `i18n/portuguese-complete-pt-br` (PR #952) |
+| **Branch de Trabalho** | `i18n/pt-br-182` (PR #1204, base `v1.8.2`) |
 | **Última Versão** | `v1.8.1` (19/10/2026) — anterior ao lote atual |
 
 ---
@@ -30,22 +30,22 @@ O **BitChord** é um dos clientes de código aberto mais elegantes e avançados 
 
 ## 🗂️ Arquitetura dos Módulos de Tradução
 
-A localização do BitChord está dividida em 3 arquivos modulares após a reestruturação do upstream (os módulos `desktopApp/` e `desktopUi/` foram removidos):
+A localização do BitChord cobre os 3 módulos da branch `v1.8.2`:
 
 | Módulo | Arquivo de Tradução | Strings | Status pt-BR |
 | :--- | :--- | :---: | :---: |
-| **Android Core (`app/`)** | [`app/src/main/res/values-pt/strings.xml`](./repo/app/src/main/res/values-pt/strings.xml) | 1.070 traduzíveis + 24 plurais | 🟢 100% Concluído |
-| **UI Multiplataforma (`sharedUi/`)** | [`sharedUi/.../values-pt/strings.xml`](./repo/sharedUi/src/commonMain/composeResources/values-pt/strings.xml) | 179 | 🟢 100% Concluído |
+| **Android Core (`app/`)** | [`app/src/main/res/values-pt/strings.xml`](./repo/app/src/main/res/values-pt/strings.xml) | 1.097 strings + 23 plurais | 🟢 100% Concluído |
+| **UI Multiplataforma (`sharedUi/`)** | [`sharedUi/.../values-pt/strings.xml`](./repo/sharedUi/src/commonMain/composeResources/values-pt/strings.xml) | 249 | 🟢 100% Concluído |
 | **Wear OS Smartwatches (`wearos/`)** | [`wearos/src/main/res/values-pt/strings.xml`](./repo/wearos/src/main/res/values-pt/strings.xml) | 40 | 🟢 100% Concluído (Criado) |
 
 ---
 
 ## 🚀 O que foi Feito Nesta Localização
 
-1. **Eliminação de Termos em Inglês:** Mais de 140 frases que estavam em inglês no meio das telas (avisos do Android Auto, predefinições do equalizador, saída de áudio, Cast e diálogos de login) foram 100% traduzidas para o Português do Brasil.
-2. **Reestruturação do Upstream (26/10/2026):** os módulos `desktopApp/` e `desktopUi/` foram removidos do repositório oficial e a UI passou para `sharedUi/`. A PR #952 foi refeita sobre a nova base e voltou a ficar **MERGEABLE**.
-3. **Criação do Módulo Wear OS:** mantido o arquivo `values-pt/strings.xml` criado do zero para relógios Wear OS (40 strings), já que o upstream ainda não tem tradução nesse módulo.
-4. **Novas Strings (26/10/2026):** traduzidas as 17 entradas adicionadas pelo upstream (períodos do Replay, cache parcial e painel de informações da música), com paridade total de chaves traduzíveis.
+1. **Eliminação de Termos em Inglês:** 115 entradas que ainda estavam em inglês no `app` (saída de áudio, Cast, atraso de letras, equalizador, SMB, WebDAV e outras) foram traduzidas, além das 79 que faltavam no `sharedUi`.
+2. **Base Correta do Ciclo de Release (28/10/2026):** a entrega foi refeita sobre a branch `v1.8.2`, conforme o `CONTRIBUTING.md`, em vez de `main`. A PR #952 foi fechada e substituída pela #1204.
+3. **Criação do Módulo Wear OS:** arquivo `values-pt/strings.xml` criado do zero para relógios Wear OS (40 strings), já que o upstream ainda não tem tradução nesse módulo.
+4. **Novas Strings:** traduzidas as 145 chaves que o upstream adicionou (bit-perfect/DAC, modos de renderização, Top Picks, catálogo de climas, períodos do Replay, cache parcial e painel de informações da música), com paridade total de chaves traduzíveis.
 
 ---
 

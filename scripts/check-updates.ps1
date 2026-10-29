@@ -101,7 +101,7 @@ $GitHubProjects = @(
         Key    = 'github:bitchord'
         Label  = 'BitChord'
         Repo   = 'BitChord\repo'
-        Branch = 'main'
+        Branch = 'v1.8.2'
         Files  = @(
             @{ Module = 'android'; Source = 'app/src/main/res/values/strings.xml'; Target = 'app/src/main/res/values-pt/strings.xml' }
             @{ Module = 'shared_ui'; Source = 'sharedUi/src/commonMain/composeResources/values/strings.xml'; Target = 'sharedUi/src/commonMain/composeResources/values-pt/strings.xml' }
