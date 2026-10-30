@@ -5,7 +5,7 @@
   "file_id": 32447,
   "file_name": "en.json",
   "total_submitted": 3637,
-  "generated_at": "2026-10-30T16:14:44-03:00",
+  "generated_at": "2026-10-30T17:15:46-03:00",
   "translations": {
     "7045051": {
       "source": "Go to homepage",
@@ -5133,11 +5133,11 @@
     },
     "7048173": {
       "source": "Make app translations accessible to your users in a click with Crowdin Over-the-Air Content Delivery.",
-      "target": "Torne as traduções do aplicativo acessíveis aos seus usuários com um clique, usando a Entrega de Conteúdo Over-the-air do Crowdin."
+      "target": "Torne as traduções do aplicativo acessíveis aos seus usuários com um clique, usando a Entrega de Conteúdo Over-the-Air da Crowdin."
     },
     "7048175": {
       "source": "Over-the-air (OTA) delivery",
-      "target": "Entrega de conteúdo Over-the-air (OTA)"
+      "target": "Entrega Over-the-Air (OTA)"
     },
     "7048177": {
       "source": "Translators can see their work live inside a version of the app as they type.",
@@ -8941,7 +8941,7 @@
     },
     "7050151": {
       "source": "Send new translations from Crowdin to your app over-the-air with no need to update it on Google Play or App Store. The Crowdin SDK for Android and iOS includes two additional components that you can connect: real-time translation preview and easy screenshots upload and tagging.",
-      "target": "Envie novas traduções do Crowdin para o seu aplicativo através de atualizações over-the-air(OTA) sem a necessidade de atualizar seu aplicativo no Google Play ou na App Store. O Crowdin SDK para Android e iOS contém dois componentes adicionais que você pode conectar: pré-visualização da tradução em tempo real e de fácil upload e marcação de capturas de tela."
+      "target": "Envie novas traduções do Crowdin para o seu aplicativo por meio de atualizações Over-the-Air (OTA), sem precisar atualizar o aplicativo no Google Play ou na App Store. O SDK da Crowdin para Android e iOS inclui dois componentes adicionais que você pode conectar: pré-visualização de traduções em tempo real e envio e marcação de capturas de tela."
     },
     "7050153": {
       "source": "Deliver better app translations, <span class=\"opacity-60\">faster</span>",
@@ -9105,7 +9105,7 @@
     },
     "7050233": {
       "source": "Crowdin SDK for Android and iOS apps provides over-the-air content delivery, real-time translation preview, screenshots upload and tagging.",
-      "target": "O Crowdin SDK para aplicativos Android e iOS oferece entrega de conteúdo over-the-air, pré-visualização de traduções em tempo real, envio de capturas de tela e marcação de tags."
+      "target": "O SDK da Crowdin para aplicativos Android e iOS oferece entrega de conteúdo Over-the-Air, pré-visualização de traduções em tempo real e envio e marcação de capturas de tela."
     },
     "7050235": {
       "source": "If you have up to 1M requests and 10GB of data transfer, it's free.",
@@ -9181,7 +9181,7 @@
     },
     "7050275": {
       "source": "Additional quota for over-the-air delivery",
-      "target": "Cota adicional para entrega over-the-air"
+      "target": "Cota adicional para entrega Over-the-Air"
     },
     "7050277": {
       "source": "Advanced reports",
@@ -10053,7 +10053,7 @@
     },
     "7050715": {
       "source": "Crowdin employs a team of 24/7/365 server specialists to keep our software and its dependencies up to date, removing potential security vulnerabilities. We use monitoring solutions to prevent and eliminate site attacks.",
-      "target": "A Crowdin emprega uma equipe de especialistas de servidores 24/7/365 para manter o nosso software e suas dependências atualizadas, removendo potenciais vulnerabilidades de segurança. Nós usamos monitoramos soluções para prevenir e eliminar ataques do site."
+      "target": "A Crowdin conta com uma equipe de especialistas em servidores 24/7/365 para manter nosso software e suas dependências atualizados, removendo possíveis vulnerabilidades de segurança. Usamos soluções de monitoramento para prevenir e eliminar ataques ao site."
     },
     "7050717": {
       "source": "OAuth App Control - OAuth apps with access to corporate data are continuously controlled and monitored.",
@@ -10669,7 +10669,7 @@
     },
     "7051023": {
       "source": "Tailor JSON or custom bundles for your engine or CMS.",
-      "target": "Personalize pacotes JSON ou customizados para sua engine ou CMS."
+      "target": "Personalize pacotes JSON ou personalizados para seu motor ou CMS."
     },
     "7051025": {
       "source": "Custom exporters",
@@ -12029,7 +12029,7 @@
     },
     "7051725": {
       "source": "Over-the-air delivery allows you to share translations directly from your Crowdin project to your website with one click.",
-      "target": "O Over-the-air permite que você compartilhe traduções diretamente do seu projeto Crowdin para o seu site com um clique."
+      "target": "A entrega Over-the-Air permite compartilhar traduções diretamente do seu projeto Crowdin para o seu site com um clique."
     },
     "7051727": {
       "source": "Publish translations",
