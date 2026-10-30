@@ -88,6 +88,22 @@ Sempre que realizar commits em qualquer repositório do usuário:
 
 ---
 
+### 🚨 Regra 7: Fonte Canônica — Traduzir Sempre do Idioma Original
+* **A fonte é o arquivo EN do projeto:**
+  * Android/Compose: `values/strings.xml` ou `values-pt/strings.xml` derivado dele.
+  * JSON/i18n: `en.json`, `messages/en.json` ou o catálogo EN da plataforma.
+  * Plataformas: o texto de origem exibido no Crowdin/Weblate (sempre o EN), nunca outro locale.
+* **Nunca use outro idioma como origem:**
+  * `es`, `de`, `fr`, `ja`, `pl` ou qualquer tradução de terceiro servem apenas como **referência terminológica**, jamais como texto de origem.
+  * Uma string já traduzida no upstream só pode ser reaproveitada depois de conferida contra a fonte EN; se não bater, retraduza.
+* **Validação obrigatória antes de subir:**
+  * Paridade de chaves com a fonte EN: **0 faltando, 0 sobrando**.
+  * Placeholders, ICU (`plural`/`select`), tags HTML e escapes idênticos aos da fonte.
+  * Strings idênticas ao EN apenas para marca, unidade ou termo técnico consagrado — nunca para frase.
+* **Vale para todos os projetos do hub:** Nuvio, BitChord, TorBox, TizenTube, Better Lyrics, YTDLnis, DNSToggle e Crowdin Platform.
+
+---
+
 ## 📂 3. Mapa do Repositório
 
 ```text
