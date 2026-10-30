@@ -45,7 +45,7 @@ O projeto divide as strings em **7 arquivos modulares**:
 ### 2. [Pull Request #2288](https://github.com/NuvioMedia/NuvioMobile/pull/2288) — Módulos Adicionais (Watch Party, Servers, MDBList e AutoSync)
 * **Branch:** `i18n/pt-br-modules`
 * **Volume:** 208 novas entradas nos 5 novos módulos arquiteturais, além do refinamento de 92 entradas no módulo principal e no PiP.
-* **Refinamento:** terminologia do glossário (`Continuar assistindo`, `Lista de interesses`, `Picture-in-Picture (PiP)`), Sentence Case, miniaturas, provedores de streaming e mensagens de download.
+* **Refinamento:** terminologia do glossário (`Continuar assistindo`, `Minha lista`, `Picture-in-Picture (PiP)`), Sentence Case, miniaturas, provedores de streaming e mensagens de download.
 * **Cobertura validada:** 2.632/2.632 entradas, 0 faltando e 0 divergências de placeholders.
 * **Status:** ✅ **MERGED** — incorporado na versão `0.6.3-beta`.
 * **Status da Pipeline CI/CD:**

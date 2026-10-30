@@ -105,6 +105,7 @@ Sempre que realizar commits em qualquer repositório do usuário:
 ---
 
 ### 🚨 Regra 8: Contexto do Projeto — Ler o README Antes de Traduzir
+* **Referência obrigatória:** o vocabulário do serviço equivalente (lista abaixo) é a referência de naturalidade. Aplique sem pedir autorização; só mude mediante instrução explícita do mantenedor.
 * **Leia o projeto antes da string:**
   * README do projeto, `docs/`, `glossario.md` e `diretrizes-tecnicas.md`.
   * Entenda o que o produto faz, para quem, e qual é o vocabulário do domínio.

@@ -83,7 +83,7 @@ Estes termos são marcas registradas, nomes de protocolos ou jargões universais
 | :--- | :--- | :--- |
 | **Cast (Actors)** | `Elenco` | Lista de atores e atrizes do filme ou série. |
 | **Crew** | `Equipe técnica` | Direção, roteiro, produção. |
-| **Watchlist** | `Lista de interesses` | Títulos salvos pelo usuário para assistir depois. |
+| **Watchlist** | `Minha lista` | Títulos salvos pelo usuário para assistir depois. Mesmo termo de Netflix/Prime Video. |
 | **Favorites** | `Favoritos` | Itens marcados com estrela/coração. |
 | **Rating / Score** | `Avaliação` / `Nota` | Notas do IMDb, Metacritic, Trakt ou MDBList. |
 | **Genres** | `Gêneros` | Categorias (Ação, Comédia, Drama, Ficção científica). |
