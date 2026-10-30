@@ -5,7 +5,7 @@
   "file_id": 32447,
   "file_name": "en.json",
   "total_submitted": 3637,
-  "generated_at": "2026-10-30T14:05:33-03:00",
+  "generated_at": "2026-10-30T15:50:11-03:00",
   "translations": {
     "7045051": {
       "source": "Go to homepage",
@@ -253,7 +253,7 @@
     },
     "7045183": {
       "source": "Easily create and use your Glossary and TM",
-      "target": "Crie e use facilmente seu Glossário e MT"
+      "target": "Crie e use facilmente seu Glossário e Memória de Tradução"
     },
     "7045185": {
       "source": "Key Features of Crowdin",
@@ -281,7 +281,7 @@
     },
     "7045197": {
       "source": "Vendors list will only include your company. White-labeling is also available in Crowdin Enterprise per request. Translate customer requests on your side using your specific workflows, TMs, and Glossaries with no need to share with the customer.",
-      "target": "A lista de fornecedores só incluirá a sua empresa. A marcação sem branco também está disponível no Crowdin Empresarial por pedido. Traduza as solicitações do cliente do seu lado usando fluxos de trabalho específicos, MT e Glossários, sem necessidade de compartilhar com o cliente."
+      "target": "A lista de fornecedores só incluirá a sua empresa. O white-label também está disponível no Crowdin Enterprise por solicitação. Traduza as solicitações do cliente do seu lado usando seus fluxos de trabalho, Memórias de Tradução e Glossários específicos, sem precisar compartilhar com o cliente."
     },
     "7045199": {
       "source": "Be the single vendor for your customer",
@@ -353,7 +353,7 @@
     },
     "7045303": {
       "source": "AI translation uses artificial intelligence to automatically convert content from one language to another, learning from big data to provide more natural translations. AI localization goes a step further, using AI to adapt content such as text and visuals so it culturally fits a local audience.",
-      "target": "A tradução IA usa inteligência artificial para converter automaticamente conteúdo de um idioma para outro, aprendendo com grandes dados para fornecer mais traduções naturais. A localização da IA vai um passo mais longe, usando AI para adaptar conteúdo como texto e visuais, para que culturalmente se adapte a um público local."
+      "target": "A tradução por IA usa inteligência artificial para converter automaticamente conteúdo de um idioma para outro, aprendendo com grandes dados para fornecer traduções mais naturais. A localização com IA vai um passo além, usando IA para adaptar conteúdo como texto e visuais, para que se encaixe culturalmente em um público local."
     },
     "7045305": {
       "source": "What is AI translation and localization?",
@@ -365,7 +365,7 @@
     },
     "7045311": {
       "source": "Translate apps, websites, marketing materials, and documentation faster with AI translation, automation, and a full localization operating system.",
-      "target": "Traduza aplicativos, sites, materiais de marketing e documentação mais rapidamente com tradução AI, automação e um sistema operacional de localização completa."
+      "target": "Traduza aplicativos, sites, materiais de marketing e documentação mais rapidamente com tradução por IA, automação e um sistema operacional completo de localização."
     },
     "7045313": {
       "source": "AI translation software for fast, scalable global content",
@@ -373,7 +373,7 @@
     },
     "7045315": {
       "source": "Product-led teams and fast-growing SaaS companies rely on Crowdin to scale global content using <strong>AI for translation</strong>.",
-      "target": "Equipes lideradas por produtos e empresas SaaS de crescimento rápido confiam no Crowdin para dimensionar o conteúdo global usando <strong>AI para tradução</strong>."
+      "target": "Equipes lideradas por produtos e empresas SaaS de crescimento rápido confiam no Crowdin para dimensionar o conteúdo global usando <strong>IA para tradução</strong>."
     },
     "7045319": {
       "source": "AI-powered translation management for apps, websites, and docs. Improve speed, consistency, and quality with AI translations and automation.",
@@ -425,7 +425,7 @@
     },
     "7045345": {
       "source": "Bring Your Own AI: Connect OpenAI, Gemini, Anthropic, or Mistral directly. You control the API key, data privacy, and costs.",
-      "target": "Traga Seu Próprio AI: Conecte OpenAI, Gemini, Anthropic ou Mistral diretamente. Você controla a chave da API, a privacidade dos dados e os custos."
+      "target": "Traga sua própria IA: conecte OpenAI, Gemini, Anthropic ou Mistral diretamente. Você controla a chave da API, a privacidade dos dados e os custos."
     },
     "7045347": {
       "source": "Context Injection: Our tools scan your code and screenshots to show the AI exactly where text appears, drastically reducing hallucinations.",
@@ -453,7 +453,7 @@
     },
     "7045359": {
       "source": "AI Localization Workflow Guide Cover",
-      "target": "Guia de Workflow de Localização AI"
+      "target": "Guia de fluxo de trabalho de localização com IA"
     },
     "7045361": {
       "source": "Building a Smart AI Localization Workflow with Crowdin",
@@ -461,11 +461,11 @@
     },
     "7045363": {
       "source": "Everyone is talking about AI, but rushing to automate everything often leads to poor translations and even more work for your team. It's time to shift your mindset from «How can I use AI for everything?» to «Where does AI actually add value?»",
-      "target": "Todos falam de IA, mas a pressa em automatizar tudo muitas vezes leva a más traduções e ainda mais trabalho para sua equipe. É hora de mudar a sua mentalidade de «Como posso usar AI para tudo?» para «Onde AI realmente acrescenta valor?»"
+      "target": "Todos falam de IA, mas a pressa em automatizar tudo muitas vezes leva a más traduções e ainda mais trabalho para sua equipe. É hora de mudar sua mentalidade de “Como posso usar IA para tudo?” para “Onde a IA realmente agrega valor?”"
     },
     "7045365": {
       "source": "This guide isn't just about tools; it is a blueprint for a sustainable localization workflow. We break down exactly how to treat AI as an assistant rather than a replacement, ensuring your linguists remain the main heroes of your content strategy",
-      "target": "Este guia não é sobre ferramentas; é um diagrama para um fluxo de trabalho de localização sustentável. Nós dividimos exatamente como tratar as AI como assistentes e não como substituição, garantindo que seus linguistas permaneçam os principais heróis da sua estratégia de conteúdo"
+      "target": "Este guia não é só sobre ferramentas; é um plano para um fluxo de trabalho de localização sustentável. Mostramos exatamente como tratar a IA como assistente, e não como substituta, garantindo que seus linguistas continuem sendo os protagonistas da sua estratégia de conteúdo."
     },
     "7045367": {
       "source": "Learn how to integrate AI strategically to cut costs and scale faster",
@@ -2445,7 +2445,7 @@
     },
     "7046495": {
       "source": "Bring your own AI/LLM keys or use {count}+ MT engines",
-      "target": "Traga suas próprias chaves de IA/LLM ou use {count}+ engines de MT"
+      "target": "Traga suas próprias chaves de IA/LLM ou use {count}+ motores de MT"
     },
     "7046497": {
       "source": "Connect any CMS or framework",
@@ -3297,7 +3297,7 @@
     },
     "7046961": {
       "source": "Translation Memory speeds up the translation of the same or similar strings. Every translation made in the project is automatically added to the TM which can be also shared between projects.",
-      "target": "A memória de tradução acelera a tradução de strings iguais ou semelhantes. Cada tradução feita no projeto é adicionada automaticamente à MT que também pode ser compartilhada entre os projetos."
+      "target": "A memória de tradução acelera a tradução de strings iguais ou semelhantes. Cada tradução feita no projeto é adicionada automaticamente à Memória de Tradução, que também pode ser compartilhada entre projetos."
     },
     "7046963": {
       "source": "Translation memories",
@@ -4349,7 +4349,7 @@
     },
     "7047611": {
       "source": "Global TM",
-      "target": "Global MT"
+      "target": "TM Global"
     },
     "7047613": {
       "source": "just now",
@@ -7149,7 +7149,7 @@
     },
     "7049195": {
       "source": "Translation Memory (TM)",
-      "target": "Memória de Tradução (MT)"
+      "target": "Memória de Tradução (TM)"
     },
     "7049197": {
       "source": "Automate localization of your apps, websites, games, marketing content, blogs, and help centers",
@@ -7489,7 +7489,7 @@
     },
     "7049385": {
       "source": "Translation Memory (TM)",
-      "target": "Memória de Tradução (MT)"
+      "target": "Memória de Tradução (TM)"
     },
     "7049387": {
       "source": "A full editor overlay",
@@ -10905,7 +10905,7 @@
     },
     "7051141": {
       "source": "Works with your TM, MT/AI, and style guides",
-      "target": "Funciona com seus guias de MT, MT/AI e estilo"
+      "target": "Funciona com suas Memórias de Tradução, MT/IA e guias de estilo"
     },
     "7051143": {
       "source": "Start Translating",
@@ -12825,7 +12825,7 @@
     },
     "7053331": {
       "source": "Crowdin Copilot:<br />your AI project orchestrator",
-      "target": "Crowdin Copilot:<br />seu projeto AI orquestrador"
+      "target": "Crowdin Copilot:<br />seu orquestrador de projetos com IA"
     },
     "7053433": {
       "source": "Start a conversation",

@@ -12,13 +12,13 @@
 | **Plataforma Tecnológica** | Crowdin Enterprise / Modern Web UI (React, TypeScript, JSON, PHP/Blade) |
 | **Projeto Oficial** | [Crowdin Translations (ID: 31)](https://crowdin.com/project/crowdin) |
 | **Idioma Alvo** | Português do Brasil (`pt-BR`) |
-| **Volume Total do Projeto** | **17.454 strings visíveis** (119.751 palavras; 18.377 no total, 923 ocultas) |
-| **Entregas Submetidas (pt-BR)** | **17.454 strings** — 0 pendentes em 214 arquivos |
+| **Volume Total do Projeto** | **17.515 strings visíveis** (120.107 palavras; 18.438 no total, 923 ocultas) |
+| **Entregas Submetidas (pt-BR)** | **17.515 strings** — 0 pendentes em 214 arquivos |
 | **Cobertura** | 🟢 **100%** (auditoria de placeholders e ICU com 0 divergências) |
 | **Foco Estratégico Atual** | Projeto completo: `en.json`, `editor.csv`, `dynamic.csv`, `backend.csv`, `frontend.csv`, escopos/permissões, MFA, log de segurança e e-mails — **100% Concluído** |
 | **Integração Técnica** | Crowdin REST API v2 (`https://api.crowdin.com/api/v2/`) |
 
-> **Última atualização (30/10/2026):** 12 novas strings traduzidas (7 em `dynamic.csv`, 1 em `mfa.php` e 4 em `backend.csv` — webhooks) — auto-tag de capturas de tela, confirmação do autenticador e entregas de webhook. Auditoria completa em 17.454 strings com **0 divergências**.
+> **Última atualização (30/10/2026):** 62 novas strings traduzidas (27 em `editor.csv`, 11 em `backend.csv`, 10 em `frontend.csv`, 7 em `dynamic.csv`, 1 em `mfa.php` e 6 em `en.json`) e 17 correções de terminologia (TM ≠ MT, AI → IA, workflow → fluxo de trabalho, engines → motores). Auditoria completa em 17.515 strings com **0 divergências**.
 >
 > **Atualização anterior (28/10/2026):** 55 novas strings traduzidas (27 em `dynamic.csv`, 19 em `backend.csv`, 7 em `en.json` e 2 em `scopes.php`).
 >

@@ -116,6 +116,15 @@ Sempre que realizar commits em qualquer repositório do usuário:
   * Nunca “traduza” um nome de recurso proprietário por impulso.
 * **Sem glossário, crie um:**
   * Se o projeto ainda não tiver `glossario.md` no hub, registre os termos de domínio antes de fechar o lote.
+* **Vocabulário de referência por projeto:**
+  * **Nuvio** → Netflix, Prime Video, Disney+, Max.
+  * **BitChord** → YouTube Music, Spotify, Apple Music, Tidal.
+  * **TorBox** → qBittorrent.
+  * **TizenTube** → YouTube.
+  * **Better Lyrics** → Letras.mus.br, Genius, Musixmatch.
+  * **YTDLnis** → YouTube, Internet Download Manager.
+  * **DNSToggle** → AdGuard, Cloudflare, OpenDNS.
+  * **Crowdin Platform** → Crowdin, Transifex, Lokalise, Phrase.
 * **Vale para todos os projetos do hub:** Nuvio, BitChord, TorBox, TizenTube, Better Lyrics, YTDLnis, DNSToggle e Crowdin Platform.
 
 ---
