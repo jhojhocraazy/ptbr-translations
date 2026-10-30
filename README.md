@@ -33,7 +33,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 | Projeto | Ecossistema | Plataforma | Strings | Status Oficial | Progresso |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.707** | 🟢 **No ar** (`v0.6.5-beta`) + PR #2435 na fila | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**BitChord**](#2-bitchord) | Android / Wear OS | GitHub PRs / XML | **+1.471** | 🚀 **Em Análise** ([PR #1204](https://github.com/kushagrasinghx/BitChord/pull/1204), base `v1.8.2`) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**BitChord**](#2-bitchord) | Android / Wear OS | GitHub PRs / XML | **+1.471** | 🚀 **Em Análise** ([PR #1204](https://github.com/kushagrasinghx/BitChord/pull/1204), base `main`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **682** | 🟢 **100% Traduzido** (0 pendentes; aguarda release) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **Sincronizado** (PR #1019 aberto; 2 chaves novas na fonte) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **17.454** (214 arquivos) | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
@@ -91,15 +91,15 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 <summary><b>🔍 Ver Histórico de Entregas & Detalhes do BitChord</b></summary>
 <br/>
 
-* **PR #1204:** [loc(pt): complete Portuguese (pt-BR) localization for v1.8.2](https://github.com/kushagrasinghx/BitChord/pull/1204)
-  * **Status:** 🚀 **OPEN / MERGEABLE**, base `v1.8.2` conforme o `CONTRIBUTING.md`; rebaseada sobre o head atual.
+* **PR #1204:** [loc(pt): complete Portuguese (pt-BR) localization](https://github.com/kushagrasinghx/BitChord/pull/1204)
+  * **Status:** 🚀 **OPEN / MERGEABLE**, base `main`, rebaseada sobre o head atual.
   * **Módulos:** Android (1.135 entradas traduzíveis), Shared UI (249) e Wear OS (40, arquivo criado do zero).
   * **Volume:** 145 chaves novas + 15 do upstream (fontes SF Pro, sincronização de playlists e conversão para DAC), 115 entradas que ainda estavam em inglês corrigidas e 4 textos removidos acompanhados.
   * **Validação:** 0 problemas de placeholder/XML nos três módulos; paridade exata de chaves com a fonte EN.
   * **Release:** `v1.9` saiu em 30/10 sem esta PR; o merge ainda depende do mantenedor.
 * **PR #952:** [loc(pt): complete Portuguese (pt-BR) localization and fix untranslated strings across all modules](https://github.com/kushagrasinghx/BitChord/pull/952)
   * **Status:** 🔒 **FECHADA** — apontava para `main`; o trabalho foi refeito em #1204 na branch do ciclo de release.
-  * **Histórico:** chegou a ser reconstruída sobre a estrutura nova do `main` (26/10), mas o `CONTRIBUTING.md` exige a branch do ciclo de release (`v1.8.2`).
+  * **Histórico:** foi reconstruída sobre a `v1.8.2` em 26/10 e, depois da `v1.9`, rebaseada para `main` (30/10).
   * **Módulos Abrangidos:** Android Core, Shared UI e Wear OS.
   * **Destaques:** Tradução completa das telas do Android Auto, predefinições do equalizador paramétrico, pipeline de áudio DSP, informações da música, períodos do Replay e módulo para smartwatches Wear OS.
 </details>
