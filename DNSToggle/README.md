@@ -12,10 +12,10 @@
 | **Repositório Oficial** | [`ELowry/DNSToggle`](https://github.com/ELowry/DNSToggle) |
 | **Plataforma de Tradução** | [Weblate — projeto `elowry`](https://hosted.weblate.org/projects/elowry/) |
 | **Componentes** | `dnstoggle-strings` + `dnstoggle-metadata` |
-| **Cobertura pt-BR** | 🟢 **176/176 strings · 37/37 metadados (100%)** |
+| **Cobertura pt-BR** | 🟢 **176/176 strings · 38/38 metadados (100%)** |
 | **Pendências** | 🟢 **0 strings pendentes** |
 | **Última revisão** | 20/10/2026 — naturalidade (14 ajustes) |
-| **Publicação** | `v3.0.6` (25/10/2026) — release cita oficialmente a tradução pt-BR |
+| **Publicação** | `v3.0.7` (29/10/2026) — release cita oficialmente a tradução pt-BR |
 
 ---
 
@@ -32,7 +32,7 @@ A tradução do DNSToggle está organizada em dois componentes oficiais:
 | Componente | Conteúdo | Cobertura pt-BR |
 | :--- | :--- | :---: |
 | **`dnstoggle-strings`** | Interface principal, Blocos das Configurações Rápidas, notificações, diálogos e permissões | 🟢 176/176 (100%) |
-| **`dnstoggle-metadata`** | Título, descrição curta, descrição completa e changelogs das lojas | 🟢 37/37 (100%) |
+| **`dnstoggle-metadata`** | Título, descrição curta, descrição completa e changelogs das lojas | 🟢 38/38 (100%) |
 
 > Os cinco domínios funcionais (app, tiles, notifications, dialogs e metadata) são cobertos por esses dois componentes.
 
