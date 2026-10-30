@@ -5,7 +5,7 @@
   "file_id": 32447,
   "file_name": "en.json",
   "total_submitted": 3637,
-  "generated_at": "2026-10-30T17:15:46-03:00",
+  "generated_at": "2026-10-30T19:38:54-03:00",
   "translations": {
     "7045051": {
       "source": "Go to homepage",
@@ -261,7 +261,7 @@
     },
     "7045187": {
       "source": "With Crowdin, you instantly get access to {count}+ integrations, allowing you to translate any customer content. You can connect to multiple CMS platforms, design tools, repositories, help centers, and more. Combine your language expertise with our technology solutions.",
-      "target": "Com Crowdin, você obtém acesso instantâneo a mais de integrações do {count}, permitindo traduzir qualquer conteúdo do cliente. Você pode se conectar a várias plataformas CMS, ferramentas de design, repositórios, centros de ajuda e muito mais. Combine sua experiência linguística com nossas soluções de tecnologia."
+      "target": "Com a Crowdin, você obtém acesso instantâneo a mais de {count} integrações, permitindo traduzir qualquer conteúdo do cliente. Você pode se conectar a várias plataformas CMS, ferramentas de design, repositórios, centrais de ajuda e muito mais. Combine sua experiência linguística com nossas soluções de tecnologia."
     },
     "7045189": {
       "source": "Our technology, your expertise",
@@ -4261,7 +4261,7 @@
     },
     "7047567": {
       "source": "Get My Free Checklist",
-      "target": "Obtenha Minha Lista de Verificação Gratuita"
+      "target": "Obtenha minha lista de verificação gratuita"
     },
     "7047569": {
       "source": "Thank you for downloading the checklist!",
@@ -6425,7 +6425,7 @@
     },
     "7048829": {
       "source": "Send your designs to Crowdin for translation.",
-      "target": "Envie seus designs para para tradução pela Crowdin."
+      "target": "Envie seus designs para tradução pela Crowdin."
     },
     "7048831": {
       "source": "Import translations back into Figma and preview them.",
@@ -7189,7 +7189,7 @@
     },
     "7049221": {
       "source": "Custom Spellcheck",
-      "target": "Verificador Ortográfico Personalizado"
+      "target": "Verificador ortográfico personalizado"
     },
     "7049223": {
       "source": "SAML SSO",
@@ -11525,7 +11525,7 @@
     },
     "7051465": {
       "source": "Effective communication is the key to connecting with your customers and building lasting relationships. As your business expands and reaches a global audience, it becomes imperative to optimize your email marketing strategy for a multilingual audience.",
-      "target": "A comunicação efetiva é a chave para conectar seus clientes e construir relações. Com o seu trabalho expandindo e chegando em uma audiência mundial, ele ficará imperativo para otimizar a sua estratégia de marketing por email para uma audiência multilíngue."
+      "target": "A comunicação eficaz é a chave para conectar seus clientes e construir relacionamentos. Com seu trabalho se expandindo e alcançando um público global, será essencial otimizar sua estratégia de marketing por e-mail para um público multilíngue."
     },
     "7051467": {
       "source": "Webinar",
@@ -12605,7 +12605,7 @@
     },
     "7052227": {
       "source": "Enterprise Security for All",
-      "target": "Segurança Empresarial Para Todos"
+      "target": "Segurança empresarial para todos"
     },
     "7052229": {
       "source": "Zero Trust architecture with Biometric 2FA, ISO/GDPR/HIPAA compliance, and auto-expiring JIT access to eliminate \"ghost account\" risks on any plan.",
@@ -12669,7 +12669,7 @@
     },
     "7052259": {
       "source": "Waste-Free Workflow",
-      "target": "Fluxo de Trabalho Sem Desperdício"
+      "target": "Fluxo de trabalho sem desperdício"
     },
     "7052261": {
       "source": "If you upload a file by mistake, just delete it. Your word count balance is restored instantly.",
@@ -13513,7 +13513,7 @@
     },
     "7060238": {
       "source": "Translation Management - Fastest Implementation - Enterprise",
-      "target": "Gerenciamento de Tradução - Implementação Mais Rápida - Enterprise"
+      "target": "Gerenciamento de tradução - implementação mais rápida - Enterprise"
     },
     "7060240": {
       "source": "Translation Management - Leader - Enterprise",
