@@ -25,6 +25,9 @@ O BitChord integra reprodução de áudio de alta fidelidade (Hi-Res/Lossless), 
 | **LUFS / dB** | `LUFS` / `dB` | Unidades de medição de intensidade sonora e decibéis. |
 | **Android Auto / Wear OS** | `Android Auto` / `Wear OS` | Plataformas automotivas e de relógios da Google. |
 | **Chromecast / Google Cast** | `Chromecast` / `Google Cast` | Protocolo e dispositivos de transmissão sem fio. |
+| **Crossfade** | `Crossfade` | Transição suave entre faixas; mesmo termo de Spotify e Apple Music. |
+| **Addon** | `addon` / `addons` | Fonte externa de catálogo e streaming; nunca "extensão" nem "complemento". |
+| **Listen Together** | `Ouvir junto` | Festa sincronizada entre dispositivos; equivalente ao Jam do Spotify. |
 
 ---
 
@@ -43,6 +46,7 @@ O BitChord integra reprodução de áudio de alta fidelidade (Hi-Res/Lossless), 
 | **Small speakers** | `Alto-falantes pequenos` | Predefinição calibrada para speakers compactos de celulares. |
 | **Reset all bands** | `Redefinir todas as bandas` | Restaurar a curva de frequências para o padrão neutro. |
 | **Float audio (32-bit float)** | `Áudio em float (32 bits)` | Pipeline de áudio de ponto flutuante sem headroom clipping. |
+| **Lyrics offset** | `Deslocamento da letra` | Ajuste fino, em milissegundos, do tempo da letra sobre a música. |
 
 ---
 
