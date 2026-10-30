@@ -104,6 +104,22 @@ Sempre que realizar commits em qualquer repositório do usuário:
 
 ---
 
+### 🚨 Regra 8: Contexto do Projeto — Ler o README Antes de Traduzir
+* **Leia o projeto antes da string:**
+  * README do projeto, `docs/`, `glossario.md` e `diretrizes-tecnicas.md`.
+  * Entenda o que o produto faz, para quem, e qual é o vocabulário do domínio.
+* **A tradução deve soar como o produto:**
+  * Player de música, gerenciador de downloads, TMS, extensão de letras e cliente de TV têm vocabulários diferentes.
+  * Botões: curtos e imperativos. Erros: diretos e acionáveis. Configurações: consistentes com o glossário.
+* **Termos de domínio e nomes de recursos ficam como são:**
+  * Exemplos: `Airlock`, `Canvas`, `Automix`, `Replay`, `SponsorBlock`, `DeArrow`, `Unison`, `Addon`, `Debrid`, `Scraper`.
+  * Nunca “traduza” um nome de recurso proprietário por impulso.
+* **Sem glossário, crie um:**
+  * Se o projeto ainda não tiver `glossario.md` no hub, registre os termos de domínio antes de fechar o lote.
+* **Vale para todos os projetos do hub:** Nuvio, BitChord, TorBox, TizenTube, Better Lyrics, YTDLnis, DNSToggle e Crowdin Platform.
+
+---
+
 ## 📂 3. Mapa do Repositório
 
 ```text

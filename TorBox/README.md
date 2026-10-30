@@ -92,3 +92,4 @@ bunx prettier --check src/i18n
 
 - 📘 [**i18n do projeto**](https://github.com/jittarao/torbox-app/blob/main/src/i18n/README.md): invariantes, comandos e protocolo de tradução.
 - 📗 [**README oficial**](https://github.com/jittarao/torbox-app#readme): instalação, Docker e arquitetura.
+- 📙 [**Glossário TorBox (glossario.md)**](./glossario.md): termos de domínio (Airlock, WebDL, seeds, peers, etiquetas) e tom da tradução.
