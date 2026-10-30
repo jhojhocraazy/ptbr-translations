@@ -5,14 +5,14 @@
 
 <!-- Efeito de Digitação Animado -->
 <a href="https://github.com/jhojhocraazy/ptbr-translations">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=22C55E&center=true&vCenter=true&width=620&lines=Central+de+Localiza%C3%A7%C3%A3o+Open+Source+%F0%9F%87%A7%F0%9F%87%B7;Mais+de+22.500+strings+traduzidas+para+pt-BR;Nuvio+%E2%80%A2+BitChord+%E2%80%A2+Crowdin+%E2%80%A2+TizenTube+%E2%80%A2+YTDLnis;100%25+Compat%C3%ADvel+com+Placeholders+%26+Tags;Qualidade%2C+Fluidez+e+Consist%C3%AAncia+Terminol%C3%B3gica" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=22C55E&center=true&vCenter=true&width=620&lines=Central+de+Localiza%C3%A7%C3%A3o+Open+Source+%F0%9F%87%A7%F0%9F%87%B7;Mais+de+24.500+strings+traduzidas+para+pt-BR;Nuvio+%E2%80%A2+BitChord+%E2%80%A2+Crowdin+%E2%80%A2+TizenTube+%E2%80%A2+YTDLnis;100%25+Compat%C3%ADvel+com+Placeholders+%26+Tags;Qualidade%2C+Fluidez+e+Consist%C3%AAncia+Terminol%C3%B3gica" alt="Typing SVG" />
 </a>
 
 <br/><br/>
 
 <!-- Badges Principais Estilizadas -->
 [![pt-BR](https://img.shields.io/badge/Portugu%C3%AAs%20(Brasil)-pt--BR-009739?style=for-the-badge&logo=brazil&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
-[![Strings](https://img.shields.io/badge/Strings-+23.062-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
+[![Strings](https://img.shields.io/badge/Strings-+24.598-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Cobertura](https://img.shields.io/badge/Cobertura-100%25-brightgreen?style=for-the-badge&logo=checkmarx)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Autor](https://img.shields.io/badge/Mantido%20por-Joseph%20Alves-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jhojhocraazy)
 
@@ -39,6 +39,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 | [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **17.450** (214 arquivos) | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**TizenTube & Cobalt**](#6-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **197** | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718)) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Hosted Weblate | **176 + 38** | 🟢 **No ar** (`v3.0.7`) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**TorBox**](#8-torbox) | Next.js / Web + Desktop | GitHub PRs / JSON | **1.536** | 🚀 **Em Análise** ([PR #125](https://github.com/jittarao/torbox-app/pull/125)) | ![100%](https://geps.dev/progress/100?color=00c853) |
 
 ---
 
@@ -210,6 +211,27 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 ---
 
+### 8. TorBox
+
+> Alternativa moderna e focada em usuários avançados para a interface padrão do TorBox, com downloads, torrents, Usenet, WebDAV, RSS, automações e player de vídeo.
+
+* **Repositório Oficial:** [`jittarao/torbox-app`](https://github.com/jittarao/torbox-app) (187 stars)
+* **Status:** 🟢 **100% Traduzido** (1.536 chaves traduzíveis; 1.454 no delta pt-BR + 82 herdadas do inglês).
+* **Diretório Local:** [`TorBox/`](./TorBox/)
+
+<details>
+<summary><b>🔍 Ver Histórico de Entregas & Detalhes do TorBox</b></summary>
+<br/>
+
+* **PR #125:** [feat(i18n): add Brazilian Portuguese (pt-BR) locale](https://github.com/jittarao/torbox-app/pull/125)
+  * **Status:** 🚀 **OPEN / MERGEABLE**.
+  * **Escopo:** locale `pt-BR` completo — delta de 1.454 chaves, 82 herdadas, registro em `settings.ts` e `request.ts`, seletor de idioma, bandeira, dicas de estilo do pipeline e teste de invariantes.
+  * **Pipeline do projeto:** `i18n:verify` passou, 14 testes de i18n sem falha e Prettier limpo.
+  * **Regras respeitadas:** `Admin.*` e `CustomViews.presets.*` não entram em deltas; placeholders e ICU preservados.
+</details>
+
+---
+
 ## 📁 Arquitetura do Repositório
 
 ```text
@@ -237,6 +259,11 @@ ptbr-translations/
 │   ├── glossario.md
 │   ├── README.md
 │   ├── tizentube_pt_BR.json
+│   └── 📁 repo/              # Repositório Git conectado ao fork e upstream
+├── 📁 TorBox/                # Snapshot EN/PT-BR e clone do repositório
+│   ├── README.md
+│   ├── torbox_messages_en.json
+│   ├── torbox_messages_pt_BR.json
 │   └── 📁 repo/              # Repositório Git conectado ao fork e upstream
 ├── 📁 YTDLnis/               # Backup XML completo e documentação
 │   ├── diretrizes-tecnicas.md
