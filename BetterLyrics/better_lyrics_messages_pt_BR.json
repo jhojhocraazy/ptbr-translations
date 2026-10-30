@@ -1284,7 +1284,7 @@
     }
   },
   "marketplace_tooltipRating": {
-    "message": "Média de $AVERAGE$ de $COUNT$ avaliações",
+    "message": "Média de $AVERAGE$ em $COUNT$ avaliações",
     "description": "Tooltip on a theme's star rating",
     "placeholders": {
       "average": {
@@ -1382,7 +1382,7 @@
     }
   },
   "unison_sortAscendingClearLabel": {
-    "message": "$LABEL$, ordem crescente. Ative para limpar a ordenação.",
+    "message": "$LABEL$, crescente. Ative para limpar a ordenação.",
     "description": "Accessible label of the selected Unison sort chip in ascending order, where activating it again removes the sort",
     "placeholders": {
       "label": {

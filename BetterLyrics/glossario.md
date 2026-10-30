@@ -8,7 +8,7 @@
 ## 📌 Introdução
 
 O Better Lyrics é a extensão de navegador para **YouTube Music** (organização [better-lyrics](https://github.com/better-lyrics)) que exibe letras sincronizadas, romanização, tradução e temas personalizados.  
-Este glossário estabelece o que deve ser mantido no termo internacional consagrado e como traduzir os termos específicos de áudio, sincronização e interface. Cobre as **637 strings** do catálogo atual (projeto Crowdin 863186).
+Este glossário estabelece o que deve ser mantido no termo internacional consagrado e como traduzir os termos específicos de áudio, sincronização e interface. Cobre as **638 strings** do catálogo atual (projeto Crowdin 863186).
 
 ---
 
