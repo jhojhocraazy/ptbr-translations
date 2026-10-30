@@ -37,7 +37,7 @@ O projeto usa um pipeline de i18n próprio, baseado em **deltas**: `en.json` é 
 | Herdadas do inglês | `src/i18n/messages/inherited.json` | **82 chaves** registradas como idênticas |
 | Registro de locales | `src/i18n/settings.ts` | `pt-BR` adicionado |
 | Loader | `src/i18n/request.ts` | importa `./messages/pt-BR.json` |
-| Seletor de idioma | `src/components/LanguageSwitcher.js` | "Português (Brasil)" + bandeira |
+| Seletor de idioma | `src/components/LanguageSwitcher.js` | "Português" + bandeira |
 | Estilo do pipeline | `scripts/i18n/lib/style.js` | dicas de estilo para `pt-BR` |
 | Teste de invariantes | `scripts/__tests__/i18n.test.js` | inclui `pt-BR` |
 | Documentação | `src/i18n/README.md` | lista de locales suportados |
