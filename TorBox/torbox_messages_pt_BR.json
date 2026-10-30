@@ -43,7 +43,7 @@
       "confirm": "Excluir",
       "deleting": "Excluindo…",
       "deletingProgress": "Excluindo {current}/{total}…",
-      "includeParentDownloads": "Excluir downloads pais",
+      "includeParentDownloads": "Excluir downloads pai",
       "includeParentDownloadsTooltip": "Quando arquivos dentro de downloads estão selecionados, marcar esta opção excluirá o download inteiro.",
       "message": "Tem certeza de que deseja excluir {count} {type}? Esta ação não pode ser desfeita.",
       "title": "Confirmar Exclusão"
