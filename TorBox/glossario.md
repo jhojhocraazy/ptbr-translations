@@ -38,6 +38,8 @@
 | **API key** | `Chave de API` | |
 | **Rate limit** | `Limite de taxa` | |
 | **Webhook** | `Webhook` | Termo técnico mantido |
+| **Stalled** | `Parado` | Mesmo termo do qBittorrent para downloads sem atividade |
+| **Free / Essential / Standard** | `Grátis` / `Essencial` / `Padrão` | Nomes de plano traduzidos; `Pro` permanece |
 
 ---
 
@@ -46,4 +48,5 @@
 - Botões e ações: imperativo curto — “Arquivar”, “Excluir”, “Tentar novamente”.
 - Mensagens de erro: diretas e acionáveis — “Não foi possível conectar aos servidores do TorBox.”
 - Configurações: frases curtas, sem jargão desnecessário.
+- **Caixa:** Sentence Case em português (só a primeira palavra e nomes próprios em maiúscula), mesmo quando o inglês usa Title Case.
 - Nunca traduzir nome de recurso (`Airlock`, `TBM`, `TorBox`) nem alterar `Admin.*`.
