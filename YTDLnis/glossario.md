@@ -23,6 +23,9 @@ O YTDLnis é uma ponte entre o usuário Android e utilitários de mídia avança
 | **DASH / HLS** | `DASH` / `HLS` | Protocolos de streaming dinâmico adaptativo. |
 | **Weblate** | `Weblate` | Plataforma oficial de tradução comunitária. |
 | **JSON / Info-JSON** | `JSON` / `Info-JSON` | Formato de armazenamento de metadados extraídos dos vídeos. |
+| **PO Token** | `PO Token` | Token de prova de origem exigido pelo YouTube; sigla técnica mantida. |
+| **Cookie** | `cookie` / `cookies` | Credenciais de sessão do navegador importadas para o yt-dlp. |
+| **APK** | `APK` | Formato de pacote de aplicativo do Android. |
 | **Codecs (Opus, AAC, VP9, AV1, H.264, H.265)** | *Manter nomes exatos* | Padrões industriais de compressão de mídia. |
 | **Contêineres (MP4, MKV, WebM, MP3, M4A)** | *Manter extensões* | Extensões e formatos de arquivo. |
 
@@ -41,6 +44,7 @@ O YTDLnis é uma ponte entre o usuário Android e utilitários de mídia avança
 | **Merge cuts into one file** | `Mesclar cortes em um único arquivo` | Unir vários trechos cortados em um único arquivo de saída. |
 | **Limit rate** | `Limitar velocidade` | Definir teto máximo de transferência de dados (ex: 50K ou 4.2M). |
 | **Command template** | `Modelo de comando` | Instrução pré-configurada de parâmetros do yt-dlp. |
+| **Update channel** | `Canal de atualização` | `Stable` → `Estável`; `Nightly` e `Master` permanecem como nomes de canal; `Beta` → `Beta`. |
 
 ---
 

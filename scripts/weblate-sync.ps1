@@ -518,7 +518,9 @@ switch ($Action) {
         if (-not $OutFile) { throw 'Informe -OutFile para Backup.' }
         $r = Invoke-WebRequest -Uri "$BaseUrl/translations/$Project/$Component/$Language/file/" -Headers $headers
         Assert-Json $r "$BaseUrl/translations/$Project/$Component/$Language/file/"
-        [System.IO.File]::WriteAllText($OutFile, $r.Content, $utf8)
+        # Componentes appstore (metadados) baixam ZIP; texto puro corromperia o arquivo.
+        if ($r.Content -is [byte[]]) { [System.IO.File]::WriteAllBytes($OutFile, $r.Content) }
+        else { [System.IO.File]::WriteAllText($OutFile, $r.Content, $utf8) }
         Write-Host "backup -> $OutFile ($($r.RawContentLength) bytes)" -ForegroundColor Green
         Write-Host 'aviso: unidades read-only (state=100) podem ser omitidas do export; confira a contagem de contextos contra o Status e escaneie o arquivo para escapes duplicados (\\'' e \\").' -ForegroundColor Yellow
     }

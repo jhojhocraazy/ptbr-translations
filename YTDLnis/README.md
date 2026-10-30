@@ -11,13 +11,13 @@
 | :--- | :--- |
 | **Repositório Oficial** | [`deniscerri/ytdlnis`](https://github.com/deniscerri/ytdlnis) (+10.600 stars) |
 | **Plataforma de Tradução** | [Hosted Weblate — YTDLnis pt-BR](https://hosted.weblate.org/projects/ytdlnis/-/pt_BR/) |
-| **Cobertura Geral** | 🟢 **100% Traduzido** (682 unidades, 0 pendentes e 0 avisos de qualidade) |
+| **Cobertura Geral** | 🟢 **100% Traduzido** (682 unidades, 0 pendentes e 3 avisos de qualidade justificados) |
 | **Pendências** | 🟢 **0 pendentes** no Weblate (24/10/2026) |
-| **Checks Ativos** | 🟢 **0 avisos** — os 5 falsos positivos anteriores foram resolvidos/suprimidos na plataforma |
+| **Checks Ativos** | 🟢 **3 avisos** — 2 de duplicidade intencional (`length`/`duration` → `Duração`) e 1 de sigla mantida (`PO Token (GVS)`) |
 | **Refinamentos** | 107 strings revisadas e aplicadas nesta rodada |
 | **Status Upstream** | Sincronização direta via Pull Requests automáticos do Weblate |
 
-> **Nota:** as 3 strings read-only (`trendingPlaylist`, `unfound_file`, `ytdlp`) não são editáveis no Weblate e não entram no XML exportado; o Android usa o fallback da fonte. Os 5 checks restantes são falsos positivos: `JSON`/`Info-JSONs` são termos protegidos pelo glossário e `Nightly` é o nome próprio do canal.
+> **Nota:** as 3 strings read-only (`trendingPlaylist`, `unfound_file`, `ytdlp`) não são editáveis no Weblate e não entram no XML exportado; o Android usa o fallback da fonte. Os 3 checks restantes são falsos positivos: `length` e `duration` compartilham `Duração` por serem o mesmo dado em contextos diferentes, e `PO Token (GVS)` mantém a sigla do provedor de token.
 
 ---
 

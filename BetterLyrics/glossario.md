@@ -55,6 +55,7 @@ Estes termos são nomes de produto, marcas do ecossistema de letras ou conceitos
 | **Artist / Album** | `Artista` / `Álbum` | Metadados principais da música. |
 | **Now Playing** | `Reproduzindo agora` | Cabeçalho indicando a faixa ativa no momento. |
 | **Queue** | `Fila de reprodução` | Lista das próximas músicas programadas para tocar. |
+| **Crossfade** | `Crossfade` | Transição suave entre faixas ou capas. Mesmo termo de Spotify e Apple Music. |
 | **Seek / Scrubbing** | `Avançar/Retroceder` ou `Buscar` | Ação de arrastar a barra de progresso temporal da música. |
 | **Pitch / Tempo** | `Tom` / `Andamento (velocidade)` | Parâmetros de afinação e velocidade rítmica do áudio. |
 | **Vocal Stem / Instrumental** | `Faixa vocal` / `Faixa instrumental` | Separação de canais de áudio para isolar a voz ou a melodia. |
