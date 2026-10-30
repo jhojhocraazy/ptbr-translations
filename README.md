@@ -12,7 +12,7 @@
 
 <!-- Badges Principais Estilizadas -->
 [![pt-BR](https://img.shields.io/badge/Portugu%C3%AAs%20(Brasil)-pt--BR-009739?style=for-the-badge&logo=brazil&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
-[![Strings](https://img.shields.io/badge/Strings-+24.598-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
+[![Strings](https://img.shields.io/badge/Strings-+24.617-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Cobertura](https://img.shields.io/badge/Cobertura-100%25-brightgreen?style=for-the-badge&logo=checkmarx)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Autor](https://img.shields.io/badge/Mantido%20por-Joseph%20Alves-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jhojhocraazy)
 
@@ -33,10 +33,10 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 | Projeto | Ecossistema | Plataforma | Strings | Status Oficial | Progresso |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.707** | 🟢 **No ar** (`v0.6.5-beta`) + PR #2435 na fila | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**BitChord**](#2-bitchord) | Android / Wear OS | GitHub PRs / XML | **+1.456** | 🚀 **Em Análise** ([PR #1204](https://github.com/kushagrasinghx/BitChord/pull/1204), base `v1.8.2`) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**BitChord**](#2-bitchord) | Android / Wear OS | GitHub PRs / XML | **+1.471** | 🚀 **Em Análise** ([PR #1204](https://github.com/kushagrasinghx/BitChord/pull/1204), base `v1.8.2`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **682** | 🟢 **100% Traduzido** (0 pendentes; aguarda release) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **Sincronizado** (PR #1019 aberto; 2 chaves novas na fonte) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **17.450** (214 arquivos) | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **17.454** (214 arquivos) | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**TizenTube & Cobalt**](#6-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **197** | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718)) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Hosted Weblate | **176 + 38** | 🟢 **No ar** (`v3.0.7`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**TorBox**](#8-torbox) | Next.js / Web + Desktop | GitHub PRs / JSON | **1.536** | 🚀 **Em Análise** ([PR #125](https://github.com/jittarao/torbox-app/pull/125)) | ![100%](https://geps.dev/progress/100?color=00c853) |
@@ -84,7 +84,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Cliente moderno de YouTube Music com estética inspirada no Apple Music desenvolvido em **Kotlin Multiplatform (KMP)** para Android e Wear OS.
 
 * **Repositório Oficial:** [`kushagrasinghx/BitChord`](https://github.com/kushagrasinghx/BitChord) (+3.700 stars)
-* **Status:** 🟢 **100% Traduzido** (+1.456 strings nos 3 módulos ativos: Android, Shared UI e Wear OS).
+* **Status:** 🟢 **100% Traduzido** (+1.471 strings nos 3 módulos ativos: Android, Shared UI e Wear OS).
 * **Diretório Local:** [`BitChord/`](./BitChord/)
 
 <details>
@@ -92,10 +92,11 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 <br/>
 
 * **PR #1204:** [loc(pt): complete Portuguese (pt-BR) localization for v1.8.2](https://github.com/kushagrasinghx/BitChord/pull/1204)
-  * **Status:** 🚀 **OPEN / MERGEABLE**, base `v1.8.2` conforme o `CONTRIBUTING.md`.
-  * **Módulos:** Android (1.120 entradas traduzíveis), Shared UI (249) e Wear OS (40, arquivo criado do zero).
-  * **Volume:** 145 chaves novas, 115 entradas que ainda estavam em inglês corrigidas e 4 textos removidos acompanhados.
+  * **Status:** 🚀 **OPEN / MERGEABLE**, base `v1.8.2` conforme o `CONTRIBUTING.md`; rebaseada sobre o head atual.
+  * **Módulos:** Android (1.135 entradas traduzíveis), Shared UI (249) e Wear OS (40, arquivo criado do zero).
+  * **Volume:** 145 chaves novas + 15 do upstream (fontes SF Pro, sincronização de playlists e conversão para DAC), 115 entradas que ainda estavam em inglês corrigidas e 4 textos removidos acompanhados.
   * **Validação:** 0 problemas de placeholder/XML nos três módulos; paridade exata de chaves com a fonte EN.
+  * **Release:** `v1.9` saiu em 30/10 sem esta PR; o merge ainda depende do mantenedor.
 * **PR #952:** [loc(pt): complete Portuguese (pt-BR) localization and fix untranslated strings across all modules](https://github.com/kushagrasinghx/BitChord/pull/952)
   * **Status:** 🔒 **FECHADA** — apontava para `main`; o trabalho foi refeito em #1204 na branch do ciclo de release.
   * **Histórico:** chegou a ser reconstruída sobre a estrutura nova do `main` (26/10), mas o `CONTRIBUTING.md` exige a branch do ciclo de release (`v1.8.2`).
@@ -151,16 +152,16 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 * **Projeto Oficial:** [Crowdin Translations (ID: 31)](https://crowdin.com/project/crowdin)
 * **Plataforma de Tradução:** Crowdin API v2
-* **Status:** 🟢 **100% Traduzido** (**17.450 strings** / 119.740 palavras em 214 arquivos — 0 pendentes).
+* **Status:** 🟢 **100% Traduzido** (**17.454 strings** / 119.751 palavras em 214 arquivos — 0 pendentes).
 * **Diretório Local:** [`Crowdin/`](./Crowdin/)
 
 <details>
 <summary><b>🔍 Ver Detalhes do Projeto Crowdin Platform</b></summary>
 <br/>
 
-* **Cobertura Total (100%):** 17.450 strings visíveis traduzidas, 923 strings ocultas e **0 pendentes** em 214 arquivos, cobrindo web app, backend, e-mails e templates.
+* **Cobertura Total (100%):** 17.454 strings visíveis traduzidas, 923 strings ocultas e **0 pendentes** em 214 arquivos, cobrindo web app, backend, e-mails e templates.
 * **Interface Moderna Web:** 3.637 strings visíveis de `src/i18n/locales/en.json` (ID: 32447) concluídas.
-* **Atualização 30/10/2026:** 8 novas strings traduzidas — 7 em `dynamic.csv` (auto-tag de capturas de tela) e 1 em `mfa.php` (confirmação do autenticador) — com auditoria completa em 17.450 strings e **0 divergências**.
+* **Atualização 30/10/2026:** 12 novas strings traduzidas — 7 em `dynamic.csv` (auto-tag de capturas de tela), 1 em `mfa.php` (confirmação do autenticador) e 4 em `backend.csv` (webhooks) — com auditoria completa em 17.454 strings e **0 divergências**.
 * **Atualização 28/10/2026:** 55 novas strings traduzidas — 27 em `dynamic.csv`, 19 em `backend.csv`, 7 em `en.json` e 2 em `scopes.php`.
 * **Atualização 26/10/2026:** 51 novas strings traduzidas — 18 em `backend.csv`, 14 em `auth.php`, 7 em `dynamic.csv`, 7 em `workspace.php` e 5 em `scopes.php`.
 * **Atualização 22/10/2026:** 286 novas strings traduzidas — 157 em `en.json`, 110 em `editor.csv`, 12 em `backend.csv` e 7 em `dynamic.csv` — e 8 divergências antigas de placeholders corrigidas.

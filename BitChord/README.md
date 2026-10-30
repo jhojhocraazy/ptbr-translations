@@ -11,10 +11,10 @@
 | :--- | :--- |
 | **Plataforma Tecnológica** | Kotlin Multiplatform (KMP) + Jetpack Compose / Compose Multiplatform |
 | **Sistemas Alvo** | Android e Wear OS (o módulo Desktop foi removido do upstream em 26/10/2026) |
-| **Cobertura Geral** | 🟢 **100% Traduzido** (+1.456 strings nos 3 módulos ativos: Android, Shared UI e Wear OS) |
+| **Cobertura Geral** | 🟢 **100% Traduzido** (+1.471 strings nos 3 módulos ativos: Android, Shared UI e Wear OS) |
 | **Repositório Upstream** | [`kushagrasinghx/BitChord`](https://github.com/kushagrasinghx/BitChord) (+3.700 stars) |
 | **Branch de Trabalho** | `i18n/pt-br-182` (PR #1204, base `v1.8.2`) |
-| **Última Versão** | `v1.8.1` (19/10/2026) — anterior ao lote atual |
+| **Última Versão** | `v1.9` (30/10/2026) — saiu antes do merge desta PR |
 
 ---
 
@@ -34,7 +34,7 @@ A localização do BitChord cobre os 3 módulos da branch `v1.8.2`:
 
 | Módulo | Arquivo de Tradução | Strings | Status pt-BR |
 | :--- | :--- | :---: | :---: |
-| **Android Core (`app/`)** | [`app/src/main/res/values-pt/strings.xml`](./repo/app/src/main/res/values-pt/strings.xml) | 1.097 strings + 23 plurais | 🟢 100% Concluído |
+| **Android Core (`app/`)** | [`app/src/main/res/values-pt/strings.xml`](./repo/app/src/main/res/values-pt/strings.xml) | 1.112 strings + 23 plurais | 🟢 100% Concluído |
 | **UI Multiplataforma (`sharedUi/`)** | [`sharedUi/.../values-pt/strings.xml`](./repo/sharedUi/src/commonMain/composeResources/values-pt/strings.xml) | 249 | 🟢 100% Concluído |
 | **Wear OS Smartwatches (`wearos/`)** | [`wearos/src/main/res/values-pt/strings.xml`](./repo/wearos/src/main/res/values-pt/strings.xml) | 40 | 🟢 100% Concluído (Criado) |
 
@@ -46,6 +46,7 @@ A localização do BitChord cobre os 3 módulos da branch `v1.8.2`:
 2. **Base Correta do Ciclo de Release (28/10/2026):** a entrega foi refeita sobre a branch `v1.8.2`, conforme o `CONTRIBUTING.md`, em vez de `main`. A PR #952 foi fechada e substituída pela #1204.
 3. **Criação do Módulo Wear OS:** arquivo `values-pt/strings.xml` criado do zero para relógios Wear OS (40 strings), já que o upstream ainda não tem tradução nesse módulo.
 4. **Novas Strings:** traduzidas as 145 chaves que o upstream adicionou (bit-perfect/DAC, modos de renderização, Top Picks, catálogo de climas, períodos do Replay, cache parcial e painel de informações da música), com paridade total de chaves traduzíveis.
+5. **Rebase de 30/10/2026:** a branch foi refeita sobre o head atual da `v1.8.2` (14 commits) e recebeu as 15 strings novas do upstream — seleção de fonte (SF Pro/Clássica), sincronização de playlists baixadas, conversão para DACs limitados e a tolerância padrão atualizada de 3 para 5 segundos.
 
 ---
 
