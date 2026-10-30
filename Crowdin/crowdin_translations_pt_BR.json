@@ -5,7 +5,7 @@
   "file_id": 32447,
   "file_name": "en.json",
   "total_submitted": 3637,
-  "generated_at": "2026-10-30T15:50:11-03:00",
+  "generated_at": "2026-10-30T16:14:44-03:00",
   "translations": {
     "7045051": {
       "source": "Go to homepage",
@@ -585,7 +585,7 @@
     },
     "7045433": {
       "source": "Email translation",
-      "target": "Tradução do Email"
+      "target": "Tradução de e-mail"
     },
     "7045435": {
       "source": "Over {count, number}",
@@ -1585,7 +1585,7 @@
     },
     "7045979": {
       "source": "Please enter a valid email address.",
-      "target": "Favor inserir um endereço de email válido."
+      "target": "Insira um endereço de e-mail válido."
     },
     "7045981": {
       "source": "Please fill in all required fields.",
@@ -1961,7 +1961,7 @@
     },
     "7046241": {
       "source": "Please enter a valid email address.",
-      "target": "Favor inserir um endereço de email válido."
+      "target": "Insira um endereço de e-mail válido."
     },
     "7046243": {
       "source": "Please fill in all required fields.",
@@ -1997,7 +1997,7 @@
     },
     "7046263": {
       "source": "Please enter a valid email address.",
-      "target": "Favor inserir um endereço de email válido."
+      "target": "Insira um endereço de e-mail válido."
     },
     "7046265": {
       "source": "Please fill in all required fields.",
@@ -4217,7 +4217,7 @@
     },
     "7047545": {
       "source": "Please enter a valid email address.",
-      "target": "Favor inserir um endereço de email válido."
+      "target": "Insira um endereço de e-mail válido."
     },
     "7047547": {
       "source": "Oops! Unable to send your request. Please email us at {email}",
@@ -8265,7 +8265,7 @@
     },
     "7049775": {
       "source": "Join our Webinar on creating multilingual campaigns. Learn how to scale your email program across markets.",
-      "target": "Participe do nosso Webinar sobre a criação de campanhas multilíngues. Aprenda como expandir seu programa de email em diferentes mercados."
+      "target": "Participe do nosso webinar sobre a criação de campanhas multilíngues. Aprenda como expandir seu programa de e-mail em diferentes mercados."
     },
     "7049777": {
       "source": "Running multilingual campaigns with Crowdin and Dyspatch",
@@ -11541,7 +11541,7 @@
     },
     "7051473": {
       "source": "Join our Webinar on creating multilingual campaigns. Learn how to scale your email program across markets.",
-      "target": "Participe do nosso Webinar sobre a criação de campanhas multilíngues. Aprenda como expandir seu programa de email em diferentes mercados."
+      "target": "Participe do nosso webinar sobre a criação de campanhas multilíngues. Aprenda como expandir seu programa de e-mail em diferentes mercados."
     },
     "7051475": {
       "source": "Running multilingual campaigns with Crowdin and Dyspatch",
