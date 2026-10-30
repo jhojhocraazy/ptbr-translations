@@ -11,10 +11,10 @@
 | :--- | :--- |
 | **Plataforma Tecnológica** | Kotlin Multiplatform (KMP) + Compose Multiplatform (CMP) |
 | **Sistemas Alvo** | Android e iOS |
-| **Cobertura Geral** | 🟢 **100% Traduzido** (2.707 entradas em 7 arquivos; lotes #2288, #2338, #2402 e #2435) |
-| **Refinamento de Qualidade** | 🟢 **92 entradas revisadas** (terminologia, Sentence Case e naturalidade) |
+| **Cobertura Geral** | 🟢 **100% Traduzido** (2.707 entradas em 7 arquivos; lotes #2288, #2338, #2402, #2435 e #2455) |
+| **Refinamento de Qualidade** | 🟢 **Revisão completa contra o EN** (terminologia Netflix/Prime, Sentence Case e naturalidade) |
 | **Última Versão Estável** | `v0.6.5-beta` (inclui os lotes #2288, #2338 e #2402) |
-| **Último Pull Request** | [**PR #2435**](https://github.com/NuvioMedia/NuvioMobile/pull/2435) (62 novas strings de configurações, legendas e renderização ASS) |
+| **Último Pull Request** | [**PR #2455**](https://github.com/NuvioMedia/NuvioMobile/pull/2455) (`Minha lista`, Sentence Case e texto de scrobble recuperado do EN) |
 
 ---
 

@@ -32,7 +32,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 | Projeto | Ecossistema | Plataforma | Strings | Status Oficial | Progresso |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.707** | 🟢 **No ar** (`v0.6.5-beta`) + PR #2435 na fila | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.707** | 🟢 **No ar** (`v0.6.5-beta`); #2435 mesclado e [PR #2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) na fila | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**BitChord**](#2-bitchord) | Android / Wear OS | GitHub PRs / XML | **+1.471** | 🚀 **Em Análise** ([PR #1204](https://github.com/kushagrasinghx/BitChord/pull/1204), base `main`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **682** | 🟢 **100% Traduzido** (0 pendentes; aguarda release) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **Sincronizado** (PR #1019 aberto; 2 chaves novas na fonte) | ![100%](https://geps.dev/progress/100?color=00c853) |
@@ -49,7 +49,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Aplicativo moderno de streaming de mídia e entretenimento desenvolvido em **Kotlin Multiplatform (Compose Multiplatform)** para Android e iOS.
 
 * **Repositório Oficial:** [`NuvioMedia/NuvioMobile`](https://github.com/NuvioMedia/NuvioMobile)
-* **Status:** 🟢 **100% Traduzido** (2.707 entradas em 7 arquivos modulares; lotes #2288, #2338, #2402 e #2435).
+* **Status:** 🟢 **100% Traduzido** (2.707 entradas em 7 arquivos modulares; lotes #2288, #2338, #2402, #2435 e #2455).
 * **Diretório Local:** [`NuvioMobile/`](./NuvioMobile/)
 
 <details>
@@ -73,9 +73,11 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
   * **Volume:** 4 novas entradas (`settings_mdb_show_on_hero`, `settings_mdb_show_on_hero_description`, `settings_playback_render_scale`, `settings_playback_render_scale_description`).
   * **Cobertura:** 2.424/2.424 entradas no módulo principal, paridade exata de chaves com a fonte EN e 0 divergências de placeholders.
 * **PR #2435:** [Traduz grupos de configurações, aparência de legendas e modos de renderização ASS](https://github.com/NuvioMedia/NuvioMobile/pull/2435)
-  * **Status:** 🚀 **OPEN / MERGEABLE** — CI bloqueado por erro pré-existente na base (`updateAssMargins`).
+  * **Status:** ✅ **MESCLADO** em 30/10/2026 na branch `cmp-rewrite`.
   * **Volume:** 62 entradas novas (grupos e páginas de configurações, aparência de legendas, modos ASS e troca automática de motor) + 1 descrição atualizada.
   * **Cobertura:** 2.492/2.492 entradas no módulo principal, paridade exata de chaves com a fonte EN e 0 divergências de placeholders.
+* **PR #2455:** [`Minha lista`, Sentence Case e texto de scrobble recuperado do EN](https://github.com/NuvioMedia/NuvioMobile/pull/2455)
+  * **Status:** 🚀 **OPEN / MERGEABLE** — continuação do #2435 com as 3 correções que ficaram fora do merge.
 </details>
 
 ---
