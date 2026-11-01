@@ -297,6 +297,7 @@ A regra é simples: **a entrega termina onde a tradução vive**.
 
 * 📘 [**Metodologia completa**](./metodologia.md) — classificação, ciclo de trabalho, regras de qualidade e definição de pronto.
 * 🛠️ [**Ferramentas**](./scripts/README.md) — `crowdin-sync.ps1` e `weblate-sync.ps1` (`Status` / `Export` / `Push` / `Check` / `Backup`) + `validate-ptbr.ps1`.
+* 🗂️ [**Organização dos repositórios e fontes EN**](./organizacao-dos-repositorios.md) — quando o clone local é necessário e quando basta a fonte EN fixada.
 
 ---
 

@@ -1,7 +1,7 @@
 # 🗂️ Organização dos Repositórios e das Fontes EN
 
 > **Proposta de reorganização das pastas do hub.**  
-> Status: **aguardando validação do mantenedor** — nenhuma remoção foi executada.  
+> Status: **validada e parcialmente executada em 01/11/2026** — ver §9.  
 > Medições de 01/11/2026.
 
 ---
@@ -49,7 +49,9 @@ Fatos que sustentam a proposta:
 - DNSToggle, YTDLnis e Crowdin **não têm fonte EN nenhuma** no hub — são justamente os que mais
   precisam dela para validar.
 - Better Lyrics é entregue por Crowdin e mantém clone de 8,2 MB **e** o EN local
-  (`better_lyrics_messages_en.json`): o clone é redundante.
+  (`better_lyrics_messages_en.json`). O clone é redundante para **validar**, mas ainda é a única
+  referência viva do upstream para o item aberto "638 no Crowdin vs 640 no upstream"
+  (`research/README.md:113`): mantê-lo até esse item fechar.
 
 ---
 
@@ -80,7 +82,8 @@ passa a significar apenas a primeira. Deriva vira um passo separado e explícito
    Custo: ~30 KB por projeto.
 2. **Clone apenas nos quatro projetos entregues por PR.** Não criar clone para DNSToggle,
    YTDLnis e Crowdin.
-3. **Remover o clone do Better Lyrics** (projeto de plataforma, EN já local).
+3. **Manter o clone do Better Lyrics por enquanto** — é a única referência viva do upstream
+   enquanto o item aberto "638 vs 640" não fechar; remover depois disso.
 4. **Clones que ficam**: clone raso (`--depth 1`) e sem artefato de build.
 5. **Nenhuma mudança de governança**: `AGENTS.md`, `README.md` raiz, `metodologia.md` e os
    documentos de projeto não são alterados por esta proposta.
@@ -101,8 +104,8 @@ DNSToggle/
 
 | # | Ação | Ganho | Risco |
 | :-: | :--- | :--- | :--- |
-| 1 | Apagar `TorBox/repo/node_modules` e `TorBox/repo/.next` | ~1.656 MB | nulo (0 arquivos versionados; `npm install` recria) |
-| 2 | Remover `BetterLyrics/repo` | 8,2 MB | baixo (EN já local; clone pode ser recriado) |
+| 1 | Apagar `TorBox/repo/node_modules` e `TorBox/repo/.next` — **executado em 01/11/2026** | 1.656 MB | nulo (0 arquivos versionados; `npm install` recria) |
+| 2 | Manter `BetterLyrics/repo` até o item aberto "638 vs 640" fechar | — | removê-lo agora perderia a única referência viva do upstream |
 | 3 | Reclonar Nuvio, BitChord, TizenTube, TorBox com `--depth 1` | ~1 GB estimado | baixo (histórico completo deixa de existir localmente) |
 | 4 | Criar `fonte/` + SHA nos 9 projetos | nenhum | nulo (arquivo novo) |
 
@@ -127,3 +130,14 @@ Ganho total estimado: de ≈ 2.520 MB para algo entre 100 e 300 MB. **Estimativa
 - **TorBox no validador**: o erro de JSON (`All`/`all`) é do `validate-ptbr.ps1`, não da
   organização de pastas. Continua exigindo validação manual.
 - **Deriva do YTDLnis**: as 5 chaves novas precisam de uma rodada de tradução própria.
+
+---
+
+## 9. Execução
+
+| Data | Ação | Resultado medido |
+| :--- | :--- | :--- |
+| 01/11/2026 | Apagados `TorBox/repo/node_modules` e `TorBox/repo/.next` | TorBox: **1.736,2 MB → 80,0 MB**; `git status` do clone sem nenhuma alteração versionada |
+| 01/11/2026 | Clone do Better Lyrics mantido (era remoção na proposta original) | o item aberto "638 vs 640" continua verificável no upstream |
+| — | Reclone raso dos quatro clones de PR | pendente |
+| — | `fonte/` + SHA nos nove projetos | pendente |
