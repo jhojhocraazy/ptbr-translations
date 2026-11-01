@@ -106,7 +106,7 @@ DNSToggle/
 | :-: | :--- | :--- | :--- |
 | 1 | Apagar `TorBox/repo/node_modules` e `TorBox/repo/.next` — **executado em 01/11/2026** | 1.656 MB | nulo (0 arquivos versionados; `npm install` recria) |
 | 2 | Manter `BetterLyrics/repo` até o item aberto "638 vs 640" fechar | — | removê-lo agora perderia a única referência viva do upstream |
-| 3 | Reclonar Nuvio, BitChord, TizenTube, TorBox com `--depth 1` | ~1 GB estimado | baixo (histórico completo deixa de existir localmente) |
+| 3 | Reclonar Nuvio, BitChord, TizenTube, TorBox com `--depth 1` — **executado em 01/11/2026** | 2.188 MB medidos | baixo (histórico completo deixa de existir localmente; commits só locais do BitChord salvos em bundle) |
 | 4 | Criar `fonte/` + SHA nos 9 projetos | nenhum | nulo (arquivo novo) |
 
 Ganho total estimado: de ≈ 2.520 MB para algo entre 100 e 300 MB. **Estimativa**, não medição.
@@ -117,8 +117,8 @@ Ganho total estimado: de ≈ 2.520 MB para algo entre 100 e 300 MB. **Estimativa
 
 - [ ] Todo projeto tem `fonte/` com o EN exato usado na tradução e o SHA registrado no README.
 - [ ] `validate-ptbr.ps1 -Source <projeto>/fonte/...` roda sem depender de rede.
-- [ ] Existem clones apenas para Nuvio, BitChord, TizenTube e TorBox.
-- [ ] Nenhum clone contém `node_modules` ou diretório de build.
+- [x] Existem clones apenas para Nuvio, BitChord, TizenTube e TorBox.
+- [x] Nenhum clone contém `node_modules` ou diretório de build.
 - [ ] `.gitignore` continua cobrindo `*/repo/` (`.gitignore:2-3`) — sem alteração necessária.
 
 ---
@@ -139,5 +139,18 @@ Ganho total estimado: de ≈ 2.520 MB para algo entre 100 e 300 MB. **Estimativa
 | :--- | :--- | :--- |
 | 01/11/2026 | Apagados `TorBox/repo/node_modules` e `TorBox/repo/.next` | TorBox: **1.736,2 MB → 80,0 MB**; `git status` do clone sem nenhuma alteração versionada |
 | 01/11/2026 | Clone do Better Lyrics mantido (era remoção na proposta original) | o item aberto "638 vs 640" continua verificável no upstream |
-| — | Reclone raso dos quatro clones de PR | pendente |
+| 01/11/2026 | Reclone raso dos quatro clones de PR | Nuvio 552,7 → **149,6 MB**; BitChord 188,5 → **158,3 MB**; TizenTube 34,4 → **2,8 MB**; TorBox 80,0 → **13,7 MB**. Total dos clones: **2.520 → 332,3 MB** |
 | — | `fonte/` + SHA nos nove projetos | pendente |
+
+### 9.1 Notas da execução do reclone
+
+- **`git clone --depth 1` implica `--single-branch`.** Cada clone rastreia só a branch base; branches de PR precisam de
+  fetch explícito: `git fetch --depth 1 origin <branch>:refs/remotes/origin/<branch>`.
+- **Branch de trabalho restaurada** em cada clone, conforme o PR correspondente: Nuvio `cmp-rewrite` (#2435, merged),
+  BitChord `i18n/pt-br-182` (#1204), TizenTube `i18n/portuguese-complete-pt-br` (#718), TorBox `i18n/pt-br` (#125).
+- **Nuvio:** a base local foi alinhada ao upstream (`46febb5`). O fork `origin/cmp-rewrite` está 1 commit atrás e
+  1 à frente (commit próprio `229c083`), então `git status` mostra `ahead 1, behind 1` — é o esperado, não erro.
+- **BitChord:** três branches tinham commits só locais. Antes de remover o clone antigo, eles foram salvos em
+  `research/bundle-bitcord-2026-11-01.bundle` (68,6 MB, `git bundle verify` = okay, histórico completo).
+- **Validação:** `check-updates.ps1` roda nos quatro clones sem erro (0 erros; `exit 2` = novidades encontradas,
+  comportamento documentado em `scripts/README.md:139`).
