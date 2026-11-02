@@ -375,10 +375,10 @@ Coisas que este documento **não** resolve, com o que falta para resolver:
    não de `main`. A PR #1204 está aberta contra **`main`** (verificado com `gh pr view 1204` em
    02/11/2026: `base=main`, `state=OPEN`, `mergeable=MERGEABLE`). Falta: a decisão do mantenedor
    sobre qual das duas vale — até lá, o documento registra as duas.
-2. **Termos técnicos fora do glossário.** O catálogo mantém em inglês `Loudness`, `Replay`,
-   `Scrobbling`, `Buffers`, `Bit-exact`, `Playlist`, `Mono`, `Status`, `Online` e `Token`, e o
-   [`glossario.md`](./glossario.md) não os cobre. Falta: registrá-los lá para que a decisão não seja
-   refeita a cada string.
+2. **Nome do "Ouvir junto".** O glossário cobre os termos que ficam em inglês e os que se traduzem,
+   mas o catálogo usa **três** nomes para o mesmo recurso: `Ouvir junto` (`values-pt/strings.xml:684`),
+   `festa` (`:686`) e `Jam de %1$s` (`sharedUi/.../values-pt/strings.xml:44`). Falta: a decisão do
+   mantenedor sobre `Jam` — está registrada em [`glossario.md`](./glossario.md), seção 7.
 3. **Módulos sem teste.** `sharedUi/` e `wearos/` dependem do validador local; não há teste de CI
    para eles. Falta: um teste equivalente ao `LocaleStringsTest` nesses módulos (decisão do
    upstream, não do hub).
