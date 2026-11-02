@@ -1,128 +1,290 @@
-# 📗 Glossário Terminológico — Better Lyrics
+# 📗 Glossário de termos — Better Lyrics
 
-> **O vocabulário da localização em Português do Brasil (`pt-BR`) da extensão
-> [Better Lyrics](https://github.com/better-lyrics/better-lyrics).**
-> Mantido por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jhojhocraazy).
-
----
-
-## 📌 Como usar
-
-O Better Lyrics é a extensão de navegador para **YouTube Music** que exibe letras sincronizadas,
-romanização, tradução e temas personalizados.
-
-Cada linha abaixo traz a **chave do catálogo** onde o termo aparece, para que a decisão seja
-verificável. As linhas entre parênteses são do snapshot
-[`snapshots/better_lyrics_messages_pt_BR.json`](./snapshots/better_lyrics_messages_pt_BR.json),
-medido em 02/11/2026.
-
-O glossário decide a **palavra**. O formato, os placeholders e os plurais estão em
-[`diretrizes-tecnicas.md`](./diretrizes-tecnicas.md).
+> **O que é este documento:** o vocabulário da **etapa 4** do método de tradução (escrever em pt-BR).
+> Ele decide a **palavra**; [`diretrizes-tecnicas.md`](./diretrizes-tecnicas.md) decide **como
+> escrevê-la em JSON**. Status do projeto em [`README.md`](./README.md).
+>
+> **Contra o que foi escrito:** snapshot
+> [`snapshots/better_lyrics_messages_pt_BR.json`](./snapshots/better_lyrics_messages_pt_BR.json)
+> (638 chaves), conferido chave a chave contra o EN em **02/11/2026**. Toda citação `:linha` é desse
+> arquivo.
+>
+> **Como usar:** procure o termo, confira a linha citada e escreva igual. Se o termo não estiver aqui,
+> decida com a regra da seção 1 e acrescente a linha **no mesmo commit** da string nova.
 
 ---
 
-## 1. 🚫 Termos que nunca se traduzem
+## 1. 🔎 Como decidir um termo que não está aqui
 
-Nomes de produto e de marca. O `tooling/check-i18n-brand.ts:14` do upstream reprova o PR que alterar
-os cinco primeiros.
+Três perguntas, nesta ordem:
 
-| Termo | Como fica | Onde / por quê |
-| :--- | :--- | :--- |
-| **Better Lyrics** | `Better Lyrics` | nome do produto (`options_provider_betterLyrics`, `:796`) |
-| **Unison** | `Unison` | acervo colaborativo de letras — votação, revisões, dock de ações (`unison_title`) |
-| **Portato** | `Portato` | provedor do produto (`options_provider_betterLyricsPortato`) |
-| **Legato** | `Legato` | provedor do produto (`options_provider_betterLyricsLegato`) |
-| **boidu.dev** | `boidu.dev` | endereço do projeto. Não aparece no catálogo atual — a proteção vale se aparecer |
-| **YouTube Music** | `YouTube Music` | plataforma hospedeira |
-| **Musixmatch**, **LRClib**, **BiniLyrics**, **Spicy Lyrics** | grafia original | provedores de letra. O mesmo `check-i18n-brand.ts:11-13` diz que marcas de terceiro **podem** ser transliteradas — a decisão daqui é manter. `Spicy Lyrics` ainda não está no snapshot: é uma das 5 chaves pendentes |
-| **LRC**, **TTML** | `LRC`, `TTML` | nomes de formato de letra (`unison_format_lrc`, `unison_format_ttml`) |
-| **ISRC** | `ISRC` | código internacional de gravação (`unison_isrc`, `:2188`) |
-| **Picture-in-Picture** | `Picture-in-Picture` | nome do recurso de janela flutuante (`picture_in_picture_open`) |
-| **Playground** | `Playground` | área de testes de estilo (`editor_playground`, `:1506`) |
-| **Crossfade** | `Crossfade` | nome da transição, igual em Spotify e Apple Music (`options_pipTransition_crossfade`) |
-| **Shaders** | `Shaders` | nome do pacote de efeitos (`marketplace_shadersBadge`, `:1008`) |
-| **GitHub**, **Discord** | grafia original | `marketplace_githubBadge`, `options_about_discordLink` |
-| **Feed**, **Status**, **Original** | grafia original | rótulos de aba e coluna no Unison (`unison_tabFeed` `:2270`, `unison_rev_colStatus`, `unison_rev_original`) |
+1. **É nome próprio, marca, produto, formato ou sigla?**
+   Fica em inglês. `Better Lyrics`, `Unison`, `LRC`, `TTML`, `ISRC`.
+2. **É termo que o brasileiro já usa em inglês no dia a dia?**
+   Fica. `Feed`, `Playground`, `Crossfade`, `Shaders`, `Marketplace`.
+3. **É palavra comum com equivalente natural em pt-BR?**
+   Traduz. `theme` ➔ **tema**; `install` ➔ **instalar**; `rating` ➔ **avaliação**;
+   `revision` ➔ **revisão**.
+
+**Nunca traduza pela metade.** Escolhida a forma, ela vale em todas as telas. O catálogo já segue
+isso, e as contagens abaixo são a prova de que a decisão foi aplicada em massa, não em uma string:
+
+| Termo | Em quantas chaves do pt-BR aparece |
+| :--- | ---: |
+| `letra` / `letras` | **70** |
+| `tema` / `temas` | **62** |
+| `sincroniz…` (sincronização, sincronizada) | **30** |
+| `Unison` | **11** |
+| `fonte` / `fontes` | **11** |
+| `Marketplace` | **10** |
+
+Se você encontrar "canção" onde o resto diz "música", ou "ficheiro" onde o resto diz "arquivo", o erro
+é seu, não uma variação aceitável.
+
+**Termo técnico que o leitor pode não conhecer** ganha explicação curta na própria tela, não no
+glossário — o glossário é para quem traduz, a explicação é para quem usa. Exemplo:
+`reprodução contínua (gapless)` (`:3034`) em vez de só "gapless".
 
 ---
 
-## 2. 🎵 Letras & modos de sincronização
+## 2. 🚫 Fica em inglês
 
-O catálogo tem **dois** vocabulários de sincronização, em telas diferentes. Não misture.
+### 2.1. Produto e plataformas
 
-### 2.1. Configuração do app (traduz)
-
-| Inglês | pt-BR | Chave |
+| Termo | Como escrever | Onde aparece |
 | :--- | :--- | :--- |
-| Syllable | `Sílaba` | `options_syncType_syllable` (`:832`) |
-| Word | `Palavra` | `options_syncType_word` (`:840`) |
-| Line | `Linha` | `options_syncType_line` (`:848`) |
-| Unsynced | `Não sincronizado` | `options_syncType_unsynced` (`:856`) |
-| Sync | `Sincronização` | `unison_sync` |
+| Better Lyrics | `Better Lyrics` | `options_provider_betterLyrics` (`:796`) |
+| Unison | `Unison` | `unison_title` (`:1936`) |
+| Portato / Legato | `Portato` / `Legato` | `options_provider_betterLyricsPortato` (`:804`), `:800` |
+| YouTube / YouTube Music | `YouTube` / `YouTube Music` | `options_provider_youtube` (`:820`) |
+| Musixmatch / LRClib / BiniLyrics | grafia original | `:812`, `:816`, `:828` |
+| GitHub / Discord | grafia original | `marketplace_githubBadge` (`:1012`), `options_about_discordLink` (`:1644`) |
 
-### 2.2. Etiqueta do Unison (decisão em aberto)
+`Portato`, `Legato` e `Unison` também são nomes de provedor (`options_provider_betterLyricsUnison`,
+`:808`): aparecem como sufixo do produto, nunca traduzidos.
 
-| Inglês | pt-BR atual | Chave |
+### 2.2. Formatos, siglas e nomes de recurso
+
+| Termo | Como escrever | Onde aparece | Por quê |
+| :--- | :--- | :--- | :--- |
+| LRC / TTML | `LRC` / `TTML` | `unison_format_lrc` (`:2104`), `unison_format_ttml` (`:2108`) | Nomes de formato de letra |
+| ISRC | `ISRC` | `unison_isrc` (`:2188`) | Código internacional de gravação |
+| RICS | `RICS` | `marketplace_ricsBadge` (`:1342`) | Selo no detalhe do tema; o texto é "Este tema usa RICS" |
+| XP | `XP` | `unison_xpToNext` (`:2402`) | Unidade de experiência do Unison |
+| JSON | `JSON` | `options_identityImport_pastePlaceholder` (`:482`) | Formato de arquivo |
+| GPL / PRs | `GPL` / `PRs` | `options_about_openSourceBody` (`:1606`) | Licença e termo de contribuição |
+| Shaders | `Shaders` | `marketplace_shadersBadge` (`:1008`) | Nome do pacote de efeitos — ver 4.2 |
+| Playground | `Playground` | `editor_playground` (`:1506`) | Área de testes do editor |
+| Crossfade | `Crossfade` | `options_pipTransition_crossfade` (`:222`) | Mesmo termo em Spotify e Apple Music |
+| Marketplace | `Marketplace` | `marketplace_title` (`:892`) | Ver 4.3 |
+| Feed | `Feed` | `unison_tabFeed` (`:2270`) | Nome da aba; ver 4.6 |
+| Status / Original | `Status` / `Original` | `unison_rev_colStatus` (`:2804`), `unison_rev_original` (`:2584`) | Rótulos de coluna e de revisão |
+| Commit | `Commit` | `marketplace_commit` (`:1468`) | `Commit $hash$` — termo do git |
+| Picture-in-Picture | `Picture-in-Picture` | `options_display_pipWindow` (`:230`) | Nome do recurso de janela flutuante |
+| Layout | `Layout` | `options_display_pipWindowLayout` (`:194`) | "Layout da janela" |
+| Cache | `cache` (minúsculo no meio da frase) | `options_general_clearCache` (`:50`) | Palavra corrente; "Limpar cache" |
+
+---
+
+## 3. ✅ Traduz-se
+
+### 3.1. Letras e sincronização
+
+| Inglês | pt-BR | Onde aparece |
 | :--- | :--- | :--- |
-| Richsync | `Sincronização rica` | `unison_syncRichsync` (`:2080`) |
-| Linesync | `Sincronização por linhas` | `unison_syncLinesync` (`:2084`) |
-| Plain | `Sem sincronização` | `unison_syncPlain` (`:2088`) |
-
-**Por que está em aberto:** o `description` dessas três chaves diz que o texto é reaproveitado no
-**badge do card** e no **chip de filtro** — um espaço minúsculo. O EN usa uma palavra; o pt-BR usa
-duas ou três. E os formatos vizinhos (`LRC`, `TTML`) ficaram em inglês, o que deixa o conjunto
-inconsistente. A decisão é do mantenedor: tratar tipo de sincronização como termo de domínio (mantém
-`Richsync`/`Linesync`) ou como descrição (traduz, e aí vale encurtar).
-
-### 2.3. Demais termos de letra
-
-| Inglês | pt-BR | Chave / observação |
-| :--- | :--- | :--- |
-| Time-synced lyrics | `Letras sincronizadas` | `options_about_tagline` (`:1562`) — "Letras sincronizadas para o YouTube Music" |
-| Synced version | `Solicitar versão sincronizada` | `lyrics_requestSyncedVersion` (`:1890`) — botão, no infinitivo |
-| Bad sync / Bad synchronization | `Sincronização incorreta` | `unison_report_bad_sync` (`:2036`), `report_lyrics_bad_sync` |
-| Sync offset | `Ajuste de sincronização` | `options_unisonModal_controlOffset` |
-| Per-song offsets | `Ajustes por música` | `options_offsetModal_perSong` |
+| Lyrics | `Letras` | `unison_lyrics` (`:2160`) |
+| Time-synced lyrics | `Letras sincronizadas` | `options_about_tagline` (`:1562`) |
+| Community lyrics | `Letras da comunidade` | `unison_subtitle` (`:1940`) |
+| Raw lyrics | `Letras sem formatação` | `unison_rawLyrics` (`:2184`) |
+| Synced version | `Versão sincronizada` | `lyrics_requestSyncedLanded` (`:1928`) |
+| Syllable / Word / Line / Unsynced | `Sílaba` / `Palavra` / `Linha` / `Não sincronizado` | `options_syncType_*` (`:832`, `:840`, `:848`, `:856`) |
+| Sync offset | `Ajuste de sincronização` | `options_unisonModal_controlOffset` (`:318`) — ver 4.7 |
+| Per-song offsets | `Ajustes por música` | `options_offsetModal_perSong` (`:350`) |
+| Saved offsets | `Ajustes salvos` | `options_offsetModal_perSongCount` (`:358`) |
+| Shift lyrics earlier / later | `Adiantar` / `Atrasar sincronização das letras` | `lyricsDock_offsetEarlier` (`:338`), `lyricsDock_offsetLater` (`:342`) |
+| Bad sync | `Sincronização incorreta` | `unison_report_bad_sync` (`:2036`) |
+| Source | `Fonte` | `lyrics_source` (`:1514`) |
+| Translation / Romanization | `Tradução` / `Romanização` | `options_translation_tab` (`:1704`), `options_language_romanization` (`:374`) |
 | Karaoke subtitles | `Legendas de karaokê` | `options_display_karaoke` (`:3026`) — **com acento** |
-| Romanization | `Romanização` | `options_language_romanization` (`:374`) |
 
-**Furigana** e **Romaji** não aparecem no catálogo atual (0 ocorrências). Se aparecerem, mantêm a
-grafia: são termos linguísticos, não marca.
+### 3.2. Marketplace e temas
 
----
-
-## 3. 🎛️ Reprodução & janela
-
-| Inglês | pt-BR | Chave / observação |
+| Inglês | pt-BR | Onde aparece |
 | :--- | :--- | :--- |
-| Fit window | `Ajustar à janela` | `picture_in_picture_fitWindow` — ação de botão, no infinitivo |
-| Open Picture-in-Picture lyrics | `Abrir letras Picture-in-Picture` | `picture_in_picture_open` (`:148`) |
-| Crossfade | `Crossfade` | `options_pipTransition_crossfade` |
-| Shaders | `Shaders` | `marketplace_shadersBadge` |
+| Theme | `Tema` | `options_themes_theme` (`:402`) |
+| Theme Marketplace | `Marketplace de temas` | `options_themes_marketplace` (`:430`) — ver 4.3 |
+| Install / Installed | `Instalar` / `Instalados` | `marketplace_install` (`:992`), `marketplace_showInstalled` (`:948`) |
+| Rating / ratings | `Avaliação` / `avaliações` | `marketplace_tooltipRating` (`:1286`) |
+| Shader config | `configuração de shader` | `options_detail_shaderInfo` (`:876`) — "shader" minúsculo no meio da frase |
+| Custom styles | `Estilos personalizados` | `options_themes_customStyles` (`:418`) |
+| Styles editor | `Editor de estilos` | `editor_pageTitle` (`:1478`) |
 
-Termos de player que **não** estão no catálogo atual (0 ocorrências): *Now Playing*, *Queue*,
-*Lead-in*, *Pitch*, *Tempo*, *Vocal Stem*. Não invente tradução para eles — se aparecerem, decidir
-aqui primeiro.
+### 3.3. Unison
+
+| Inglês | pt-BR | Onde aparece |
+| :--- | :--- | :--- |
+| Upvote / Downvote | `Voto positivo` / `Voto negativo` | `unison_upvote` (`:1996`), `unison_downvote` (`:2000`) |
+| vote / votes | `voto` / `votos` | `unison_vote_singular` (`:2450`), `unison_vote_plural` (`:2454`) |
+| Revision / Revisions | `Revisão` / `Revisões` | `unison_rev_revision` (`:2820`), `unison_rev_revisions` (`:2618`) |
+| Council | `conselho` | `unison_rev_councilNote` (`:2730`) — "Nota do conselho" |
+| Council review | `revisão do conselho` | `unison_rev_pendingTitle` (`:2700`) |
+| Submission / submissions | `envio` / `envios` | `unison_deleteForbidden` (`:2024`), `unison_tabMySubmissions` (`:2274`) — ver 4.6 |
+| Level / Max level | `Nível` / `Nível máximo` | `unison_level` (`:2392`), `unison_maxLevel` (`:2416`) |
+| Rank | `Classificação nº $rank$` | `unison_rank` (`:2420`) |
+| Top-Rated | `Mais bem avaliado` / `Mais bem avaliados` | `unison_confidence_high` (`:2060`), `unison_sortTopRated` (`:2064`) — ver 4.4 |
+| Requested & fulfilled | `Solicitado e atendido` | `unison_fulfilledBadge` (`:2310`) |
+
+### 3.4. Interface, janela e identidade
+
+| Inglês | pt-BR | Onde aparece |
+| :--- | :--- | :--- |
+| Fullscreen | `Tela cheia` | `options_display_fullscreenTab` (`:88`) |
+| Floating lyrics window | `Janela de letras flutuante` | `options_display_pipWindow` (`:230`) |
+| Fit window | `Ajustar à janela` | `picture_in_picture_fitWindow` (`:3054`) |
+| Lyrics controls dock | `Painel de controles de letras` | `options_display_unisonActions` (`:254`) — ver 4.1 |
+| Identity | `Identidade` | `options_identity_yourIdentity` (`:446`) |
+| Storage | `Armazenamento` | `options_general_storageUsed` (`:58`) |
+| Cache | `cache` | `options_general_clearCache` (`:50`) |
 
 ---
 
-## 4. 🔤 Regras de escrita
+## 4. ⚠️ Decisões que não são óbvias
 
-1. **Sentence Case.** Só a primeira letra maiúscula: `Ajustar à janela`, não `Ajustar À Janela`. Nome
-   próprio e sigla mantêm a grafia.
-2. **Português do Brasil, não de Portugal.** `tela` (não *ecrã*), `arquivo` (não *ficheiro*),
-   `salvar` (não *guardar*), `configurações` (não *definições*).
-3. **Botão começa com verbo**, no infinitivo: `Ajustar`, `Abrir`, `Solicitar`, `Tentar novamente`.
-4. **Uma palavra por uma palavra** (`CONTRIBUTING.md:156`). Se o EN é `Retry`, o ideal é uma palavra;
-   `Tentar novamente` é a exceção aceita porque `Repetir` não é o que o botão faz.
-5. **Sigla e unidade não se traduzem.** `ISRC`, `LRC`, `TTML`, `PiP`.
+Estas são as que geram dúvida de verdade. Todas já estão aplicadas no catálogo — a seção existe para
+que ninguém "corrija" o que foi decidido.
+
+### 4.1. `dock` virou `painel`
+
+O inglês usa "dock" em **4** chaves (`:254`, `:258`, `:262`, `:266`). O pt-BR não tem nenhuma
+ocorrência de "dock": todas viraram **painel**.
+
+- `Lyrics controls dock` ➔ `Painel de controles de letras` (`:254`, `:258`)
+- `Show controls dock` ➔ `Mostrar painel de controles` (`:262`)
+- `A floating dock` ➔ `Painel flutuante` (`:266`)
+
+O `description` de `picture_in_picture_open` ainda chama de "dock action" — é o nome interno. O
+usuário nunca vê "dock".
+
+### 4.2. `badge` tem dois destinos
+
+A palavra inglesa aparece no texto **uma** vez: `options_about_badgesBody` (`:1686`), sobre os
+emblemas do Unison — e ali virou **`emblema`**.
+
+Nos outros lugares, "badge" existe só no **nome da chave**, não no texto:
+
+| Chave | Texto | Por quê |
+| :--- | :--- | :--- |
+| `marketplace_shadersBadge` (`:1008`) | `Shaders` | o badge mostra o nome do recurso |
+| `marketplace_githubBadge` (`:1012`) | `GitHub` | o badge mostra a marca |
+| `theme_top_badge` (`:1812`) | `Nº $RANK$ no Marketplace` | o selo mostra a posição |
+| `unison_fulfilledBadge` (`:2310`) | `Solicitado e atendido` | o badge mostra o estado |
+
+Não traduza "badge" por reflexo: traduza o que ele **exibe**.
+
+### 4.3. `Marketplace` fica, `Theme` traduz
+
+`Theme Marketplace` ➔ **`Marketplace de temas`** (`:430`, `:892`). A ordem inverte — em pt-BR o
+núcleo vem primeiro — e só a segunda palavra é traduzida.
+
+O mesmo vale para `Temas do Marketplace` (`:1060`) e `Nº $RANK$ no Marketplace` (`:1812`). "Marketplace"
+sozinho, capitalizado, é o nome da loja. Não vire "mercado" nem "loja de temas".
+
+### 4.4. `Top-Rated` muda de número conforme o contexto
+
+| Contexto | Texto | Chave |
+| :--- | :--- | :--- |
+| Etiqueta de uma letra | `Mais bem avaliado` (singular) | `unison_confidence_high` (`:2060`) |
+| Opção de ordenação | `Mais bem avaliados` (plural) | `unison_sortTopRated` (`:2064`) |
+
+A etiqueta classifica **uma** entrada; a ordenação classifica **a lista**. Plural ali não é descuido.
+
+### 4.5. `gapless` fica entre parênteses
+
+`Audio-only gapless playback is preserved` ➔ `A reprodução contínua (gapless) de áudio é mantida`
+(`:3034`).
+
+"Reprodução contínua" é a tradução; `gapless` fica como âncora para quem já conhece o termo. Traduzir
+só para "sem intervalos" perderia a palavra que o usuário procura, e manter só `gapless` perderia
+quem não conhece.
+
+### 4.6. `Feed` fica; `submission` vira `envio`
+
+- `Feed` (`:2270`) é o nome da aba. Fica.
+- `submission` **não** fica: `Meus envios` (`:2274`), `Não é o seu envio` (`:2024`),
+  `Falha no envio` (`:2332`).
+
+São coisas diferentes: `Feed` é uma tela; "submission" é o ato de enviar uma letra.
+
+### 4.7. `offset` não é `deslocamento`
+
+`Sync offset` ➔ **`Ajuste de sincronização`** (`:318`), não "deslocamento" nem "offset". O botão que
+move a letra no tempo diz `Adiantar` / `Atrasar sincronização das letras` (`:338`, `:342`).
+
+"Offset" continua correto em conversa técnica, mas não é o que o usuário lê.
+
+### 4.8. O nome do produto é traduzido no parêntese
+
+`extensionName` (`:2`): `Better Lyrics (Lyrics for YouTube Music)` ➔
+**`Better Lyrics (Letras para YouTube Music)`**.
+
+A marca fica; a explicação entre parênteses traduz. É a linha em que o nome do produto e uma tradução
+dividem a mesma string — o parêntese existe justamente para quem ainda não conhece o produto.
+
+### 4.9. `Rank` tem duas renderizações
+
+| Chave | Texto | Forma |
+| :--- | :--- | :--- |
+| `unison_rank` (`:2420`) | `Classificação nº $rank$` | nome + número |
+| `theme_top_badge` (`:1812`) | `Nº $RANK$ no Marketplace` | só o número, com contexto |
+
+As duas usam o indicador de número `nº`, minúsculo. A diferença é o que vem antes: na primeira, o
+rótulo; na segunda, o contexto já está na frase.
 
 ---
 
-## 5. ⚠️ Lacunas
+## 5. 📱 Onde o termo aparece muda o tamanho
 
-1. **Tipo de sincronização em aberto** (seção 2.2) — falta a decisão do mantenedor.
-2. **Termos sem ocorrência no catálogo** (Furigana, Romaji, Now Playing, Queue, Lead-in, Pitch, Tempo,
-   Vocal Stem) — o glossário os lista por precaução, não porque existam hoje.
-3. **Nenhum termo foi conferido em tela.** As decisões vêm do texto e do `description` das chaves, não
-   de ver a extensão rodando.
+O mesmo vocabulário, espaços diferentes:
+
+1. **Popup do navegador:** 1 a 2 palavras. `Instalar`, `Atualizar`, `Entrar`.
+2. **Badge e chip em card:** o texto é etiqueta, não frase. `Shaders`, `GitHub`, `Solicitado e
+   atendido`.
+3. **Tooltip e rótulo acessível:** lido em voz alta, precisa funcionar sozinho.
+   `Ajustar à janela` (`:3054`) funciona; `Ajustar` não.
+4. **Página de opções:** cabe explicação nos campos `*Hint`, `*Body` e `*Footer`.
+5. **Unison:** rótulos de coluna e de aba são curtos por natureza. `Revisão`, `Status`, `Feed`.
+
+---
+
+## 6. ❓ Ainda não decidido
+
+1. **`Richsync` / `Linesync` / `Plain`.** Hoje: `Sincronização rica` (`:2080`),
+   `Sincronização por linhas` (`:2084`), `Sem sincronização` (`:2088`). O `description` avisa que o
+   mesmo texto vira **badge em card** e **chip de filtro** — espaço mínimo — e os formatos vizinhos
+   (`LRC`, `TTML`) ficaram em inglês. Falta: decidir se tipo de sincronização é termo de domínio
+   (mantém) ou descrição (traduz, e encurta).
+2. **`Furigana`, `Romaji`, `Now Playing`, `Queue`, `Lead-in`, `Pitch`, `Tempo`, `Vocal Stem`.** Nenhum
+   aparece no catálogo atual (0 ocorrências). Estão listados por precaução, não porque existam hoje.
+   Falta: decidir cada um quando a string aparecer — e aí registrar aqui.
+3. **21 chaves com EN de uma palavra e pt-BR de duas ou mais**, contra `CONTRIBUTING.md:156`. As mais
+   visíveis: `Retry` ➔ `Tentar novamente` (`marketplace_retry`), `Unsynced` ➔ `Não sincronizado`
+   (`:856`), `Fullscreen` ➔ `Tela cheia` (`:88`). Falta: decidir quais encurtar e quais aceitar como
+   inevitáveis.
+4. **`Classificação nº` contra `Nº`.** As duas formas convivem (4.9). Falta: dizer se a diferença é
+   intencional ou se uma delas deve padronizar.
+5. **Nenhum termo foi conferido em tela.** As decisões vêm do texto e do `description` de cada chave,
+   não de ver a extensão rodando. Falta: carregar a extensão em modo desenvolvedor.
+
+---
+
+## 7. 📌 Como este glossário se mantém honesto
+
+- Toda linha aponta `chave:linha` do snapshot pt-BR. Sem linha, é opinião.
+- Termo novo entra **no mesmo commit** da string que o usa.
+- Termo que saiu do catálogo sai daqui — o glossário não guarda vocabulário de recurso removido.
+- As **29** chaves com texto idêntico ao EN são a pista de onde procurar decisão faltando: elas são
+  marca, sigla, nome de formato ou string composta só de placeholders. O validador reporta **28**
+  porque só acusa quando a fonte tem 4+ letras seguidas (`scripts/validate-ptbr.ps1:176`) — a que
+  escapa é `options_general_segment`, `$LABEL$: $VALUE$`.
+- Contagem de ocorrências é do snapshot de **02/11/2026**, não do Crowdin. O catálogo da plataforma
+  pode estar diferente; confira a chave antes de confiar na linha.
