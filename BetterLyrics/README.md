@@ -15,8 +15,9 @@
 | **Catálogo (snapshot)** | **638** chaves EN e **638** pt-BR — 0 faltando, 0 sobrando (02/11/2026) |
 | **Validação** | 🟢 `validate-ptbr.ps1 -Format chrome`: `OK`, 638 strings, 28 avisos de texto idêntico ao EN |
 | **Aprovação formal** | 🟡 **0%** — a conta não tem permissão de *proofreader*; a aprovação depende do mantenedor |
-| **Upstream hoje** | `master` com **643** chaves EN e **637** no `pt_BR` (02/11/2026) |
-| **Sync pendente** | PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) aberto em 20/10/2026 — leva o `pt_BR` a **638** |
+| **Upstream hoje** | `master` em `f77dcc2` (02/11/2026), com **643** chaves EN e **637** no `pt_BR` |
+| **Sync pendente** | PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019), criado em 20/10/2026 — leva o `pt_BR` a **638** |
+| **Estado da PR** | 🟢 checks verdes · 🟡 `mergeState=BEHIND` (precisa de update) · 🟡 `review=REVIEW_REQUIRED` |
 | **Ainda sem tradução** | **5** chaves, que só existem no upstream (lista abaixo) |
 | **Clone no hub** | **não existe** — removido em 02/11/2026 (seção "Por que não há clone") |
 
@@ -59,7 +60,7 @@ O vocabulário está em [`glossario.md`](./glossario.md); as regras de escrita e
 | **Plataforma (fonte de verdade)** | Crowdin 863186, idioma `pt-BR` |
 | **Arquivo no upstream** | `_locales/en/messages.json` → `_locales/pt_BR/messages.json` |
 | **Snapshot EN (fonte fixa)** | [`snapshots/better_lyrics_messages_en.json`](./snapshots/better_lyrics_messages_en.json) |
-| **Snapshot pt-BR** | [`snapshots/better_lyrics_messages_pt_BR.json`](./snapshots/better_lyrics_messages_pt_BR.json) |
+| **Snapshot pt-BR (estado atual)** | [`snapshots/better_lyrics_messages_pt_BR.json`](./snapshots/better_lyrics_messages_pt_BR.json) |
 
 **A pasta no upstream é `pt_BR`, com underscore; o idioma no Crowdin é `pt-BR`, com hífen.** O
 `crowdin.yml:14` faz esse mapeamento porque o Chrome exige o nome da pasta no formato dele. Uma pasta
@@ -67,6 +68,9 @@ O vocabulário está em [`glossario.md`](./glossario.md); as regras de escrita e
 
 O upstream tem 24 pastas de locale (`en` + 23 traduções). Nenhuma delas serve de origem — e a
 armadilha específica deste projeto é o **`pt_PT`**, que existe, é português e não é brasileiro.
+
+**O snapshot pt-BR não é cópia do PR.** Ele é o estado mais recente do Crowdin; o PR é o que foi
+exportado em 20–21/10. A diferença é real e está medida na seção "O que a PR #1019 carrega".
 
 ---
 
@@ -76,15 +80,15 @@ armadilha específica deste projeto é o **`pt_PT`**, que existe, é português 
 BetterLyrics/
 ├── snapshots/
 │   ├── better_lyrics_messages_en.json     # espelho fixo da fonte EN (638 chaves)
-│   └── better_lyrics_messages_pt_BR.json  # o que a extensão entrega em pt-BR
+│   └── better_lyrics_messages_pt_BR.json  # estado mais recente do Crowdin em pt-BR
 ├── README.md                  # este documento
 ├── diretrizes-tecnicas.md     # o método aplicado ao formato Chrome i18n
 └── glossario.md               # o vocabulário
 ```
 
-Os dois snapshots são o registro local. O EN é **fixo de propósito**: é a régua do validador, e uma
-régua que muda a cada sync transforma "string nova no upstream" em "tradução faltando". Quem detecta
-novidade é a comparação com o `master`, não o validador.
+O EN é **fixo de propósito**: é a régua do validador, e uma régua que muda a cada sync transforma
+"string nova no upstream" em "tradução faltando". Quem detecta novidade é a comparação com o
+`master`, não o validador.
 
 ---
 
@@ -120,6 +124,45 @@ O custo foi **7,9 MB** a menos. O preço: as checagens do projeto não rodam mai
 
 ---
 
+## 📦 O que a PR #1019 carrega
+
+Medido com `gh pr view 1019` em 02/11/2026:
+
+| Item | Valor |
+| :--- | :--- |
+| Commits | **27**, de 20/10 17:55 a 21/10 22:48 |
+| Arquivos | **23** — todos em `_locales/` |
+| Linhas | **+204 / −112** no total |
+| Só o `pt_BR` | **+64 / −60** |
+| Estado | `mergeable=MERGEABLE`, `mergeState=BEHIND`, `review=REVIEW_REQUIRED` |
+| Checks | 🟢 `brand-check`, `stale-check`, `CodeQL`, `Socket Security` — todos `SUCCESS` |
+
+`BEHIND` significa que a PR está atrás do `master`: precisa de update antes do merge, e o merge não
+vai acontecer sozinho.
+
+**A armadilha: a PR está mais velha que o Crowdin.** Comparando as 638 chaves do PR com as 638 do
+snapshot, **7 strings** divergem — e o snapshot é o lado novo. A pior:
+
+| Chave | No PR #1019 | No Crowdin hoje (snapshot) |
+| :--- | :--- | :--- |
+| `options_display_fullscreenControlsTooltipStates` (`:112`) | `Auto hides the controls while the player bar is showing. On keeps them visible.` — **em inglês** | `Automático oculta os controles enquanto a barra do player estiver visível. Ligado mantém os controles visíveis.` |
+
+As outras 6 são redações anteriores, corrigidas depois no Crowdin:
+
+- `options_pipTransition_crossfade` (`:222`): `Fade cruzado` → **`Crossfade`**
+- `marketplace_shortcutsInstallUrl` (`:1080`): `Instalar de URL` → **`Instalar por URL`**
+- `marketplace_tooltipRating` (`:1286`): `Média de $AVERAGE$ de $COUNT$ avaliações` → **`Média de $AVERAGE$ em $COUNT$ avaliações`**
+- `options_general_clearCachedLyricsHint` (`:46`): `Elas baixam de novo…` → **`Elas são baixadas de novo…`**
+- `options_display_letterWaveTooltip` (`:136`): `rolagem parecer travada` → **`rolagem das letras ficar aos trancos`**
+- `unison_sortAscendingClearLabel` (`:1384`): `$LABEL$, crescente` → **`$LABEL$, ordem crescente`**
+
+**Consequência prática:** mergear a #1019 hoje publicaria **uma string em inglês** e seis redações
+antigas. O `stale-check` não pega esse caso — ele acusa tradução que ficou presa numa versão **antiga**
+do inglês, não tradução que é o inglês **atual**. O próximo sync do bot corrige tudo, porque o Crowdin
+já tem o texto certo.
+
+---
+
 ## 🧪 Como conferir
 
 ```powershell
@@ -147,13 +190,16 @@ placeholders — nenhuma é frase esquecida em inglês. O validador avisa 28 por
 curl.exe -sL "https://raw.githubusercontent.com/better-lyrics/better-lyrics/master/_locales/en/messages.json" `
   -o BetterLyrics/snapshots/better_lyrics_messages_en.json
 
-# pt-BR — antes do merge do PR de sync
-curl.exe -sL "https://raw.githubusercontent.com/better-lyrics/better-lyrics/refs/pull/1019/head/_locales/pt_BR/messages.json" `
+# pt-BR — o estado que a extensão entrega depois do merge do PR de sync
+curl.exe -sL "https://raw.githubusercontent.com/better-lyrics/better-lyrics/master/_locales/pt_BR/messages.json" `
   -o BetterLyrics/snapshots/better_lyrics_messages_pt_BR.json
 ```
 
 `curl.exe` grava os bytes como vêm. `Set-Content` e `>` trocam o fim de linha para CRLF e o arquivo
 deixa de bater com o do upstream.
+
+> **Rode o comando do pt-BR só depois do merge.** Hoje o `master` tem **637** chaves e o snapshot tem
+> **638** — o snapshot está à frente, não atrás. Rodar agora rebaixaria o arquivo.
 
 Cobertura e pendências no Crowdin exigem token:
 
@@ -166,17 +212,19 @@ Cobertura e pendências no Crowdin exigem token:
 ## ⚠️ Lacunas
 
 1. **5 chaves sem tradução** (lista no topo). Dependem de a fonte chegar ao Crowdin.
-2. **Estado do Crowdin não reverificado.** Sem `CROWDIN_TOKEN` nesta sessão, a última medição local é
+2. **A PR #1019 está `BEHIND` e carrega 7 strings desatualizadas**, uma delas em inglês. Falta: o bot
+   rodar de novo — ou o mantenedor mergear e aceitar que o próximo sync corrige.
+3. **Estado do Crowdin não reverificado.** Sem `CROWDIN_TOKEN` nesta sessão, a última medição local é
    de 30/10/2026 (638/638). Falta rodar `Status`.
-3. **0% aprovado.** O catálogo está traduzido, mas a conta não tem permissão de *proofreader*.
-4. **As checagens do projeto só rodam no CI do upstream** — sem clone, não há checkout local.
-5. **21 chaves têm EN de uma palavra e pt-BR de duas ou mais**, contra a regra
+4. **0% aprovado.** O catálogo está traduzido, mas a conta não tem permissão de *proofreader*.
+5. **As checagens do projeto só rodam no CI do upstream** — sem clone, não há checkout local.
+6. **21 chaves têm EN de uma palavra e pt-BR de duas ou mais**, contra a regra
    `CONTRIBUTING.md:156`. Algumas são inevitáveis; outras poderiam encurtar.
-6. **Nomes de tipo de sincronização em aberto** (`Richsync`, `Linesync`, `Plain`) — o mesmo texto vira
+7. **Nomes de tipo de sincronização em aberto** (`Richsync`, `Linesync`, `Plain`) — o mesmo texto vira
    badge em card. Decisão pendente no glossário.
-7. **Nada foi aberto no navegador.** Nenhuma regra de espaço de tela foi conferida em popup, opções
+8. **Nada foi aberto no navegador.** Nenhuma regra de espaço de tela foi conferida em popup, opções
    ou Picture-in-Picture reais.
-8. **O snapshot está 5 chaves atrás do EN do `master`** — de propósito, porque o espelho é fixo.
+9. **O snapshot está 5 chaves atrás do EN do `master`** — de propósito, porque o espelho é fixo.
 
 ---
 
@@ -186,7 +234,7 @@ Cobertura e pendências no Crowdin exigem token:
   Lyrics: chave ➔ inglês ➔ o que o usuário vê ➔ pt-BR ➔ regras do projeto. Formato Chrome i18n,
   placeholders `$NOME$`, plurais por par de chaves e o comando de validação.
 - 📗 [**Glossário de termos**](./glossario.md) — o vocabulário: o que fica em inglês, o que se traduz
-  e por quê.
+  e por quê, com `chave:linha` em cada decisão.
 - 🗂️ [**Snapshots**](./snapshots/) — cópia versionada dos dois catálogos.
 
 ---
@@ -198,8 +246,12 @@ Cobertura e pendências no Crowdin exigem token:
 | 638 chaves EN e 638 pt-BR | contagem em `BetterLyrics/snapshots/*.json` em 02/11/2026 |
 | `OK`, 638 strings, 28 avisos | `validate-ptbr.ps1 -Format chrome` em 02/11/2026 |
 | 29 strings idênticas ao EN | comparação chave a chave EN × PT |
-| 643 EN / 637 PT no `master`; 638 no PR #1019 | API do GitHub em 02/11/2026 |
+| 643 EN / 637 PT no `master`; 638 no PR #1019 | API do GitHub em 02/11/2026 (`contents?ref=master`, `?ref=refs/pull/1019/head`) |
 | 5 chaves novas sem tradução | diferença de chaves `master` EN × PR #1019 PT |
+| PR #1019: 27 commits, 23 arquivos, +204/−112, `pt_BR` +64/−60 | `gh pr view 1019 --json commits,files,additions,deletions` |
+| `mergeState=BEHIND`, `mergeable=MERGEABLE`, `review=REVIEW_REQUIRED` | `gh pr view 1019 --json mergeStateStatus,mergeable,reviewDecision` |
+| `brand-check`, `stale-check`, `CodeQL`, `Socket` = `SUCCESS` | `gh pr view 1019 --json statusCheckRollup` |
+| 7 strings divergentes entre PR e snapshot | comparação chave a chave do `pt_BR` do PR × snapshot |
 | HEAD do `master` = `f77dcc2` (02/11/2026) | `gh api repos/better-lyrics/better-lyrics/commits/master` |
 | PRs #975/#994/#1001/#1010 mergeados, #1019 aberto | `gh pr list --search "i18n in:title" --state all` |
 | 24 pastas de locale | `contents/_locales` na API do GitHub |
