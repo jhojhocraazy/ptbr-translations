@@ -38,7 +38,8 @@ O aplicativo oferece:
 
 ```text
 YTDLnis/
-├── ytdlnis_strings_pt_BR.xml # Backup oficial do Weblate (669 strings + 9 plurais; 3 read-only não exportadas)
+├── snapshots/
+│   └── ytdlnis_strings_pt_BR.xml # Backup oficial do Weblate (669 strings + 9 plurais; 3 read-only não exportadas)
 ├── README.md                 # Este documento (Visão geral e status do projeto)
 ├── diretrizes-tecnicas.md    # Regras técnicas de XML, permissões Android e integração com Weblate
 └── glossario.md              # Dicionário especializado de yt-dlp, FFmpeg, codecs e formatos de mídia

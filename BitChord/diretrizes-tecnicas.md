@@ -102,4 +102,4 @@ Existe **um** teste de paridade de strings na pipeline:
 - [ ] Sentence Case aplicado, e nomes próprios/siglas preservados?
 - [ ] Rótulos de Wear OS com 1 ou 2 palavras?
 - [ ] `validate-ptbr.ps1` retornando `OK` nos três arquivos?
-- [ ] Snapshot do hub atualizado (`bitchord_strings_pt_BR.xml`, `sharedUi_strings_pt_BR.xml` e `wearos_strings_pt_BR.xml`)?
+- [ ] Snapshot do hub atualizado em `BitChord/snapshots/` (`bitchord_strings_pt_BR.xml`, `sharedUi_strings_pt_BR.xml` e `wearos_strings_pt_BR.xml`)?

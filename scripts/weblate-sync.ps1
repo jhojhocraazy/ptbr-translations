@@ -75,7 +75,7 @@
     ./scripts/weblate-sync.ps1 -Action Checks -Project elowry -Component dnstoggle-strings -Tsv checks.tsv
 
 .EXAMPLE
-    ./scripts/weblate-sync.ps1 -Action Backup -Project elowry -Component dnstoggle-strings -OutFile DNSToggle/dnstoggle_strings_pt_BR.xml
+    ./scripts/weblate-sync.ps1 -Action Backup -Project elowry -Component dnstoggle-strings -OutFile DNSToggle/snapshots/dnstoggle_strings_pt_BR.xml
 #>
 #Requires -Version 7.0
 [CmdletBinding()]

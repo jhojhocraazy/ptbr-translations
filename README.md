@@ -240,39 +240,50 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 ```text
 ptbr-translations/
 ├── 📁 BetterLyrics/          # Backups JSON e recursos do Crowdin
-│   ├── better_lyrics_messages_en.json   # Snapshot da fonte EN (upstream)
-│   └── better_lyrics_messages_pt_BR.json
+│   └── 📁 snapshots/
+│       ├── better_lyrics_messages_en.json   # Snapshot da fonte EN (upstream)
+│       └── better_lyrics_messages_pt_BR.json
 ├── 📁 BitChord/              # Recursos XML e clone do repositório
+│   ├── 📁 snapshots/         # Snapshots pt-BR dos 3 módulos
+│   │   ├── bitchord_strings_pt_BR.xml
+│   │   ├── sharedUi_strings_pt_BR.xml
+│   │   └── wearos_strings_pt_BR.xml
 │   └── 📁 repo/              # Repositório Git conectado ao fork e upstream
 ├── 📁 Crowdin/               # Recursos da plataforma Crowdin e backup JSON
-│   ├── crowdin_translations_pt_BR.json
+│   ├── 📁 snapshots/
+│   │   └── crowdin_translations_pt_BR.json
 │   ├── diretrizes-tecnicas.md
 │   ├── glossario.md
 │   └── README.md
 ├── 📁 DNSToggle/             # Documentação e recursos do Weblate
+│   ├── 📁 snapshots/
+│   │   ├── dnstoggle_strings_pt_BR.xml
+│   │   └── dnstoggle_metadata_pt_BR.zip
 │   ├── README.md
 │   ├── diretrizes-tecnicas.md
-│   ├── glossario.md
-│   └── dnstoggle_strings_pt_BR.xml
+│   └── glossario.md
 ├── 📁 NuvioMobile/           # Backups XML e clone do repositório
-│   ├── NuvioMobile_strings_pt_BR.xml
+│   ├── 📁 snapshots/         # 7 arquivos pt-BR (strings, party, servers, mdblist, pip, autosync)
 │   └── 📁 repo/              # Repositório Git conectado ao fork e upstream
 ├── 📁 TizenTube/             # Backup JSON completo e clone do repositório
+│   ├── 📁 snapshots/
+│   │   └── tizentube_pt_BR.json
 │   ├── diretrizes-tecnicas.md
 │   ├── glossario.md
 │   ├── README.md
-│   ├── tizentube_pt_BR.json
 │   └── 📁 repo/              # Repositório Git conectado ao fork e upstream
 ├── 📁 TorBox/                # Snapshot EN/PT-BR e clone do repositório
+│   ├── 📁 snapshots/
+│   │   ├── torbox_messages_en.json
+│   │   └── torbox_messages_pt_BR.json
 │   ├── README.md
-│   ├── torbox_messages_en.json
-│   ├── torbox_messages_pt_BR.json
 │   └── 📁 repo/              # Repositório Git conectado ao fork e upstream
 ├── 📁 YTDLnis/               # Backup XML completo e documentação
+│   ├── 📁 snapshots/
+│   │   └── ytdlnis_strings_pt_BR.xml
 │   ├── diretrizes-tecnicas.md
 │   ├── glossario.md
-│   ├── README.md
-│   └── ytdlnis_strings_pt_BR.xml
+│   └── README.md
 ├── 📁 scripts/               # Ferramentas de tradução e validação
 │   ├── crowdin-sync.ps1      # Status, Export, Push, Check e Backup (Crowdin API v2)
 │   ├── weblate-sync.ps1      # Status, Export, Push, Check e Backup (Weblate API)

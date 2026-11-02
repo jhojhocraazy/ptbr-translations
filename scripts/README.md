@@ -80,7 +80,7 @@ Critério de aceite: `divergências: 0`.
 ### Backup — snapshot JSON de um arquivo
 
 ```powershell
-./scripts/crowdin-sync.ps1 -Action Backup -ProjectId 31 -FileId 32447 -OutFile Crowdin/crowdin_translations_pt_BR.json
+./scripts/crowdin-sync.ps1 -Action Backup -ProjectId 31 -FileId 32447 -OutFile Crowdin/snapshots/crowdin_translations_pt_BR.json
 ```
 
 Gera `{ source, target }` por string + metadados (projeto, arquivo, idioma, data).
@@ -165,7 +165,7 @@ não substitui o `Check` de placeholders/ICU/chaves.
 ### Backup — arquivo traduzido
 
 ```powershell
-./scripts/weblate-sync.ps1 -Action Backup -Project elowry -Component dnstoggle-strings -OutFile DNSToggle/dnstoggle_strings_pt_BR.xml
+./scripts/weblate-sync.ps1 -Action Backup -Project elowry -Component dnstoggle-strings -OutFile DNSToggle/snapshots/dnstoggle_strings_pt_BR.xml
 ```
 
 Baixa o arquivo no formato nativo do componente (XML/JSON/etc.). Unidades read-only podem ser
@@ -278,8 +278,8 @@ Exemplos:
 Validador local para arquivos já traduzidos (fora de plataforma ou snapshots).
 
 ```powershell
-./scripts/validate-ptbr.ps1 -Path BetterLyrics/better_lyrics_messages_pt_BR.json -Source BetterLyrics/better_lyrics_messages_en.json -Format chrome
-./scripts/validate-ptbr.ps1 -Path NuvioMobile/NuvioMobile_strings_pt_BR.xml -Source NuvioMobile/repo/app/src/main/res/values/strings.xml -Escape cmp
+./scripts/validate-ptbr.ps1 -Path BetterLyrics/snapshots/better_lyrics_messages_pt_BR.json -Source BetterLyrics/snapshots/better_lyrics_messages_en.json -Format chrome
+./scripts/validate-ptbr.ps1 -Path NuvioMobile/snapshots/NuvioMobile_strings_pt_BR.xml -Source NuvioMobile/repo/composeApp/src/commonMain/composeResources/values/strings.xml -Escape cmp
 ```
 
 Verifica strings vazias, placeholders ausentes/desconhecidos, escapes Android,

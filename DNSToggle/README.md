@@ -54,10 +54,12 @@ O DNSToggle é um projeto de plataforma: a entrega termina no Weblate.
 
 ```text
 DNSToggle/
+├── snapshots/
+│   ├── dnstoggle_strings_pt_BR.xml   # Snapshot do componente de strings (Weblate)
+│   └── dnstoggle_metadata_pt_BR.zip  # Metadados de cobertura exportados do Weblate
 ├── README.md               # Este documento (Visão geral e status dos componentes)
 ├── diretrizes-tecnicas.md  # Regras de limite de caracteres para Tiles e alinhamento com Android OS
-├── glossario.md            # Dicionário de redes, DNS, segurança Android e permissões
-└── dnstoggle_strings_pt_BR.xml  # Snapshot do componente de strings (Weblate)
+└── glossario.md            # Dicionário de redes, DNS, segurança Android e permissões
 ```
 
 ---

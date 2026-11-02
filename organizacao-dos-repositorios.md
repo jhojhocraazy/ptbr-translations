@@ -95,8 +95,10 @@ Estrutura resultante:
 
 ```text
 DNSToggle/
-├── fonte/values/strings.xml      ← EN fixado (novo)
-├── dnstoggle_strings_pt_BR.xml   ← snapshot da plataforma
+├── snapshots/
+│   ├── dnstoggle_strings_pt_BR.xml   ← snapshot da plataforma
+│   └── dnstoggle_metadata_pt_BR.zip  ← metadados de cobertura
+├── fonte/values/strings.xml          ← EN fixado (novo)
 ├── glossario.md
 └── diretrizes-tecnicas.md
 ```
@@ -143,6 +145,7 @@ Ganho total estimado: de ≈ 2.520 MB para algo entre 100 e 300 MB. **Estimativa
 | 01/11/2026 | Apagados `TorBox/repo/node_modules` e `TorBox/repo/.next` | TorBox: **1.736,2 MB → 80,0 MB**; `git status` do clone sem nenhuma alteração versionada |
 | 01/11/2026 | Clone do Better Lyrics mantido (era remoção na proposta original) | o item aberto "638 vs 640" continua verificável no upstream |
 | 01/11/2026 | Reclone raso dos quatro clones de PR | Nuvio 552,7 → **149,6 MB**; BitChord 188,5 → **158,3 MB**; TizenTube 34,4 → **2,8 MB**; TorBox 80,0 → **13,7 MB**. Total dos clones: **2.520 → 332,3 MB** |
+| 02/11/2026 | Snapshots movidos para `<Projeto>/snapshots/` (19 arquivos) | XML, JSON e zip de metadados no mesmo lugar, nos 8 projetos |
 | — | `fonte/` + SHA nos nove projetos | pendente |
 
 ### 9.1 Notas da execução do reclone
@@ -163,9 +166,9 @@ Ganho total estimado: de ≈ 2.520 MB para algo entre 100 e 300 MB. **Estimativa
 ## 10. Snapshots (arquivos traduzidos)
 
 Regra: o hub guarda **todos** os arquivos traduzidos de cada projeto, no formato nativo
-(XML para Android, JSON para i18n), com sufixo `_pt_BR`.
+(XML para Android, JSON para i18n), com sufixo `_pt_BR`, dentro de `<Projeto>/snapshots/`.
 
-| Projeto | Arquivos no hub | Observação |
+| Projeto | Arquivos em `snapshots/` | Observação |
 | :--- | :--- | :--- |
 | Nuvio Mobile | 7: `strings`, `strings_party`, `strings_servers`, `strings_mdblist`, `strings_pip`, `autosync_strings`, `autosync_toast_strings` | completado em 02/11/2026 |
 | BitChord | 3: `bitchord` (app), `sharedUi`, `wearos` | completado em 02/11/2026 |

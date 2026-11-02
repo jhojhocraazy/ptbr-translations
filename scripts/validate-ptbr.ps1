@@ -13,10 +13,10 @@
       - BOM / encoding
 
 .EXAMPLE
-    ./scripts/validate-ptbr.ps1 -Path BetterLyrics/better_lyrics_messages_pt_BR.json -Source BetterLyrics/better_lyrics_messages_en.json -Format chrome
+    ./scripts/validate-ptbr.ps1 -Path BetterLyrics/snapshots/better_lyrics_messages_pt_BR.json -Source BetterLyrics/snapshots/better_lyrics_messages_en.json -Format chrome
 
 .EXAMPLE
-    ./scripts/validate-ptbr.ps1 -Path NuvioMobile/NuvioMobile_strings_pt_BR.xml -Source NuvioMobile/repo/app/src/main/res/values/strings.xml -Escape cmp
+    ./scripts/validate-ptbr.ps1 -Path NuvioMobile/snapshots/NuvioMobile_strings_pt_BR.xml -Source NuvioMobile/repo/composeApp/src/commonMain/composeResources/values/strings.xml -Escape cmp
 #>
 #Requires -Version 7.0
 [CmdletBinding()]

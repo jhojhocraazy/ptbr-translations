@@ -49,7 +49,8 @@ A localização oficial do Crowdin visa proporcionar uma experiência completame
 
 ```text
 Crowdin/
-├── crowdin_translations_pt_BR.json  # Backup da Web UI + metadados de cobertura
+├── snapshots/
+│   └── crowdin_translations_pt_BR.json  # Backup da Web UI + metadados de cobertura
 ├── diretrizes-tecnicas.md     # Padrões de interpolação, sintaxe ICU e regras de qualidade
 ├── glossario.md               # Terminologia especializada em TMS, i18n e l10n
 └── README.md                  # Este documento

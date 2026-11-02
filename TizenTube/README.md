@@ -37,7 +37,7 @@ A tradução central do projeto está concentrada no repositório core `reisxd/T
 
 | Arquivo de Tradução | Strings Totais | Strings Iniciais em Inglês | Status Atual pt-BR |
 | :--- | :---: | :---: | :---: |
-| [`mods/translations/resources/pt-BR.json`](./tizentube_pt_BR.json) | **197** | 92 (~47%) | 🟢 **100% Traduzido & Refinado** (96 ajustes) |
+| [`mods/translations/resources/pt-BR.json`](./snapshots/tizentube_pt_BR.json) | **197** | 92 (~47%) | 🟢 **100% Traduzido & Refinado** (96 ajustes) |
 
 ---
 
@@ -56,8 +56,9 @@ A tradução central do projeto está concentrada no repositório core `reisxd/T
 
 ```text
 TizenTube/
+├── snapshots/
+│   └── tizentube_pt_BR.json   # Backup completo com 197 strings traduzidas
 ├── diretrizes-tecnicas.md     # Regras de sintaxe JSON, placeholders e boas práticas
 ├── glossario.md               # Harmonização terminológica para Smart TVs e streaming
-├── README.md                  # Este documento
-└── tizentube_pt_BR.json       # Backup completo com 197 strings traduzidas
+└── README.md                  # Este documento
 ```

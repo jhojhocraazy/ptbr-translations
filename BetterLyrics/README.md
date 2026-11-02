@@ -43,8 +43,9 @@ O **Better Lyrics** é uma extensão de navegador para o **YouTube Music**, mant
 
 ```text
 BetterLyrics/
-├── better_lyrics_messages_pt_BR.json  # Backup local das mensagens em pt-BR (JSON i18n)
-├── better_lyrics_messages_en.json     # Snapshot exato da fonte EN (upstream), para auditoria offline
+├── snapshots/
+│   ├── better_lyrics_messages_pt_BR.json  # Backup local das mensagens em pt-BR (JSON i18n)
+│   └── better_lyrics_messages_en.json     # Snapshot exato da fonte EN (upstream), para auditoria offline
 ├── README.md                          # Este documento (Visão geral e status do projeto)
 ├── diretrizes-tecnicas.md             # Regras de sintaxe JSON, ICU MessageFormat e API Crowdin
 └── glossario.md                       # Dicionário de termos musicais, streaming e CJK
