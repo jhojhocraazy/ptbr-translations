@@ -23,6 +23,9 @@ Precisamos manter o clone completo de cada projeto dentro do hub, ou basta guard
 
 Fonte da classificação: `metodologia.md:24-38` e `research/README.md:152-159`.
 
+**Base do clone:** sempre a **branch padrão do upstream**. Na prática é `main` em BitChord, TizenTube e
+TorBox. O Nuvio Mobile é a exceção: o upstream não tem `main` — a branch padrão é `cmp-rewrite`.
+
 O clone serve a quatro funções: entregar por PR, fornecer a fonte EN para o validador,
 detectar deriva no upstream (`scripts/check-updates.ps1:240`) e dar contexto de tela.
 Só a primeira e a última exigem o clone; as outras duas exigem apenas **um arquivo EN de versão fixa**.
@@ -154,3 +157,28 @@ Ganho total estimado: de ≈ 2.520 MB para algo entre 100 e 300 MB. **Estimativa
   `research/bundle-bitcord-2026-11-01.bundle` (68,6 MB, `git bundle verify` = okay, histórico completo).
 - **Validação:** `check-updates.ps1` roda nos quatro clones sem erro (0 erros; `exit 2` = novidades encontradas,
   comportamento documentado em `scripts/README.md:139`).
+
+---
+
+## 10. Snapshots (arquivos traduzidos)
+
+Regra: o hub guarda **todos** os arquivos traduzidos de cada projeto, no formato nativo
+(XML para Android, JSON para i18n), com sufixo `_pt_BR`.
+
+| Projeto | Arquivos no hub | Observação |
+| :--- | :--- | :--- |
+| Nuvio Mobile | 7: `strings`, `strings_party`, `strings_servers`, `strings_mdblist`, `strings_pip`, `autosync_strings`, `autosync_toast_strings` | completado em 02/11/2026 |
+| BitChord | 3: `bitchord` (app), `sharedUi`, `wearos` | completado em 02/11/2026 |
+| TizenTube | 1 JSON | completo |
+| TorBox | 1 JSON (+ fonte EN) | completo |
+| Better Lyrics | 1 JSON (+ fonte EN) | completo |
+| YTDLnis | 1 XML | completo |
+| DNSToggle | 1 XML + zip de metadados | completo |
+| Crowdin Platform | 1 JSON | completo |
+
+Por que manter, mesmo nos projetos entregues por PR: a branch do clone é a fonte da verdade, mas o
+snapshot é o que sobrevive se a branch for fechada, rebaseada ou sobrescrita. Nos projetos de
+plataforma ele é a **única** cópia local.
+
+Validação dos 8 arquivos adicionados em 02/11/2026 com `validate-ptbr.ps1` contra a fonte EN do clone:
+todos `OK`, com avisos de "idêntica à fonte" apenas em nome próprio/termo técnico.
