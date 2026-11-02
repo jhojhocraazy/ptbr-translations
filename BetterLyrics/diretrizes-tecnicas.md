@@ -5,9 +5,9 @@
 > (o status).
 >
 > **Contra o que foi escrito:** snapshots em `BetterLyrics/snapshots/`
-> (`better_lyrics_messages_en.json` e `better_lyrics_messages_pt_BR.json`, 638 chaves cada), clone em
-> `BetterLyrics/repo` no commit `99c9ea6` (20/10/2026) e o `master` do upstream em `f77dcc2`
-> (02/11/2026). Contagens e citações de linha medidas em **02/11/2026**.
+> (`better_lyrics_messages_en.json` e `better_lyrics_messages_pt_BR.json`, 638 chaves cada) e o
+> upstream `better-lyrics/better-lyrics` no commit `f77dcc2` (02/11/2026), lido pela API do GitHub.
+> Contagens e citações de linha medidas em **02/11/2026**.
 >
 > **O que ele não cobre:** abrir a extensão no navegador, julgar fluência e verificar o que está no
 > Crowdin — ver seção 9.
@@ -48,26 +48,38 @@ extensão o texto aparece, e a distribuição real do catálogo confirma isso:
 | `blUpdate_` | 4 | aviso de atualização da própria extensão |
 | `ui_` | 3 | componentes genéricos |
 
+A tabela cobre 633 das 638 chaves. As outras 5 são `extensionName`, `extensionDescription`,
+`symlink_` (2) e `builtin_` (1) — chaves soltas, sem área própria.
+
 O `CONTRIBUTING.md:169-174` documenta o padrão como `<área>_<componente>_<elemento>` e dá três
 exemplos. O que ele **não** diz: depois do prefixo de área, o resto costuma ser **camelCase**
 (`options_display_letterWaveBadge`, `unison_rev_colStatus`). Isso é normal e não se mexe — a chave
 nunca é traduzida, reformatada ou renomeada.
 
-A tabela cobre 633 das 638 chaves. As outras 5 são `extensionName`, `extensionDescription`,
-`symlink_` (2) e `builtin_` (1) — chaves soltas, sem área própria.
-
 ### 1.2. Etapa 2 — Ler a string em inglês
 
-A fonte é **`_locales/en/messages.json`** (`crowdin.yml:9`). O repositório tem 24 pastas de locale:
-`en` (a fonte) e 23 traduções (`de`, `es`, `fr`, `ja`, `pl`, `pt_PT`…).
+Aqui este projeto é diferente dos que entregam por pull request: **não existe clone do repositório
+no hub** (seção 2.1). Então a fonte tem três camadas, e cada uma serve a uma pergunta diferente:
 
-**A armadilha deste projeto é o `pt_PT`.** Ele existe no repositório, é português, e parece uma
-resposta pronta. Não é: é português de Portugal, com vocabulário e concordância diferentes. Nenhuma
-tradução de terceiro serve de origem — uma já pode conter erro, e o erro se propaga sem aparecer. O
-inglês é o único texto que o mantenedor revisa.
+| Camada | Onde | Responde |
+| :--- | :--- | :--- |
+| **Fonte de tradução** | o texto que o Crowdin mostra como fonte | "o que eu traduzo agora?" |
+| **Espelho fixo** | `snapshots/better_lyrics_messages_en.json` (638 chaves) | "contra o que eu valido?" |
+| **Antecipação** | `master` do upstream, via `gh api` | "o que vem por aí?" |
 
-Uma string já traduzida no `pt_BR` do upstream só pode ser reaproveitada depois de conferida contra o
-EN; se não bater, retraduza.
+Na dúvida, a fonte é a **primeira**. O snapshot não é a fonte: ele é a fotografia do EN usada na
+última tradução, congelada para que o validador não mude de régua no meio do trabalho. E o `master`
+não é a fonte: ele anda na frente da plataforma (hoje, 643 contra 638) e traduzir por ele produz
+string que ainda não existe no Crowdin.
+
+**Nunca use outro locale como origem.** O repositório upstream tem 24 pastas de locale (`de`, `es`,
+`fr`, `ja`, `pl`, `pt_PT`…), e nenhuma delas serve. A armadilha específica deste projeto é o
+**`pt_PT`**: existe, é português e parece uma resposta pronta — mas é português de Portugal, com
+vocabulário e concordância diferentes. Uma tradução de terceiro pode ter erro, e o erro se propaga
+sem aparecer.
+
+Uma string já traduzida no `pt_BR` só pode ser reaproveitada depois de conferida contra o EN; se não
+bater, retraduza.
 
 ### 1.3. Etapa 3 — Entender o que o usuário vê
 
@@ -88,11 +100,11 @@ fazendo quando lê". A extensão tem contextos bem diferentes:
 
 **O atalho para esta etapa é o campo `description`.** Ele é a nota do tradutor: descreve a tela, o
 estado e o que o clique faz. O `CONTRIBUTING.md:155` manda lê-lo em cada string, e as 638 chaves do
-catálogo têm `description` preenchida (0 sem nota, medido em 02/11/2026).
+snapshot têm `description` preenchida (0 sem nota, medido em 02/11/2026).
 
 O `CONTRIBUTING.md:156` acrescenta uma regra dura de espaço: **"Match word count — If the original is
 one word, use one word in translation."** O catálogo atual tem **21** chaves em que o EN é uma palavra
-e o pt-BR tem duas ou mais (seção 9, lacuna 4).
+e o pt-BR tem duas ou mais (seção 9, lacuna 3).
 
 ### 1.4. Etapa 4 — Escrever em pt-BR
 
@@ -112,8 +124,8 @@ O vocabulário vem do [`glossario.md`](./glossario.md). O que **não** se traduz
 
 | Termo | Por quê |
 | :--- | :--- |
-| `Better Lyrics`, `Unison`, `Portato`, `Legato`, `boidu.dev` | nomes do produto. Verificados por `tooling/check-i18n-brand.ts:14` — o CI reprova quem altera |
-| `YouTube Music`, `Musixmatch`, `LRClib`, `BiniLyrics` | plataformas e provedores de letra. O mesmo arquivo, `:12-13`, diz que marcas de terceiro **podem** ser transliteradas — o glossário decide manter |
+| `Better Lyrics`, `Unison`, `Portato`, `Legato`, `boidu.dev` | nomes do produto. Verificados por `tooling/check-i18n-brand.ts:14` no CI do upstream — reprova quem altera |
+| `YouTube Music`, `Musixmatch`, `LRClib`, `BiniLyrics`, `Spicy Lyrics` | plataformas e provedores de letra. O mesmo arquivo, `:12-13`, diz que marcas de terceiro **podem** ser transliteradas — o glossário decide manter |
 | `LRC`, `TTML`, `ISRC` | nomes de formato e de código. `unison_format_lrc` e `unison_format_ttml` já estão idênticos ao EN |
 | `Playground`, `Crossfade`, `Shaders`, `Picture-in-Picture` | termo consagrado do domínio |
 
@@ -125,8 +137,8 @@ Quatro barreiras, nesta ordem:
 
 1. **O formato JSON** — `message`, `description`, `placeholders` (seção 3).
 2. **O validador do hub** — `scripts/validate-ptbr.ps1 -Format chrome` (seção 6).
-3. **As checagens do projeto** — `check-i18n-brand`, `check-i18n-format` e `check-i18n-stale`
-   (seção 5).
+3. **As checagens do projeto** — `check-i18n-brand`, `check-i18n-format` e `check-i18n-stale`, que
+   rodam no CI do upstream quando o bot abre o PR de sync (seção 5).
 4. **O olho no `description`** — a string continua fazendo sentido no contexto descrito?
 
 ### 1.6. O método aplicado a uma string real
@@ -146,7 +158,7 @@ Quatro barreiras, nesta ordem:
 
 O contraexemplo está em `unison_syncRichsync`: o EN é uma palavra (`Richsync`) e a nota avisa que o
 texto vira **badge** em card. O pt-BR atual é `Sincronização rica` — duas palavras num badge. É uma
-decisão de termo em aberto (seção 9, lacuna 5), não um erro de digitação.
+decisão de termo em aberto (seção 9, lacuna 4), não um erro de digitação.
 
 ---
 
@@ -154,22 +166,39 @@ decisão de termo em aberto (seção 9, lacuna 5), não um erro de digitação.
 
 | Item | Caminho |
 | :--- | :--- |
-| **Fonte EN (a referência)** | `_locales/en/messages.json` |
-| **Tradução pt-BR no repositório** | `_locales/pt_BR/messages.json` |
-| **Tradução pt-PT (não é fonte)** | `_locales/pt_PT/messages.json` |
-| **Snapshot versionado no hub** | `BetterLyrics/snapshots/better_lyrics_messages_{en,pt_BR}.json` |
-| **Plataforma** | Crowdin, projeto **863186**, idioma `pt-BR` |
+| **Plataforma (fonte de verdade)** | Crowdin, projeto **863186**, idioma `pt-BR` |
+| **Arquivo no upstream** | `_locales/en/messages.json` → `_locales/pt_BR/messages.json` |
+| **Snapshot no hub (EN fixo)** | `BetterLyrics/snapshots/better_lyrics_messages_en.json` |
+| **Snapshot no hub (pt-BR)** | `BetterLyrics/snapshots/better_lyrics_messages_pt_BR.json` |
 | **Branch do upstream** | `master` |
+| **Clone no hub** | **não existe** — removido em 02/11/2026 |
 
 **A pasta é `pt_BR`, com underscore — e o idioma no Crowdin é `pt-BR`, com hífen.** Não é engano: o
-`crowdin.yml:14` faz o mapeamento `pt-BR: pt_BR` justamente porque o Chrome exige o nome da pasta no
-formato dele. Criar uma pasta `pt-BR` produziria uma tradução que a extensão nunca carrega.
+`crowdin.yml:14` faz o mapeamento `pt-BR: pt_BR` porque o Chrome exige o nome da pasta no formato
+dele. Criar uma pasta `pt-BR` produziria uma tradução que a extensão nunca carrega.
 
 **Não há PR de tradução.** A entrega é feita pelo Crowdin, que abre um PR automático
 (`CONTRIBUTING.md:142-149`). Este hub não commita em `_locales/` — o snapshot é o registro local.
 
-O snapshot **não é byte a byte igual** ao upstream: os arquivos do repositório usam CRLF, o snapshot
-EN usa LF e o PT usa CRLF. O conteúdo é o mesmo; a diferença é de fim de linha, não de texto.
+### 2.1. Por que não há clone
+
+A regra do hub é: **clone só onde o clone é o veículo de entrega**
+(`organizacao-dos-repositorios.md:19-22`). Better Lyrics entrega por Crowdin, então o clone não
+entregava nada — era uma cópia de leitura, parada em 20/10/2026 e **6 chaves** atrás do `master`
+(637 contra 643).
+
+O que o clone dava e como ficou:
+
+| O clone servia para | Substituto |
+| :--- | :--- |
+| Ler o EN mais recente | `gh api` no `master` (seção 1.2) |
+| Ler `CONTRIBUTING.md` e `crowdin.yml` | `gh api`, ou o link direto no GitHub |
+| Ler `tooling/check-i18n-*.ts` | `gh api` — leitura sim, execução não |
+| Rodar as checagens do projeto | **não roda mais aqui** — roda no CI do upstream (seção 5) |
+| Dar contexto de tela | o `description` de cada chave, que já descreve a tela |
+
+O custo da remoção: **7,9 MB** e uma dependência a menos. O preço: as checagens do projeto deixaram
+de ser executáveis localmente; quem valida no hub é o `validate-ptbr.ps1` (seção 6).
 
 ---
 
@@ -229,9 +258,9 @@ comparar — mas grafia divergente é ruído que ninguém precisa criar.
 Isso descreve o campo **`content`** do bloco `placeholders`, não o `message`. No `message` o que
 aparece é `$NOME$`. Confundir os dois produz uma string que nunca recebe valor.
 
-**O que este catálogo não tem:** nenhum `{nome}` (0 ocorrências), nenhum `%s` / `%1$s` e nenhum `$`
-literal solto (0 ocorrências). Se uma string nova do EN trouxer `{nome}`, o próprio
-`check-i18n-format.ts:22-24` reprova com a mensagem "`{name}` must be written as `$NAME$`".
+**O que este catálogo não tem:** nenhum `{nome}` (0 ocorrências) e nenhum `%s` / `%1$s` (0
+ocorrências). Se uma string nova do EN trouxer `{nome}`, o próprio `check-i18n-format.ts:22-24` reprova
+com a mensagem "`{name}` must be written as `$NAME$`".
 
 ### 3.3. Plurais são chaves separadas, não ICU
 
@@ -329,8 +358,8 @@ sync do bot sobrescreve. O caminho é esperar a fonte chegar à plataforma e tra
 
 ## 5. 🧪 As checagens do projeto
 
-O upstream tem três verificadores próprios em `tooling/`, rodados por CI. Eles são a barreira real —
-mais específica que qualquer script genérico.
+O upstream tem três verificadores próprios em `tooling/`, rodados pelo CI dele. **Eles não rodam
+neste hub** — sem clone, não há checkout. Conhecê-los serve para saber o que o PR do bot vai reprovar.
 
 ### 5.1. `check-i18n-format.ts` — placeholders e mensagens vazias
 
@@ -393,7 +422,7 @@ marca, sigla, nome de formato ou string composta só de placeholders — nenhuma
 inglês.
 
 > **Cuidado:** o validador compara o snapshot com o EN **do snapshot**. Snapshot velho, resultado
-> velho. Atualize os dois arquivos antes de confiar no número.
+> velho. A atualização é a seção 6.2.
 
 ### 6.1. O que o `crowdin-sync.ps1 -Action Check` **não** vê neste projeto
 
@@ -404,8 +433,39 @@ conjunto vazio: para este projeto o `Check` reporta 0 divergências mesmo que um
 apagado.
 
 Para Better Lyrics, a conferência de placeholder é o validador da seção 6 ou o
-`check-i18n-format.ts` do próprio projeto. O `Check` continua útil para cobertura e strings
-pendentes.
+`check-i18n-format.ts` do CI do upstream. O `Check` continua útil para cobertura e strings pendentes.
+
+### 6.2. Como atualizar os snapshots (sem clone)
+
+**EN — o espelho fixo.** Só muda quando a tradução é refeita contra uma fonte nova, não a cada sync.
+Baixa o arquivo cru, sem reformatar:
+
+```powershell
+curl.exe -sL "https://raw.githubusercontent.com/better-lyrics/better-lyrics/master/_locales/en/messages.json" `
+  -o BetterLyrics/snapshots/better_lyrics_messages_en.json
+```
+
+**pt-BR — o que a extensão entrega.** O conteúdo é o que o bot do Crowdin escreveu. Antes do merge do
+PR, baixe da cabeça do PR; depois do merge, do `master`:
+
+```powershell
+# antes do merge (troque 1019 pelo PR de sync aberto)
+curl.exe -sL "https://raw.githubusercontent.com/better-lyrics/better-lyrics/refs/pull/1019/head/_locales/pt_BR/messages.json" `
+  -o BetterLyrics/snapshots/better_lyrics_messages_pt_BR.json
+
+# depois do merge
+curl.exe -sL "https://raw.githubusercontent.com/better-lyrics/better-lyrics/master/_locales/pt_BR/messages.json" `
+  -o BetterLyrics/snapshots/better_lyrics_messages_pt_BR.json
+```
+
+O `curl.exe` grava os bytes como vêm. `Set-Content` e `>` não servem: eles trocam o fim de linha para
+CRLF e o arquivo deixa de bater com o do upstream.
+
+**Cobertura no Crowdin.** Precisa de token:
+
+```powershell
+./scripts/crowdin-sync.ps1 -Action Status -ProjectId 863186
+```
 
 ---
 
@@ -429,7 +489,7 @@ Cada item pertence a uma etapa do método.
 
 **Etapas 1 e 2 — origem**
 - [ ] Li a chave e sei em que tela/área o texto aparece (prefixo da seção 1.1)?
-- [ ] Traduzi a partir de `_locales/en/messages.json`, não de `pt_PT`/`es`/`de`/`fr`?
+- [ ] Traduzi a partir da fonte EN do Crowdin, não de `pt_PT`/`es`/`de`/`fr`?
 - [ ] Li o `description` da chave antes de escrever?
 
 **Etapas 3 e 4 — texto**
@@ -444,7 +504,7 @@ Cada item pertence a uma etapa do método.
 - [ ] Par singular/plural conferido nas duas chaves (seção 3.3)?
 - [ ] Aspas duplas escapadas como `\"`?
 - [ ] `validate-ptbr.ps1 -Format chrome` retornando `OK`?
-- [ ] Snapshot do hub atualizado em [`snapshots/`](./snapshots/) depois da mudança?
+- [ ] Snapshot do hub atualizado (seção 6.2) depois da mudança?
 
 ---
 
@@ -457,23 +517,22 @@ Coisas que este documento **não** resolve, com o que falta para resolver:
 2. **Estado do Crowdin não reverificado.** `crowdin-sync.ps1 -Action Status` exige `CROWDIN_TOKEN`
    (`scripts/crowdin-sync.ps1:67`) e não há token nesta sessão — a última medição local é de
    30/10/2026 (638/638). Falta: rodar `Status` com token para confirmar cobertura e pendências.
-3. **`crowdin-sync.ps1 -Action Check` é cego para `$NOME$`** (seção 6.1). Falta: acrescentar o padrão
-   `\$[A-Za-z0-9_]+\$` ao `Get-Tokens`, ou aceitar que este projeto usa só o validador.
-4. **21 chaves contrariam a regra "uma palavra por uma palavra"** (`CONTRIBUTING.md:156`). Algumas são
+3. **21 chaves contrariam a regra "uma palavra por uma palavra"** (`CONTRIBUTING.md:156`). Algumas são
    inevitáveis (*Retry* → *Tentar novamente*); outras são rótulo de ordenação que poderia ser mais
    curto (*Most-Voted* → *Mais votados*). Falta: decidir quais encurtar.
-5. **Nomes de tipo de sincronização em aberto.** `Richsync` virou `Sincronização rica`, `Linesync`
+4. **Nomes de tipo de sincronização em aberto.** `Richsync` virou `Sincronização rica`, `Linesync`
    virou `Sincronização por linhas` e `Plain` virou `Sem sincronização` — mas o mesmo texto é badge
    (seção 7). Os formatos vizinhos (`LRC`, `TTML`) ficaram em inglês. Falta: registrar no
    [`glossario.md`](./glossario.md) se tipo de sincronização é termo de domínio (mantém) ou
    descrição (traduz).
+5. **As checagens do projeto não rodam aqui.** Sem clone, `check-i18n-format`, `check-i18n-brand` e
+   `check-i18n-stale` só executam no CI do upstream. Falta: um jeito de rodá-las sem checkout (ou
+   aceitar que o CI cobre).
 6. **Nada foi aberto no navegador.** O hub não instala a extensão. Nenhuma regra da seção 7 foi
    verificada em popup, página de opções ou PiP reais. Falta: carregar a extensão em modo desenvolvedor
    e olhar as telas.
-7. **O snapshot está 5 chaves atrás do EN.** O snapshot tem 638, o `master` tem 643. Falta: reexportar
-   depois do próximo sync.
-8. **Histórico do clone é raso** (`--depth 1`, commit `99c9ea6` de 20/10/2026). Não dá para datar
-   quando uma string nasceu nem consultar commits anteriores sem baixar mais histórico.
+7. **O snapshot está 5 chaves atrás do EN.** O snapshot tem 638, o `master` tem 643 — de propósito,
+   porque o espelho é fixo (seção 1.2). Falta: reexportar depois do próximo sync.
 
 ---
 
@@ -486,15 +545,16 @@ Coisas que este documento **não** resolve, com o que falta para resolver:
 | 0 divergências de placeholder e de bloco `placeholders` | comparação chave a chave EN × PT |
 | 29 strings idênticas ao EN (28 avisos) | comparação EN × PT; aviso em `validate-ptbr.ps1:176` |
 | 0 `description` traduzida | comparação do campo nas 638 chaves |
-| 1 chave com aspas duplas; 0 com `\n`, HTML ou emoji | varredura de `better_lyrics_messages_en.json` |
+| 1 chave com aspas duplas; 2 com `%`; 0 com `\n`, HTML ou emoji | varredura de `better_lyrics_messages_en.json` |
 | Distribuição por prefixo (221/208/104/28/20/14/9/8/7/7/4/3) | `Object.keys` sobre o snapshot EN |
 | 4 pares singular/plural | chaves `*Singular`/`*Plural`/`*One`/`*Others` no catálogo |
-| 24 pastas de locale | `Get-ChildItem BetterLyrics/repo/_locales -Directory` |
-| `pt-BR` → `pt_BR` | `crowdin.yml:14` |
+| 21 chaves com EN de 1 palavra e PT com 2+ | contagem de palavras depois de remover `$NOME$` |
+| 24 pastas de locale no upstream | API do GitHub: `contents/_locales` |
+| `pt-BR` → `pt_BR` | `crowdin.yml:14` (lido no `master` em 02/11/2026) |
 | 643 EN / 637 PT no `master`; 638 no PR #1019 | API do GitHub em 02/11/2026 (`contents?ref=master`, `?ref=refs/pull/1019/head`) |
 | 5 chaves novas sem tradução | diferença de chaves `master` EN × PR #1019 PT |
 | HEAD do `master` = `f77dcc2` (02/11/2026) | `gh api repos/better-lyrics/better-lyrics/commits/master` |
-| Clone = `99c9ea6` (20/10/2026), raso | `git -C BetterLyrics/repo log -1` e `.git/shallow` |
+| Clone removido: 7,9 MB, `99c9ea6`, 0 commits locais | `Measure-Object` e `git log` antes da remoção, em 02/11/2026 |
 | PRs #975/#994/#1001/#1010 mergeados, #1019 aberto | `gh pr list --search "i18n in:title" --state all` |
 | Checagens e linhas de CI | `.github/workflows/i18n-brand-check.yml:38`, `:42`, `:45`, `:67` |
 | Termos protegidos | `tooling/check-i18n-brand.ts:14` |
@@ -502,3 +562,4 @@ Coisas que este documento **não** resolve, com o que falta para resolver:
 | Substituição em tempo de execução | `src/core/i18n.ts:77-82`, `:93` |
 | `$NOME$` invisível ao `Check` do hub | `scripts/crowdin-sync.ps1:129-138`; teste com `Instalado $NAME$ de $SOURCE$` devolveu conjunto vazio |
 | Saída do validador do hub | `./scripts/validate-ptbr.ps1 -Format chrome` em 02/11/2026 |
+| Clone só onde há entrega por PR | `organizacao-dos-repositorios.md:19-22` |

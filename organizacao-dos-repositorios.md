@@ -40,7 +40,7 @@ Só a primeira e a última exigem o clone; as outras duas exigem apenas **um arq
 | NuvioMobile | 552,7 MB | `.git` 478,2 MB (histórico) |
 | BitChord | 188,5 MB | `.git` 75,8 MB |
 | TizenTube | 34,4 MB | `.git` 32,5 MB |
-| BetterLyrics | 8,2 MB | `.git` 2,3 MB — projeto de plataforma |
+| BetterLyrics | 8,2 MB | `.git` 2,3 MB — projeto de plataforma (**clone removido em 02/11/2026**) |
 | **Soma dos clones** | **≈ 2.520 MB** | para 9 projetos |
 
 Medição: `Get-ChildItem -Recurse -File | Measure-Object Length -Sum`, por pasta, em 01/11/2026.
@@ -51,10 +51,11 @@ Fatos que sustentam a proposta:
   confirma que ambos são ignorados: apagar não perde nada versionado.
 - DNSToggle, YTDLnis e Crowdin **não têm fonte EN nenhuma** no hub — são justamente os que mais
   precisam dela para validar.
-- Better Lyrics é entregue por Crowdin e mantém clone de 8,2 MB **e** o EN local
-  (`better_lyrics_messages_en.json`). O clone é redundante para **validar**, mas ainda é a única
-  referência viva do upstream para o item aberto "638 no Crowdin vs 640 no upstream"
-  (`research/README.md:113`): mantê-lo até esse item fechar.
+- Better Lyrics era entregue por Crowdin e mantinha clone de 8,2 MB **e** o EN local
+  (`better_lyrics_messages_en.json`). O clone era redundante para **validar** e foi a única
+  referência viva do upstream enquanto o item aberto "638 no Crowdin vs 640 no upstream"
+  (`research/README.md:125`) estava em aberto. Esse item foi medido de novo em 02/11/2026
+  (643 no `master` × 637 no `pt_BR`) e o clone foi removido — ver §9.
 
 ---
 
@@ -84,9 +85,10 @@ passa a significar apenas a primeira. Deriva vira um passo separado e explícito
 1. **Fonte EN fixada por projeto**, em `fonte/`, com o **SHA do commit** anotado no README do projeto.
    Custo: ~30 KB por projeto.
 2. **Clone apenas nos quatro projetos entregues por PR.** Não criar clone para DNSToggle,
-   YTDLnis e Crowdin.
-3. **Manter o clone do Better Lyrics por enquanto** — é a única referência viva do upstream
-   enquanto o item aberto "638 vs 640" não fechar; remover depois disso.
+   YTDLnis, Better Lyrics e Crowdin.
+3. **Remover o clone do Better Lyrics — executado em 02/11/2026.** O projeto entrega por Crowdin; o
+   clone de 7,9 MB era cópia de leitura, sem commit local, e ficou 5 chaves atrás do `master`. O EN
+   segue em `snapshots/better_lyrics_messages_en.json` e a fonte é lida por `gh api`.
 4. **Clones que ficam**: clone raso (`--depth 1`) e sem artefato de build.
 5. **Nenhuma mudança de governança**: `AGENTS.md`, `README.md` raiz, `metodologia.md` e os
    documentos de projeto não são alterados por esta proposta.
@@ -110,7 +112,7 @@ DNSToggle/
 | # | Ação | Ganho | Risco |
 | :-: | :--- | :--- | :--- |
 | 1 | Apagar `TorBox/repo/node_modules` e `TorBox/repo/.next` — **executado em 01/11/2026** | 1.656 MB | nulo (0 arquivos versionados; `npm install` recria) |
-| 2 | Manter `BetterLyrics/repo` até o item aberto "638 vs 640" fechar | — | removê-lo agora perderia a única referência viva do upstream |
+| 2 | Remover `BetterLyrics/repo` — **executado em 02/11/2026** | 7,9 MB | nulo (clone raso, sem commit local; o EN segue em `snapshots/` e a fonte é lida por `gh api`) |
 | 3 | Reclonar Nuvio, BitChord, TizenTube, TorBox com `--depth 1` — **executado em 01/11/2026** | 2.188 MB medidos | baixo (histórico completo deixa de existir localmente; commits só locais do BitChord salvos em bundle) |
 | 4 | Criar `fonte/` + SHA nos 9 projetos | nenhum | nulo (arquivo novo) |
 
@@ -143,7 +145,9 @@ Ganho total estimado: de ≈ 2.520 MB para algo entre 100 e 300 MB. **Estimativa
 | Data | Ação | Resultado medido |
 | :--- | :--- | :--- |
 | 01/11/2026 | Apagados `TorBox/repo/node_modules` e `TorBox/repo/.next` | TorBox: **1.736,2 MB → 80,0 MB**; `git status` do clone sem nenhuma alteração versionada |
-| 01/11/2026 | Clone do Better Lyrics mantido (era remoção na proposta original) | o item aberto "638 vs 640" continua verificável no upstream |
+| 01/11/2026 | Clone do Better Lyrics mantido naquele momento | o item aberto "638 vs 640" continuava verificável no upstream |
+| 02/11/2026 | **Clone do Better Lyrics removido** (`BetterLyrics/repo`, 7,9 MB) | `git status` do clone limpo, 0 commits locais, HEAD `99c9ea6`; hub sem `repo/` nesse projeto |
+| 02/11/2026 | Documentos do Better Lyrics reescritos para o modelo de plataforma | `diretrizes-tecnicas.md`, `README.md` e `glossario.md` sem referência a clone; fonte lida por `gh api` |
 | 01/11/2026 | Reclone raso dos quatro clones de PR | Nuvio 552,7 → **149,6 MB**; BitChord 188,5 → **158,3 MB**; TizenTube 34,4 → **2,8 MB**; TorBox 80,0 → **13,7 MB**. Total dos clones: **2.520 → 332,3 MB** |
 | 02/11/2026 | Snapshots movidos para `<Projeto>/snapshots/` (19 arquivos) | XML, JSON e zip de metadados no mesmo lugar, nos 8 projetos |
 | — | `fonte/` + SHA nos nove projetos | pendente |

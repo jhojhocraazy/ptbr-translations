@@ -1,73 +1,128 @@
-# 📗 Glossário Terminológico Musical — Better Lyrics
+# 📗 Glossário Terminológico — Better Lyrics
 
-> **Dicionário Técnico de Padronização para Português do Brasil (`pt-BR`).**  
+> **O vocabulário da localização em Português do Brasil (`pt-BR`) da extensão
+> [Better Lyrics](https://github.com/better-lyrics/better-lyrics).**
 > Mantido por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jhojhocraazy).
 
 ---
 
-## 📌 Introdução
+## 📌 Como usar
 
-O Better Lyrics é a extensão de navegador para **YouTube Music** (organização [better-lyrics](https://github.com/better-lyrics)) que exibe letras sincronizadas, romanização, tradução e temas personalizados.  
-Este glossário estabelece o que deve ser mantido no termo internacional consagrado e como traduzir os termos específicos de áudio, sincronização e interface. Cobre as **638 strings** do catálogo atual (projeto Crowdin 863186).
+O Better Lyrics é a extensão de navegador para **YouTube Music** que exibe letras sincronizadas,
+romanização, tradução e temas personalizados.
 
----
+Cada linha abaixo traz a **chave do catálogo** onde o termo aparece, para que a decisão seja
+verificável. As linhas entre parênteses são do snapshot
+[`snapshots/better_lyrics_messages_pt_BR.json`](./snapshots/better_lyrics_messages_pt_BR.json),
+medido em 02/11/2026.
 
-## 1. 🚫 Termos que NUNCA Devem Ser Traduzidos
-
-Estes termos são nomes de produto, marcas do ecossistema de letras ou conceitos fonéticos universais:
-
-| Termo em Inglês | Tradução no Better Lyrics | Justificativa / Contexto |
-| :--- | :--- | :--- |
-| **Better Lyrics** | `Better Lyrics` | Nome do produto. Verificado por `tooling/check-i18n-brand.ts` — nunca traduzir nem transliterar. |
-| **Unison** | `Unison` | Acervo colaborativo de letras da extensão (votação, dock de ações). Também protegido pelo checador de marca. |
-| **Furigana** | `Furigana` | Sistema japonês de escrita fonética em kana sobre kanjis para indicar pronúncia. Termo linguístico padrão. |
-| **Romanization / Romaji** | `Romanização` / `Romaji` | Transliteração de escrita japonesa/coreana/chinesa para o alfabeto latino (chave `options_language_romanization`). |
-| **Karaoke** | `Karaokê` (com acento) | Modo de exibição de letras sincronizadas sílaba por sílaba com efeito de preenchimento. |
-| **YouTube Music** | *Manter nome exato* | Plataforma hospedeira da extensão. |
-| **Picture-in-Picture (PiP)** | `Picture-in-Picture (PiP)` | Janela flutuante de letras do sistema operacional (inclui `picture_in_picture_fitWindow`). |
-| **Playground** | `Playground` | Área de testes de estilos do editor. Mantido em inglês por ser termo consagrado entre desenvolvedores. |
+O glossário decide a **palavra**. O formato, os placeholders e os plurais estão em
+[`diretrizes-tecnicas.md`](./diretrizes-tecnicas.md).
 
 ---
 
-## 2. 🎵 Letras & Modos de Sincronização
+## 1. 🚫 Termos que nunca se traduzem
 
-| Termo em Inglês | Tradução Oficial pt-BR | Contexto / Exemplo |
+Nomes de produto e de marca. O `tooling/check-i18n-brand.ts:14` do upstream reprova o PR que alterar
+os cinco primeiros.
+
+| Termo | Como fica | Onde / por quê |
 | :--- | :--- | :--- |
-| **Time-synced lyrics** | `Letras sincronizadas` | Letras que rolam automaticamente no tempo exato da música. |
-| **Plain lyrics / Unsynced** | `Letras não sincronizadas` / `Letras estáticas` | Texto simples da letra sem marcação de tempo por linha. |
-| **Line-by-line** | `Linha por linha` | Modo de sincronização onde a linha inteira acende de uma vez. |
-| **Word-by-word / Syllable-by-syllable** | `Palavra por palavra` / `Sílaba por sílaba` | Modo dinâmico onde cada palavra ou sílaba acende conforme é cantada. |
-| **Lyrics Provider** | `Provedor de letras` | Fonte de onde as letras são baixadas (Musixmatch, NetEase, LRCLIB, Genius). |
-| **Offset / Delay** | `Ajuste de atraso` / `Offset (atraso)` | Ajuste fino em milissegundos (+/- ms) para sincronizar letra adiantada/atrasada. |
-| **Lead-in** | `Contagem regressiva` / `Aviso de entrada` | Indicador visual de contagem antes da voz começar. |
-| **Instrumental break** | `Intervalo instrumental` | Momento da música onde não há vocal e a interface indica solo/pausa. |
+| **Better Lyrics** | `Better Lyrics` | nome do produto (`options_provider_betterLyrics`, `:796`) |
+| **Unison** | `Unison` | acervo colaborativo de letras — votação, revisões, dock de ações (`unison_title`) |
+| **Portato** | `Portato` | provedor do produto (`options_provider_betterLyricsPortato`) |
+| **Legato** | `Legato` | provedor do produto (`options_provider_betterLyricsLegato`) |
+| **boidu.dev** | `boidu.dev` | endereço do projeto. Não aparece no catálogo atual — a proteção vale se aparecer |
+| **YouTube Music** | `YouTube Music` | plataforma hospedeira |
+| **Musixmatch**, **LRClib**, **BiniLyrics**, **Spicy Lyrics** | grafia original | provedores de letra. O mesmo `check-i18n-brand.ts:11-13` diz que marcas de terceiro **podem** ser transliteradas — a decisão daqui é manter. `Spicy Lyrics` ainda não está no snapshot: é uma das 5 chaves pendentes |
+| **LRC**, **TTML** | `LRC`, `TTML` | nomes de formato de letra (`unison_format_lrc`, `unison_format_ttml`) |
+| **ISRC** | `ISRC` | código internacional de gravação (`unison_isrc`, `:2188`) |
+| **Picture-in-Picture** | `Picture-in-Picture` | nome do recurso de janela flutuante (`picture_in_picture_open`) |
+| **Playground** | `Playground` | área de testes de estilo (`editor_playground`, `:1506`) |
+| **Crossfade** | `Crossfade` | nome da transição, igual em Spotify e Apple Music (`options_pipTransition_crossfade`) |
+| **Shaders** | `Shaders` | nome do pacote de efeitos (`marketplace_shadersBadge`, `:1008`) |
+| **GitHub**, **Discord** | grafia original | `marketplace_githubBadge`, `options_about_discordLink` |
+| **Feed**, **Status**, **Original** | grafia original | rótulos de aba e coluna no Unison (`unison_tabFeed` `:2270`, `unison_rev_colStatus`, `unison_rev_original`) |
 
 ---
 
-## 3. 🎛️ Controles de Áudio, Reprodução & Janela
+## 2. 🎵 Letras & modos de sincronização
 
-| Termo em Inglês | Tradução Oficial pt-BR | Contexto |
+O catálogo tem **dois** vocabulários de sincronização, em telas diferentes. Não misture.
+
+### 2.1. Configuração do app (traduz)
+
+| Inglês | pt-BR | Chave |
 | :--- | :--- | :--- |
-| **Fit window** | `Ajustar à janela` | Redimensionar o conteúdo ou a arte para preencher a janela ativa. |
-| **Always on top / Pin** | `Sempre no topo` / `Fixar no topo` | Manter a janela do aplicativo sobreposta sobre todas as outras. |
-| **Compact mode** | `Modo compacto` | Visualização minimalista ocupando pouco espaço na tela. |
-| **Track / Song** | `Faixa` / `Música` | A gravação em reprodução. |
-| **Artist / Album** | `Artista` / `Álbum` | Metadados principais da música. |
-| **Now Playing** | `Reproduzindo agora` | Cabeçalho indicando a faixa ativa no momento. |
-| **Queue** | `Fila de reprodução` | Lista das próximas músicas programadas para tocar. |
-| **Crossfade** | `Crossfade` | Transição suave entre faixas ou capas. Mesmo termo de Spotify e Apple Music. |
-| **Seek / Scrubbing** | `Avançar/Retroceder` ou `Buscar` | Ação de arrastar a barra de progresso temporal da música. |
-| **Pitch / Tempo** | `Tom` / `Andamento (velocidade)` | Parâmetros de afinação e velocidade rítmica do áudio. |
-| **Vocal Stem / Instrumental** | `Faixa vocal` / `Faixa instrumental` | Separação de canais de áudio para isolar a voz ou a melodia. |
+| Syllable | `Sílaba` | `options_syncType_syllable` (`:832`) |
+| Word | `Palavra` | `options_syncType_word` (`:840`) |
+| Line | `Linha` | `options_syncType_line` (`:848`) |
+| Unsynced | `Não sincronizado` | `options_syncType_unsynced` (`:856`) |
+| Sync | `Sincronização` | `unison_sync` |
+
+### 2.2. Etiqueta do Unison (decisão em aberto)
+
+| Inglês | pt-BR atual | Chave |
+| :--- | :--- | :--- |
+| Richsync | `Sincronização rica` | `unison_syncRichsync` (`:2080`) |
+| Linesync | `Sincronização por linhas` | `unison_syncLinesync` (`:2084`) |
+| Plain | `Sem sincronização` | `unison_syncPlain` (`:2088`) |
+
+**Por que está em aberto:** o `description` dessas três chaves diz que o texto é reaproveitado no
+**badge do card** e no **chip de filtro** — um espaço minúsculo. O EN usa uma palavra; o pt-BR usa
+duas ou três. E os formatos vizinhos (`LRC`, `TTML`) ficaram em inglês, o que deixa o conjunto
+inconsistente. A decisão é do mantenedor: tratar tipo de sincronização como termo de domínio (mantém
+`Richsync`/`Linesync`) ou como descrição (traduz, e aí vale encurtar).
+
+### 2.3. Demais termos de letra
+
+| Inglês | pt-BR | Chave / observação |
+| :--- | :--- | :--- |
+| Time-synced lyrics | `Letras sincronizadas` | `options_about_tagline` (`:1562`) — "Letras sincronizadas para o YouTube Music" |
+| Synced version | `Solicitar versão sincronizada` | `lyrics_requestSyncedVersion` (`:1890`) — botão, no infinitivo |
+| Bad sync / Bad synchronization | `Sincronização incorreta` | `unison_report_bad_sync` (`:2036`), `report_lyrics_bad_sync` |
+| Sync offset | `Ajuste de sincronização` | `options_unisonModal_controlOffset` |
+| Per-song offsets | `Ajustes por música` | `options_offsetModal_perSong` |
+| Karaoke subtitles | `Legendas de karaokê` | `options_display_karaoke` (`:3026`) — **com acento** |
+| Romanization | `Romanização` | `options_language_romanization` (`:374`) |
+
+**Furigana** e **Romaji** não aparecem no catálogo atual (0 ocorrências). Se aparecerem, mantêm a
+grafia: são termos linguísticos, não marca.
 
 ---
 
-## 4. 🎨 Efeitos Visuais & Tipografia
+## 3. 🎛️ Reprodução & janela
 
-| Termo em Inglês | Tradução Oficial pt-BR | Contexto |
+| Inglês | pt-BR | Chave / observação |
 | :--- | :--- | :--- |
-| **Blur / Background Blur** | `Desfoque de fundo` | Efeito translúcido (Glassmorphism/Aero) da arte do álbum desfocada. |
-| **Font Size / Line Height** | `Tamanho da fonte` / `Altura da linha` | Ajustes tipográficos para legibilidade das letras. |
-| **Opacity** | `Opacidade` / `Transparência` | Nível de transparência do fundo ou das linhas inativas. |
-| **Highlight color** | `Cor de destaque` | Cor da linha ativa que está sendo cantada no momento. |
-| **Alignment** | `Alinhamento` | Alinhamento do texto (À esquerda, Centralizado, À direita). |
+| Fit window | `Ajustar à janela` | `picture_in_picture_fitWindow` — ação de botão, no infinitivo |
+| Open Picture-in-Picture lyrics | `Abrir letras Picture-in-Picture` | `picture_in_picture_open` (`:148`) |
+| Crossfade | `Crossfade` | `options_pipTransition_crossfade` |
+| Shaders | `Shaders` | `marketplace_shadersBadge` |
+
+Termos de player que **não** estão no catálogo atual (0 ocorrências): *Now Playing*, *Queue*,
+*Lead-in*, *Pitch*, *Tempo*, *Vocal Stem*. Não invente tradução para eles — se aparecerem, decidir
+aqui primeiro.
+
+---
+
+## 4. 🔤 Regras de escrita
+
+1. **Sentence Case.** Só a primeira letra maiúscula: `Ajustar à janela`, não `Ajustar À Janela`. Nome
+   próprio e sigla mantêm a grafia.
+2. **Português do Brasil, não de Portugal.** `tela` (não *ecrã*), `arquivo` (não *ficheiro*),
+   `salvar` (não *guardar*), `configurações` (não *definições*).
+3. **Botão começa com verbo**, no infinitivo: `Ajustar`, `Abrir`, `Solicitar`, `Tentar novamente`.
+4. **Uma palavra por uma palavra** (`CONTRIBUTING.md:156`). Se o EN é `Retry`, o ideal é uma palavra;
+   `Tentar novamente` é a exceção aceita porque `Repetir` não é o que o botão faz.
+5. **Sigla e unidade não se traduzem.** `ISRC`, `LRC`, `TTML`, `PiP`.
+
+---
+
+## 5. ⚠️ Lacunas
+
+1. **Tipo de sincronização em aberto** (seção 2.2) — falta a decisão do mantenedor.
+2. **Termos sem ocorrência no catálogo** (Furigana, Romaji, Now Playing, Queue, Lead-in, Pitch, Tempo,
+   Vocal Stem) — o glossário os lista por precaução, não porque existam hoje.
+3. **Nenhum termo foi conferido em tela.** As decisões vêm do texto e do `description` das chaves, não
+   de ver a extensão rodando.
