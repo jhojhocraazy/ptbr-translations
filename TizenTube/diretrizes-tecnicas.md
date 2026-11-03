@@ -238,6 +238,6 @@ Antes de atualizar o PR:
 | :--- | :--- |
 | 198 chaves de interface + 1 crédito = 199 | contagem em `en.json` e `pt-BR.json` em 02/11/2026 |
 | `OK`, 4 avisos | `validate-ptbr.ps1 -Format nested` em 02/11/2026 |
-| PR #718: aberto, `CLEAN`, 7 commits, base `main` | `gh pr view 718` em 02/11/2026 |
+| PR [#718](https://github.com/reisxd/TizenTube/pull/718): aberto, `CLEAN`, 7 commits, base `main` | `gh pr view 718` em 02/11/2026 |
 | Branch e commit | `git -C TizenTube/repo branch --show-current` e `git log -1` |
 | Release `v2.1.1` (13/09/2026) | `gh release view --repo reisxd/TizenTube` |

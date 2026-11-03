@@ -35,14 +35,14 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 | Projeto | Ecossistema | Plataforma | Strings | Status Oficial | Progresso |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.707** | 🟢 **No ar** (`v0.6.6-beta`); #2455 mesclado em 01/11 | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.707** | 🟢 **No ar** (`v0.6.6-beta`); [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) mesclado em 01/11 | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**BitChord**](#2-bitchord) | Android / Wear OS | GitHub PRs / XML | **+1.448** | 🚀 **Em Análise** ([PR #1204](https://github.com/kushagrasinghx/BitChord/pull/1204), base `main`, `BLOCKED`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **686** | 🟢 **671/686**; 15 checks são falsos positivos de plural e 5 aguardam sync | ![99%](https://geps.dev/progress/99?color=00c853) |
-| [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **Sincronizado** no Crowdin; 6 chaves ausentes no `master` e PR #1019 `BEHIND` | ![99%](https://geps.dev/progress/99?color=00c853) |
+| [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **Sincronizado** no Crowdin; 6 chaves ausentes no `master` e PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) `BEHIND` | ![99%](https://geps.dev/progress/99?color=00c853) |
 | [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **18.819** (214 arquivos) | 🟡 **344 pendentes** em 1 arquivo | ![98%](https://geps.dev/progress/98?color=ffb300) |
 | [**TizenTube & Cobalt**](#6-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **198** (+1 crédito) | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718), `CLEAN`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Hosted Weblate | **176 + 39** | 🟢 **No ar** (`v3.0.8`); 2 checks em análise | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**TorBox**](#8-torbox) | Next.js / Web + Desktop | GitHub PRs / JSON | **1.592** (1.466 + 126 herdadas) | 🟡 **PR #125** `MERGEABLE` — CI aguarda aprovação do mantenedor | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**TorBox**](#8-torbox) | Next.js / Web + Desktop | GitHub PRs / JSON | **1.592** (1.466 + 126 herdadas) | 🟡 **PR [#125](https://github.com/jittarao/torbox-app/pull/125)** `MERGEABLE` — CI aguarda aprovação do mantenedor | ![100%](https://geps.dev/progress/100?color=00c853) |
 
 ---
 
@@ -52,34 +52,34 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Aplicativo moderno de streaming de mídia e entretenimento desenvolvido em **Kotlin Multiplatform (Compose Multiplatform)** para Android e iOS.
 
 * **Repositório Oficial:** [`NuvioMedia/NuvioMobile`](https://github.com/NuvioMedia/NuvioMobile)
-* **Status:** 🟢 **100% Traduzido** (2.707 entradas em 7 arquivos modulares; lotes #2288, #2338, #2402, #2435 e #2455 — todos mesclados).
+* **Status:** 🟢 **100% Traduzido** (2.707 entradas em 7 arquivos modulares; lotes [#2288](https://github.com/NuvioMedia/NuvioMobile/pull/2288), [#2338](https://github.com/NuvioMedia/NuvioMobile/pull/2338), [#2402](https://github.com/NuvioMedia/NuvioMobile/pull/2402), [#2435](https://github.com/NuvioMedia/NuvioMobile/pull/2435) e [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) — todos mesclados).
 * **Diretório Local:** [`NuvioMobile/`](./NuvioMobile/)
 
 <details>
 <summary><b>🔍 Ver Histórico de Entregas & Pull Requests do Nuvio Mobile</b></summary>
 <br/>
 
-* **PR #2234:** [Traduz todas as strings do app para pt-BR](https://github.com/NuvioMedia/NuvioMobile/pull/2234)
+* **PR [#2234](https://github.com/NuvioMedia/NuvioMobile/pull/2234):** Traduz todas as strings do app para pt-BR
   * **Status:** 🚀 **MERGED**
   * **Publicação:** Lançado oficialmente nas versões estáveis `v0.6.0-beta` e `v0.6.1-beta`.
   * **Volume:** 2.410 strings + 4 plurais.
-* **PR #2288:** [Adiciona tradução dos 5 novos módulos](https://github.com/NuvioMedia/NuvioMobile/pull/2288)
+* **PR [#2288](https://github.com/NuvioMedia/NuvioMobile/pull/2288):** Adiciona tradução dos 5 novos módulos
   * **Status:** ✅ **MERGED** — incorporado na versão `v0.6.3-beta` (`Build fullDebug APK: SUCCESS`, 6m49s).
   * **Módulos:** `strings_party.xml` (84 entradas), `strings_servers.xml` (60 entradas), `strings_mdblist.xml` (52 entradas), `autosync_strings.xml` (10 entradas), `autosync_toast_strings.xml` (4 entradas).
   * **Refinamento:** 92 entradas revisadas (terminologia do glossário, Sentence Case, miniaturas, provedores de streaming e mensagens de download).
-* **PR #2338:** [Adiciona traduções das novas strings do player e da watch party](https://github.com/NuvioMedia/NuvioMobile/pull/2338)
+* **PR [#2338](https://github.com/NuvioMedia/NuvioMobile/pull/2338):** Adiciona traduções das novas strings do player e da watch party
   * **Status:** 🚀 **MERGED** em 23/10/2026 e publicado na versão **`v0.6.4-beta`**.
   * **Volume:** 9 novas entradas (7 em `strings.xml`, 2 em `strings_party.xml`) + 1 descrição atualizada.
   * **Cobertura:** 2.641/2.641 entradas na época, 0 pendentes e 0 divergências de placeholders.
-* **PR #2402:** [Traduz resolução de renderização das legendas e avaliações no destaque](https://github.com/NuvioMedia/NuvioMobile/pull/2402)
+* **PR [#2402](https://github.com/NuvioMedia/NuvioMobile/pull/2402):** Traduz resolução de renderização das legendas e avaliações no destaque
   * **Status:** 🚀 **MERGED** em 26/10/2026 e publicado na versão **`v0.6.5-beta`**.
   * **Volume:** 4 novas entradas (`settings_mdb_show_on_hero`, `settings_mdb_show_on_hero_description`, `settings_playback_render_scale`, `settings_playback_render_scale_description`).
   * **Cobertura:** 2.424/2.424 entradas no módulo principal, paridade exata de chaves com a fonte EN e 0 divergências de placeholders.
-* **PR #2435:** [Traduz grupos de configurações, aparência de legendas e modos de renderização ASS](https://github.com/NuvioMedia/NuvioMobile/pull/2435)
+* **PR [#2435](https://github.com/NuvioMedia/NuvioMobile/pull/2435):** Traduz grupos de configurações, aparência de legendas e modos de renderização ASS
   * **Status:** ✅ **MESCLADO** em 30/10/2026 na branch `cmp-rewrite`; incluído em `0.6.6-beta`.
   * **Volume:** 62 entradas novas (grupos e páginas de configurações, aparência de legendas, modos ASS e troca automática de motor) + 1 descrição atualizada.
   * **Cobertura:** 2.496/2.496 entradas no módulo principal, paridade exata de chaves com a fonte EN e 0 divergências de placeholders.
-* **PR #2455:** [`Minha lista`, Sentence Case e texto de scrobble recuperado do EN](https://github.com/NuvioMedia/NuvioMobile/pull/2455)
+* **PR [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455):** `Minha lista`, Sentence Case e texto de scrobble recuperado do EN
   * **Status:** ✅ **MESCLADO** em 01/11/2026 na branch `cmp-rewrite`; ainda não saiu em release.
 </details>
 
@@ -96,14 +96,14 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 <summary><b>🔍 Ver Histórico de Entregas & Detalhes do BitChord</b></summary>
 <br/>
 
-* **PR #1204:** [loc(pt): complete Portuguese (pt-BR) localization](https://github.com/kushagrasinghx/BitChord/pull/1204)
+* **PR [#1204](https://github.com/kushagrasinghx/BitChord/pull/1204):** loc(pt): complete Portuguese (pt-BR) localization
   * **Status:** 🚀 **OPEN / BLOCKED** — `MERGEABLE`, base `main`, CI verde; falta a revisão exigida pelo repositório (`REVIEW_REQUIRED`).
   * **Módulos:** Android (1.135 entradas traduzíveis), Shared UI (249) e Wear OS (40, arquivo criado do zero).
   * **Volume:** 145 chaves novas + 15 do upstream (fontes SF Pro, sincronização de playlists e conversão para DAC), 115 entradas que ainda estavam em inglês corrigidas e 4 textos removidos acompanhados.
   * **Validação:** 0 problemas de placeholder/XML nos três módulos; paridade exata de chaves com a fonte EN.
   * **Release:** `v1.9` saiu em 30/10 sem esta PR; o merge ainda depende do mantenedor.
-* **PR #952:** [loc(pt): complete Portuguese (pt-BR) localization and fix untranslated strings across all modules](https://github.com/kushagrasinghx/BitChord/pull/952)
-  * **Status:** 🔒 **FECHADA** — apontava para `main`; o trabalho foi refeito em #1204 na branch do ciclo de release.
+* **PR [#952](https://github.com/kushagrasinghx/BitChord/pull/952):** loc(pt): complete Portuguese (pt-BR) localization and fix untranslated strings across all modules
+  * **Status:** 🔒 **FECHADA** — apontava para `main`; o trabalho foi refeito em [#1204](https://github.com/kushagrasinghx/BitChord/pull/1204) na branch do ciclo de release.
   * **Histórico:** foi reconstruída sobre a `v1.8.2` em 26/10 e, depois da `v1.9`, rebaseada para `main` (30/10).
   * **Módulos Abrangidos:** Android Core, Shared UI e Wear OS.
   * **Destaques:** Tradução completa das telas do Android Auto, predefinições do equalizador paramétrico, pipeline de áudio DSP, informações da música, períodos do Replay e módulo para smartwatches Wear OS.
@@ -145,8 +145,8 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 <summary><b>🔍 Ver Detalhes do Projeto Better Lyrics</b></summary>
 <br/>
 
-* **Sincronização Upstream:** automática pela integração GitHub do Crowdin (`_locales/pt_BR/messages.json`); PRs do bot #1001 e #1010 já mesclados pelo mantenedor (15/10 e 20/10/2026), sem PR manual do hub.
-* **Pendência Atual (03/11/2026):** a fonte EN cresceu para **643** chaves e o `pt_BR` do `master` tem 637; o PR de sync #1019 (aberto, `BEHIND`) cobre 638. As 6 ausentes são as 5 novas (`options_provider_spicylyrics`, `lyrics_syncedBy`, `lyrics_syncedAndUploadedBy`, `unison_detectedFromLyrics`, `unison_detectedUse`) + `options_display_fullscreenControlsTooltipStates`, que o PR carrega em inglês.
+* **Sincronização Upstream:** automática pela integração GitHub do Crowdin (`_locales/pt_BR/messages.json`); PRs do bot [#1001](https://github.com/better-lyrics/better-lyrics/pull/1001) e [#1010](https://github.com/better-lyrics/better-lyrics/pull/1010) já mesclados pelo mantenedor (15/10 e 20/10/2026), sem PR manual do hub.
+* **Pendência Atual (03/11/2026):** a fonte EN cresceu para **643** chaves e o `pt_BR` do `master` tem 637; o PR de sync [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) (aberto, `BEHIND`) cobre 638. As 6 ausentes são as 5 novas (`options_provider_spicylyrics`, `lyrics_syncedBy`, `lyrics_syncedAndUploadedBy`, `unison_detectedFromLyrics`, `unison_detectedUse`) + `options_display_fullscreenControlsTooltipStates`, que o PR carrega em inglês.
 * **Sincronização Contínua:** Atualização via API oficial do Crowdin, com validação de placeholders (`$VAR$`), tags e termos protegidos antes de cada envio.
 * **Terminologia Musical:** Preservação de termos como *Unison*, *Time-synced*, *Romanization*, *Furigana* e *Picture-in-Picture*.
 </details>
@@ -191,7 +191,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 <summary><b>🔍 Ver Histórico de Entregas & Detalhes do TizenTube</b></summary>
 <br/>
 
-* **PR #718:** [feat(i18n): complete Portuguese (pt-BR) localization and translate missing strings](https://github.com/reisxd/TizenTube/pull/718)
+* **PR [#718](https://github.com/reisxd/TizenTube/pull/718):** feat(i18n): complete Portuguese (pt-BR) localization and translate missing strings
   * **Status:** 🚀 **OPEN / CLEAN** — 7 commits, base `main` (02/11/2026).
   * **Destaques:** Tradução completa de 92 strings que estavam em inglês (barra lateral, relógio em tela, menus de vídeo, atualizador do Cobalt e controle de velocidade).
   * **Refinamento:** 96 strings ajustadas (Sentence Case, ergonomia de TV, leitura de QR Code e naturalidade), com 0 divergências de placeholders e **4** strings mantidas intencionalmente em inglês (`GitHub Sponsors`, `Podcasts`, `Shorts` e uma URL de patrocínio).
@@ -233,7 +233,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 <summary><b>🔍 Ver Histórico de Entregas & Detalhes do TorBox</b></summary>
 <br/>
 
-* **PR #125:** [feat(i18n): add Brazilian Portuguese (pt-BR) locale](https://github.com/jittarao/torbox-app/pull/125)
+* **PR [#125](https://github.com/jittarao/torbox-app/pull/125):** feat(i18n): add Brazilian Portuguese (pt-BR) locale
   * **Status:** 🟡 **OPEN / MERGEABLE** — base `main`; rebaseado em 03/11/2026, CI em `action_required` (aguarda aprovação do mantenedor).
   * **Escopo:** locale `pt-BR` completo — delta de 1.466 chaves, 126 herdadas, registro em `settings.ts` e `request.ts`, seletor de idioma, bandeira, dicas de estilo do pipeline e teste de invariantes.
   * **Pipeline do projeto:** `i18n:verify` passou em 30/10/2026, mas **falha em 03/11/2026**: chaves não ordenadas nos 7 locales; testes 13/14.

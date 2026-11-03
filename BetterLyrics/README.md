@@ -21,7 +21,7 @@
 | **Ainda sem tradução** | **6** chaves ausentes no `master`: 5 novas + `options_display_fullscreenControlsTooltipStates` |
 | **Clone no hub** | **não existe** — removido em 02/11/2026 (seção "Por que não há clone") |
 
-As 5 chaves novas que faltam — ausentes do PR #1019 e, portanto, ainda fora do `pt_BR`:
+As 5 chaves novas que faltam — ausentes do PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) e, portanto, ainda fora do `pt_BR`:
 
 - `options_provider_spicylyrics` = `Spicy Lyrics`
 - `lyrics_syncedBy` = `Synced by`
@@ -32,7 +32,7 @@ As 5 chaves novas que faltam — ausentes do PR #1019 e, portanto, ainda fora do
 Elas **não podem ser entregues por PR manual**: o texto tem de nascer no Crowdin, senão o próximo
 sync do bot sobrescreve. O caminho é esperar a fonte chegar à plataforma e traduzir lá.
 
-Além dessas 5, o `master` não tem `options_display_fullscreenControlsTooltipStates`; o PR #1019 a
+Além dessas 5, o `master` não tem `options_display_fullscreenControlsTooltipStates`; o PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) a
 carrega, mas **em inglês** (“Auto hides the controls while the player bar is showing…”). Por isso o
 `master` tem 637 chaves e não 638: faltam 6, não 5.
 
@@ -74,7 +74,7 @@ O upstream tem 24 pastas de locale (`en` + 23 traduções). Nenhuma delas serve 
 armadilha específica deste projeto é o **`pt_PT`**, que existe, é português e não é brasileiro.
 
 **O snapshot pt-BR não é cópia do PR.** Ele é o estado mais recente do Crowdin; o PR é o que foi
-exportado em 20–21/10. A diferença é real e está medida na seção "O que a PR #1019 carrega".
+exportado em 20–21/10. A diferença é real e está medida na seção "O que a PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) carrega".
 
 ---
 
@@ -128,7 +128,7 @@ O custo foi **7,9 MB** a menos. O preço: as checagens do projeto não rodam mai
 
 ---
 
-## 📦 O que a PR #1019 carrega
+## 📦 O que a PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) carrega
 
 Medido com `gh pr view 1019` em 02/11/2026:
 
@@ -147,7 +147,7 @@ vai acontecer sozinho.
 **A armadilha: a PR está mais velha que o Crowdin.** Comparando as 638 chaves do PR com as 638 do
 snapshot, **7 strings** divergem — e o snapshot é o lado novo. A pior:
 
-| Chave | No PR #1019 | No Crowdin hoje (snapshot) |
+| Chave | No PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) | No Crowdin hoje (snapshot) |
 | :--- | :--- | :--- |
 | `options_display_fullscreenControlsTooltipStates` (`:112`) | `Auto hides the controls while the player bar is showing. On keeps them visible.` — **em inglês** | `Automático oculta os controles enquanto a barra do player estiver visível. Ligado mantém os controles visíveis.` |
 
@@ -160,7 +160,7 @@ As outras 6 são redações anteriores, corrigidas depois no Crowdin:
 - `options_display_letterWaveTooltip` (`:136`): `rolagem parecer travada` → **`rolagem das letras ficar aos trancos`**
 - `unison_sortAscendingClearLabel` (`:1384`): `$LABEL$, crescente` → **`$LABEL$, ordem crescente`**
 
-**Consequência prática:** mergear a #1019 hoje publicaria **uma string em inglês** e seis redações
+**Consequência prática:** mergear a [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) hoje publicaria **uma string em inglês** e seis redações
 antigas. O `stale-check` não pega esse caso — ele acusa tradução que ficou presa numa versão **antiga**
 do inglês, não tradução que é o inglês **atual**. O próximo sync do bot corrige tudo, porque o Crowdin
 já tem o texto certo.
@@ -216,7 +216,7 @@ Cobertura e pendências no Crowdin exigem token:
 ## ⚠️ Lacunas
 
 1. **6 chaves ausentes no `master`** (5 novas + a que o PR carrega em inglês). Dependem do Crowdin/sync.
-2. **A PR #1019 está `BEHIND` e carrega 7 strings desatualizadas**, uma delas em inglês. Falta: o bot
+2. **A PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) está `BEHIND` e carrega 7 strings desatualizadas**, uma delas em inglês. Falta: o bot
    rodar de novo — ou o mantenedor mergear e aceitar que o próximo sync corrige.
 3. **Estado do Crowdin não reverificado.** Sem `CROWDIN_TOKEN` nesta sessão, a última medição local é
    de 30/10/2026 (638/638). Falta rodar `Status`.
@@ -250,14 +250,14 @@ Cobertura e pendências no Crowdin exigem token:
 | 638 chaves EN e 638 pt-BR | contagem em `BetterLyrics/snapshots/*.json` em 02/11/2026 |
 | `OK`, 638 strings, 28 avisos | `validate-ptbr.ps1 -Format chrome` em 02/11/2026 |
 | 29 strings idênticas ao EN | comparação chave a chave EN × PT |
-| 643 EN / 637 PT no `master`; 638 no PR #1019 | API do GitHub em 02/11/2026 (`contents?ref=master`, `?ref=refs/pull/1019/head`) |
-| 5 chaves novas sem tradução | diferença de chaves `master` EN × PR #1019 PT |
-| PR #1019: 27 commits, 23 arquivos, +204/−112, `pt_BR` +64/−60 | `gh pr view 1019 --json commits,files,additions,deletions` |
+| 643 EN / 637 PT no `master`; 638 no PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) | API do GitHub em 02/11/2026 (`contents?ref=master`, `?ref=refs/pull/1019/head`) |
+| 5 chaves novas sem tradução | diferença de chaves `master` EN × PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) PT |
+| PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019): 27 commits, 23 arquivos, +204/−112, `pt_BR` +64/−60 | `gh pr view 1019 --json commits,files,additions,deletions` |
 | `mergeState=BEHIND`, `mergeable=MERGEABLE`, `review=REVIEW_REQUIRED` | `gh pr view 1019 --json mergeStateStatus,mergeable,reviewDecision` |
 | `brand-check`, `stale-check`, `CodeQL`, `Socket` = `SUCCESS` | `gh pr view 1019 --json statusCheckRollup` |
 | 7 strings divergentes entre PR e snapshot | comparação chave a chave do `pt_BR` do PR × snapshot |
 | HEAD do `master` = `f77dcc2` (02/11/2026) | `gh api repos/better-lyrics/better-lyrics/commits/master` |
-| PRs #975/#994/#1001/#1010 mergeados, #1019 aberto | `gh pr list --search "i18n in:title" --state all` |
+| PRs [#975](https://github.com/better-lyrics/better-lyrics/pull/975)/[#994](https://github.com/better-lyrics/better-lyrics/pull/994)/[#1001](https://github.com/better-lyrics/better-lyrics/pull/1001)/[#1010](https://github.com/better-lyrics/better-lyrics/pull/1010) mergeados, [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) aberto | `gh pr list --search "i18n in:title" --state all` |
 | 24 pastas de locale | `contents/_locales` na API do GitHub |
 | `pt-BR` → `pt_BR` | `crowdin.yml:14` |
 | Clone removido: 7,9 MB, 0 commits locais | `Measure-Object` e `git log` antes da remoção, em 02/11/2026 |

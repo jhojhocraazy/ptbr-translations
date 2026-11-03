@@ -197,7 +197,7 @@ validador.
 | :--- | :--- |
 | Classificação dos projetos | [`metodologia.md`](./metodologia.md) §2 |
 | Branch padrão do Nuvio = `cmp-rewrite` | `gh repo view NuvioMedia/NuvioMobile --json defaultBranchRef` |
-| Base do BitChord = `main` na PR #1204 | `gh pr view 1204 --json baseRefName` (02/11/2026) |
+| Base do BitChord = `main` na PR [#1204](https://github.com/kushagrasinghx/BitChord/pull/1204) | `gh pr view 1204 --json baseRefName` (02/11/2026) |
 | Base do TizenTube = `main` | `gh pr view 718 --json baseRefName` |
 | Base do TorBox = `main` | `gh pr view 125 --json baseRefName` |
 | Tamanhos dos clones | `Measure-Object Length -Sum` em 01/11/2026 |

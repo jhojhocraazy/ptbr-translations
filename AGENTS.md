@@ -98,6 +98,9 @@ Sempre que realizar commits em qualquer repositório do usuário:
   * Se o texto for realmente curto e de uma linha, usar aspas simples (`'...'`) ou here-string (`@' ... '@`), nunca aspas duplas com crases.
 * **Verificação obrigatória após publicar:**
   * Reler o texto publicado (`gh pr view`, `gh api ... --jq '.body'`) e corrigir imediatamente qualquer escape, caractere de controle ou Markdown quebrado.
+* **Toda citação de PR leva link:**
+  * Escreva `[#123](https://github.com/owner/repo/pull/123)`, nunca `#123` solto.
+  * Vale para README, diretrizes, changelog, relatório, chat e corpo de PR.
 
 ---
 

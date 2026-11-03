@@ -236,7 +236,7 @@ Antes de atualizar o PR:
 2. **126 chaves herdadas.** Não estão no delta por regra; não são pendência.
 3. **Nada foi rodado no app.** O hub não instala web/desktop; nenhuma regra de espaço de tela foi
    conferida.
-4. **PR conflitante.** O #125 precisa de rebase; a release `v0.1.2` é anterior ao PR.
+4. **PR conflitante.** O [#125](https://github.com/jittarao/torbox-app/pull/125) precisa de rebase; a release `v0.1.2` é anterior ao PR.
 5. **Snapshot e clone podem divergir.** Se o upstream avançar, o snapshot fica velho.
 
 ---
@@ -249,5 +249,5 @@ Antes de atualizar o PR:
 | 1.466 chaves no delta pt-BR | `pt-BR.json` em 02/11/2026 |
 | 126 chaves ausentes do delta | diferença `en.json` × `pt-BR.json` em 02/11/2026 |
 | `verify`, 14 testes, Prettier, 0 pendentes | execução registrada em 30/10/2026 |
-| PR #125: aberto, `CONFLICTING`, base `main` | `gh pr view 125` em 03/11/2026 |
+| PR [#125](https://github.com/jittarao/torbox-app/pull/125): aberto, `CONFLICTING`, base `main` | `gh pr view 125` em 03/11/2026 |
 | Release `v0.1.2` (02/11/2026) | `gh release view --repo jittarao/torbox-app` |

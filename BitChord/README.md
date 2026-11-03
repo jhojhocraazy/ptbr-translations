@@ -76,7 +76,7 @@ navegador vê inglês.
 
 ## 📦 O que a entrega contém
 
-Tudo abaixo foi lido da PR #1204 (`gh pr view 1204`) e dos catálogos nas tags, em 02/11/2026 — não é
+Tudo abaixo foi lido da PR [#1204](https://github.com/kushagrasinghx/BitChord/pull/1204) (`gh pr view 1204`) e dos catálogos nas tags, em 02/11/2026 — não é
 resumo de memória.
 
 | # | O que | Evidência |
@@ -135,7 +135,7 @@ A pasta [`repo/`](./repo/) é um clone do fork, raso (`--depth 1`) e na branch d
 
 **Qual branch usar como base.** O `CONTRIBUTING.md:12` pede a branch do ciclo de release ativo, não a
 `main`. A branch `v1.8.2` existe no upstream, mas **as duas PRs desta tradução apontam para `main`**
-(#952 fechada em 28/10/2026, #1204 aberta) e o catálogo EN de `v1.8.2` é **idêntico** ao de `main`
+([#952](https://github.com/kushagrasinghx/BitChord/pull/952) fechada em 28/10/2026, [#1204](https://github.com/kushagrasinghx/BitChord/pull/1204) aberta) e o catálogo EN de `v1.8.2` é **idêntico** ao de `main`
 hoje. Ou seja: a divergência de regra existe, mas não muda nenhuma string. Se o mantenedor pedir a
 troca de base, o diff é o mesmo.
 
@@ -183,7 +183,7 @@ troca de base, o diff é o mesmo.
 | 145 strings novas entre `v1.8.1` e `v1.8.2` | conteúdo de `values/strings.xml` e `composeResources/values/strings.xml` nas duas tags, via API do GitHub |
 | `v1.8.2` e `main` com catálogo idêntico | comparação byte a byte dos dois arquivos EN em 02/11/2026 |
 | `wearos/values-pt` ausente no upstream | API do GitHub em `v1.8.2` e `main` devolve 404 |
-| PR #1204: estado, base, commits, arquivos, checks | `gh pr view 1204 --repo kushagrasinghx/BitChord` em 02/11/2026 |
+| PR [#1204](https://github.com/kushagrasinghx/BitChord/pull/1204): estado, base, commits, arquivos, checks | `gh pr view 1204 --repo kushagrasinghx/BitChord` em 02/11/2026 |
 | Testes nativos no CI | `check.yml:45-46` (`./gradlew testDevDebugUnitTest`) no job `Android`, com `SUCCESS` |
 | 5.312 estrelas, release `v1.9` de 30/10/2026 | `gh repo view` e `gh release list` em 02/11/2026 |
 | Versão `1.9` / `versionCode 36` | `build.gradle.kts:44-45` |

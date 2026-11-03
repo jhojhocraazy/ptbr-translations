@@ -31,10 +31,10 @@ O commit no hub é **documentação**, não entrega. Ele não substitui nem ante
 
 | Projeto | Tipo | Onde entregamos | Estado em 03/11/2026 |
 | :--- | :--- | :--- | :--- |
-| Nuvio Mobile | Sem plataforma | PR no GitHub | 7 arquivos, 2.707 entradas; #2455 mesclado |
-| BitChord | Sem plataforma | PR no GitHub | 3 módulos, 1.448 unidades; PR #1204 `BLOCKED` |
-| TizenTube & Cobalt | Sem plataforma | PR no GitHub | 198 chaves + crédito; PR #718 `CLEAN` |
-| TorBox | Sem plataforma | PR no GitHub | 1.466 no delta + 126 herdadas; PR #125 `CONFLICTING` |
+| Nuvio Mobile | Sem plataforma | PR no GitHub | 7 arquivos, 2.707 entradas; [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) mesclado |
+| BitChord | Sem plataforma | PR no GitHub | 3 módulos, 1.448 unidades; PR [#1204](https://github.com/kushagrasinghx/BitChord/pull/1204) `BLOCKED` |
+| TizenTube & Cobalt | Sem plataforma | PR no GitHub | 198 chaves + crédito; PR [#718](https://github.com/reisxd/TizenTube/pull/718) `CLEAN` |
+| TorBox | Sem plataforma | PR no GitHub | 1.466 no delta + 126 herdadas; PR [#125](https://github.com/jittarao/torbox-app/pull/125) `CONFLICTING` |
 | Better Lyrics | Plataforma | Crowdin (863186) | 638/638; 6 ausentes no `master` |
 | Crowdin Platform | Plataforma | Crowdin (31) | 18.819 strings; 354 pendentes |
 | YTDLnis | Plataforma | Weblate (`ytdlnis`) | 671/686; 15 checks são falsos positivos de plural |
@@ -177,9 +177,9 @@ O commit no hub é **documentação**, não entrega. Ele não substitui nem ante
 | Projeto | Base | Observação |
 | :--- | :--- | :--- |
 | Nuvio Mobile | `cmp-rewrite` | é a branch padrão do upstream |
-| BitChord | `main` | o `CONTRIBUTING.md:12` pede a branch do ciclo (`v1.8.2`), mas o catálogo EN é idêntico e a PR #1204 aponta para `main` |
-| TizenTube | `main` | PR #718 |
-| TorBox | `main` | PR #125 |
+| BitChord | `main` | o `CONTRIBUTING.md:12` pede a branch do ciclo (`v1.8.2`), mas o catálogo EN é idêntico e a PR [#1204](https://github.com/kushagrasinghx/BitChord/pull/1204) aponta para `main` |
+| TizenTube | `main` | PR [#718](https://github.com/reisxd/TizenTube/pull/718) |
+| TorBox | `main` | PR [#125](https://github.com/jittarao/torbox-app/pull/125) |
 
 Critério de aceite: **PR aberto e válido**, com validação local sem erros.
 

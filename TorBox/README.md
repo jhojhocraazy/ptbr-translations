@@ -124,7 +124,7 @@ mão sem rodar `verify`.
 
 ## ⚠️ Lacunas
 
-1. **CI parado em `action_required`.** O #125 está `MERGEABLE` desde o rebase de 03/11/2026, mas os
+1. **CI parado em `action_required`.** O [#125](https://github.com/jittarao/torbox-app/pull/125) está `MERGEABLE` desde o rebase de 03/11/2026, mas os
    workflows do PR aguardam aprovação do mantenedor (PR de fork).
 2. **Validador do hub não roda.** `All`/`all` quebra o `ConvertFrom-Json`; a validação é o `verify` do
    projeto.
@@ -157,7 +157,7 @@ mão sem rodar `verify`.
 | 1.466 chaves no delta pt-BR | `pt-BR.json` em 02/11/2026 |
 | 126 chaves ausentes do delta | diferença `en.json` × `pt-BR.json` em 02/11/2026 |
 | `verify`, 14 testes, Prettier, 0 pendentes | execução de 03/11/2026, após o rebase |
-| PR #125: aberto, `MERGEABLE`, `UNSTABLE`, base `main` | `gh pr view 125` em 03/11/2026 |
+| PR [#125](https://github.com/jittarao/torbox-app/pull/125): aberto, `MERGEABLE`, `UNSTABLE`, base `main` | `gh pr view 125` em 03/11/2026 |
 | CI do PR em `action_required` | `gh run list --repo jittarao/torbox-app` em 03/11/2026 |
 | Branch `i18n/pt-br`, commit `5afa3e2a` | `git log -1` em 03/11/2026, após rebase |
 | Falha de “keys are not sorted” era CRLF | `isSorted` em `scripts/i18n/lib/io.js:25` + normalização dos 7 arquivos |

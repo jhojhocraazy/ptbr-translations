@@ -113,7 +113,7 @@ git switch i18n/portuguese-complete-pt-br
 git rebase upstream/main
 ```
 
-A branch padrão do upstream é `main`. O PR #718 aponta para ela.
+A branch padrão do upstream é `main`. O PR [#718](https://github.com/reisxd/TizenTube/pull/718) aponta para ela.
 
 ---
 
@@ -143,6 +143,6 @@ A branch padrão do upstream é `main`. O PR #718 aponta para ela.
 | :--- | :--- |
 | 198 chaves de interface + 1 crédito | contagem em `en.json`/`pt-BR.json` em 02/11/2026 |
 | `OK`, 199 strings, 4 avisos | `validate-ptbr.ps1 -Format nested` em 02/11/2026 |
-| PR #718: aberto, `CLEAN`, 7 commits, base `main` | `gh pr view 718` em 02/11/2026 |
+| PR [#718](https://github.com/reisxd/TizenTube/pull/718): aberto, `CLEAN`, 7 commits, base `main` | `gh pr view 718` em 02/11/2026 |
 | Branch `i18n/portuguese-complete-pt-br`, commit `008f40d` | `git branch` e `git log -1` em 02/11/2026 |
 | Release `v2.1.1` (13/09/2026) | `gh release view --repo reisxd/TizenTube` |

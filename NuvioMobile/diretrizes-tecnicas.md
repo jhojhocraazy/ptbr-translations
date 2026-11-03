@@ -224,7 +224,7 @@ Todo PR passa por dois jobs:
 
 O job de build pode falhar por erro **pré-existente na base**. Antes de atribuir a falha à tradução,
 leia o log e confira se o erro está numa linha que a PR não tocou (foi o caso de
-`Unresolved reference 'updateAssMargins'` em `PlayerEngine.android.kt` no #2435).
+`Unresolved reference 'updateAssMargins'` em `PlayerEngine.android.kt` no [#2435](https://github.com/NuvioMedia/NuvioMobile/pull/2435)).
 
 ---
 

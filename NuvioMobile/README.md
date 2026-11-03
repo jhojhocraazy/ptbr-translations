@@ -14,9 +14,9 @@
 | **Catálogos** | **7** arquivos em `composeApp/src/commonMain/composeResources/values-pt-rBR/` |
 | **Entradas** | **2.707** no total — 2.496 no principal + 84 + 60 + 52 + 1 + 10 + 4 |
 | **Paridade** | 🟢 100% nos 7 arquivos; `validate-ptbr.ps1` `OK` (02/11/2026) |
-| **Pull Requests** | #2234, #2288, #2338, #2402, #2435 e #2455 — todos **MERGED** |
+| **Pull Requests** | [#2234](https://github.com/NuvioMedia/NuvioMobile/pull/2234), [#2288](https://github.com/NuvioMedia/NuvioMobile/pull/2288), [#2338](https://github.com/NuvioMedia/NuvioMobile/pull/2338), [#2402](https://github.com/NuvioMedia/NuvioMobile/pull/2402), [#2435](https://github.com/NuvioMedia/NuvioMobile/pull/2435) e [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) — todos **MERGED** |
 | **Último merge** | [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) em 01/11/2026 (`cmp-rewrite`) |
-| **Última release** | `0.6.6-beta` (31/10/2026) — inclui o #2435; o #2455 ainda não saiu em release |
+| **Última release** | `0.6.6-beta` (31/10/2026) — inclui o [#2435](https://github.com/NuvioMedia/NuvioMobile/pull/2435); o [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) ainda não saiu em release |
 | **Branch de trabalho** | `cmp-rewrite`, commit `46febb5` (01/11/2026) |
 | **Upstream** | [`NuvioMedia/NuvioMobile`](https://github.com/NuvioMedia/NuvioMobile) |
 
@@ -65,30 +65,30 @@ branch, via PR; o snapshot sobrevive se a branch for fechada ou rebaseada.
 
 ## 📦 Histórico de entregas
 
-### #2234 — Tradução principal
+### [#2234](https://github.com/NuvioMedia/NuvioMobile/pull/2234) — Tradução principal
 - **Volume:** 2.410 strings + 4 plurais.
 - **Resultado:** publicado em `0.6.0-beta` e `0.6.1-beta`.
 
-### #2288 — Módulos adicionais
+### [#2288](https://github.com/NuvioMedia/NuvioMobile/pull/2288) — Módulos adicionais
 - **Volume:** 208 entradas novas em 5 módulos + 92 refinadas no principal e no PiP.
 - **Resultado:** `MERGED`, publicado em `0.6.3-beta`; CI `Build fullDebug APK` verde (6m49s).
 
-### #2338 — Player e Watch Party
+### [#2338](https://github.com/NuvioMedia/NuvioMobile/pull/2338) — Player e Watch Party
 - **Volume:** 9 entradas novas (7 em `strings.xml`, 2 em `strings_party.xml`) + 1 descrição.
 - **Resultado:** `MERGED` em 23/10/2026, publicado em `0.6.4-beta`.
 
-### #2402 — Renderização de legendas e avaliações no destaque
+### [#2402](https://github.com/NuvioMedia/NuvioMobile/pull/2402) — Renderização de legendas e avaliações no destaque
 - **Volume:** 4 entradas novas.
 - **Resultado:** `MERGED` em 26/10/2026, publicado em `0.6.5-beta`.
 
-### #2435 — Configurações, aparência de legendas e modos ASS
+### [#2435](https://github.com/NuvioMedia/NuvioMobile/pull/2435) — Configurações, aparência de legendas e modos ASS
 - **Volume:** 62 entradas novas + 1 descrição atualizada.
 - **Resultado:** `MERGED` em 30/10/2026 na `cmp-rewrite`, incluído em `0.6.6-beta`.
 - **Observação:** o check `Build fullDebug APK` falhava por erro pré-existente na base
   (`Unresolved reference 'updateAssMargins'`), não pela tradução.
 
-### #2455 — `Minha lista`, Sentence Case e scrobble
-- **Volume:** 3 correções que ficaram fora do #2435.
+### [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) — `Minha lista`, Sentence Case e scrobble
+- **Volume:** 3 correções que ficaram fora do [#2435](https://github.com/NuvioMedia/NuvioMobile/pull/2435).
 - **Resultado:** `MERGED` em 01/11/2026; ainda não há release com esse merge.
 
 ---
@@ -144,7 +144,7 @@ A branch padrão do upstream é `cmp-rewrite`, não `main`. Um PR para `main` se
 
 ## ⚠️ Lacunas
 
-1. **#2455 fora de release.** O merge está na `cmp-rewrite`, mas a última release (`0.6.6-beta`) é
+1. **[#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) fora de release.** O merge está na `cmp-rewrite`, mas a última release (`0.6.6-beta`) é
    anterior. Falta: a próxima release.
 2. **Nada foi rodado em aparelho.** O hub não compila nem instala o app; nenhuma regra de espaço de
    tela foi conferida em Android Auto, PiP ou celular real.
@@ -175,6 +175,6 @@ A branch padrão do upstream é `cmp-rewrite`, não `main`. Um PR para `main` se
 | 2.707 entradas no total | soma dos 7 arquivos |
 | `OK`, 111 avisos | `validate-ptbr.ps1 -Escape none` em 02/11/2026 |
 | 11 falsos positivos com `-Escape android` | mesma execução com a flag Android |
-| PRs #2234–#2455 e estados | `gh pr view` em 02/11/2026 |
+| PRs [#2234](https://github.com/NuvioMedia/NuvioMobile/pull/2234)–[#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) e estados | `gh pr view` em 02/11/2026 |
 | Release `0.6.6-beta` (31/10/2026) | `gh release view --repo NuvioMedia/NuvioMobile` |
 | Branch `cmp-rewrite`, commit `46febb5` | `git branch --show-current` e `git log -1` em 02/11/2026 |
