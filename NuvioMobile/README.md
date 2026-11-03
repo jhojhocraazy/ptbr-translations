@@ -93,7 +93,7 @@ branch, via PR; o snapshot sobrevive se a branch for fechada ou rebaseada.
 
 ### [#2506](https://github.com/NuvioMedia/NuvioMobile/pull/2506) — pontuação de duas descrições
 - **Volume:** 2 strings, só o ponto final removido.
-- **Resultado:** `OPEN` em 03/11/2026, base `cmp-rewrite`; `PR Template Check` verde, build em andamento.
+- **Resultado:** `OPEN` em 03/11/2026, base `cmp-rewrite`; `PR Template Check` e `Build fullDebug APK` verdes, `CLEAN`.
 
 ---
 
