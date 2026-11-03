@@ -5,7 +5,7 @@
   "file_id": 32447,
   "file_name": "en.json",
   "total_submitted": 3639,
-  "generated_at": "2026-11-03T04:16:41-03:00",
+  "generated_at": "2026-11-03T07:51:32-03:00",
   "translations": {
     "7045051": {
       "source": "Go to homepage",
@@ -7733,7 +7733,7 @@
     },
     "7049509": {
       "source": "But localization can be challenging and time-consuming. You need to manage multiple files, formats, tools, and teams. You need to sync content updates, provide context for translators, integrate design into localization, and ensure quality and consistency.",
-      "target": "Mas a localização pode ser desafiadora e demorada. Você precisa gerenciar diversos aquivos, formatos, etc. Você precisa sincronizar atualizações de conteúdo, fornecer contexto para tradutores, integrar design para a localização, etc."
+      "target": "Mas a localização pode ser desafiadora e demorada. Você precisa gerenciar diversos arquivos, formatos, etc. Você precisa sincronizar atualizações de conteúdo, fornecer contexto para tradutores, integrar design para a localização, etc."
     },
     "7049511": {
       "source": "What is Localization?",

@@ -72,8 +72,14 @@ mostra 18.819 strings e 354 pendentes; o `Check` completo fechou 17.542 com 0 di
 A varredura semântica de 03/11/2026 encontrou três problemas graves, **corrigidos via `Push`**:
 `profile.crowdinApps.allUsersIncludeGuests` (“Portuese ”), a headline `alternatives.lokalise.hero.title`
 (em inglês) e `generic.integrationTool` (em inglês). Também corrigiu “vá para a aba… baixar a fatura”,
-“Traduzir arquivo: {file}” e “As taxas não foram salvas”. Restam o typo “aquivo” e um espaço final em
-`settings.betaFeatures`.
+“Traduzir arquivo: {file}” e “As taxas não foram salvas”.
+
+Em 03/11/2026 (07:46) o typo “aquivos” de
+`learn.mobileAppEbook.whatIsLocalization.paragraph2` (`en.json`) foi corrigido. O typo “aquivo”
+(`activity.userDeletedFileFromProject`, `backend.en_US.csv`) e o espaço final em
+`settings.betaFeatures` (`frontend.en_US.csv`) **não** foram corrigidos: a API recusa substituir
+tradução de outro usuário (“Duplicate translation. Please vote or approve the original”) e não expõe
+edição de tradução existente (`PATCH` → 405). Precisam de edição na interface do Crowdin.
 
 ---
 
