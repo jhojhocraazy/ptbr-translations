@@ -42,7 +42,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 | [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **18.819** (214 arquivos) | 🟡 **344 pendentes** em 1 arquivo | ![98%](https://geps.dev/progress/98?color=ffb300) |
 | [**TizenTube & Cobalt**](#6-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **198** (+1 crédito) | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718), `CLEAN`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Hosted Weblate | **176 + 39** | 🟢 **No ar** (`v3.0.8`); 2 checks em análise | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**TorBox**](#8-torbox) | Next.js / Web + Desktop | GitHub PRs / JSON | **1.592** (1.466 + 126 herdadas) | 🟡 **PR #125 conflitante** — precisa de rebase | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**TorBox**](#8-torbox) | Next.js / Web + Desktop | GitHub PRs / JSON | **1.592** (1.466 + 126 herdadas) | 🟡 **PR #125** `MERGEABLE` — CI aguarda aprovação do mantenedor | ![100%](https://geps.dev/progress/100?color=00c853) |
 
 ---
 
@@ -234,7 +234,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 <br/>
 
 * **PR #125:** [feat(i18n): add Brazilian Portuguese (pt-BR) locale](https://github.com/jittarao/torbox-app/pull/125)
-  * **Status:** 🟡 **OPEN / CONFLICTING** — base `main`; precisa de rebase antes da revisão (03/11/2026).
+  * **Status:** 🟡 **OPEN / MERGEABLE** — base `main`; rebaseado em 03/11/2026, CI em `action_required` (aguarda aprovação do mantenedor).
   * **Escopo:** locale `pt-BR` completo — delta de 1.466 chaves, 126 herdadas, registro em `settings.ts` e `request.ts`, seletor de idioma, bandeira, dicas de estilo do pipeline e teste de invariantes.
   * **Pipeline do projeto:** `i18n:verify` passou em 30/10/2026, mas **falha em 03/11/2026**: chaves não ordenadas nos 7 locales; testes 13/14.
   * **Regras respeitadas:** `Admin.*` e `CustomViews.presets.*` não entram em deltas; placeholders e ICU preservados.
