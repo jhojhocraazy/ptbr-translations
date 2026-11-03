@@ -13,14 +13,14 @@
 | **Plataforma** | Crowdin — projeto **31** (`crowdin`), idioma `pt-BR` |
 | **Entrega** | 🟢 **Crowdin** — submissão direta na plataforma; não há PR de tradução |
 | **Escopo** | **18.823** strings visíveis em **214** arquivos |
-| **Cobertura** | 🟡 **18.579/18.823 (98,7%)** — **244 pendentes** em 1 arquivo (03/11/2026) |
-| **Pendências por arquivo** | `backend.en_US.csv` 244/4.329 · `auth.php` 69/69 · `workspace.php` 41/41 · `en.json` 3.643/3.643 |
+| **Cobertura** | 🟢 **18.823/18.823 (100%)** — **0 pendentes** (03/11/2026) |
+| **Pendências por arquivo** | `backend.en_US.csv` 4.329/4.329 · `auth.php` 69/69 · `workspace.php` 41/41 · `en.json` 3.643/3.643 |
 | **Snapshot local** | `snapshots/crowdin_translations_pt_BR.json` — só `en.json` (3.639 strings, 03/11/2026) |
 | **Auditoria** | **17.542 verificadas, 0 divergências** (03/11/2026); lote de 10 fechou 41+69+3.639 com 0 divergências |
 | **Integração** | Crowdin REST API v2 (`https://api.crowdin.com/api/v2/`) |
 | **Clone no hub** | **não existe** — projeto de plataforma |
 
-O projeto **não está 100%**: restam 244 strings em `backend.en_US.csv`. O snapshot local cobre
+O projeto está **100% traduzido** (0 pendentes) desde 03/11/2026. O snapshot local cobre
 apenas o `en.json`; os outros 213 arquivos só existem na plataforma.
 
 ---
@@ -67,6 +67,7 @@ O snapshot é um recorte do `en.json`: 3.639 strings com `source`/`target`, gera
 | 03/11/2026 | 10 strings | 2 em `workspace.php`, 6 em `auth.php`, 2 em `en.json`; os três arquivos ficaram com 0 pendentes |
 | 03/11/2026 | 4 strings | 4 erros do DeepL Translator em `backend.en_US.csv` (18.819 → 18.823 strings) |
 | 03/11/2026 | 100 strings | eventos `auditLog.*` em `backend.en_US.csv`; pendentes 344 → 244 |
+| 03/11/2026 | 244 strings | 3 lotes de `auditLog.*` em `backend.en_US.csv`; pendentes 244 → **0** |
 
 A auditoria de 30/10/2026 fechou 17.515 strings com 0 divergências. Em 03/11/2026 a plataforma
 mostra 18.823 strings e 244 pendentes; o `Check` completo fechou 17.542 com 0 divergências.
@@ -121,7 +122,7 @@ O commit no hub é documentação, não entrega. Ele não substitui nem antecede
 
 ## ⚠️ Lacunas
 
-1. **244 pendentes.** Restam só no `backend.en_US.csv`; `auth.php`, `workspace.php` e `en.json` fecharam em 03/11/2026.
+1. **0 pendentes** desde 03/11/2026 — os quatro arquivos que tinham pendência fecharam no dia.
 2. **Snapshot parcial.** Só o `en.json` está versionado, e com 3.639 das 3.643 strings.
 3. **Sem validação de todos os arquivos.** `Check` cobre integridade, não fluência.
 4. **Sem interface aberta.** Nenhuma regra de espaço de tela foi conferida na UI real.
@@ -144,8 +145,8 @@ O commit no hub é documentação, não entrega. Ele não substitui nem antecede
 
 | Valor | De onde veio |
 | :--- | :--- |
-| 18.823 strings, 244 pendentes | `crowdin-sync.ps1 -Action Status -ProjectId 31` em 03/11/2026, após o `Push` de 100 |
-| 244/4.329; 69/69; 41/41; 3.643/3.643 | mesma execução, por arquivo |
+| 18.823 strings, 0 pendentes | `crowdin-sync.ps1 -Action Status -ProjectId 31` em 03/11/2026, após os 3 lotes |
+| 4.329/4.329; 69/69; 41/41; 3.643/3.643 | mesma execução, por arquivo |
 | 3.639 strings no snapshot | `total_submitted` do JSON, gerado em 03/11/2026 04:16 |
 | 214 arquivos | `research/README.md` e dashboard |
 | 17.542 verificadas, 0 divergências; 18.823 exportadas | `Check` + export da API em 03/11/2026 |
