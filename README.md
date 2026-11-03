@@ -157,7 +157,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > A principal plataforma global de gerenciamento contínuo de localização e tradução baseada em nuvem para equipes de engenharia e produto.
 
 * **Projeto Oficial:** [Crowdin Translations (ID: 31)](https://crowdin.com/project/crowdin)
-* **Plataforma de Tradução:** Crowdin API v2
+* **Plataforma de Tradução:** [Crowdin API v2](https://crowdin.com/project/crowdin)
 * **Status:** 🟡 **18.819 strings** em 214 arquivos — **344 pendentes** em 1 arquivo (03/11/2026).
 * **Diretório Local:** [`Crowdin/`](./Crowdin/)
 
@@ -205,7 +205,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Aplicativo Android open source para alternar rapidamente servidores DNS privados e perfis de rede via Quick Settings Tiles.
 
 * **Repositório Oficial:** [`ELowry/DNSToggle`](https://github.com/ELowry/DNSToggle)
-* **Plataforma de Tradução:** Hosted Weblate — projeto `elowry`
+* **Plataforma de Tradução:** [Hosted Weblate — DNSToggle pt_BR](https://hosted.weblate.org/projects/elowry/dnstoggle-strings/pt_BR/)
 * **Status:** 🟢 **100% Traduzido** nos dois componentes (`dnstoggle-strings` 176/176 e `dnstoggle-metadata` 39/39), com 0 pendentes e publicado no **`v3.0.8`**.
 * **Diretório Local:** [`DNSToggle/`](./DNSToggle/)
 

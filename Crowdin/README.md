@@ -67,7 +67,7 @@ O snapshot é um recorte do `en.json`: 3.639 strings com `source`/`target`, gera
 | 03/11/2026 | 10 strings | 2 em `workspace.php`, 6 em `auth.php`, 2 em `en.json`; os três arquivos ficaram com 0 pendentes |
 
 A auditoria de 30/10/2026 fechou 17.515 strings com 0 divergências. Em 03/11/2026 a plataforma
-mostra 18.819 strings e 354 pendentes; o `Check` completo fechou 17.542 com 0 divergências.
+mostra 18.819 strings e 344 pendentes; o `Check` completo fechou 17.542 com 0 divergências.
 
 A varredura semântica de 03/11/2026 encontrou três problemas graves, **corrigidos via `Push`**:
 `profile.crowdinApps.allUsersIncludeGuests` (“Portuese ”), a headline `alternatives.lokalise.hero.title`
@@ -95,7 +95,7 @@ Precisa de `CROWDIN_TOKEN` no ambiente (ou `scripts/tokens.ps1`, ignorado pelo G
 Resultado de 02/11/2026:
 
 ```text
-Projeto 31 | 18819 strings | 354 pendentes
+Projeto 31 | 18819 strings | 344 pendentes
   31090  backend.en_US.csv  344/4325
   32187  auth.php             6/69
   32219  workspace.php        2/41

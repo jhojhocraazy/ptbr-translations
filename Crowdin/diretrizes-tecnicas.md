@@ -156,7 +156,7 @@ de formatação printf, que não é o caso da interface moderna.
 Resultado de 03/11/2026:
 
 ```text
-Projeto 31 | 18819 strings | 354 pendentes
+Projeto 31 | 18819 strings | 344 pendentes
   31090  backend.en_US.csv  344/4325
   32187  auth.php             6/69
   32219  workspace.php        2/41
@@ -215,7 +215,7 @@ Antes de fechar um lote:
 
 ## 8. ⚠️ Lacunas conhecidas
 
-1. **354 pendentes.** Em 03/11/2026 o projeto tem 354 strings pendentes em 4 arquivos; a tradução
+1. **344 pendentes.** Em 03/11/2026 o projeto tem 344 strings pendentes, todas em `backend.en_US.csv`; a tradução
    **não** está 100%.
 2. **Snapshot parcial.** Só o `en.json` está versionado; os outros 213 arquivos não têm cópia local.
 3. **Snapshot 6 strings atrás.** `en.json` na plataforma tem 3.643; o snapshot tem 3.637.
@@ -230,8 +230,8 @@ Antes de fechar um lote:
 
 | Valor | De onde veio |
 | :--- | :--- |
-| 18.819 strings, 354 pendentes | `crowdin-sync.ps1 -Action Status -ProjectId 31` em 03/11/2026 |
-| 344/4.325, 6/69, 2/41, 2/3.643 | mesma execução, por arquivo |
+| 18.819 strings, 344 pendentes | `crowdin-sync.ps1 -Action Status -ProjectId 31` em 03/11/2026 |
+| 344/4.325; 69/69; 41/41; 3.643/3.643 | mesma execução, por arquivo |
 | 3.637 strings no snapshot | `total_submitted` do JSON, gerado em 30/10/2026 |
 | 214 arquivos | `research/README.md` e dashboard do hub |
 | 0 divergências | última auditoria completa registrada em 30/10/2026 |
