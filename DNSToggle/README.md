@@ -1,70 +1,121 @@
-# 🛡️ DNSToggle — Central de Localização pt-BR
+# 🛡️ DNSToggle — Localização pt-BR
 
-> **Módulo de Localização & Gestão de Tradução via Weblate para o aplicativo [DNSToggle](https://github.com/ELowry/DNSToggle).**  
+> **Central de localização para Português do Brasil (`pt-BR`) do aplicativo
+> [DNSToggle](https://github.com/ELowry/DNSToggle).**
 > Mantido por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jhojhocraazy).
 
 ---
 
-## 📊 Status do Projeto
+## 📊 Status
 
-| Métrica | Status Oficial |
+| Item | Estado |
 | :--- | :--- |
-| **Repositório Oficial** | [`ELowry/DNSToggle`](https://github.com/ELowry/DNSToggle) |
-| **Plataforma de Tradução** | [Weblate — projeto `elowry`](https://hosted.weblate.org/projects/elowry/) |
+| **Plataforma** | [Weblate — projeto `elowry`](https://hosted.weblate.org/projects/elowry/) |
 | **Componentes** | `dnstoggle-strings` + `dnstoggle-metadata` |
-| **Cobertura pt-BR** | 🟢 **176/176 strings · 38/38 metadados (100%)** |
-| **Pendências** | 🟢 **0 strings pendentes** |
-| **Última revisão** | 20/10/2026 — naturalidade (14 ajustes) |
-| **Publicação** | `v3.0.7` (29/10/2026) — release cita oficialmente a tradução pt-BR |
+| **Cobertura** | 🟢 **176/176 strings** e **39/39 metadados** (100%) |
+| **Pendências** | 🟢 **0 strings pendentes** nos dois componentes |
+| **Checks nativos** | 🟡 **2** — `off_label` e `mode_disabled`, ambos com alvo "Desativado" |
+| **Entrega** | 🟢 **Weblate** — a entrega termina na plataforma; não há PR de tradução |
+| **Snapshot** | 174 `<string>` + 1 `<plurals>` (3 formas) = **177 unidades** (02/11/2026) |
+| **Última release** | `v3.0.8` (01/11/2026) — cita oficialmente a tradução pt-BR |
+| **Clone no hub** | **não existe** — projeto de plataforma |
+
+A tradução está completa nos dois componentes. O que resta é decidir o que fazer com os 2 checks.
 
 ---
 
-## 🌐 Sobre o DNSToggle
+## 🌐 O que é o DNSToggle
 
-O **DNSToggle** é um utilitário open source essencial para Android desenvolvido por [ELowry](https://github.com/ELowry). Ele permite alternar instantaneamente servidores de **DNS Privado** (como AdGuard, Cloudflare 1.1.1.1, NextDNS, Quad9 e Google DNS) e protocolos de **DNS-over-TLS (DoT)** diretamente a partir dos **Blocos das Configurações Rápidas (Quick Settings Tiles)** da barra de notificações do Android, sem a necessidade de acesso root.
+Utilitário Android para alternar servidores de **DNS Privado** (AdGuard, Cloudflare, NextDNS, Quad9,
+Google DNS) e protocolos **DNS-over-TLS (DoT)** direto dos **Blocos das Configurações Rápidas**, sem
+root.
+
+O app altera o ajuste de sistema **DNS Privado** do Android 9+. Por isso o vocabulário precisa bater
+com o menu nativo: o usuário compara os dois.
+
+O vocabulário está em [`glossario.md`](./glossario.md); as regras de escrita em
+[`diretrizes-tecnicas.md`](./diretrizes-tecnicas.md).
 
 ---
 
 ## 🗂️ Componentes no Weblate
 
-A tradução do DNSToggle está organizada em dois componentes oficiais:
-
-| Componente | Conteúdo | Cobertura pt-BR |
+| Componente | Conteúdo | Cobertura |
 | :--- | :--- | :---: |
-| **`dnstoggle-strings`** | Interface principal, Blocos das Configurações Rápidas, notificações, diálogos e permissões | 🟢 176/176 (100%) |
-| **`dnstoggle-metadata`** | Título, descrição curta, descrição completa e changelogs das lojas | 🟢 38/38 (100%) |
+| **`dnstoggle-strings`** | interface, Blocos, notificações, diálogos e permissões | 🟢 176/176 |
+| **`dnstoggle-metadata`** | título, descrição curta, descrição completa e changelog | 🟢 39/39 |
 
-> Os cinco domínios funcionais (app, tiles, notifications, dialogs e metadata) são cobertos por esses dois componentes.
+Os cinco domínios funcionais (app, tiles, notifications, dialogs e metadata) são cobertos por esses
+dois componentes.
 
-> **Qualidade:** revisão de naturalidade aplicada em 20/10/2026 (14 ajustes). Restam 2 avisos automáticos de consistência — gênero em “Desativado/Desativada” e termo repetido — ambos intencionais.
-
----
-
-## 🚀 Fluxo de Entrega
-
-O DNSToggle é um projeto de plataforma: a entrega termina no Weblate.
-
-1. As strings são traduzidas e revisadas no projeto `elowry`, idioma `pt_BR`.
-2. O critério de conclusão é **100% traduzido e 0 pendências** nos dois componentes.
-3. A entrega termina na plataforma; a publicação no repositório upstream é responsabilidade do Weblate e do mantenedor.
+O snapshot de strings tem **177 unidades** (174 strings + 1 plural de 3 formas). O Weblate reporta
+176/176 porque o `app_name` é tratado à parte pelo exportador.
 
 ---
 
-## 📁 Arquitetura dos Arquivos Locais
+## 🧪 Como conferir
 
-```text
-DNSToggle/
-├── snapshots/
-│   ├── dnstoggle_strings_pt_BR.xml   # Snapshot do componente de strings (Weblate)
-│   └── dnstoggle_metadata_pt_BR.zip  # Metadados de cobertura exportados do Weblate
-├── README.md               # Este documento (Visão geral e status dos componentes)
-├── diretrizes-tecnicas.md  # Regras de limite de caracteres para Tiles e alinhamento com Android OS
-└── glossario.md            # Dicionário de redes, DNS, segurança Android e permissões
+Precisa de `WEBLATE_TOKEN` no ambiente (ou `scripts/tokens.ps1`, ignorado pelo Git):
+
+```powershell
+./scripts/weblate-sync.ps1 -Action Status -Project elowry -Component dnstoggle-strings
+./scripts/weblate-sync.ps1 -Action Check  -Project elowry -Component dnstoggle-strings
+./scripts/weblate-sync.ps1 -Action Checks -Project elowry -Component dnstoggle-strings
 ```
 
+Resultado de 02/11/2026:
+
+```text
+dnstoggle-strings   176/176   pendentes=0   checks=2
+dnstoggle-metadata   39/39    pendentes=0   checks=0
+```
+
+Os 2 checks são `off_label` e `mode_disabled`, ambos com alvo "Desativado". A decisão está em aberto:
+falso positivo a dispensar ou colisão real de termo.
+
+> **Sem fonte EN no hub.** O validador não roda contra uma fonte fixa; falta criar
+> `DNSToggle/fonte/` (ver [`../organizacao-dos-repositorios.md`](../organizacao-dos-repositorios.md)).
+> Enquanto isso, a conferência é feita na plataforma.
+
 ---
 
-## 📖 Documentos Complementares
+## 🔄 Como a entrega funciona
 
-* 📘 [**Diretrizes Técnicas de Tradução (diretrizes-tecnicas.md)**](./diretrizes-tecnicas.md): Manual de engenharia para adaptação aos limites de caracteres dos Quick Settings Tiles, alinhamento terminológico estrito com as configurações do Android da Google e instruções de comandos ADB.
-* 📗 [**Glossário de Redes & DNS (glossario.md)**](./glossario.md): Tabela de referência técnica para desambiguação de termos de DNS Privado, DoT, DoH, Shizuku, Tiles e estados de rede.
+1. As strings são traduzidas e revisadas no Weblate, projeto `elowry`, idioma `pt_BR`.
+2. O critério de conclusão é **100% traduzido e 0 pendências** nos dois componentes.
+3. A entrega termina na plataforma; a publicação no repositório é responsabilidade do Weblate e do
+   mantenedor.
+
+O commit no hub é documentação, não entrega.
+
+---
+
+## ⚠️ Lacunas
+
+1. **2 checks em aberto.** `off_label` e `mode_disabled` continuam sem decisão.
+2. **Sem fonte EN versionada.** O validador não roda offline contra o EN.
+3. **Nada foi rodado em Android.** Nenhum limite de Tile foi conferido em aparelho real.
+4. **Snapshot de metadados em ZIP.** Não é XML legível; a conferência é manual.
+5. **Snapshot pode divergir.** O XML é cópia do Weblate; se a plataforma avançar, o snapshot fica
+   velho.
+
+---
+
+## 📖 Documentos complementares
+
+- 📘 [**Diretrizes técnicas**](./diretrizes-tecnicas.md) — o método aplicado a XML Android, limites de
+  Tile, vocabulário do Android, ADB/Shizuku e validação no Weblate.
+- 📗 [**Glossário de termos**](./glossario.md) — DNS, DoT, Tiles, estados e permissões.
+- 🗂️ [**Snapshots**](./snapshots/) — XML de strings e ZIP de metadados.
+
+---
+
+## 📚 Fontes dos números
+
+| Valor | De onde veio |
+| :--- | :--- |
+| 176/176 strings, 0 pendentes, 2 checks | `weblate-sync.ps1 -Action Status` em 02/11/2026 |
+| 39/39 metadados | mesma execução |
+| 174 strings + 1 plural (3 formas) = 177 | contagem no snapshot em 02/11/2026 |
+| `off_label` e `mode_disabled` | `weblate-sync.ps1 -Action Checks` em 02/11/2026 |
+| Release `v3.0.8` (01/11/2026) | `gh release view --repo ELowry/DNSToggle` |

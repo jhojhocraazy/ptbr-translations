@@ -1,64 +1,148 @@
-# 📺 TizenTube & TizenTube Cobalt — Central de Localização pt-BR
+# 📺 TizenTube & TizenTube Cobalt — Localização pt-BR
 
-> **Módulo de Localização & Engenharia de Internacionalização (i18n & l10n) para o ecossistema [TizenTube](https://github.com/reisxd/TizenTube) e [TizenTube Cobalt](https://github.com/reisxd/TizenTubeCobalt).**  
+> **Central de localização para Português do Brasil (`pt-BR`) do ecossistema
+> [TizenTube](https://github.com/reisxd/TizenTube) e
+> [TizenTube Cobalt](https://github.com/reisxd/TizenTubeCobalt).**
 > Mantido por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jhojhocraazy).
 
 ---
 
-## 📊 Status do Projeto
+## 📊 Status
 
-| Métrica | Status Oficial |
+| Item | Estado |
 | :--- | :--- |
-| **Ecossistema Tecnológico** | JavaScript (ESM / Rollup) + Cobalt C++ Container (Chromium/Starboard) |
-| **Dispositivos Suportados** | Smart TVs Samsung (Tizen OS), Android TV, Google TV e Amazon Fire TV |
-| **Cobertura Geral** | 🟢 **100% Traduzido & Refinado** (197 strings revisadas; 96 refinadas em 20/10/2026) |
-| **Repositórios Oficiais** | [`reisxd/TizenTube`](https://github.com/reisxd/TizenTube) & [`reisxd/TizenTubeCobalt`](https://github.com/reisxd/TizenTubeCobalt) |
-| **Branch de Trabalho** | `i18n/portuguese-complete-pt-br` |
-| **Pull Request** | [#718](https://github.com/reisxd/TizenTube/pull/718) — aberto e mergeable (3 commits) |
+| **Plataforma** | JavaScript (ESM / Rollup) + Cobalt (Chromium/Starboard) |
+| **Dispositivos** | Samsung Tizen OS, Android TV, Google TV e Fire TV |
+| **Catálogo** | `mods/translations/resources/pt-BR.json` — **198** chaves de interface + `__contributors` |
+| **Paridade** | 🟢 100% — 198/198 chaves do EN, 0 faltando, 0 sobrando |
+| **Validação** | 🟢 `validate-ptbr.ps1 -Format nested`: `OK`, 199 strings, 4 avisos de texto idêntico |
+| **Pull Request** | [#718](https://github.com/reisxd/TizenTube/pull/718) — `OPEN`, base `main`, `CLEAN`, 7 commits |
+| **Branch** | `i18n/portuguese-complete-pt-br`, commit `008f40d` (30/10/2026) |
+| **Última release** | `v2.1.1` (13/09/2026) — anterior ao PR |
+| **Upstream** | [`reisxd/TizenTube`](https://github.com/reisxd/TizenTube) |
+
+A tradução está completa e o PR está verde. O que falta é a revisão e o merge do mantenedor.
 
 ---
 
-## 🎬 Sobre o TizenTube & TizenTube Cobalt
+## 🎬 O que é o TizenTube
 
-O **TizenTube** é a solução definitiva de código aberto para aprimorar a experiência de streaming em televisores conectados:
+Camada de melhorias para o YouTube em TVs:
 
-* 🛑 **Bloqueio de Anúncios Nativo:** Elimina propagandas intrusivas sem interrupções.
-* ❗ **Integração com SponsorBlock:** Pula automaticamente segmentos patrocinados, intros, encerramentos, avisos de inscrição e piadas irrelevantes.
-* 🔺 **Suporte ao DeArrow:** Substitui títulos e miniaturas sensacionalistas (*clickbaits*) por versões precisas criadas pela comunidade.
-* 🎛️ **Controle Fino de Velocidade e Resolução:** Incrementos customizados de velocidade de reprodução e taxa de quadros automática (**AFR**).
-* ⏰ **Relógio em Tela & Personalização da Barra Lateral:** Relógio integrado com modo 12h/24h e reordenação dinâmica de menus.
-* 🔄 **Atualizador Automático:** Sistema embutido de verificação de atualizações no TizenTube Cobalt.
+- **Bloqueio de anúncios** nativo.
+- **SponsorBlock:** pula patrocínios, intros, encerramentos, avisos de inscrição e piadas.
+- **DeArrow:** substitui títulos e miniaturas sensacionalistas por versões da comunidade.
+- **Controle de velocidade e resolução**, com taxa de quadros automática (AFR).
+- **Relógio em tela** e personalização da barra lateral.
+- **Atualizador automático** no TizenTube Cobalt.
 
----
-
-## 🗂️ Arquitetura da Localização
-
-A tradução central do projeto está concentrada no repositório core `reisxd/TizenTube`, que compila o bundle `@foxreis/tizentube` consumido tanto por Smart TVs Samsung (Tizen) quanto por Android TVs (Cobalt):
-
-| Arquivo de Tradução | Strings Totais | Strings Iniciais em Inglês | Status Atual pt-BR |
-| :--- | :---: | :---: | :---: |
-| [`mods/translations/resources/pt-BR.json`](./snapshots/tizentube_pt_BR.json) | **197** | 92 (~47%) | 🟢 **100% Traduzido & Refinado** (96 ajustes) |
+O vocabulário está em [`glossario.md`](./glossario.md); as regras de escrita em
+[`diretrizes-tecnicas.md`](./diretrizes-tecnicas.md).
 
 ---
 
-## 🚀 O que foi Feito Nesta Localização
+## 🗂️ Onde a tradução vive
 
-1. **Eliminação de 92 Strings em Inglês:** Cerca de metade do aplicativo utilizava textos em inglês copiados diretamente do `en.json`. Todas as 92 strings foram traduzidas para um português do Brasil fluído e natural.
-2. **Localização Completa da Barra Lateral & Categorias:** Menus como *Início*, *Pesquisar*, *Filmes e TV*, *Ao Vivo*, *Jogos*, *Inscrições*, *Shorts* e comandos de reordenação agora estão 100% em pt-BR.
-3. **Módulo de Atualização do Cobalt:** Tradução completa dos diálogos de verificação de atualização, download e notas de versão.
-4. **Preservação Absoluta de Placeholders:** Variáveis como `{{count}}`, `{{version}}`, `{{latestVersion}}`, `{{currentVersion}}`, `{{name}}` e `{{date}}` foram rigorosamente mantidas.
-5. **Reconhecimento nos Créditos:** Atualizado o array oficial `__contributors` com a inclusão de **Joseph Alves**.
-6. **Refinamento de Qualidade (20/10/2026):** 96 strings ajustadas para Sentence Case, ergonomia de controle remoto (*selecione* em vez de *clique*), leitura de QR Code, naturalidade e precisão terminológica (ex.: *cartões*, *abrir em*, *preferencialmente*), preservando 100% dos placeholders e as 5 strings intencionalmente idênticas ao inglês.
+| Item | Caminho |
+| :--- | :--- |
+| **Fonte EN** | `TizenTube/repo/mods/translations/resources/en.json` |
+| **Tradução pt-BR** | `.../pt-BR.json` |
+| **Snapshot do hub** | [`snapshots/tizentube_pt_BR.json`](./snapshots/tizentube_pt_BR.json) |
+| **Entrega** | PR no repositório `reisxd/TizenTube` |
+| **Branch** | `i18n/portuguese-complete-pt-br` |
+
+O catálogo é um JSON aninhado com 8 seções (`common`, `settings`, `welcomeMsg`, `sponsorblock`,
+`player`, `videoMenu`, `toasts`, `__contributors`). A última não é interface: é a lista de créditos,
+onde Joseph Alves aparece oficialmente.
+
+O bundle `@foxreis/tizentube` é consumido por Tizen e Cobalt; uma tradução atende os dois.
 
 ---
 
-## 📁 Estrutura de Arquivos Locais
+## 📦 O que a entrega contém
+
+| # | O que | Evidência |
+| :-: | :--- | :--- |
+| 1 | **92 strings que estavam em inglês traduzidas** | `pt-BR.json` contra `en.json` |
+| 2 | **96 strings refinadas** em 20/10/2026 | Sentence Case, D-Pad, QR Code e naturalidade |
+| 3 | **Barra lateral e categorias completas** | Início, Pesquisar, Filmes e TV, Ao Vivo, Jogos, Inscrições, Shorts |
+| 4 | **Atualizador do Cobalt traduzido** | diálogos de verificação, download e notas |
+| 5 | **Placeholders preservados** | `{{count}}`, `{{name}}`, `{{version}}`, `{{date}}`, `{{segment}}` |
+| 6 | **Crédito oficial** | `__contributors` inclui `Joseph Alves` |
+| 7 | **4 strings mantidas em inglês** | `GitHub Sponsors`, `Podcasts`, `Shorts` e uma URL de patrocínio |
+
+---
+
+## 🧪 Como conferir
+
+```powershell
+./scripts/validate-ptbr.ps1 `
+  -Path   TizenTube/snapshots/tizentube_pt_BR.json `
+  -Source TizenTube/repo/mods/translations/resources/en.json `
+  -Format nested
+```
+
+Resultado de 02/11/2026:
 
 ```text
-TizenTube/
-├── snapshots/
-│   └── tizentube_pt_BR.json   # Backup completo com 197 strings traduzidas
-├── diretrizes-tecnicas.md     # Regras de sintaxe JSON, placeholders e boas práticas
-├── glossario.md               # Harmonização terminológica para Smart TVs e streaming
-└── README.md                  # Este documento
+OK   tizentube_pt_BR.json  (199 strings, perfil=nested, escape=none)
+     avisos: 4 string(s) idêntica(s) à fonte (nomes próprios/termos mantidos)
 ```
+
+As 199 "strings" são **198 chaves de interface + 1 entrada de créditos**. As 4 idênticas são marca,
+nome de formato ou URL — nenhuma é frase esquecida em inglês.
+
+> **Cuidado:** o validador compara o snapshot com o EN **do clone**. Clone velho, resultado velho.
+> Rode `git -C TizenTube/repo fetch upstream` antes de confiar no número.
+
+---
+
+## 🛠️ Trabalhar no clone (`repo/`)
+
+A pasta [`repo/`](./repo/) é um clone raso (`--depth 1`) do fork, na branch da PR.
+
+| Remoto | URL |
+| :--- | :--- |
+| `origin` | `https://github.com/jhojhocraazy/TizenTube.git` (fork) |
+| `upstream` | `https://github.com/reisxd/TizenTube.git` (projeto original — só leitura) |
+
+```bash
+cd TizenTube/repo
+git fetch upstream main
+git switch i18n/portuguese-complete-pt-br
+git rebase upstream/main
+```
+
+A branch padrão do upstream é `main`. O PR #718 aponta para ela.
+
+---
+
+## ⚠️ Lacunas
+
+1. **Revisão do mantenedor.** O PR está `CLEAN` e completo; falta o merge.
+2. **Sem CI de tradução no upstream.** A validação é local + revisão manual.
+3. **Nada foi rodado em TV.** O hub não instala o app; nenhuma regra de espaço de tela foi conferida
+   em Tizen, Android TV ou Fire TV.
+4. **`pt-PT` existe no repositório.** É a armadilha de origem; nunca use como fonte.
+5. **Release desatualizada.** `v2.1.1` é de 13/09/2026, anterior ao PR.
+
+---
+
+## 📖 Documentos complementares
+
+- 📘 [**Diretrizes técnicas**](./diretrizes-tecnicas.md) — o método aplicado ao JSON aninhado:
+  chave ➔ inglês ➔ tela ➔ pt-BR ➔ regras. `{{placeholders}}`, emojis, D-Pad e validação.
+- 📗 [**Glossário de termos**](./glossario.md) — o vocabulário de TV, SponsorBlock e DeArrow.
+- 🗂️ [**Snapshot**](./snapshots/) — cópia versionada do catálogo.
+
+---
+
+## 📚 Fontes dos números
+
+| Valor | De onde veio |
+| :--- | :--- |
+| 198 chaves de interface + 1 crédito | contagem em `en.json`/`pt-BR.json` em 02/11/2026 |
+| `OK`, 199 strings, 4 avisos | `validate-ptbr.ps1 -Format nested` em 02/11/2026 |
+| PR #718: aberto, `CLEAN`, 7 commits, base `main` | `gh pr view 718` em 02/11/2026 |
+| Branch `i18n/portuguese-complete-pt-br`, commit `008f40d` | `git branch` e `git log -1` em 02/11/2026 |
+| Release `v2.1.1` (13/09/2026) | `gh release view --repo reisxd/TizenTube` |

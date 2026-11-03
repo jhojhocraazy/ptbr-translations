@@ -1,103 +1,185 @@
-# 📗 Glossário Terminológico Oficial — Nuvio Mobile
+# 📗 Glossário de termos — Nuvio Mobile
 
-> **Dicionário Técnico de Padronização para Português do Brasil (`pt-BR`).**  
-> Mantido por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jhojhocraazy).
+> **O que é este documento:** o vocabulário da **etapa 4** do método de tradução (escrever em pt-BR).
+> Ele decide a **palavra**; [`diretrizes-tecnicas.md`](./diretrizes-tecnicas.md) decide **como
+> escrevê-la em XML**. Status do projeto em [`README.md`](./README.md).
+>
+> **Contra o que foi escrito:** snapshot
+> [`snapshots/NuvioMobile_strings_pt_BR.xml`](./snapshots/NuvioMobile_strings_pt_BR.xml) e os seis
+> catálogos menores, conferidos contra o EN do clone em **02/11/2026**. As citações são de **chave**,
+> não de linha, porque o snapshot muda a cada lote.
+>
+> **Como usar:** procure o termo, confira a chave citada e escreva igual. Se o termo não estiver aqui,
+> decida com a regra da seção 1 e acrescente a linha **no mesmo commit** da string nova.
 
 ---
 
-## 📌 Introdução
+## 1. 🔎 Como decidir um termo que não está aqui
 
-O Nuvio Mobile opera na interseção entre streaming de mídia, serviços de Debrid, integração com o protocolo Stremio e redes P2P.  
-A tradução de termos deve equilibrar **clareza para usuários leigos** com o **respeito à terminologia consolidada** utilizada pela comunidade de tecnologia e entretenimento.
+Três perguntas, nesta ordem:
+
+1. **É nome próprio, marca, produto, protocolo ou sigla?**
+   Fica em inglês. `Nuvio`, `Stremio`, `Debrid`, `HLS`, `MPV`.
+2. **É termo que o brasileiro já usa em inglês no dia a dia?**
+   Fica. `Addon`, `Buffer`, `Player`, `Trailer`, `Spoiler`.
+3. **É palavra comum com equivalente natural em pt-BR?**
+   Traduz. `playback` ➔ **reprodução**; `watchlist` ➔ **Minha lista**; `cast` ➔ **transmitir**.
+
+**Nunca traduza pela metade.** Escolhida a forma, ela vale em todas as telas. O catálogo já segue
+isso: `Minha lista` aparece no menu e nos botões, nunca alternado com "Lista de interesses".
+
+**Termo técnico que o leitor pode não conhecer** ganha explicação curta na própria tela, não no
+glossário — o glossário é para quem traduz, a explicação é para quem usa.
 
 ---
 
-## 1. 🚫 Termos que NUNCA Devem Ser Traduzidos
+## 2. 🚫 Fica em inglês
 
-Estes termos são marcas registradas, nomes de protocolos ou jargões universais da comunidade. Traduzi-los gera confusão ou estraga a compatibilidade semântica.
+### 2.1. Produto, protocolos e provedores
 
-| Termo em Inglês | Tradução no Nuvio | Justificativa / Contexto |
+| Termo | Como escrever | Onde aparece |
 | :--- | :--- | :--- |
-| **Stremio** | `Stremio` | Nome do protocolo e ecossistema de streaming. |
-| **Addon / Add-ons** | `Addon` / `Addons` | Padrão absoluto na comunidade Stremio (evitar "Complemento"). |
-| **Real-Debrid / AllDebrid / Premiumize / TorBox** | *Manter nome exato* | Nomes próprios de provedores de serviço Debrid. |
-| **Debrid** | `Debrid` | Categoria de serviço de download e streaming em nuvem. |
-| **Scraper / Scrapers** | `Scraper` / `Scrapers` | Mecanismo técnico que rastreia e descobre links de mídia. |
-| **Seeds / Peers** | `Seeds` / `Peers` | Conceitos técnicos fundamentais da rede BitTorrent. |
-| **Torrent / Magnet** | `Torrent` / `Magnet` | Protocolo e formato de URI de distribuição. |
-| **Trakt / Simkl / MDBList / TMDB / IMDb** | *Manter nome exato* | Plataformas e serviços externos de metadados e scrobbling. |
-| **HLS / DASH** | `HLS` / `DASH` | Protocolos de streaming adaptativo. |
-| **MPV** | `MPV` | Motor de reprodução de vídeo utilizado no aplicativo. |
-| **Picture-in-Picture (PiP)** | `Picture-in-Picture (PiP)` | Recurso nativo do sistema operacional. |
+| Nuvio | `Nuvio` | nome do app |
+| Stremio | `Stremio` | integração de addons e catálogo |
+| Addon / Addons | `Addon` / `Addons` | `addons_*`; nunca "complemento" |
+| Debrid | `Debrid` | categoria de serviço |
+| Real-Debrid / AllDebrid / Premiumize / TorBox | nome exato | provedores |
+| Trakt / Simkl / MDBList / TMDB / IMDb | nome exato | metadados e scrobble |
+| HLS / DASH | `HLS` / `DASH` | protocolos de streaming |
+| MPV | `MPV` | motor de reprodução |
+| Picture-in-Picture (PiP) | `Picture-in-Picture (PiP)` | recurso do sistema |
+| Android Auto | `Android Auto` | projeção no carro |
+
+### 2.2. Rede e torrent
+
+| Termo | Como escrever | Por quê |
+| :--- | :--- | :--- |
+| Scraper / Scrapers | `Scraper` / `Scrapers` | mecanismo que descobre links |
+| Seeds / Peers | `Seeds` / `Peers` | conceitos do BitTorrent |
+| Torrent / Magnet | `Torrent` / `Magnet` | protocolo e URI |
+| Buffer | `Buffer` | estado de pré-carregamento |
 
 ---
 
-## 2. 🎬 Reprodução de Mídia & Player de Vídeo
+## 3. ✅ Traduz-se
 
-| Termo em Inglês | Tradução Oficial pt-BR | Exemplos de Aplicação no App |
+### 3.1. Reprodução e player
+
+| Inglês | pt-BR | Chave de exemplo |
 | :--- | :--- | :--- |
-| **Playback** | `Reprodução` | *Velocidade de reprodução*, *Falha na reprodução*. |
-| **Cast / Casting** | `Transmitir` | *Transmitir para a TV*, *Transmitir via Chromecast*. |
-| **Audio Track** | `Faixa de áudio` | *Selecionar faixa de áudio*. |
-| **Subtitle Track** | `Faixa de legenda` | *Faixas de legenda embutidas*. |
-| **Embedded Subtitles** | `Legendas embutidas` | Legendas encapsuladas no arquivo de vídeo (MKV/MP4). |
-| **Hardware Acceleration** | `Aceleração de hardware` | Decodificação por GPU nos ajustes do player. |
-| **Aspect Ratio** | `Proporção de tela` | *Ajustar proporção de tela (16:9, preencher, original)*. |
-| **Buffer / Buffering** | `Buffer` / `Armazenando em buffer` | Estado de pré-carregamento do fluxo de vídeo. |
-| **Queue** | `Fila` | *Adicionar à fila de reprodução*, *Próximo da fila*. |
-| **Resume** | `Continuar assistindo` | Ação de retomar vídeo a partir do timestamp gravado. |
-| **Rewind / Fast Forward** | `Retroceder` / `Avançar` | Pular 10 segundos para trás ou para frente. |
+| Playback | `Reprodução` | `compose_settings_page_playback` |
+| Audio track | `Faixa de áudio` | `compose_player_audio_tracks` |
+| Subtitle track | `Faixa de legenda` | `compose_player_subtitles` |
+| Embedded subtitles | `Legendas embutidas` | `stream_info_subtitle_source_embedded` |
+| Subtitle delay | `Atraso da legenda` | `compose_player_subtitle_delay` |
+| Queue | `Fila` | `downloads_enqueue_*` |
+| Resume | `Continuar assistindo` | `action_resume` |
+| Playback speed | `Velocidade de reprodução` | `compose_player_speed` |
+
+### 3.2. Catálogo e metadados
+
+| Inglês | pt-BR | Chave de exemplo |
+| :--- | :--- | :--- |
+| Watchlist | `Minha lista` | `trakt_watchlist` |
+| Rating / Score | `Avaliação` / `Nota` | `settings_mdb_enable_ratings` |
+| Genres | `Gêneros` | `collections_editor_all_genres` |
+| Overview / Synopsis | `Sinopse` | `settings_meta_overview` |
+| Cast (actors) | `Elenco` | `settings_meta_cast` |
+| Crew | `Equipe técnica` | `meta_section_cast_description` |
+
+### 3.3. Watch Party
+
+| Inglês | pt-BR | Chave de exemplo |
+| :--- | :--- | :--- |
+| Host | `Anfitrião` | `party_host` |
+| Join party | `Entrar na sessão` | `party_join_action` |
+| Leave party | `Sair da sessão` | `party_leave` |
+| End party | `Encerrar sessão` | `party_end` |
+| Syncing / In sync | `Sincronizando` / `Em sincronia` | `party_status_ready`, `party_reconnecting` |
+| Lobby | `Sala de espera` | `party_waiting` |
+| Room code | `Código da sala` | `party_code_label` |
+
+### 3.4. Servidores e AutoSync de legendas
+
+| Inglês | pt-BR | Chave de exemplo |
+| :--- | :--- | :--- |
+| Server address | `Endereço do servidor` | `servers_address` |
+| Username / Password | `Usuário` / `Senha` | `servers_username`, `servers_password` |
+| Unreachable | `Inalcançável` | `servers_status_unreachable` |
+| Credentials | `Credenciais` | `servers_sign_in_title` |
+| Subtitle auto-sync | `Sincronização automática de legendas` | `settings_playback_subtitle_auto_sync` |
+| Auto-sync tolerance | `Tolerância da sincronização automática` | `settings_playback_auto_sync_tolerance` |
+| Synced automatically | `Sincronizado automaticamente` | `autosync_label_synced` |
+| Auto-sync failed | `Falha na sincronização` | `autosync_toast_failed` |
 
 ---
 
-## 3. 👥 Watch Party & Sessões em Grupo (`strings_party.xml`)
+## 4. ⚠️ Decisões que não são óbvias
 
-| Termo em Inglês | Tradução Oficial pt-BR | Justificativa / Contexto de Aplicação |
-| :--- | :--- | :--- |
-| **Host** | `Anfitrião` | Usuário que criou a sessão e controla a reprodução de todos. |
-| **Join Party** | `Entrar na sessão` | Ação de um usuário se conectar à sala do anfitrião. |
-| **Leave Party** | `Sair da sessão` | Desconectar da sala atual. |
-| **End Party** | `Encerrar sessão` | Ação exclusiva do anfitrião que encerra a sala para todos. |
-| **Syncing / In Sync** | `Sincronizando` / `Em sincronia` | Estado de alinhamento temporal entre os participantes. |
-| **Lobby** | `Sala de espera` ou `Lobby` | Tela de pré-início onde os participantes aguardam. |
-| **Room Code** | `Código da sala` | Hash ou código numérico compartilhado para conexão. |
+### 4.1. `Player` fica; `playback` traduz
 
----
+O app usa `player` como nome do componente (*"Configurações do player"*), mas `playback` vira
+**reprodução** (*"Velocidade de reprodução"*). São coisas diferentes: o player é a tela; a reprodução é
+o ato.
 
-## 4. 🖥️ Servidores Remotos & Redes (`strings_servers.xml`)
+### 4.2. `Minha lista` é o nome do recurso
 
-| Termo em Inglês | Tradução Oficial pt-BR | Contexto |
-| :--- | :--- | :--- |
-| **Host (Networking)** | `Endereço do servidor` ou `Host` | Endereço IP ou domínio do servidor remoto. |
-| **Port** | `Porta` | Porta de conexão TCP/UDP (ex: 8080). |
-| **Latency / Ping** | `Latência` / `Ping` | Tempo de resposta de ida e volta do servidor. |
-| **Reachability** | `Acessibilidade` / `Conectividade` | Teste de verificação se o servidor responde à rota. |
-| **Timeout** | `Tempo limite esgotado` | Falha após tempo de espera sem resposta. |
-| **Credentials** | `Credenciais` | Nome de usuário e senha de autenticação. |
+`Watchlist` não vira "Lista de interesses" nem "Assistir depois". O padrão de Netflix e Prime Video é
+**Minha lista**, e é o termo que o usuário reconhece. O mesmo vale para `Continuar assistindo`.
 
----
+### 4.3. `Buffer` fica; `Armazenando em buffer` descreve o estado
 
-## 5. 📑 Catálogos, Metadados & MDBList (`strings_mdblist.xml`)
+O substantivo é `Buffer` (*"Tamanho do buffer"*). O estado é **Armazenando em buffer** — não
+"Carregando", que perderia a informação técnica.
 
-| Termo em Inglês | Tradução Oficial pt-BR | Contexto |
-| :--- | :--- | :--- |
-| **Cast (Actors)** | `Elenco` | Lista de atores e atrizes do filme ou série. |
-| **Crew** | `Equipe técnica` | Direção, roteiro, produção. |
-| **Watchlist** | `Minha lista` | Títulos salvos pelo usuário para assistir depois. Mesmo termo de Netflix/Prime Video. |
-| **Favorites** | `Favoritos` | Itens marcados com estrela/coração. |
-| **Rating / Score** | `Avaliação` / `Nota` | Notas do IMDb, Metacritic, Trakt ou MDBList. |
-| **Genres** | `Gêneros` | Categorias (Ação, Comédia, Drama, Ficção científica). |
-| **Overview / Synopsis** | `Sinopse` | Resumo da trama da obra. |
-| **Air Date** | `Data de exibição` | Data de lançamento original do episódio na TV. |
-| **Release Date** | `Data de lançamento` | Data de estreia do filme nos cinemas ou digital. |
+### 4.4. `Host` tem dois sentidos
+
+- Em Watch Party, `Host` é **Anfitrião** (pessoa).
+- Em servidor, `Host` é **Endereço do servidor** (rede).
+
+Nunca use "Host" para a pessoa; nunca use "Anfitrião" para o endereço.
+
+### 4.5. `Lobby` vira `Sala de espera`
+
+`Lobby` é entendido por parte do público, mas **Sala de espera** é mais claro para quem nunca usou o
+recurso. O código e a chave continuam `lobby`.
+
+### 4.6. `Cast` tem dois sentidos
+
+- Verbo (`Cast to TV`) ➔ **Transmitir**.
+- Substantivo (`Cast`) ➔ **Elenco**.
+
+O contexto é a chave: `cast_*` é transmissão; `details_cast` é elenco.
 
 ---
 
-## 6. 🔄 Sincronização Automática (`autosync_strings.xml`)
+## 5. 📱 Onde o termo aparece muda o tamanho
 
-| Termo em Inglês | Tradução Oficial pt-BR | Contexto |
-| :--- | :--- | :--- |
-| **AutoSync** | `Sincronização automática` | Recurso de background sync de histórico e listas. |
-| **Sync Interval** | `Intervalo de sincronização` | Frequência de atualização (ex: a cada 1 hora). |
-| **Last Synced** | `Última sincronização` | Timestamp da última execução bem-sucedida. |
-| **Sync on Startup** | `Sincronizar ao iniciar` | Gatilho de sincronização ao abrir o aplicativo. |
+1. **Botão e aba:** 1 a 3 palavras. `Minha lista`, `Favoritos`, `Baixar`.
+2. **Configuração:** rótulo curto; a explicação vai em `*_description`.
+3. **PiP e Android Auto:** espaço mínimo; prefira `Reproduzir`, não `Iniciar a reprodução`.
+4. **Toast e notificação:** fora do app, truncado. `Download concluído`, `Falha na conexão`.
+5. **Watch Party:** o estado precisa ser inequívoco para todos os participantes.
+
+---
+
+## 6. ❓ Ainda não decidido
+
+1. **`many` nos plurais.** Os 4 blocos usam só `one` e `other`; falta decidir se vale completar
+   `many` para milhões exatos.
+2. **`Debrid` como categoria.** Hoje fica em inglês; não há termo em pt-BR que o público reconheça.
+3. **`Scraper` em texto de usuário.** Aparece em configurações avançadas; falta decidir se ganha
+   explicação entre parênteses.
+4. **`Spoiler`.** Não há chave no catálogo atual; se aparecer, a tendência é manter.
+
+---
+
+## 7. 📌 Como este glossário se mantém honesto
+
+- Toda linha aponta uma **chave** do catálogo. Sem chave, é opinião.
+- Termo novo entra **no mesmo commit** da string que o usa.
+- Termo que saiu do catálogo sai daqui — o glossário não guarda vocabulário de recurso removido.
+- As **111** strings idênticas ao EN são a pista de onde procurar decisão faltando; o validador as
+  lista como aviso, não como erro.
+- Contagem e vocabulário são do snapshot de **02/11/2026**, não do app em produção. Confira a chave
+  antes de confiar na linha.

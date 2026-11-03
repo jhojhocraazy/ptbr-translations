@@ -1,111 +1,180 @@
-# 📱 Nuvio Mobile — Central de Localização pt-BR
+# 📱 Nuvio Mobile — Localização pt-BR
 
-> **Módulo de Localização & Engenharia de Internacionalização (i18n & l10n) para o aplicativo [Nuvio Mobile](https://github.com/NuvioMedia/NuvioMobile).**  
+> **Central de localização para Português do Brasil (`pt-BR`) do
+> [Nuvio Mobile](https://github.com/NuvioMedia/NuvioMobile).**
 > Mantido por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jhojhocraazy).
 
 ---
 
-## 📊 Status do Projeto
+## 📊 Status
 
-| Métrica | Status Oficial |
+| Item | Estado |
 | :--- | :--- |
-| **Plataforma Tecnológica** | Kotlin Multiplatform (KMP) + Compose Multiplatform (CMP) |
-| **Sistemas Alvo** | Android e iOS |
-| **Cobertura Geral** | 🟢 **100% Traduzido** (2.707 entradas em 7 arquivos; lotes #2288, #2338, #2402, #2435 e #2455) |
-| **Refinamento de Qualidade** | 🟢 **Revisão completa contra o EN** (terminologia Netflix/Prime, Sentence Case e naturalidade) |
-| **Última Versão Estável** | `v0.6.5-beta` (inclui os lotes #2288, #2338 e #2402) |
-| **Último Pull Request** | [**PR #2455**](https://github.com/NuvioMedia/NuvioMobile/pull/2455) (`Minha lista`, Sentence Case e texto de scrobble recuperado do EN) |
+| **Plataforma** | Kotlin Multiplatform (**KMP** — um código-fonte, Android e iOS) + Compose Multiplatform |
+| **Catálogos** | **7** arquivos em `composeApp/src/commonMain/composeResources/values-pt-rBR/` |
+| **Entradas** | **2.707** no total — 2.496 no principal + 84 + 60 + 52 + 1 + 10 + 4 |
+| **Paridade** | 🟢 100% nos 7 arquivos; `validate-ptbr.ps1` `OK` (02/11/2026) |
+| **Pull Requests** | #2234, #2288, #2338, #2402, #2435 e #2455 — todos **MERGED** |
+| **Último merge** | [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) em 01/11/2026 (`cmp-rewrite`) |
+| **Última release** | `0.6.6-beta` (31/10/2026) — inclui o #2435; o #2455 ainda não saiu em release |
+| **Branch de trabalho** | `cmp-rewrite`, commit `46febb5` (01/11/2026) |
+| **Upstream** | [`NuvioMedia/NuvioMobile`](https://github.com/NuvioMedia/NuvioMobile) |
+
+A tradução está completa e mergeada. O que resta não é código: é release e verificação em aparelho.
 
 ---
 
-## 🗂️ Arquitetura dos Módulos XML
+## 🎬 O que é o Nuvio Mobile
 
-No Compose Multiplatform, as strings residem em `composeApp/src/commonMain/composeResources/values-pt-rBR/`.  
-O projeto divide as strings em **7 arquivos modulares**:
+Aplicativo de streaming de mídia em **Compose Multiplatform**, para Android e iOS. O que interessa
+para a tradução é o que o app **faz**, porque cada recurso tem vocabulário próprio:
 
-| Arquivo XML | Descrição do Domínio | Entradas | Status |
-| :--- | :--- | :---: | :---: |
-| [`strings.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings.xml) | Módulo Principal: Catálogos, Player, Configurações, Debrid e Stremio | 2.492 | 🟢 Merged + 62 novas no #2435 (em análise) |
-| [`strings_pip.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_pip.xml) | Picture-in-Picture: Controles flutuantes e mini-player | 1 | 🟢 Merged + refinado no #2288 |
-| [`strings_party.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_party.xml) | Watch Party: Sessões em grupo, sincronia, salas e chat | 84 | 🟢 Merged (PRs #2288 e #2338) |
-| [`strings_servers.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_servers.xml) | Servidores Remotos: Endereços, conexão, portas e latência | 60 | 🟢 Merged (PR #2288) |
-| [`strings_mdblist.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/strings_mdblist.xml) | Integração MDBList: Filtros avançados, listas e notas de avaliação | 52 | 🟢 Merged (PR #2288) |
-| [`autosync_strings.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/autosync_strings.xml) | AutoSync: Sincronização em segundo plano e agendamento | 10 | 🟢 Merged (PR #2288) |
-| [`autosync_toast_strings.xml`](./repo/composeApp/src/commonMain/composeResources/values-pt-rBR/autosync_toast_strings.xml) | Notificações Rápidas: Mensagens voláteis de sucesso/erro | 4 | 🟢 Merged (PR #2288) |
+- **Catálogo e metadados:** filmes, séries, elenco, avaliações e integração MDBList/TMDB/IMDb.
+- **Player:** faixas de áudio e legenda, modos de renderização (incluindo ASS), troca automática de
+  motor e Picture-in-Picture.
+- **Watch Party:** sessão em grupo com anfitrião, sincronia, sala e chat.
+- **Servidores remotos:** endereço, porta, latência e credenciais.
+- **AutoSync de legendas:** correspondência automática da legenda ao vídeo, com tolerância e modo.
+- **Addons e Debrid:** catálogos de terceiros e serviços de download em nuvem.
 
----
-
-## 🚀 Histórico de Contribuições & Pull Requests
-
-### 1. [Pull Request #2234](https://github.com/NuvioMedia/NuvioMobile/pull/2234) — Tradução Principal Completa
-* **Branch:** `i18n/pt-br`
-* **Volume:** 2.410 strings e 4 blocos de plurais (`<plurals>`).
-* **Resultado:** Incorporado oficialmente no código-fonte principal pelo mantenedor `Nayif` e disponibilizado para os usuários finais nas versões oficiais `0.6.0-beta` e `0.6.1-beta`.
-
-### 2. [Pull Request #2288](https://github.com/NuvioMedia/NuvioMobile/pull/2288) — Módulos Adicionais (Watch Party, Servers, MDBList e AutoSync)
-* **Branch:** `i18n/pt-br-modules`
-* **Volume:** 208 novas entradas nos 5 novos módulos arquiteturais, além do refinamento de 92 entradas no módulo principal e no PiP.
-* **Refinamento:** terminologia do glossário (`Continuar assistindo`, `Minha lista`, `Picture-in-Picture (PiP)`), Sentence Case, miniaturas, provedores de streaming e mensagens de download.
-* **Cobertura validada:** 2.632/2.632 entradas, 0 faltando e 0 divergências de placeholders.
-* **Status:** ✅ **MERGED** — incorporado na versão `0.6.3-beta`.
-* **Status da Pipeline CI/CD:**
-  * ✅ `PR Template Check` (`validate_pr_body`): **SUCCESS**
-  * ✅ `PR Full Debug Build` (`Build fullDebug APK`): **SUCCESS** (6m49s)
-
-### 3. [Pull Request #2338](https://github.com/NuvioMedia/NuvioMobile/pull/2338) — Strings do Player e Watch Party
-* **Branch:** `i18n/pt-br-player-badges`
-* **Volume:** 9 novas entradas — 7 em `strings.xml` (emblemas no player, pacote de emblemas e troca de motor) e 2 em `strings_party.xml` (chat companion e saída de dispositivo), além de 1 descrição atualizada.
-* **Cobertura validada:** 2.641/2.641 entradas, 0 faltando e 0 divergências de placeholders.
-* **Status:** ✅ **MERGED** em 23/10/2026 e publicado na versão `v0.6.4-beta`.
-* **Status da Pipeline CI/CD:**
-  * ✅ `PR Template Check` (`validate_pr_body`): **SUCCESS**
-  * ✅ `PR Full Debug Build` (`Build fullDebug APK`): **SUCCESS** (4m3s)
-
-### 4. [Pull Request #2402](https://github.com/NuvioMedia/NuvioMobile/pull/2402) — Resolução de Legendas e Avaliações no Destaque
-* **Branch:** `i18n/pt-br-atualizacao-out-2026`
-* **Volume:** 4 novas entradas em `strings.xml` (`settings_mdb_show_on_hero`, `settings_mdb_show_on_hero_description`, `settings_playback_render_scale` e `settings_playback_render_scale_description`).
-* **Cobertura validada:** 2.424/2.424 entradas no módulo principal, paridade exata de chaves com a fonte EN e 0 divergências de placeholders.
-* **Status:** ✅ **MERGED** em 26/10/2026 e publicado na versão `v0.6.5-beta`.
-
-### 5. [Pull Request #2435](https://github.com/NuvioMedia/NuvioMobile/pull/2435) — Configurações, Aparência de Legendas e Renderização ASS
-* **Branch:** `i18n/pt-br-capitulos`
-* **Volume:** 62 novas entradas em `strings.xml` (grupos e páginas de configurações, aparência de legendas, modos ASS e troca automática de motor) + `settings_playback_engine_auto_description` atualizada.
-* **Cobertura validada:** 2.492/2.492 entradas no módulo principal, paridade exata de chaves com a fonte EN e 0 divergências de placeholders.
-* **Status:** 🚀 **OPEN / MERGEABLE** — o check `Build fullDebug APK` falha por erro pré-existente na base (`Unresolved reference 'updateAssMargins'` em `PlayerEngine.android.kt`), não por esta PR.
+O vocabulário está em [`glossario.md`](./glossario.md); as regras de escrita em
+[`diretrizes-tecnicas.md`](./diretrizes-tecnicas.md).
 
 ---
 
-## 🛠️ Como Trabalhar no Repositório Local (`repo/`)
+## 🗂️ Onde a tradução vive
 
-A pasta [`repo/`](./repo/) é um clone oficial do seu fork (`jhojhocraazy/NuvioMobile`).
+| Arquivo | Domínio | Entradas |
+| :--- | :--- | ---: |
+| `strings.xml` | catálogo, player, configurações, Debrid e Stremio | 2.496 |
+| `strings_party.xml` | Watch Party: sessões, sincronia, salas e chat | 84 |
+| `strings_servers.xml` | servidores remotos, portas e latência | 60 |
+| `strings_mdblist.xml` | MDBList: filtros, listas e notas | 52 |
+| `strings_pip.xml` | Picture-in-Picture e mini-player | 1 |
+| `autosync_strings.xml` | sincronização automática de legendas | 10 |
+| `autosync_toast_strings.xml` | mensagens voláteis de sucesso/erro | 4 |
+| **Total** | | **2.707** |
 
-### Remotos Configurados:
-* **`origin`**: `https://github.com/jhojhocraazy/NuvioMobile.git` (Seu fork pessoal)
-* **`upstream`**: `https://github.com/NuvioMedia/NuvioMobile.git` (Repositório oficial dos criadores)
+As 2.496 entradas do principal são **2.488 `<string>` + 4 `<plurals>` (8 formas)**. O validador conta
+cada forma de plural como uma unidade.
 
-### Fluxo para Atualizar e Criar Novas Traduções:
-```bash
-# 1. Entrar na pasta do repositório
-cd repo
+O snapshot versionado em [`snapshots/`](./snapshots/) é cópia dos sete catálogos. Quem entrega é a
+branch, via PR; o snapshot sobrevive se a branch for fechada ou rebaseada.
 
-# 2. Atualizar o tronco principal com as novidades do app oficial
-git checkout cmp-rewrite
-git fetch upstream cmp-rewrite
-git merge upstream/cmp-rewrite
-git push origin cmp-rewrite
+---
 
-# 3. Criar uma branch temática nova para o trabalho
-git checkout -b i18n/nome-da-melhoria
+## 📦 Histórico de entregas
 
-# 4. Fazer as alterações e commitar
-git add .
-git commit -m "feat(i18n): atualiza traduções de pt-BR"
-git push origin i18n/nome-da-melhoria
+### #2234 — Tradução principal
+- **Volume:** 2.410 strings + 4 plurais.
+- **Resultado:** publicado em `0.6.0-beta` e `0.6.1-beta`.
+
+### #2288 — Módulos adicionais
+- **Volume:** 208 entradas novas em 5 módulos + 92 refinadas no principal e no PiP.
+- **Resultado:** `MERGED`, publicado em `0.6.3-beta`; CI `Build fullDebug APK` verde (6m49s).
+
+### #2338 — Player e Watch Party
+- **Volume:** 9 entradas novas (7 em `strings.xml`, 2 em `strings_party.xml`) + 1 descrição.
+- **Resultado:** `MERGED` em 23/10/2026, publicado em `0.6.4-beta`.
+
+### #2402 — Renderização de legendas e avaliações no destaque
+- **Volume:** 4 entradas novas.
+- **Resultado:** `MERGED` em 26/10/2026, publicado em `0.6.5-beta`.
+
+### #2435 — Configurações, aparência de legendas e modos ASS
+- **Volume:** 62 entradas novas + 1 descrição atualizada.
+- **Resultado:** `MERGED` em 30/10/2026 na `cmp-rewrite`, incluído em `0.6.6-beta`.
+- **Observação:** o check `Build fullDebug APK` falhava por erro pré-existente na base
+  (`Unresolved reference 'updateAssMargins'`), não pela tradução.
+
+### #2455 — `Minha lista`, Sentence Case e scrobble
+- **Volume:** 3 correções que ficaram fora do #2435.
+- **Resultado:** `MERGED` em 01/11/2026; ainda não há release com esse merge.
+
+---
+
+## 🧪 Como conferir
+
+O hub não compila o app. O passo equivalente é o validador, contra o EN do clone:
+
+```powershell
+./scripts/validate-ptbr.ps1 `
+  -Path   NuvioMobile/snapshots/NuvioMobile_strings_pt_BR.xml `
+  -Source NuvioMobile/repo/composeApp/src/commonMain/composeResources/values/strings.xml `
+  -Format xml
 ```
 
+Resultado de 02/11/2026:
+
+```text
+OK   NuvioMobile_strings_pt_BR.xml  (2496 strings, perfil=xml, escape=none)
+     avisos: 111 string(s) idêntica(s) à fonte (nomes próprios/termos mantidos)
+```
+
+**Não use `-Escape android` neste projeto.** Compose Resources aceita apóstrofo e aspas literais; a
+flag Android reporta 11 falsos positivos (medido em 02/11/2026). O EN tem 31 apóstrofos e só 2 aspas
+escapadas.
+
+> **Cuidado:** o validador compara o snapshot com o EN **do clone**. Clone velho, resultado velho.
+> Rode `git -C NuvioMobile/repo fetch upstream` antes de confiar no número.
+
 ---
 
-## 📖 Documentos Complementares
+## 🛠️ Trabalhar no clone (`repo/`)
 
-* 📘 [**Diretrizes Técnicas de Tradução (diretrizes-tecnicas.md)**](./diretrizes-tecnicas.md): Manual aprofundado com regras de XML, escapes, placeholders posicionais, tags HTML e conformidade com a pipeline de CI/CD.
-* 📗 [**Glossário Terminológico Oficial (glossario.md)**](./glossario.md): Tabela de referência técnica para desambiguação de termos de streaming, redes e mídia.
+A pasta [`repo/`](./repo/) é um clone raso (`--depth 1`) do fork, na branch `cmp-rewrite`.
+
+| Remoto | URL |
+| :--- | :--- |
+| `origin` | `https://github.com/jhojhocraazy/NuvioMobile.git` (fork) |
+| `upstream` | `https://github.com/NuvioMedia/NuvioMobile.git` (projeto original — só leitura) |
+
+```bash
+cd NuvioMobile/repo
+git fetch upstream cmp-rewrite
+git switch cmp-rewrite
+git merge --ff-only upstream/cmp-rewrite
+git push origin cmp-rewrite
+git switch -c i18n/nome-da-melhoria
+```
+
+A branch padrão do upstream é `cmp-rewrite`, não `main`. Um PR para `main` seria recusado.
+
+---
+
+## ⚠️ Lacunas
+
+1. **#2455 fora de release.** O merge está na `cmp-rewrite`, mas a última release (`0.6.6-beta`) é
+   anterior. Falta: a próxima release.
+2. **Nada foi rodado em aparelho.** O hub não compila nem instala o app; nenhuma regra de espaço de
+   tela foi conferida em Android Auto, PiP ou celular real.
+3. **Plurais sem `many`.** Os 4 blocos usam só `one` e `other`; o efeito para milhões exatos não foi
+   medido.
+4. **Build da base instável.** O job `Build fullDebug APK` já falhou por erro que não era da tradução.
+   Falta: acompanhar a correção no upstream.
+5. **Snapshot e clone podem divergir.** Se o upstream avançar, o validador continua verde contra o EN
+   velho. Falta: refazer o snapshot a cada rodada.
+
+---
+
+## 📖 Documentos complementares
+
+- 📘 [**Diretrizes técnicas**](./diretrizes-tecnicas.md) — o método aplicado ao Compose
+  Multiplatform: chave ➔ inglês ➔ tela ➔ pt-BR ➔ regras. XML, plurais, `-Escape none` e CI.
+- 📗 [**Glossário de termos**](./glossario.md) — o vocabulário: o que fica em inglês, o que se traduz
+  e as decisões que não são óbvias.
+- 🗂️ [**Snapshots**](./snapshots/) — cópia versionada dos sete catálogos.
+
+---
+
+## 📚 Fontes dos números
+
+| Valor | De onde veio |
+| :--- | :--- |
+| 2.496 entradas no principal | `validate-ptbr.ps1` em 02/11/2026 |
+| 2.707 entradas no total | soma dos 7 arquivos |
+| `OK`, 111 avisos | `validate-ptbr.ps1 -Escape none` em 02/11/2026 |
+| 11 falsos positivos com `-Escape android` | mesma execução com a flag Android |
+| PRs #2234–#2455 e estados | `gh pr view` em 02/11/2026 |
+| Release `0.6.6-beta` (31/10/2026) | `gh release view --repo NuvioMedia/NuvioMobile` |
+| Branch `cmp-rewrite`, commit `46febb5` | `git branch --show-current` e `git log -1` em 02/11/2026 |

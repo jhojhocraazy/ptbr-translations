@@ -1,57 +1,145 @@
-# 🌐 Crowdin Platform — Central de Localização pt-BR
+# 🌐 Crowdin Platform — Localização pt-BR
 
-> **Módulo de Localização & Engenharia de Internacionalização (i18n & l10n) para a plataforma oficial do [Crowdin](https://crowdin.com).**  
-> Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jhojhocraazy).
+> **Central de localização para Português do Brasil (`pt-BR`) da plataforma oficial do
+> [Crowdin](https://crowdin.com).**
+> Mantido por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jhojhocraazy).
 
 ---
 
-## 📊 Status do Projeto
+## 📊 Status
 
-| Métrica | Status Oficial |
+| Item | Estado |
 | :--- | :--- |
-| **Plataforma Tecnológica** | Crowdin Enterprise / Modern Web UI (React, TypeScript, JSON, PHP/Blade) |
-| **Projeto Oficial** | [Crowdin Translations (ID: 31)](https://crowdin.com/project/crowdin) |
-| **Idioma Alvo** | Português do Brasil (`pt-BR`) |
-| **Volume Total do Projeto** | **17.515 strings visíveis** (120.107 palavras; 18.438 no total, 923 ocultas) |
-| **Entregas Submetidas (pt-BR)** | **17.515 strings** — 0 pendentes em 214 arquivos |
-| **Cobertura** | 🟢 **100%** (auditoria de placeholders e ICU com 0 divergências) |
-| **Foco Estratégico Atual** | Projeto completo: `en.json`, `editor.csv`, `dynamic.csv`, `backend.csv`, `frontend.csv`, escopos/permissões, MFA, log de segurança e e-mails — **100% Concluído** |
-| **Integração Técnica** | Crowdin REST API v2 (`https://api.crowdin.com/api/v2/`) |
+| **Plataforma** | Crowdin — projeto **31** (`crowdin`), idioma `pt-BR` |
+| **Entrega** | 🟢 **Crowdin** — submissão direta na plataforma; não há PR de tradução |
+| **Escopo** | **18.819** strings visíveis em **214** arquivos |
+| **Cobertura** | 🟡 **18.465/18.819 (98,1%)** — **354 pendentes** em 4 arquivos (03/11/2026) |
+| **Pendências por arquivo** | `backend.en_US.csv` 344/4.325 · `auth.php` 6/69 · `workspace.php` 2/41 · `en.json` 2/3.643 |
+| **Snapshot local** | `snapshots/crowdin_translations_pt_BR.json` — só `en.json` (3.637 strings, 30/10/2026) |
+| **Auditoria** | **17.542 verificadas, 0 divergências** (03/11/2026); 18.819 exportadas na varredura |
+| **Integração** | Crowdin REST API v2 (`https://api.crowdin.com/api/v2/`) |
+| **Clone no hub** | **não existe** — projeto de plataforma |
 
-> **Última atualização (30/10/2026):** 62 novas strings traduzidas (27 em `editor.csv`, 11 em `backend.csv`, 10 em `frontend.csv`, 7 em `dynamic.csv`, 1 em `mfa.php` e 6 em `en.json`) e 17 correções de terminologia (TM ≠ MT, AI → IA, workflow → fluxo de trabalho, engines → motores). Auditoria completa em 17.515 strings com **0 divergências**.
->
-> **Atualização anterior (28/10/2026):** 55 novas strings traduzidas (27 em `dynamic.csv`, 19 em `backend.csv`, 7 em `en.json` e 2 em `scopes.php`).
->
-> **Atualização anterior (26/10/2026):** 51 novas strings traduzidas (18 em `backend.csv`, 14 em `auth.php`, 7 em `dynamic.csv`, 7 em `workspace.php` e 5 em `scopes.php`).
+O projeto **não está 100%**: chegaram 354 strings novas depois do último lote. O snapshot local cobre
+apenas o `en.json`; os outros 213 arquivos só existem na plataforma.
 
 ---
 
-## 🚀 Sobre o Projeto Oficial do Crowdin
+## 🌐 O que é o Crowdin
 
-O **Crowdin** é a principal plataforma global de gerenciamento contínuo de localização e internacionalização (**TMS / CAT Tool**) utilizada por milhares de empresas de tecnologia (como GitLab, Discord, GitHub, Khan Academy e milhares de projetos de código aberto).
+Plataforma global de gerenciamento contínuo de localização (**TMS / CAT tool**), usada por milhares de
+empresas e projetos de código aberto. A interface combina:
 
-A localização oficial do Crowdin visa proporcionar uma experiência completamente fluida, profissional e natural em **Português do Brasil** para gerentes de projeto, engenheiros de software, tradutores voluntários e equipes de produto.
+- **Web app moderno** (`src/i18n/locales/en.json`): painel, projetos, estimativas, memórias, IA e
+  relatórios.
+- **Backend e autenticação** (`resources/lang/en/`): login, 2FA, SSO e configurações de equipe.
+- **E-mails e notificações** (`email_templates/`): comunicações transacionais.
+- **CSV e PHP/Blade:** editor, frontend, backend, escopos, MFA e workspace.
 
----
-
-## 🗂️ Módulos Principais do Sistema
-
-1. **Interface Moderna (`src/i18n/locales/en.json`):**
-   * Novo painel de controle, gerenciamento de projetos, estimativas de custo (*Cost estimates*), resumos de economia (*Savings summary*), pré-tradução via TM/IA e relatórios em tempo real.
-2. **Backend & Autenticação (`resources/lang/en/`):**
-   * Telas de login, autenticação de dois fatores (2FA), SSO corporativo e configurações de equipe.
-3. **Modelos de Notificação & E-mails (`email_templates/`):**
-   * Comunicações transacionais enviadas a gerentes, colaboradores e tradutores.
+O vocabulário está em [`glossario.md`](./glossario.md); as regras de escrita em
+[`diretrizes-tecnicas.md`](./diretrizes-tecnicas.md).
 
 ---
 
-## 📁 Estrutura de Arquivos Locais
+## 🗂️ Onde a tradução vive
+
+| Item | Caminho |
+| :--- | :--- |
+| **Plataforma (fonte de verdade)** | Crowdin, projeto **31**, idioma `pt-BR` |
+| **Arquivos** | 214, incluindo `en.json` (32447), `editor.csv`, `dynamic.csv`, `backend.csv`, `frontend.csv`, `auth.php`, `workspace.php`, `scopes.php`, `mfa.php` |
+| **Snapshot do hub** | [`snapshots/crowdin_translations_pt_BR.json`](./snapshots/crowdin_translations_pt_BR.json) |
+| **Entrega** | submissão direta na plataforma |
+| **Clone no hub** | **não existe** |
+
+O snapshot é um recorte do `en.json`: 3.637 strings com `source`/`target`, gerado em 30/10/2026. Ele
+**não** representa os 18.819 do projeto e está 6 strings atrás do arquivo atual (3.643).
+
+---
+
+## 📦 O que foi entregue
+
+| Data | Lote | Resultado |
+| :--- | :--- | :--- |
+| 22/10/2026 | 286 strings | 157 em `en.json`, 110 em `editor.csv`, 12 em `backend.csv`, 7 em `dynamic.csv`; 8 divergências antigas corrigidas |
+| 26/10/2026 | 51 strings | 18 em `backend.csv`, 14 em `auth.php`, 7 em `dynamic.csv`, 7 em `workspace.php`, 5 em `scopes.php` |
+| 28/10/2026 | 55 strings | 27 em `dynamic.csv`, 19 em `backend.csv`, 7 em `en.json`, 2 em `scopes.php` |
+| 30/10/2026 | 62 strings + 17 correções | 27 em `editor.csv`, 11 em `backend.csv`, 10 em `frontend.csv`, 7 em `dynamic.csv`, 1 em `mfa.php`, 6 em `en.json`; TM ≠ MT, AI → IA, workflow → fluxo de trabalho, engines → motores |
+
+A auditoria de 30/10/2026 fechou 17.515 strings com 0 divergências. Em 03/11/2026 a plataforma
+mostra 18.819 strings e 354 pendentes; o `Check` completo fechou 17.542 com 0 divergências.
+
+A varredura semântica de 03/11/2026 encontrou três problemas graves, **corrigidos via `Push`**:
+`profile.crowdinApps.allUsersIncludeGuests` (“Portuese ”), a headline `alternatives.lokalise.hero.title`
+(em inglês) e `generic.integrationTool` (em inglês). Também corrigiu “vá para a aba… baixar a fatura”,
+“Traduzir arquivo: {file}” e “As taxas não foram salvas”. Restam o typo “aquivo” e um espaço final em
+`settings.betaFeatures`.
+
+---
+
+## 🧪 Como conferir
+
+Precisa de `CROWDIN_TOKEN` no ambiente (ou `scripts/tokens.ps1`, ignorado pelo Git):
+
+```powershell
+./scripts/crowdin-sync.ps1 -Action Status -ProjectId 31
+./scripts/crowdin-sync.ps1 -Action Check  -ProjectId 31 -Tsv divergencias.tsv
+```
+
+Resultado de 02/11/2026:
 
 ```text
-Crowdin/
-├── snapshots/
-│   └── crowdin_translations_pt_BR.json  # Backup da Web UI + metadados de cobertura
-├── diretrizes-tecnicas.md     # Padrões de interpolação, sintaxe ICU e regras de qualidade
-├── glossario.md               # Terminologia especializada em TMS, i18n e l10n
-└── README.md                  # Este documento
+Projeto 31 | 18819 strings | 354 pendentes
+  31090  backend.en_US.csv  344/4325
+  32187  auth.php             6/69
+  32219  workspace.php        2/41
+  32447  en.json              2/3643
 ```
+
+`Check` audita placeholders, ICU e balanceamento; critério: **0 divergências**. Ele não mede fluência
+nem espaço de tela.
+
+---
+
+## 🔄 Como a entrega funciona
+
+1. A string é traduzida **no editor do Crowdin** (projeto 31, idioma `pt-BR`).
+2. O mantenedor publica na plataforma; o Crowdin sincroniza com o produto.
+3. Este hub registra o estado em `snapshots/` e nos READMEs. **Não há PR, branch ou merge aqui.**
+
+O commit no hub é documentação, não entrega. Ele não substitui nem antecede a plataforma.
+
+---
+
+## ⚠️ Lacunas
+
+1. **354 pendentes.** O projeto não está 100%; os números antigos de "0 pendentes" são de 30/10/2026.
+2. **Snapshot parcial e desatualizado.** Só o `en.json` está versionado, e com 3.637 das 3.643
+   strings.
+3. **Sem validação de todos os arquivos.** `Check` cobre integridade, não fluência.
+4. **Sem interface aberta.** Nenhuma regra de espaço de tela foi conferida na UI real.
+5. **Crescimento semanal.** O `en.json` e o `backend.csv` recebem strings novas toda semana; meça
+   antes de citar um número.
+
+---
+
+## 📖 Documentos complementares
+
+- 📘 [**Diretrizes técnicas**](./diretrizes-tecnicas.md) — o método aplicado a ICU, chaves, CSV e
+  PHP/Blade; placeholders, HTML, validação e espaço de tela.
+- 📗 [**Glossário de termos**](./glossario.md) — TMS, TM × MT, workflow, vendor e o vocabulário da
+  interface.
+- 🗂️ [**Snapshot**](./snapshots/) — recorte do `en.json` em 30/10/2026.
+
+---
+
+## 📚 Fontes dos números
+
+| Valor | De onde veio |
+| :--- | :--- |
+| 18.819 strings, 354 pendentes | `crowdin-sync.ps1 -Action Status -ProjectId 31` em 03/11/2026 |
+| 344/4.325, 6/69, 2/41, 2/3.643 | mesma execução |
+| 3.637 strings no snapshot | `total_submitted` do JSON, gerado em 30/10/2026 |
+| 214 arquivos | `research/README.md` e dashboard |
+| 17.542 verificadas, 0 divergências; 18.819 exportadas | `Check` + export da API em 03/11/2026 |
+| 9 correções aplicadas (7 efetivas, 2 pendentes) | `crowdin-sync.ps1 -Action Push -ProjectId 31` em 03/11/2026 |
+| 286/51/55/62 strings por lote | histórico do README anterior, mantido |

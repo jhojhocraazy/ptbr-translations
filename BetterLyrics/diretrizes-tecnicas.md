@@ -183,7 +183,7 @@ dele. Criar uma pasta `pt-BR` produziria uma tradução que a extensão nunca ca
 ### 2.1. Por que não há clone
 
 A regra do hub é: **clone só onde o clone é o veículo de entrega**
-(`organizacao-dos-repositorios.md:19-22`). Better Lyrics entrega por Crowdin, então o clone não
+([`organizacao-dos-repositorios.md`](../organizacao-dos-repositorios.md) §2). Better Lyrics entrega por Crowdin, então o clone não
 entregava nada — era uma cópia de leitura, parada em 20/10/2026 e **6 chaves** atrás do `master`
 (637 contra 643).
 
@@ -337,8 +337,8 @@ aberto** em 20/10/2026, com última atualização em 21/10/2026.
 | PR #1019 — `_locales/pt_BR/messages.json` | **638** |
 | Snapshot do hub (EN e PT) | **638** |
 
-Ou seja: mergear o #1019 leva o `pt_BR` a 638 e ainda faltam **5** chaves, todas ausentes do #1019 e,
-portanto, ainda fora do `pt_BR`:
+Ou seja: mergear o #1019 leva o `pt_BR` a 638 e ainda faltam **5** chaves novas, todas ausentes do
+#1019 e, portanto, ainda fora do `pt_BR`:
 
 - `options_provider_spicylyrics` = `Spicy Lyrics`
 - `lyrics_syncedBy` = `Synced by`
@@ -349,10 +349,13 @@ portanto, ainda fora do `pt_BR`:
 Essas 5 **não podem ser entregues por PR manual**: o texto tem de nascer no Crowdin, senão o próximo
 sync do bot sobrescreve. O caminho é esperar a fonte chegar à plataforma e traduzir lá.
 
-> **Números antigos deste hub, corrigidos aqui:** o `research/README.md:125` registra "Crowdin 638 ×
-> upstream 640", e o [`README.md`](./README.md) deste projeto ainda registra 640 na fonte com 2 chaves
-> novas. As duas medições eram de 26/10/2026. Em 02/11/2026 o upstream está em 643 e o `master` em 637
-> — o número mudou porque o upstream continua trabalhando.
+Além dessas 5, o `master` não tem `options_display_fullscreenControlsTooltipStates`; o PR #1019 a
+carrega em inglês. Por isso o `master` tem 637 chaves e não 638: **faltam 6**, não 5.
+
+> **Números antigos deste hub, corrigidos aqui:** o `research/README.md` registra "Crowdin 638 ×
+> upstream 640", medição de 26/10/2026. Em 02/11/2026 o upstream está em 643 e o `master` em 637 —
+> o número mudou porque o upstream continua trabalhando. O README deste projeto já foi atualizado
+> para 643/637 e 6 chaves ausentes no `master`.
 
 ---
 
@@ -512,8 +515,9 @@ Cada item pertence a uma etapa do método.
 
 Coisas que este documento **não** resolve, com o que falta para resolver:
 
-1. **5 chaves novas sem tradução.** `master` está em 643 no EN e 637 no `pt_BR`; o #1019 leva a 638
-   (seção 4). Faltam as 5 listadas, que dependem de a fonte chegar ao Crowdin. Falta: o sync.
+1. **6 chaves ausentes no `master`.** São 5 novas + `options_display_fullscreenControlsTooltipStates`;
+   o #1019 leva o `pt_BR` a 638, mas mantém essa chave em inglês (seção 4). Falta: o sync e a tradução
+   da chave no Crowdin.
 2. **Estado do Crowdin não reverificado.** `crowdin-sync.ps1 -Action Status` exige `CROWDIN_TOKEN`
    (`scripts/crowdin-sync.ps1:67`) e não há token nesta sessão — a última medição local é de
    30/10/2026 (638/638). Falta: rodar `Status` com token para confirmar cobertura e pendências.
@@ -562,4 +566,4 @@ Coisas que este documento **não** resolve, com o que falta para resolver:
 | Substituição em tempo de execução | `src/core/i18n.ts:77-82`, `:93` |
 | `$NOME$` invisível ao `Check` do hub | `scripts/crowdin-sync.ps1:129-138`; teste com `Instalado $NAME$ de $SOURCE$` devolveu conjunto vazio |
 | Saída do validador do hub | `./scripts/validate-ptbr.ps1 -Format chrome` em 02/11/2026 |
-| Clone só onde há entrega por PR | `organizacao-dos-repositorios.md:19-22` |
+| Clone só onde há entrega por PR | [`organizacao-dos-repositorios.md`](../organizacao-dos-repositorios.md) §2 |

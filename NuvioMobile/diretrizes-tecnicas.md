@@ -1,143 +1,287 @@
 # 📘 Diretrizes Técnicas de Localização — Nuvio Mobile
 
-> **Manual de Engenharia de Internacionalização (i18n) e Boas Práticas para Compose Multiplatform (CMP).**  
-> Este documento reúne todas as regras e casos extremos aplicados nos Pull Requests oficiais do Nuvio Mobile.
+> **O que é este documento:** o método de tradução do Nuvio Mobile aplicado às regras que só valem
+> nele. Não substitui [`glossario.md`](./glossario.md) (o vocabulário) nem [`README.md`](./README.md)
+> (o status).
+>
+> **Contra o que foi escrito:** clone em `NuvioMobile/repo`, branch `cmp-rewrite`, commit `46febb5`
+> (01/11/2026), e os snapshots em `NuvioMobile/snapshots/`. Contagens e validação medidas em
+> **02/11/2026**.
+>
+> **O que ele não cobre:** compilar o app, testar em aparelho e julgar fluência — ver seção 7.
 
 ---
 
-## 1. 🏗️ Arquitetura do Compose Multiplatform (CMP)
+## 1. 🔁 O método: cinco etapas, sempre na mesma ordem
 
-O Nuvio Mobile utiliza o sistema de recursos unificado do Compose Multiplatform (`org.jetbrains.compose.resources`).  
-Diferente do Android nativo antigo:
-1. **Localização Obrigatória:**  
-   As strings traduzidas devem residir exclusivamente em:  
-   `composeApp/src/commonMain/composeResources/values-pt-rBR/`
-2. **Escopo Global de Símbolos (`Res.string.*`):**  
-   O compilador Kotlin gera uma classe estática única para todos os arquivos XML.
-   * **Colisão de Nomes:** Duas strings com o mesmo atributo `name` em arquivos diferentes (ex: em `strings.xml` e em `strings_party.xml`) causarão falha de compilação por símbolo duplicado.
-   * **Integridade das Chaves:** O atributo `name` nunca deve ser alterado ou traduzido. Deve ser rigorosamente idêntico ao arquivo base em inglês (`values/*.xml`).
-3. **Tags Raiz Puras:**  
-   Utilizar `<resources>` sem atributos de namespace legados do Android (`xmlns:android`), garantindo compatibilidade multiplataforma nativa (Android e iOS).
+Toda string segue esta ordem, sem pular etapa:
+
+1. **Ler a chave interna**
+2. **Ler a string em inglês**
+3. **Entender o que o usuário vê**
+4. **Escrever em pt-BR**
+5. **Conferir contra as regras do projeto**
+
+Pular a etapa 1 produz tradução genérica para outro contexto. Pular a 3 produz frase correta que não
+cabe na tela. Pular a 5 produz texto bonito que quebra o build.
+
+### 1.1. Etapa 1 — Ler a chave interna
+
+A chave é o identificador no XML (`<string name="settings_playback_render_scale">`). O prefixo costuma
+entregar a tela:
+
+| Prefixo | Onde vive |
+| :--- | :--- |
+| `settings_` | telas de configurações (player, legendas, aparência, MDBList) |
+| `party_` | Watch Party — sessão em grupo, sincronia e chat |
+| `server_` / `servers_` | servidores remotos e teste de latência |
+| `mdb_` / `mdblist_` | integração MDBList, filtros e avaliações |
+| `autosync_` | sincronização automática de legendas |
+| `pip_` | Picture-in-Picture e mini-player |
+| `details_` / `entity_` | ficha de filme/série e catálogo |
+
+O prefixo não substitui o arquivo: `strings_party.xml` e `strings_servers.xml` são catálogos separados
+do `strings.xml`, e uma chave com o mesmo `name` em dois arquivos **quebra a compilação** (seção 3.1).
+
+### 1.2. Etapa 2 — Ler a string em inglês
+
+A fonte é o catálogo EN **do mesmo módulo**:
+
+- `composeApp/src/commonMain/composeResources/values/strings.xml`
+- `.../values/strings_party.xml`, `strings_servers.xml`, `strings_mdblist.xml`, `strings_pip.xml`,
+  `autosync_strings.xml`, `autosync_toast_strings.xml`
+
+O projeto tem 20 pastas de locale no módulo principal, e **nenhuma delas serve de origem** — nem `es`,
+nem `pt` (que pode ser português europeu). Uma tradução de terceiro pode ter erro, e o erro se propaga
+sem aparecer.
+
+### 1.3. Etapa 3 — Entender o que o usuário vê
+
+- **Botão ou ação:** verbo no imperativo, curto (*"Reproduzir"*, *"Tentar novamente"*).
+- **Configuração:** rótulo curto + descrição em chave separada (`*_description`).
+- **Aviso e erro:** o que aconteceu e o que fazer; muitas vezes vira `Toast` ou notificação.
+- **Android Auto / PiP:** espaço mínimo; o texto aparece sobre o vídeo ou no painel do carro.
+- **Watch Party:** o mesmo texto é lido por vários participantes; nomes de estado precisam ser
+  inequívocos (*"Em sincronia"*, *"Sincronizando"*).
+
+### 1.4. Etapa 4 — Escrever em pt-BR
+
+Português do Brasil, natural e não literal:
+
+| ❌ Portugal | ✅ Brasil |
+| :--- | :--- |
+| ecrã | **tela** |
+| ficheiro | **arquivo** |
+| guardar | **salvar** |
+| definições | **configurações** |
+
+Use **Sentence Case** — só a primeira letra maiúscula (*"Adicionar à minha lista"*, não *"Adicionar À
+Minha Lista"*). Nome próprio e sigla mantêm a grafia.
+
+O vocabulário vem do [`glossario.md`](./glossario.md). O que **não** se traduz:
+`Nuvio` · `Stremio` · `Addon` · `Debrid` · `Real-Debrid` / `AllDebrid` / `Premiumize` / `TorBox` ·
+`Trakt` / `Simkl` / `MDBList` / `TMDB` / `IMDb` · `HLS` / `DASH` · `MPV` · `Picture-in-Picture (PiP)`.
+
+### 1.5. Etapa 5 — Conferir contra as regras do projeto
+
+Três barreiras, nesta ordem:
+
+1. **O XML** — chaves, placeholders, plurais e tags (seção 3).
+2. **O validador** — `scripts/validate-ptbr.ps1` contra o EN do clone (seção 4).
+3. **O build do upstream** — o job `Build fullDebug APK` roda em todo PR (seção 5).
+
+### 1.6. O método aplicado a uma string real
+
+`settings_playback_render_scale`:
+
+1. **Chave:** `settings_playback_render_scale` → configurações de reprodução, resolução das legendas.
+2. **EN:** `Subtitle Render Resolution` (`values/strings.xml:1156`), com a descrição em
+   `settings_playback_render_scale_description:1157`.
+3. **O que o usuário vê:** um rótulo de configuração e uma linha de ajuda logo abaixo; não é botão.
+4. **pt-BR:** `Resolução de renderização das legendas` (`values-pt-rBR/strings.xml:1163`).
+5. **Regras:** sem placeholder, chave presente nos dois lados, `validate-ptbr.ps1` retorna `OK`.
 
 ---
 
-## 2. ⚡ Sintaxe XML Estrita & Escapes Obrigatórios
+## 2. 🗂️ Onde a tradução vive
 
-O parser do Android Asset Packaging Tool (AAPT2) e o parser CMP tratam caracteres especiais de forma rigorosa:
+| Arquivo | Fonte EN | Tradução pt-BR | Entradas |
+| :--- | :--- | :--- | ---: |
+| Principal | `values/strings.xml` | `values-pt-rBR/strings.xml` | 2.496 |
+| Watch Party | `values/strings_party.xml` | `values-pt-rBR/strings_party.xml` | 84 |
+| Servidores | `values/strings_servers.xml` | `values-pt-rBR/strings_servers.xml` | 60 |
+| MDBList | `values/strings_mdblist.xml` | `values-pt-rBR/strings_mdblist.xml` | 52 |
+| PiP | `values/strings_pip.xml` | `values-pt-rBR/strings_pip.xml` | 1 |
+| AutoSync | `values/autosync_strings.xml` | `values-pt-rBR/autosync_strings.xml` | 10 |
+| AutoSync toast | `values/autosync_toast_strings.xml` | `values-pt-rBR/autosync_toast_strings.xml` | 4 |
+| **Total** | | | **2.707** |
 
-### 2.1. Escape de Apóstrofo (`'`)
-No Android XML, apóstrofos não escapados quebram o parser do compilador com o erro fatal `AAPT: error: unescaped apostrophe`.
-* ❌ **Incorreto:** `<string name="load_error">Não foi possível carregar d'água</string>`
-* ✅ **Correto:** `<string name="load_error">Não foi possível carregar d\'água</string>`
-* ✅ **Alternativa Válida:** Envolver a frase inteira em aspas duplas: `"Não foi possível carregar d'água"` (a convenção adotada no Nuvio é o escape com barra invertida `\'`).
+A contagem de 2.496 no principal inclui 2.488 `<string>` e 4 blocos `<plurals>` (8 formas). O
+validador conta cada forma de plural como uma unidade.
 
-### 2.2. Entidades XML Reservadas
-* **E comercial (`&`):** Deve ser sempre escrito como `&amp;`. Nunca utilize `&` solto.
-* **Símbolos de Menor e Maior (`<` e `>`):** Devem ser escritos como `&lt;` e `&gt;`, exceto quando formarem tags HTML permitidas.
-* **Aspas duplas (`"`):** Devem ser escapadas como `\"`.
-
-### 2.3. Símbolo de Porcentagem Literal (`%%`)
-Se uma string contiver um símbolo de `%` que represente uma porcentagem real (e não uma variável de formatação):
-* No XML onde houver outras variáveis formatadas, o símbolo deve ser duplicado: `%%` (ex: `Buffer atingiu 100%%`).
-* Caso contrário, o formatador de runtime tentará interpretar `%` como início de uma variável e causará um `UnknownFormatConversionException` (crash em produção).
+O snapshot versionado em [`snapshots/`](./snapshots/) é cópia dos sete catálogos. Quem entrega é a
+branch, via PR; o snapshot sobrevive se a branch for fechada ou rebaseada.
 
 ---
 
-## 3. 🎯 Placeholders, Variáveis e Argumentos Posicionais
+## 3. 🧩 O formato: Compose Multiplatform, não Android nativo
 
-### 3.1. Placeholders Posicionais Obrigatórios
-Em traduções, a estrutura gramatical do português frequentemente exige inverter a ordem dos termos em relação ao inglês. Por isso, **sempre utilize especificadores posicionais**:
+### 3.1. Escopo global de símbolos
 
-* Exemplo em Inglês:
-  ```xml
-  <string name="sync_status">Syncing %1$s of %2$s items</string>
-  ```
-* Exemplo em Português:
-  ```xml
-  <string name="sync_status">Sincronizando %1$s de %2$s itens</string>
-  ```
-* Se for necessário reordenar:
-  ```xml
-  <string name="server_log">Failed on server %1$s at %2$s</string>
-  <!-- Invertendo a ordem mantendo a injeção correta das variáveis: -->
-  <string name="server_log">Às %2$s, houve falha no servidor %1$s</string>
-  ```
+O compilador Kotlin gera uma classe estática única para todos os arquivos XML. Duas strings com o
+mesmo `name` em arquivos diferentes causam **símbolo duplicado** e falham a compilação. O atributo
+`name` nunca é traduzido, renomeado ou reformatado.
 
-### 3.2. Tipos de Variáveis Suportados:
-* `%s` / `%1$s`: Strings (nomes de filmes, URLs, títulos).
-* `%d` / `%1$d`: Inteiros (contadores, temporadas, números de porta).
-* `%f` / `%1$f`: Ponto flutuante (taxas de quadros, notas com decimais).
+A tag raiz é `<resources>`, sem `xmlns:android` — o formato é multiplataforma (Android e iOS).
 
-### 3.3. Regras para Plurais (`<plurals>`)
-No Compose Multiplatform, as tags de plural seguem as regras de pluralização da língua portuguesa do Brasil (pt-BR):
-* `quantity="one"`: Aplicado estritamente para o número 1.
-* `quantity="other"`: Aplicado para 0 e qualquer valor maior que 1.
+### 3.2. Escapes: o Nuvio **não** usa escape Android
+
+Esta é a diferença que mais gera falso positivo. Em Compose Resources, apóstrofo e aspas dentro do
+texto são literais; o catálogo EN tem 31 apóstrofos e apenas 2 aspas escapadas.
+
+- ✅ `Excluir "%1$s"? Isso não pode ser desfeito.`
+- ✅ `Séries colocadas nas listas 'Em espera'…`
+- ❌ `Excluir \"%1$s\"?` — escape desnecessário, aparece com barra na tela.
+
+Por isso a validação correta é `-Escape none`. Rodar `-Escape android` neste projeto reporta 11
+"erros" que são falsos positivos (medido em 02/11/2026).
+
+`&` continua sendo entidade XML: `&amp;`. `<` e `>` só viram tag quando formam marcação permitida.
+
+### 3.3. Porcentagem literal
+
+Quando a string tem argumento de formatação **e** exibe `%` literal, duplique: `100%%`. Sem argumento,
+`%` solto é válido.
+
+### 3.4. Placeholders posicionais
+
+**Placeholder** é o buraco preenchido em tempo de execução (`%1$s` = primeiro argumento de texto,
+`%2$d` = segundo argumento inteiro). Use sempre a forma com índice:
 
 ```xml
-<plurals name="items_count">
-    <item quantity="one">%d item selecionado</item>
-    <item quantity="other">%d itens selecionados</item>
+<string name="server_log">Falha no servidor %1$s às %2$s</string>
+```
+
+Copie o placeholder da fonte e confira **quantidade** e **índice**. Traduzir não autoriza trocar
+`%1$s` por `%s` nem mudar a ordem dos índices.
+
+### 3.5. Plurais
+
+No CLDR, o português tem `one`, `many` e `other`. Os 4 blocos atuais usam só `one` e `other`; `many`
+cobre milhões exatos e cai em `other` quando ausente. Se um bloco novo for criado, prefira as três
+formas.
+
+```xml
+<plurals name="details_season_count">
+    <item quantity="one">%1$d Temporada</item>
+    <item quantity="other">%1$d Temporadas</item>
 </plurals>
 ```
 
----
+### 3.6. Tags HTML inline
 
-## 4. 🔠 Tags HTML Inline e Rich Text
+Tags permitidas: `<b>`, `<i>`, `<u>`, `<br/>`. Toda tag aberta precisa fechar, e o espaço fora da tag
+é significativo:
 
-O Compose Multiplatform suporta formatação rica básica nas strings.
-* **Tags Permitidas:** `<b>` (negrito), `<i>` (itálico), `<u>` (sublinhado), `<br/>` (quebra de linha).
-* **Regra de Fechamento:** Toda tag aberta deve ser obrigatoriamente fechada. Uma tag `<b>` sem o respectivo `</b>` aborta a compilação.
-* **Preservação de Espaçamento:**
-  * ❌ `<b>%1$s</b>episódios` (Faltando espaço, vai renderizar grudado na tela).
-  * ✅ `<b>%1$s</b> episódios` (Espaçamento natural preservado).
+- ❌ `<b>%1$s</b>episódios`
+- ✅ `<b>%1$s</b> episódios`
 
 ---
 
-## 5. 📱 Design de Interface Mobile & Estilo pt-BR
+## 4. 🧪 Validação no hub
 
-### 5.1. Sentence Case vs Title Case
-* No inglês, é padrão usar **Title Case** nos botões e títulos (*"Add To Watchlist"*, *"Clear Search History"*).
-* No Português do Brasil (seguindo o padrão Material Design 3 e Apple HIG), utiliza-se **Sentence Case** (apenas a primeira letra maiúscula, exceto nomes próprios):
-  * ❌ *Adicionar À Lista De Interesses*
-  * ✅ *Adicionar à lista de interesses*
+O hub não compila o app. O passo equivalente é o validador, rodado contra o EN do clone:
 
-### 5.2. Concisão e Prevenção de Estouro de Layout (Truncation)
-Telas mobile possuem largura física reduzida. O português é, em média, **20% a 30% mais longo** que o inglês.
-* Em botões de ação e títulos de abas, priorize verbos diretos e objetivos:
-  * Em vez de: *"Pressione aqui para sincronizar seus dados"* ➔ Use: *"Sincronizar dados"*.
-  * Em vez de: *"Configurações do reprodutor de vídeo"* ➔ Use: *"Configurações do player"*.
+```powershell
+./scripts/validate-ptbr.ps1 `
+  -Path   NuvioMobile/snapshots/NuvioMobile_strings_pt_BR.xml `
+  -Source NuvioMobile/repo/composeApp/src/commonMain/composeResources/values/strings.xml `
+  -Format xml
+```
 
-### 5.3. Neutralidade e Naturalidade Gramatical
-* Evite construções literais e traduções automáticas (ex: *"Vocês está conectado com sucesso"*).
-* Prefira voz ativa e frases naturais para o usuário brasileiro.
-* Evite termos do Português europeu: use *"Tela"* (não ecrã), *"Salvar"* (não guardar), *"Arquivo"* (não ficheiro).
+Resultado de 02/11/2026:
 
----
+```text
+OK   NuvioMobile_strings_pt_BR.xml  (2496 strings, perfil=xml, escape=none)
+     avisos: 111 string(s) idêntica(s) à fonte (nomes próprios/termos mantidos)
+```
 
-## 6. 🤖 Pipeline de CI/CD (GitHub Actions) do Nuvio
+Os 111 avisos são marca, sigla, nome de formato ou string composta só de placeholders. Nenhum é frase
+esquecida em inglês.
 
-Todo Pull Request enviado ao upstream passa por dois testes automatizados:
-
-1. **`validate_pr_body` (PR Template Check):**
-   * O corpo do PR deve conter a marcação exata das caixas de checagem:
-     ```markdown
-     ### Type of change
-     - [x] Localization
-     ```
-   * Deve conter uma descrição clara e concisa em inglês do que foi alterado para que os mantenedores possam revisar rapidamente.
-
-2. **`Build fullDebug APK` (PR Full Debug Build):**
-   * O runner do GitHub executa `./gradlew assembleFullDebug`.
-   * Qualquer erro de sintaxe XML, escape ausente ou encoding incorreto (não-UTF-8) causará a falha deste job.
+> **Cuidado:** o validador compara o snapshot com o EN **do clone**. Clone velho, resultado velho.
+> Rode `git -C NuvioMobile/repo fetch upstream` antes de confiar no número.
 
 ---
 
-## 7. 🧪 Checklist de Validação Pré-Commit
+## 5. 🤖 CI/CD do upstream
 
-Antes de abrir qualquer commit ou PR:
-- [ ] Todos os apóstrofos (`'`) foram escapados como `\'`?
-- [ ] Todos os E comerciais soltos foram substituídos por `&amp;`?
-- [ ] Todas as variáveis do original em inglês (`%1$s`, `%2$d`, etc.) estão presentes na tradução?
-- [ ] Nenhuma tag `<string name="...">` teve seu atributo `name` modificado?
-- [ ] O arquivo XML foi salvo com codificação **UTF-8 sem BOM**?
-- [ ] O texto foi formatado em **Sentence Case**?
+Todo PR passa por dois jobs:
+
+1. **`PR Template Check`** — o corpo precisa conter `### Type of change` e `- [x] Localization`.
+2. **`Build fullDebug APK`** — roda `./gradlew assembleFullDebug`; erro de XML, chave duplicada ou
+   encoding quebra o job.
+
+O job de build pode falhar por erro **pré-existente na base**. Antes de atribuir a falha à tradução,
+leia o log e confira se o erro está numa linha que a PR não tocou (foi o caso de
+`Unresolved reference 'updateAssMargins'` em `PlayerEngine.android.kt` no #2435).
+
+---
+
+## 6. 📱 Espaço de tela
+
+1. **Botões e abas:** 1 a 3 palavras. O português é 20–30% mais longo que o inglês.
+2. **Configurações:** o rótulo é curto; a explicação vai na chave `*_description`.
+3. **PiP e Android Auto:** o texto divide espaço com vídeo e controles. Prefira o termo mais curto que
+   ainda seja claro.
+4. **Notificação e toast:** aparece fora do app, muitas vezes truncado. Frase direta.
+
+---
+
+## 7. ✅ Checklist antes de abrir/atualizar a PR
+
+**Etapas 1 e 2 — origem**
+- [ ] Li a chave e sei em que tela/arquivo o texto aparece?
+- [ ] Traduzi a partir do EN do **mesmo módulo**, não de `es`/`pt`/`fr`?
+
+**Etapas 3 e 4 — texto**
+- [ ] A frase cabe no componente (botão, configuração, PiP, Android Auto)?
+- [ ] Sentence Case aplicado; nomes próprios e siglas preservados?
+- [ ] Português do Brasil, sem termo de Portugal e sem construção literal?
+
+**Etapa 5 — regras**
+- [ ] Paridade de chaves nos 7 arquivos, sem chave sobrando nem faltando?
+- [ ] Placeholders com a mesma quantidade e os mesmos índices da fonte?
+- [ ] `%%` em toda string formatada que exibe `%` literal?
+- [ ] Nenhum escape Android (`\'`, `\"`) introduzido no XML do CMP?
+- [ ] `validate-ptbr.ps1 -Escape none` retornando `OK`, contra um clone atualizado?
+- [ ] Snapshot do hub atualizado em [`snapshots/`](./snapshots/)?
+
+---
+
+## 8. ⚠️ Lacunas conhecidas
+
+1. **Sem teste em aparelho.** O hub não compila nem instala o app; nenhuma regra da seção 6 foi
+   verificada em Android Auto, PiP ou tela pequena.
+2. **Plurais sem `many`.** Os 4 blocos usam só `one` e `other`; o efeito para milhões exatos não foi
+   medido.
+3. **Build da base instável.** O job `Build fullDebug APK` já falhou por erro que não era da tradução.
+   Falta: registrar o erro da base e decidir entre esperar a correção ou rebasear.
+4. **Validação com `-Escape android` é ruído.** O projeto usa Compose Resources; a documentação antiga
+   pedia escape Android e produzia 11 falsos positivos. Corrigido aqui.
+5. **Snapshot e clone podem divergir.** O snapshot é cópia do commit traduzido; se o upstream avançar,
+   o validador continua verde contra o EN velho.
+
+---
+
+## 📚 Fontes dos números
+
+| Valor | De onde veio |
+| :--- | :--- |
+| 2.496 entradas no principal | `validate-ptbr.ps1` em 02/11/2026 (2.488 strings + 8 formas de plural) |
+| 2.707 entradas no total | soma dos 7 arquivos: 2.496 + 84 + 60 + 52 + 1 + 10 + 4 |
+| `OK`, 111 avisos | `validate-ptbr.ps1 -Escape none` em 02/11/2026 |
+| 11 falsos positivos com `-Escape android` | mesma execução, com a flag Android |
+| 31 apóstrofos e 2 aspas escapadas no EN | varredura de `values/strings.xml` em 02/11/2026 |
+| Branch e commit | `git -C NuvioMobile/repo branch --show-current` e `git log -1` em 02/11/2026 |
+| PRs e release | `gh pr view` e `gh release view` em 02/11/2026 |

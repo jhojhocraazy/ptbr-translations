@@ -18,10 +18,10 @@
 | **Upstream hoje** | `master` em `f77dcc2` (02/11/2026), com **643** chaves EN e **637** no `pt_BR` |
 | **Sync pendente** | PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019), criado em 20/10/2026 — leva o `pt_BR` a **638** |
 | **Estado da PR** | 🟢 checks verdes · 🟡 `mergeState=BEHIND` (precisa de update) · 🟡 `review=REVIEW_REQUIRED` |
-| **Ainda sem tradução** | **5** chaves, que só existem no upstream (lista abaixo) |
+| **Ainda sem tradução** | **6** chaves ausentes no `master`: 5 novas + `options_display_fullscreenControlsTooltipStates` |
 | **Clone no hub** | **não existe** — removido em 02/11/2026 (seção "Por que não há clone") |
 
-As 5 chaves que faltam — ausentes do PR #1019 e, portanto, ainda fora do `pt_BR`:
+As 5 chaves novas que faltam — ausentes do PR #1019 e, portanto, ainda fora do `pt_BR`:
 
 - `options_provider_spicylyrics` = `Spicy Lyrics`
 - `lyrics_syncedBy` = `Synced by`
@@ -31,6 +31,10 @@ As 5 chaves que faltam — ausentes do PR #1019 e, portanto, ainda fora do `pt_B
 
 Elas **não podem ser entregues por PR manual**: o texto tem de nascer no Crowdin, senão o próximo
 sync do bot sobrescreve. O caminho é esperar a fonte chegar à plataforma e traduzir lá.
+
+Além dessas 5, o `master` não tem `options_display_fullscreenControlsTooltipStates`; o PR #1019 a
+carrega, mas **em inglês** (“Auto hides the controls while the player bar is showing…”). Por isso o
+`master` tem 637 chaves e não 638: faltam 6, não 5.
 
 ---
 
@@ -211,7 +215,7 @@ Cobertura e pendências no Crowdin exigem token:
 
 ## ⚠️ Lacunas
 
-1. **5 chaves sem tradução** (lista no topo). Dependem de a fonte chegar ao Crowdin.
+1. **6 chaves ausentes no `master`** (5 novas + a que o PR carrega em inglês). Dependem do Crowdin/sync.
 2. **A PR #1019 está `BEHIND` e carrega 7 strings desatualizadas**, uma delas em inglês. Falta: o bot
    rodar de novo — ou o mantenedor mergear e aceitar que o próximo sync corrige.
 3. **Estado do Crowdin não reverificado.** Sem `CROWDIN_TOKEN` nesta sessão, a última medição local é

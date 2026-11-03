@@ -5,15 +5,15 @@
 
 <!-- Efeito de Digitação Animado -->
 <a href="https://github.com/jhojhocraazy/ptbr-translations">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=22C55E&center=true&vCenter=true&width=620&lines=Central+de+Localiza%C3%A7%C3%A3o+Open+Source+%F0%9F%87%A7%F0%9F%87%B7;Mais+de+24.500+strings+traduzidas+para+pt-BR;Nuvio+%E2%80%A2+BitChord+%E2%80%A2+Crowdin+%E2%80%A2+TizenTube+%E2%80%A2+YTDLnis;100%25+Compat%C3%ADvel+com+Placeholders+%26+Tags;Qualidade%2C+Fluidez+e+Consist%C3%AAncia+Terminol%C3%B3gica" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=22C55E&center=true&vCenter=true&width=620&lines=Central+de+Localiza%C3%A7%C3%A3o+Open+Source+%F0%9F%87%A7%F0%9F%87%B7;Mais+de+26.000+strings+no+escopo+pt-BR;Nuvio+%E2%80%A2+BitChord+%E2%80%A2+Crowdin+%E2%80%A2+TizenTube+%E2%80%A2+YTDLnis;98%25%2B+de+cobertura+com+valida%C3%A7%C3%A3o+t%C3%A9cnica;Qualidade%2C+Fluidez+e+Consist%C3%AAncia+Terminol%C3%B3gica" alt="Typing SVG" />
 </a>
 
 <br/><br/>
 
 <!-- Badges Principais Estilizadas -->
 [![pt-BR](https://img.shields.io/badge/Portugu%C3%AAs%20(Brasil)-pt--BR-009739?style=for-the-badge&logo=brazil&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
-[![Strings](https://img.shields.io/badge/Strings-+24.667-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
-[![Cobertura](https://img.shields.io/badge/Cobertura-100%25-brightgreen?style=for-the-badge&logo=checkmarx)](https://github.com/jhojhocraazy/ptbr-translations)
+[![Strings](https://img.shields.io/badge/Strings-26.303-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
+[![Cobertura](https://img.shields.io/badge/Cobertura-98%25-yellowgreen?style=for-the-badge&logo=checkmarx)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Autor](https://img.shields.io/badge/Mantido%20por-Joseph%20Alves-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jhojhocraazy)
 
 </div>
@@ -30,16 +30,19 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 ## 📊 Painel Geral de Projetos (Dashboard)
 
+> **Medições de 02/11/2026.** O status de cada projeto é o da plataforma/repositório na data; números
+> antigos de "100%" foram substituídos pelo que a API devolve hoje.
+
 | Projeto | Ecossistema | Plataforma | Strings | Status Oficial | Progresso |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.707** | 🟢 **No ar** (`v0.6.5-beta`); #2435 mesclado e [PR #2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) na fila | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**BitChord**](#2-bitchord) | Android / Wear OS | GitHub PRs / XML | **+1.471** | 🚀 **Em Análise** ([PR #1204](https://github.com/kushagrasinghx/BitChord/pull/1204), base `main`) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **682** | 🟢 **100% Traduzido** (0 pendentes; aguarda release) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **Sincronizado** (PR #1019 aberto; 2 chaves novas na fonte) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **17.515** (214 arquivos) | 🟢 **100% Traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**TizenTube & Cobalt**](#6-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **197** | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718)) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Hosted Weblate | **176 + 38** | 🟢 **No ar** (`v3.0.7`) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**TorBox**](#8-torbox) | Next.js / Web + Desktop | GitHub PRs / JSON | **1.536** | 🚀 **Em Análise** ([PR #125](https://github.com/jittarao/torbox-app/pull/125)) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.707** | 🟢 **No ar** (`v0.6.6-beta`); #2455 mesclado em 01/11 | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**BitChord**](#2-bitchord) | Android / Wear OS | GitHub PRs / XML | **+1.448** | 🚀 **Em Análise** ([PR #1204](https://github.com/kushagrasinghx/BitChord/pull/1204), base `main`, `BLOCKED`) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **686** | 🟢 **671/686**; 15 checks são falsos positivos de plural e 5 aguardam sync | ![99%](https://geps.dev/progress/99?color=00c853) |
+| [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **Sincronizado** no Crowdin; 6 chaves ausentes no `master` e PR #1019 `BEHIND` | ![99%](https://geps.dev/progress/99?color=00c853) |
+| [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **18.819** (214 arquivos) | 🟡 **354 pendentes** em 4 arquivos | ![98%](https://geps.dev/progress/98?color=ffb300) |
+| [**TizenTube & Cobalt**](#6-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **198** (+1 crédito) | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718), `CLEAN`) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Hosted Weblate | **176 + 39** | 🟢 **No ar** (`v3.0.8`); 2 checks em análise | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**TorBox**](#8-torbox) | Next.js / Web + Desktop | GitHub PRs / JSON | **1.592** (1.466 + 126 herdadas) | 🟡 **PR #125 conflitante** — precisa de rebase | ![100%](https://geps.dev/progress/100?color=00c853) |
 
 ---
 
@@ -49,7 +52,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Aplicativo moderno de streaming de mídia e entretenimento desenvolvido em **Kotlin Multiplatform (Compose Multiplatform)** para Android e iOS.
 
 * **Repositório Oficial:** [`NuvioMedia/NuvioMobile`](https://github.com/NuvioMedia/NuvioMobile)
-* **Status:** 🟢 **100% Traduzido** (2.707 entradas em 7 arquivos modulares; lotes #2288, #2338, #2402, #2435 e #2455).
+* **Status:** 🟢 **100% Traduzido** (2.707 entradas em 7 arquivos modulares; lotes #2288, #2338, #2402, #2435 e #2455 — todos mesclados).
 * **Diretório Local:** [`NuvioMobile/`](./NuvioMobile/)
 
 <details>
@@ -62,7 +65,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
   * **Volume:** 2.410 strings + 4 plurais.
 * **PR #2288:** [Adiciona tradução dos 5 novos módulos](https://github.com/NuvioMedia/NuvioMobile/pull/2288)
   * **Status:** ✅ **MERGED** — incorporado na versão `v0.6.3-beta` (`Build fullDebug APK: SUCCESS`, 6m49s).
-  * **Módulos:** `strings_party.xml` (82 entradas), `strings_servers.xml` (60 entradas), `strings_mdblist.xml` (52 entradas), `autosync_strings.xml` (10 entradas), `autosync_toast_strings.xml` (4 entradas).
+  * **Módulos:** `strings_party.xml` (84 entradas), `strings_servers.xml` (60 entradas), `strings_mdblist.xml` (52 entradas), `autosync_strings.xml` (10 entradas), `autosync_toast_strings.xml` (4 entradas).
   * **Refinamento:** 92 entradas revisadas (terminologia do glossário, Sentence Case, miniaturas, provedores de streaming e mensagens de download).
 * **PR #2338:** [Adiciona traduções das novas strings do player e da watch party](https://github.com/NuvioMedia/NuvioMobile/pull/2338)
   * **Status:** 🚀 **MERGED** em 23/10/2026 e publicado na versão **`v0.6.4-beta`**.
@@ -73,11 +76,11 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
   * **Volume:** 4 novas entradas (`settings_mdb_show_on_hero`, `settings_mdb_show_on_hero_description`, `settings_playback_render_scale`, `settings_playback_render_scale_description`).
   * **Cobertura:** 2.424/2.424 entradas no módulo principal, paridade exata de chaves com a fonte EN e 0 divergências de placeholders.
 * **PR #2435:** [Traduz grupos de configurações, aparência de legendas e modos de renderização ASS](https://github.com/NuvioMedia/NuvioMobile/pull/2435)
-  * **Status:** ✅ **MESCLADO** em 30/10/2026 na branch `cmp-rewrite`.
+  * **Status:** ✅ **MESCLADO** em 30/10/2026 na branch `cmp-rewrite`; incluído em `0.6.6-beta`.
   * **Volume:** 62 entradas novas (grupos e páginas de configurações, aparência de legendas, modos ASS e troca automática de motor) + 1 descrição atualizada.
-  * **Cobertura:** 2.492/2.492 entradas no módulo principal, paridade exata de chaves com a fonte EN e 0 divergências de placeholders.
+  * **Cobertura:** 2.496/2.496 entradas no módulo principal, paridade exata de chaves com a fonte EN e 0 divergências de placeholders.
 * **PR #2455:** [`Minha lista`, Sentence Case e texto de scrobble recuperado do EN](https://github.com/NuvioMedia/NuvioMobile/pull/2455)
-  * **Status:** 🚀 **OPEN / MERGEABLE** — continuação do #2435 com as 3 correções que ficaram fora do merge.
+  * **Status:** ✅ **MESCLADO** em 01/11/2026 na branch `cmp-rewrite`; ainda não saiu em release.
 </details>
 
 ---
@@ -86,7 +89,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Cliente moderno de YouTube Music com estética inspirada no Apple Music desenvolvido em **Kotlin Multiplatform (KMP)** para Android e Wear OS.
 
 * **Repositório Oficial:** [`kushagrasinghx/BitChord`](https://github.com/kushagrasinghx/BitChord) (+3.700 stars)
-* **Status:** 🟢 **100% Traduzido** (+1.471 strings nos 3 módulos ativos: Android, Shared UI e Wear OS).
+* **Status:** 🟢 **100% Traduzido** (+1.448 unidades nos 3 módulos ativos: Android, Shared UI e Wear OS).
 * **Diretório Local:** [`BitChord/`](./BitChord/)
 
 <details>
@@ -94,7 +97,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 <br/>
 
 * **PR #1204:** [loc(pt): complete Portuguese (pt-BR) localization](https://github.com/kushagrasinghx/BitChord/pull/1204)
-  * **Status:** 🚀 **OPEN / MERGEABLE**, base `main`, rebaseada sobre o head atual.
+  * **Status:** 🚀 **OPEN / BLOCKED** — `MERGEABLE`, base `main`, CI verde; falta a revisão exigida pelo repositório (`REVIEW_REQUIRED`).
   * **Módulos:** Android (1.135 entradas traduzíveis), Shared UI (249) e Wear OS (40, arquivo criado do zero).
   * **Volume:** 145 chaves novas + 15 do upstream (fontes SF Pro, sincronização de playlists e conversão para DAC), 115 entradas que ainda estavam em inglês corrigidas e 4 textos removidos acompanhados.
   * **Validação:** 0 problemas de placeholder/XML nos três módulos; paridade exata de chaves com a fonte EN.
@@ -113,18 +116,19 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 * **Repositório Oficial:** [`deniscerri/ytdlnis`](https://github.com/deniscerri/ytdlnis) (+10.600 stars)
 * **Plataforma de Tradução:** [Hosted Weblate — YTDLnis pt_BR](https://hosted.weblate.org/projects/ytdlnis/-/pt_BR/)
-* **Status:** 🟢 **100% Traduzido** (682 unidades; 0 pendentes no Weblate; aguardando próxima release).
+* **Status:** 🟢 **671/686** — 15 checks são falsos positivos de plural; 5 traduzidas aguardam sync (03/11/2026).
 * **Diretório Local:** [`YTDLnis/`](./YTDLnis/)
 
 <details>
 <summary><b>🔍 Ver Detalhes do Projeto YTDLnis</b></summary>
 <br/>
 
-* **Cobertura Completa:** 682 unidades traduzidas e validadas; 0 pendentes e 0 avisos de qualidade no Weblate.
-* **Última Sincronização:** 24/10/2026 — 682 unidades, 0 pendentes e 0 avisos de qualidade no Weblate.
-* **Checks Remanescentes:** nenhum; os 5 falsos positivos anteriores (`JSON`/`Info-JSONs` e `Nightly`) deixaram de ser reportados.
+* **Cobertura Atual:** 671 de 686 unidades traduzidas; os 15 checks são falsos positivos de plural, não strings pendentes.
+* **Última Sincronização:** 24/10/2026 — o snapshot local tem 670 strings + 9 plurais (697 formas); 5 traduzidas do Weblate ainda não chegaram ao upstream.
+* **Checks Remanescentes:** 15; todos são `<string>` no upstream e já estão traduzidas no `values-pt-rBR` — o Weblate as classifica como plural.
 * **Escopo da Tradução:** Telas de boas-vindas (*welcome onboarding*), integração com lrclib.net para letras sincronizadas, corte e recorte de mídia, agendamento de downloads e configurações avançadas do yt-dlp.
-* **Rigor e Qualidade:** 100% de integridade em tags de escape (`\'`, `\"`, `&amp;`) e placeholders de sistema (`%1$s`, `%2$d`).
+* **Rigor e Qualidade:** 100% de integridade em tags de escape (`\'`, `\"`, `&amp;`) e placeholders de sistema (`%1$s`, `%2$d`) no lote validado.
+* **Read-only:** 3 unidades (`trendingPlaylist`, `unfound_file`, `ytdlp`) não são editáveis; o Android usa o fallback da fonte.
 </details>
 
 ---
@@ -134,7 +138,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 * **Repositório Oficial:** [`better-lyrics/better-lyrics`](https://github.com/better-lyrics/better-lyrics)
 * **Plataforma de Tradução:** [Crowdin — Projeto 863186](https://crowdin.com/project/better-lyrics/pt-BR)
-* **Status:** 🟢 **100% Traduzido no Crowdin** (638 frases) — 2 chaves novas na fonte upstream aguardam sincronização do bot.
+* **Status:** 🟢 **100% Traduzido no Crowdin** (638/638) — o upstream tem 643 chaves e o `master` tem 637; faltam 6, não 5.
 * **Diretório Local:** [`BetterLyrics/`](./BetterLyrics/)
 
 <details>
@@ -142,7 +146,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 <br/>
 
 * **Sincronização Upstream:** automática pela integração GitHub do Crowdin (`_locales/pt_BR/messages.json`); PRs do bot #1001 e #1010 já mesclados pelo mantenedor (15/10 e 20/10/2026), sem PR manual do hub.
-* **Pendência Atual (26/10/2026):** a fonte EN cresceu para 640 chaves; `unison_detectedFromLyrics` e `unison_detectedUse` ainda não chegaram ao projeto Crowdin 863186 (638 strings). O PR de sync #1019 está aberto e cobre 638 chaves.
+* **Pendência Atual (03/11/2026):** a fonte EN cresceu para **643** chaves e o `pt_BR` do `master` tem 637; o PR de sync #1019 (aberto, `BEHIND`) cobre 638. As 6 ausentes são as 5 novas (`options_provider_spicylyrics`, `lyrics_syncedBy`, `lyrics_syncedAndUploadedBy`, `unison_detectedFromLyrics`, `unison_detectedUse`) + `options_display_fullscreenControlsTooltipStates`, que o PR carrega em inglês.
 * **Sincronização Contínua:** Atualização via API oficial do Crowdin, com validação de placeholders (`$VAR$`), tags e termos protegidos antes de cada envio.
 * **Terminologia Musical:** Preservação de termos como *Unison*, *Time-synced*, *Romanization*, *Furigana* e *Picture-in-Picture*.
 </details>
@@ -154,15 +158,17 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 * **Projeto Oficial:** [Crowdin Translations (ID: 31)](https://crowdin.com/project/crowdin)
 * **Plataforma de Tradução:** Crowdin API v2
-* **Status:** 🟢 **100% Traduzido** (**17.515 strings** / 120.107 palavras em 214 arquivos — 0 pendentes).
+* **Status:** 🟡 **18.819 strings** em 214 arquivos — **354 pendentes** em 4 arquivos (02/11/2026).
 * **Diretório Local:** [`Crowdin/`](./Crowdin/)
 
 <details>
 <summary><b>🔍 Ver Detalhes do Projeto Crowdin Platform</b></summary>
 <br/>
 
-* **Cobertura Total (100%):** 17.515 strings visíveis traduzidas, 923 strings ocultas e **0 pendentes** em 214 arquivos, cobrindo web app, backend, e-mails e templates.
-* **Interface Moderna Web:** 3.637 strings visíveis de `src/i18n/locales/en.json` (ID: 32447) concluídas.
+* **Cobertura Atual:** 18.465 de 18.819 strings traduzidas (**98,1%**); 354 pendentes — `backend.en_US.csv` 344/4.325, `auth.php` 6/69, `workspace.php` 2/41 e `en.json` 2/3.643.
+* **Interface Moderna Web:** 3.641 de 3.643 strings de `src/i18n/locales/en.json` (ID: 32447) concluídas; o snapshot local tem 3.637 e está 6 strings atrás.
+* **Pendência 03/11/2026:** o projeto cresceu para 18.819 strings; 354 estão pendentes em 4 arquivos. O último lote fechado foi o de 30/10/2026.
+* **Auditoria 03/11/2026:** o `Check` completo fechou 17.542 strings com 0 divergências. A varredura semântica achou e **corrigiu** 3 problemas graves: “Portuese ” em `profile.crowdinApps.allUsersIncludeGuests`, headline `alternatives.lokalise.hero.title` em inglês e `generic.integrationTool` em inglês.
 * **Atualização 30/10/2026:** 62 novas strings traduzidas — 27 em `editor.csv`, 11 em `backend.csv`, 10 em `frontend.csv`, 7 em `dynamic.csv`, 1 em `mfa.php` e 6 em `en.json` — e **17 correções de terminologia** no catálogo (TM ≠ MT, AI → IA, workflow → fluxo de trabalho, engines → motores). Auditoria completa em 17.515 strings com **0 divergências**.
 * **Atualização 28/10/2026:** 55 novas strings traduzidas — 27 em `dynamic.csv`, 19 em `backend.csv`, 7 em `en.json` e 2 em `scopes.php`.
 * **Atualização 26/10/2026:** 51 novas strings traduzidas — 18 em `backend.csv`, 14 em `auth.php`, 7 em `dynamic.csv`, 7 em `workspace.php` e 5 em `scopes.php`.
@@ -178,7 +184,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Cliente avançado de streaming sem anúncios com suporte nativo a SponsorBlock, DeArrow e controle de taxa de quadros (AFR) para Smart TVs Samsung (Tizen OS) e Android TV / Google TV / Fire TV (Cobalt).
 
 * **Repositórios Oficiais:** [`reisxd/TizenTube`](https://github.com/reisxd/TizenTube) (+2.800 stars) e [`reisxd/TizenTubeCobalt`](https://github.com/reisxd/TizenTubeCobalt)
-* **Status:** 🟢 **100% Traduzido & Refinado** (197 strings; 96 refinadas em 20/10/2026).
+* **Status:** 🟢 **100% Traduzido & Refinado** (198 chaves + 1 crédito; 96 refinadas em 20/10/2026).
 * **Diretório Local:** [`TizenTube/`](./TizenTube/)
 
 <details>
@@ -186,9 +192,9 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 <br/>
 
 * **PR #718:** [feat(i18n): complete Portuguese (pt-BR) localization and translate missing strings](https://github.com/reisxd/TizenTube/pull/718)
-  * **Status:** 🚀 **OPEN / IN REVIEW**
+  * **Status:** 🚀 **OPEN / CLEAN** — 7 commits, base `main` (02/11/2026).
   * **Destaques:** Tradução completa de 92 strings que estavam em inglês (barra lateral, relógio em tela, menus de vídeo, atualizador do Cobalt e controle de velocidade).
-  * **Refinamento:** 96 strings ajustadas (Sentence Case, ergonomia de TV, leitura de QR Code e naturalidade), com 0 divergências de placeholders e 5 strings mantidas intencionalmente em inglês.
+  * **Refinamento:** 96 strings ajustadas (Sentence Case, ergonomia de TV, leitura de QR Code e naturalidade), com 0 divergências de placeholders e **4** strings mantidas intencionalmente em inglês (`GitHub Sponsors`, `Podcasts`, `Shorts` e uma URL de patrocínio).
   * **Multiplataforma:** A tradução atende simultaneamente Smart TVs Samsung (TizenBrew/Tizen OS) e dispositivos Android TV/Fire TV via TizenTube Cobalt.
   * **Créditos Oficiais:** Inclusão de Joseph Alves no arquivo oficial `pt-BR.json` (`__contributors`).
 </details>
@@ -200,16 +206,17 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 * **Repositório Oficial:** [`ELowry/DNSToggle`](https://github.com/ELowry/DNSToggle)
 * **Plataforma de Tradução:** Hosted Weblate — projeto `elowry`
-* **Status:** 🟢 **100% Traduzido** nos dois componentes (`dnstoggle-strings` e `dnstoggle-metadata`), com 0 pendentes e publicado no **`v3.0.7`**.
+* **Status:** 🟢 **100% Traduzido** nos dois componentes (`dnstoggle-strings` 176/176 e `dnstoggle-metadata` 39/39), com 0 pendentes e publicado no **`v3.0.8`**.
 * **Diretório Local:** [`DNSToggle/`](./DNSToggle/)
 
 <details>
 <summary><b>🔍 Ver Detalhes do DNSToggle</b></summary>
 <br/>
 
-* **Componentes Traduzidos:** 176/176 strings (interface, Quick Settings Tiles, notificações e diálogos) + 38/38 metadados (título, descrições e changelogs).
-* **Publicação:** release **`v3.0.7`** (29/10/2026) cita oficialmente a tradução pt-BR.
+* **Componentes Traduzidos:** 176/176 strings (interface, Quick Settings Tiles, notificações e diálogos) + 39/39 metadados (título, descrições e changelogs).
+* **Publicação:** release **`v3.0.8`** (01/11/2026) cita oficialmente a tradução pt-BR.
 * **Qualidade:** revisão de naturalidade aplicada em 20/10/2026, com 14 ajustes de vocabulário Android e fluidez.
+* **Checks em aberto:** 2 (`off_label` e `mode_disabled`, ambos com alvo "Desativado"); falta decidir se são falsos positivos.
 </details>
 
 ---
@@ -219,7 +226,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Alternativa moderna e focada em usuários avançados para a interface padrão do TorBox, com downloads, torrents, Usenet, WebDAV, RSS, automações e player de vídeo.
 
 * **Repositório Oficial:** [`jittarao/torbox-app`](https://github.com/jittarao/torbox-app) (187 stars)
-* **Status:** 🟢 **100% Traduzido** (1.536 chaves traduzíveis; 1.454 no delta pt-BR + 82 herdadas do inglês).
+* **Status:** 🟢 **100% Traduzido** (1.592 chaves EN; 1.466 no delta pt-BR + 126 herdadas do inglês por regra).
 * **Diretório Local:** [`TorBox/`](./TorBox/)
 
 <details>
@@ -227,9 +234,9 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 <br/>
 
 * **PR #125:** [feat(i18n): add Brazilian Portuguese (pt-BR) locale](https://github.com/jittarao/torbox-app/pull/125)
-  * **Status:** 🚀 **OPEN / MERGEABLE**.
-  * **Escopo:** locale `pt-BR` completo — delta de 1.454 chaves, 82 herdadas, registro em `settings.ts` e `request.ts`, seletor de idioma, bandeira, dicas de estilo do pipeline e teste de invariantes.
-  * **Pipeline do projeto:** `i18n:verify` passou, 14 testes de i18n sem falha e Prettier limpo.
+  * **Status:** 🟡 **OPEN / CONFLICTING** — base `main`; precisa de rebase antes da revisão (03/11/2026).
+  * **Escopo:** locale `pt-BR` completo — delta de 1.466 chaves, 126 herdadas, registro em `settings.ts` e `request.ts`, seletor de idioma, bandeira, dicas de estilo do pipeline e teste de invariantes.
+  * **Pipeline do projeto:** `i18n:verify` passou em 30/10/2026, mas **falha em 03/11/2026**: chaves não ordenadas nos 7 locales; testes 13/14.
   * **Regras respeitadas:** `Admin.*` e `CustomViews.presets.*` não entram em deltas; placeholders e ICU preservados.
 </details>
 
@@ -240,10 +247,16 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 ```text
 ptbr-translations/
 ├── 📁 BetterLyrics/          # Backups JSON e recursos do Crowdin
-│   └── 📁 snapshots/
-│       ├── better_lyrics_messages_en.json   # Snapshot da fonte EN (upstream)
-│       └── better_lyrics_messages_pt_BR.json
+│   ├── 📁 snapshots/
+│   │   ├── better_lyrics_messages_en.json   # Snapshot da fonte EN (upstream)
+│   │   └── better_lyrics_messages_pt_BR.json
+│   ├── diretrizes-tecnicas.md
+│   ├── glossario.md
+│   └── README.md
 ├── 📁 BitChord/              # Recursos XML e clone do repositório
+│   ├── diretrizes-tecnicas.md
+│   ├── glossario.md
+│   ├── README.md
 │   ├── 📁 snapshots/         # Snapshots pt-BR dos 3 módulos
 │   │   ├── bitchord_strings_pt_BR.xml
 │   │   ├── sharedUi_strings_pt_BR.xml
@@ -263,7 +276,17 @@ ptbr-translations/
 │   ├── diretrizes-tecnicas.md
 │   └── glossario.md
 ├── 📁 NuvioMobile/           # Backups XML e clone do repositório
+│   ├── diretrizes-tecnicas.md
+│   ├── glossario.md
+│   ├── README.md
 │   ├── 📁 snapshots/         # 7 arquivos pt-BR (strings, party, servers, mdblist, pip, autosync)
+│   │   ├── NuvioMobile_strings_pt_BR.xml
+│   │   ├── strings_party_pt_BR.xml
+│   │   ├── strings_servers_pt_BR.xml
+│   │   ├── strings_mdblist_pt_BR.xml
+│   │   ├── strings_pip_pt_BR.xml
+│   │   ├── autosync_strings_pt_BR.xml
+│   │   └── autosync_toast_strings_pt_BR.xml
 │   └── 📁 repo/              # Repositório Git conectado ao fork e upstream
 ├── 📁 TizenTube/             # Backup JSON completo e clone do repositório
 │   ├── 📁 snapshots/
@@ -276,6 +299,8 @@ ptbr-translations/
 │   ├── 📁 snapshots/
 │   │   ├── torbox_messages_en.json
 │   │   └── torbox_messages_pt_BR.json
+│   ├── diretrizes-tecnicas.md
+│   ├── glossario.md
 │   ├── README.md
 │   └── 📁 repo/              # Repositório Git conectado ao fork e upstream
 ├── 📁 YTDLnis/               # Backup XML completo e documentação
@@ -288,10 +313,12 @@ ptbr-translations/
 │   ├── crowdin-sync.ps1      # Status, Export, Push, Check e Backup (Crowdin API v2)
 │   ├── weblate-sync.ps1      # Status, Export, Push, Check e Backup (Weblate API)
 │   ├── validate-ptbr.ps1     # Validador local de placeholders, escapes e XML
+│   ├── check-updates.ps1     # Consulta somente leitura de novidades no upstream
 │   └── README.md             # Guia de uso das ferramentas
 ├── .gitignore                # Isolamento de compilações e repositórios aninhados
 ├── AGENTS.md                 # Diretrizes e governança do repositório
 ├── metodologia.md            # Metodologia de entrega e definição de pronto
+├── organizacao-dos-repositorios.md  # Quando o clone é necessário e onde fica a fonte EN
 └── README.md                 # Documentação e portfólio oficial
 ```
 
