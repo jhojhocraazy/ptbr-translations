@@ -14,13 +14,14 @@
 | **Componentes** | `dnstoggle-strings` + `dnstoggle-metadata` |
 | **Cobertura** | 🟢 **176/176 strings** e **39/39 metadados** (100%) |
 | **Pendências** | 🟢 **0 strings pendentes** nos dois componentes |
-| **Checks nativos** | 🟡 **2** — `off_label` e `mode_disabled`, ambos com alvo "Desativado" |
+| **Checks nativos** | 🟢 **0** desde 03/11/2026 — eram 2 (`off_label`, `mode_disabled`) |
 | **Entrega** | 🟢 **Weblate** — a entrega termina na plataforma; não há PR de tradução |
 | **Snapshot** | 174 `<string>` + 1 `<plurals>` (3 formas) = **177 unidades** (02/11/2026) |
 | **Última release** | `v3.0.8` (01/11/2026) — cita oficialmente a tradução pt-BR |
 | **Clone no hub** | **não existe** — projeto de plataforma |
 
-A tradução está completa nos dois componentes. O que resta é decidir o que fazer com os 2 checks.
+A tradução está completa nos dois componentes. Os 2 checks nativos zeraram em 03/11/2026 — não há
+decisão pendente.
 
 ---
 
@@ -92,7 +93,8 @@ O commit no hub é documentação, não entrega.
 
 ## ⚠️ Lacunas
 
-1. **2 checks em aberto.** `off_label` e `mode_disabled` continuam sem decisão.
+1. **2 checks — zerados em 03/11/2026.** `off_label` e `mode_disabled` deixaram de aparecer em
+   `-Action Checks`; a causa não foi investigada.
 2. **Sem fonte EN versionada.** O validador não roda offline contra o EN.
 3. **Nada foi rodado em Android.** Nenhum limite de Tile foi conferido em aparelho real.
 4. **Snapshot de metadados em ZIP.** Não é XML legível; a conferência é manual.

@@ -12,8 +12,8 @@
 | :--- | :--- |
 | **Plataforma** | [Hosted Weblate — YTDLnis pt-BR](https://hosted.weblate.org/projects/ytdlnis/-/pt_BR/) |
 | **Componente** | `strings` |
-| **Cobertura** | 🟢 **671/686** — 15 checks são falsos positivos de plural; 5 traduzidas aguardam sync |
-| **Checks nativos** | 🟡 **15** — todos são `<string>` no upstream; o Weblate as classifica como plural |
+| **Cobertura** | 🟢 **671/686** — 5 traduzidas aguardam sync; checks nativos zeraram em 03/11/2026 |
+| **Checks nativos** | 🟢 **0** desde 03/11/2026 — eram 15 falsos positivos de plural |
 | **Entrega** | 🟢 **Weblate** — o bot abre PR automático no GitHub; não há PR manual |
 | **Snapshot** | 670 `<string>` + 9 `<plurals>` (27 formas) = **697 unidades**; 5 traduzidas atrás do Weblate |
 | **Read-only** | 3 — `trendingPlaylist`, `unfound_file`, `ytdlp` |
@@ -96,7 +96,9 @@ A entrega termina na plataforma; o hub não abre PR.
 
 ## ⚠️ Lacunas
 
-1. **15 checks de plural.** São falsos positivos: no upstream as chaves são `<string>` e já estão traduzidas; o Weblate as classifica como plural.
+1. **15 checks de plural — zerados em 03/11/2026.** Eram falsos positivos: no upstream as chaves são
+   `<string>` e já estão traduzidas; o Weblate as classificava como plural. Hoje `-Action Checks`
+   devolve 0.
 2. **5 traduzidas aguardando sync.** `no_cookies_found`, `all_artists_in_album_artist`, `all_artists_in_album_artist_summary`, `press_cancel` e `fetching_data` já estão no Weblate, mas não no upstream/snapshot.
 3. **Sem fonte EN versionada.** O validador não roda offline contra o EN.
 4. **Snapshot atrás.** O XML tem 670 strings + 9 plurais; faltam as 5 traduzidas que aguardam sync.
