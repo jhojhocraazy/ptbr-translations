@@ -12,19 +12,21 @@
 | :--- | :--- |
 | **Plataforma** | [Hosted Weblate — YTDLnis pt-BR](https://hosted.weblate.org/projects/ytdlnis/-/pt_BR/) |
 | **Componente** | `strings` |
-| **Cobertura** | 🟢 **671/686** — 5 traduzidas aguardam sync; checks nativos zeraram em 03/11/2026 |
-| **Checks nativos** | 🟢 **0** desde 03/11/2026 — eram 15 falsos positivos de plural |
+| **Cobertura** | 🟢 **686/686 (100%)** — fechado em 03/11/2026 17:24 pelo mantenedor |
+| **Checks nativos** | 🟢 **0** desde 03/11/2026 (eram 15, todos resolvidos) |
 | **Entrega** | 🟢 **Weblate** — o bot abre PR automático no GitHub; não há PR manual |
-| **Snapshot** | 670 `<string>` + 9 `<plurals>` (27 formas) = **697 unidades**; 5 traduzidas atrás do Weblate |
+| **Snapshot** | 670 `<string>` + 9 `<plurals>` (27 formas) = **697 unidades**; 5 no `master` = sync do bot |
 | **Read-only** | 3 — `trendingPlaylist`, `unfound_file`, `ytdlp` |
 | **Última release** | `v1.9.1.1` (19/10/2026) |
 | **Clone no hub** | **não existe** — projeto de plataforma |
 
-As 15 unidades que o Weblate mostra como pendentes são **falsos positivos**: no upstream elas são
-`<string>` e já estão traduzidas no `values-pt-rBR`. O Weblate as trata como plural com formas vazias.
-O gap real são **5 traduções** que já existem na plataforma e ainda não chegaram ao upstream
-(`no_cookies_found`, `all_artists_in_album_artist`, `all_artists_in_album_artist_summary`,
-`press_cancel`, `fetching_data`).
+As 15 unidades que o Weblate listava como pendentes eram **tradução real**, não read-only: o
+mantenedor (Denis Çerri) as traduziu em 03/11/2026 às 17:24 e o componente fechou em **686/686**. As
+3 read-only são outras: `trendingPlaylist`, `unfound_file` e `ytdlp`.
+
+O que ainda não chegou ao upstream são **5 traduções** (`no_cookies_found`,
+`all_artists_in_album_artist`, `all_artists_in_album_artist_summary`, `press_cancel`,
+`fetching_data`) — é sync do bot, não pendência nossa (`metodologia.md` §7.2).
 
 ---
 
@@ -78,8 +80,8 @@ Projeto ytdlnis | idioma pt_BR
 **Sem fonte EN no hub.** O `validate-ptbr.ps1` não roda contra uma régua fixa; falta criar
 `YTDLnis/fonte/` (ver [`../organizacao-dos-repositorios.md`](../organizacao-dos-repositorios.md)).
 
-Os checks nativos incluem falsos positivos conhecidos (`multiple_capital` em `JSON`/`Info-JSONs`,
-`same` em `Nightly`), mas os 15 atuais não foram todos revisados nesta rodada.
+Os checks nativos estão em **0** desde 03/11/2026. Falsos positivos conhecidos do Weblate
+(`multiple_capital` em `JSON`/`Info-JSONs`, `same` em `Nightly`) não aparecem mais no relatório.
 
 ---
 
@@ -96,12 +98,11 @@ A entrega termina na plataforma; o hub não abre PR.
 
 ## ⚠️ Lacunas
 
-1. **15 checks de plural — zerados em 03/11/2026.** Eram falsos positivos: no upstream as chaves são
-   `<string>` e já estão traduzidas; o Weblate as classificava como plural. Hoje `-Action Checks`
-   devolve 0.
-2. **5 traduzidas aguardando sync.** `no_cookies_found`, `all_artists_in_album_artist`, `all_artists_in_album_artist_summary`, `press_cancel` e `fetching_data` já estão no Weblate, mas não no upstream/snapshot.
+1. **Cobertura fechada em 03/11/2026.** As 15 unidades pendentes foram traduzidas pelo mantenedor às
+   17:24; o componente está em 686/686 e `-Action Checks` devolve 0. Não eram read-only.
+2. **5 traduzidas aguardando sync.** `no_cookies_found`, `all_artists_in_album_artist`, `all_artists_in_album_artist_summary`, `press_cancel` e `fetching_data` já estão no Weblate, mas não no upstream/snapshot — sync do bot, não pendência (`metodologia.md` §7.2).
 3. **Sem fonte EN versionada.** O validador não roda offline contra o EN.
-4. **Snapshot atrás.** O XML tem 670 strings + 9 plurais; faltam as 5 traduzidas que aguardam sync.
+4. **Snapshot atrás.** O XML tem 670 strings + 9 plurais; faltam as 5 que aguardam sync.
 5. **Nada foi rodado em Android.** Nenhuma permissão, notificação ou download foi testado em aparelho
    real.
 6. **3 read-only.** Não são editáveis; o Android usa o fallback da fonte.
@@ -121,7 +122,7 @@ A entrega termina na plataforma; o hub não abre PR.
 
 | Valor | De onde veio |
 | :--- | :--- |
-| 671/686, 15 checks (falsos positivos de plural) | `weblate-sync.ps1 -Action Status` em 02/11/2026 |
+| 686/686, 0 checks | `weblate-sync.ps1 -Action Status` em 03/11/2026 17:24 |
 | 5 traduzidas fora do upstream | comparação `values-pt-rBR` × export do Weblate em 03/11/2026 |
 | 670 strings + 9 plurais (27 formas) = 697 | contagem no snapshot em 02/11/2026 |
 | 3 read-only | `trendingPlaylist`, `unfound_file`, `ytdlp` |

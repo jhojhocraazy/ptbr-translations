@@ -35,10 +35,10 @@ O commit no hub é **documentação**, não entrega. Ele não substitui nem ante
 | BitChord | Sem plataforma | PR no GitHub | 3 módulos, 1.448 unidades; PR [#1204](https://github.com/kushagrasinghx/BitChord/pull/1204) `BLOCKED` |
 | TizenTube & Cobalt | Sem plataforma | PR no GitHub | 198 chaves + crédito; PR [#718](https://github.com/reisxd/TizenTube/pull/718) `CLEAN` |
 | TorBox | Sem plataforma | PR no GitHub | 1.466 no delta + 126 herdadas; PR [#125](https://github.com/jittarao/torbox-app/pull/125) `CONFLICTING` |
-| Better Lyrics | Plataforma | Crowdin (863186) | 638/638; 6 ausentes no `master` |
-| Crowdin Platform | Plataforma | Crowdin (31) | 18.819 strings; 354 pendentes |
-| YTDLnis | Plataforma | Weblate (`ytdlnis`) | 671/686; 15 checks são falsos positivos de plural |
-| DNSToggle | Plataforma | Weblate (`elowry`) | 176/176 + 39/39; 2 checks |
+| Better Lyrics | Plataforma | Crowdin (863186) | 638/638; 6 no `master` = sync |
+| Crowdin Platform | Plataforma | Crowdin (31) | 18.823 strings; 0 pendentes |
+| YTDLnis | Plataforma | Weblate (`ytdlnis`) | 686/686; 0 checks |
+| DNSToggle | Plataforma | Weblate (`elowry`) | 176/176 + 39/39; 0 checks |
 
 > Ao entrar um projeto novo, **classifique antes de começar**. A classificação define o critério de
 > conclusão.
@@ -272,6 +272,20 @@ tradução e órfãs.
 > compara conjuntos de chaves; adicioná-lo hoje reportaria as 126 chaves herdadas como "sem
 > tradução". A decisão está em aberto (ver `research/README.md`).
 
+### 7.2. Como medimos cobertura
+
+Cobertura é **unidade traduzível na plataforma de entrega** — nada além disso.
+
+- **Conta:** `traduzidas / total` do `Status` da plataforma (Crowdin/Weblate) ou o validador nos
+  projetos entregues por PR.
+- **Não conta:** sincronização do `master` do upstream (o bot é do projeto), unidade read-only
+  (`state=100`), chave herdada do delta (TorBox), string com fonte vazia e aviso de texto idêntico.
+- **Medido à parte, nunca somado:** aprovação/proofreading, snapshot local e teste visual.
+
+A entrega termina na plataforma (§1): o que o bot faz depois não muda o nosso número. Se a plataforma
+diz 0 pendentes, a cobertura é 100%. Aprovação não depende de nós e por isso não entra na conta —
+fica registrada como estado, não como pendência.
+
 ---
 
 ## 8. Fontes dos números
@@ -279,9 +293,9 @@ tradução e órfãs.
 | Valor | Fonte |
 | :--- | :--- |
 | Classificação e bases | `research/README.md` (02/11/2026) e `CONTRIBUTING.md` de cada projeto |
-| Crowdin 31: 18.819 / 354 pendentes | `crowdin-sync.ps1 -Action Status -ProjectId 31` em 02/11/2026 |
-| Crowdin 863186: 638/638 | `crowdin-sync.ps1 -Action Status -ProjectId 863186` em 02/11/2026 |
-| YTDLnis: 671/686 | `weblate-sync.ps1 -Action Status -Project ytdlnis` em 02/11/2026 |
-| DNSToggle: 176/176 + 39/39 | `weblate-sync.ps1 -Action Status -Project elowry` em 02/11/2026 |
-| PRs e releases | `gh pr view` e `gh release view` em 02/11/2026 |
+| Crowdin 31: 18.823 / 0 pendentes | `crowdin-sync.ps1 -Action Status -ProjectId 31` em 03/11/2026 |
+| Crowdin 863186: 638/638 | `crowdin-sync.ps1 -Action Status -ProjectId 863186` em 03/11/2026 |
+| YTDLnis: 686/686 | `weblate-sync.ps1 -Action Status -Project ytdlnis` em 03/11/2026 17:24 |
+| DNSToggle: 176/176 + 39/39 | `weblate-sync.ps1 -Action Status -Project elowry` em 03/11/2026 |
+| PRs e releases | `gh pr view` e `gh release view` em 03/11/2026 |
 | `fonte/` pendente | [`organizacao-dos-repositorios.md`](./organizacao-dos-repositorios.md) §7 e §9 |

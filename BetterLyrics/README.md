@@ -18,23 +18,21 @@
 | **Upstream hoje** | `master` em `f77dcc2` (02/11/2026), com **643** chaves EN e **637** no `pt_BR` |
 | **Sync pendente** | PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019), criado em 20/10/2026 — leva o `pt_BR` a **638** |
 | **Estado da PR** | 🟢 checks verdes · 🟡 `mergeState=BEHIND` (precisa de update) · 🟡 `review=REVIEW_REQUIRED` |
-| **Ainda sem tradução** | **6** chaves ausentes no `master`: 5 novas + `options_display_fullscreenControlsTooltipStates` |
+| **Ainda sem tradução** | **0 na plataforma**; 6 no `master` = sync do bot |
 | **Clone no hub** | **não existe** — removido em 02/11/2026 (seção "Por que não há clone") |
 
-As 5 chaves novas que faltam — ausentes do PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) e, portanto, ainda fora do `pt_BR`:
+O Crowdin está em **638/638** — 100% do traduzível. O `master` tem 643 chaves EN e 637 no `pt_BR`: as
+6 que faltam são **sync do bot**, não pendência nossa (`metodologia.md` §7.2). São elas:
 
 - `options_provider_spicylyrics` = `Spicy Lyrics`
 - `lyrics_syncedBy` = `Synced by`
 - `lyrics_syncedAndUploadedBy` = `Synced and uploaded by`
 - `unison_detectedFromLyrics` = `Lyrics have`
 - `unison_detectedUse` = `Use`
+- `options_display_fullscreenControlsTooltipStates` — está no PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019), mas **em inglês**
 
-Elas **não podem ser entregues por PR manual**: o texto tem de nascer no Crowdin, senão o próximo
-sync do bot sobrescreve. O caminho é esperar a fonte chegar à plataforma e traduzir lá.
-
-Além dessas 5, o `master` não tem `options_display_fullscreenControlsTooltipStates`; o PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) a
-carrega, mas **em inglês** (“Auto hides the controls while the player bar is showing…”). Por isso o
-`master` tem 637 chaves e não 638: faltam 6, não 5.
+Elas não podem ser entregues por PR manual: o texto tem de nascer no Crowdin, senão o próximo sync do
+bot sobrescreve.
 
 ---
 

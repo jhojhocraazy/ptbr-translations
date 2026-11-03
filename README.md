@@ -5,7 +5,7 @@
 
 <!-- Efeito de Digitação Animado -->
 <a href="https://github.com/jhojhocraazy/ptbr-translations">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=22C55E&center=true&vCenter=true&width=620&lines=Central+de+Localiza%C3%A7%C3%A3o+Open+Source+%F0%9F%87%A7%F0%9F%87%B7;Mais+de+26.000+strings+no+escopo+pt-BR;Nuvio+%E2%80%A2+BitChord+%E2%80%A2+Crowdin+%E2%80%A2+TizenTube+%E2%80%A2+YTDLnis;98%25%2B+de+cobertura+com+valida%C3%A7%C3%A3o+t%C3%A9cnica;Qualidade%2C+Fluidez+e+Consist%C3%AAncia+Terminol%C3%B3gica" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=22C55E&center=true&vCenter=true&width=620&lines=Central+de+Localiza%C3%A7%C3%A3o+Open+Source+%F0%9F%87%A7%F0%9F%87%B7;Mais+de+26.000+strings+no+escopo+pt-BR;Nuvio+%E2%80%A2+BitChord+%E2%80%A2+Crowdin+%E2%80%A2+TizenTube+%E2%80%A2+YTDLnis;100%25%2B+de+cobertura+com+valida%C3%A7%C3%A3o+t%C3%A9cnica;Qualidade%2C+Fluidez+e+Consist%C3%AAncia+Terminol%C3%B3gica" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -13,7 +13,7 @@
 <!-- Badges Principais Estilizadas -->
 [![pt-BR](https://img.shields.io/badge/Portugu%C3%AAs%20(Brasil)-pt--BR-009739?style=for-the-badge&logo=brazil&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Strings](https://img.shields.io/badge/Strings-26.303-007ACC?style=for-the-badge&logo=google-translate&logoColor=white)](https://github.com/jhojhocraazy/ptbr-translations)
-[![Cobertura](https://img.shields.io/badge/Cobertura-98%25-yellowgreen?style=for-the-badge&logo=checkmarx)](https://github.com/jhojhocraazy/ptbr-translations)
+[![Cobertura](https://img.shields.io/badge/Cobertura-100%25-brightgreen?style=for-the-badge&logo=checkmarx)](https://github.com/jhojhocraazy/ptbr-translations)
 [![Autor](https://img.shields.io/badge/Mantido%20por-Joseph%20Alves-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jhojhocraazy)
 
 </div>
@@ -37,12 +37,15 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.707** | 🟢 **No ar** (`v0.6.6-beta`); [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) mesclado; [#2506](https://github.com/NuvioMedia/NuvioMobile/pull/2506) aberto | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**BitChord**](#2-bitchord) | Android / Wear OS | GitHub PRs / XML | **+1.447** | 🚀 **Em Análise** ([PR #1204](https://github.com/kushagrasinghx/BitChord/pull/1204), base `main`, `BLOCKED`) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **686** | 🟢 **671/686**; 15 checks são falsos positivos de plural e 5 aguardam sync | ![99%](https://geps.dev/progress/99?color=00c853) |
-| [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **Sincronizado** no Crowdin; 6 chaves ausentes no `master` e PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) `BEHIND` | ![99%](https://geps.dev/progress/99?color=00c853) |
+| [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **686** | 🟢 **686/686**; 3 read-only; 5 no `master` = sync | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **638/638** no Crowdin; 6 no `master` = sync; PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) `BEHIND` | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **18.823** (214 arquivos) | 🟢 **100% traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**TizenTube & Cobalt**](#6-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **198** (+1 crédito) | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718), `CLEAN`) | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Hosted Weblate | **176 + 39** | 🟢 **No ar** (`v3.0.8`); 2 checks em análise | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Hosted Weblate | **176 + 39** | 🟢 **No ar** (`v3.0.8`); 0 checks | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**TorBox**](#8-torbox) | Next.js / Web + Desktop | GitHub PRs / JSON | **1.592** (1.466 + 126 herdadas) | 🟡 **PR [#125](https://github.com/jittarao/torbox-app/pull/125)** `MERGEABLE` — CI aguarda aprovação do mantenedor | ![100%](https://geps.dev/progress/100?color=00c853) |
+
+> **Cobertura** = unidade traduzível na plataforma de entrega (`metodologia.md` §7.2). Aprovação,
+> snapshot local e teste visual são medidos à parte: o Crowdin está 100% traduzido e ~0,4% aprovado.
 
 ---
 
@@ -116,16 +119,16 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 * **Repositório Oficial:** [`deniscerri/ytdlnis`](https://github.com/deniscerri/ytdlnis) (+10.600 stars)
 * **Plataforma de Tradução:** [Hosted Weblate — YTDLnis pt_BR](https://hosted.weblate.org/projects/ytdlnis/-/pt_BR/)
-* **Status:** 🟢 **671/686** — 15 checks são falsos positivos de plural; 5 traduzidas aguardam sync (03/11/2026).
+* **Status:** 🟢 **686/686 (100%)** — fechado em 03/11/2026 17:24; 3 read-only; 5 no `master` = sync.
 * **Diretório Local:** [`YTDLnis/`](./YTDLnis/)
 
 <details>
 <summary><b>🔍 Ver Detalhes do Projeto YTDLnis</b></summary>
 <br/>
 
-* **Cobertura Atual:** 671 de 686 unidades traduzidas; os 15 checks são falsos positivos de plural, não strings pendentes.
-* **Última Sincronização:** 24/10/2026 — o snapshot local tem 670 strings + 9 plurais (697 formas); 5 traduzidas do Weblate ainda não chegaram ao upstream.
-* **Checks Remanescentes:** 15; todos são `<string>` no upstream e já estão traduzidas no `values-pt-rBR` — o Weblate as classifica como plural.
+* **Cobertura Atual:** 686 de 686 unidades traduzidas (100%).
+* **Última Sincronização:** 24/10/2026 — o snapshot local tem 670 strings + 9 plurais (697 formas); 5 traduzidas do Weblate ainda não chegaram ao `master` (sync do bot).
+* **Checks Remanescentes:** 0 desde 03/11/2026.
 * **Escopo da Tradução:** Telas de boas-vindas (*welcome onboarding*), integração com lrclib.net para letras sincronizadas, corte e recorte de mídia, agendamento de downloads e configurações avançadas do yt-dlp.
 * **Rigor e Qualidade:** 100% de integridade em tags de escape (`\'`, `\"`, `&amp;`) e placeholders de sistema (`%1$s`, `%2$d`) no lote validado.
 * **Read-only:** 3 unidades (`trendingPlaylist`, `unfound_file`, `ytdlp`) não são editáveis; o Android usa o fallback da fonte.
@@ -138,7 +141,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 * **Repositório Oficial:** [`better-lyrics/better-lyrics`](https://github.com/better-lyrics/better-lyrics)
 * **Plataforma de Tradução:** [Crowdin — Projeto 863186](https://crowdin.com/project/better-lyrics/pt-BR)
-* **Status:** 🟢 **100% Traduzido no Crowdin** (638/638) — o upstream tem 643 chaves e o `master` tem 637; faltam 6, não 5.
+* **Status:** 🟢 **100% Traduzido no Crowdin** (638/638) — as 6 chaves que faltam no `master` são sync do bot.
 * **Diretório Local:** [`BetterLyrics/`](./BetterLyrics/)
 
 <details>
