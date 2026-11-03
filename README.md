@@ -35,7 +35,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 | Projeto | Ecossistema | Plataforma | Strings | Status Oficial | Progresso |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.707** | 🟢 **No ar** (`v0.6.6-beta`); [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) mesclado em 01/11 | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.707** | 🟢 **No ar** (`v0.6.6-beta`); [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) mesclado; [#2506](https://github.com/NuvioMedia/NuvioMobile/pull/2506) aberto | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**BitChord**](#2-bitchord) | Android / Wear OS | GitHub PRs / XML | **+1.447** | 🚀 **Em Análise** ([PR #1204](https://github.com/kushagrasinghx/BitChord/pull/1204), base `main`, `BLOCKED`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **686** | 🟢 **671/686**; 15 checks são falsos positivos de plural e 5 aguardam sync | ![99%](https://geps.dev/progress/99?color=00c853) |
 | [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **Sincronizado** no Crowdin; 6 chaves ausentes no `master` e PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) `BEHIND` | ![99%](https://geps.dev/progress/99?color=00c853) |
@@ -52,7 +52,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Aplicativo moderno de streaming de mídia e entretenimento desenvolvido em **Kotlin Multiplatform (Compose Multiplatform)** para Android e iOS.
 
 * **Repositório Oficial:** [`NuvioMedia/NuvioMobile`](https://github.com/NuvioMedia/NuvioMobile)
-* **Status:** 🟢 **100% Traduzido** (2.707 entradas em 7 arquivos modulares; lotes [#2288](https://github.com/NuvioMedia/NuvioMobile/pull/2288), [#2338](https://github.com/NuvioMedia/NuvioMobile/pull/2338), [#2402](https://github.com/NuvioMedia/NuvioMobile/pull/2402), [#2435](https://github.com/NuvioMedia/NuvioMobile/pull/2435) e [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) — todos mesclados).
+* **Status:** 🟢 **100% Traduzido** (2.707 entradas em 7 arquivos modulares; lotes [#2288](https://github.com/NuvioMedia/NuvioMobile/pull/2288), [#2338](https://github.com/NuvioMedia/NuvioMobile/pull/2338), [#2402](https://github.com/NuvioMedia/NuvioMobile/pull/2402), [#2435](https://github.com/NuvioMedia/NuvioMobile/pull/2435) e [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) mesclados; [#2506](https://github.com/NuvioMedia/NuvioMobile/pull/2506) aberto).
 * **Diretório Local:** [`NuvioMobile/`](./NuvioMobile/)
 
 <details>

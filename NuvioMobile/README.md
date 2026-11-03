@@ -14,10 +14,10 @@
 | **Catálogos** | **7** arquivos em `composeApp/src/commonMain/composeResources/values-pt-rBR/` |
 | **Entradas** | **2.707** no total — 2.496 no principal + 84 + 60 + 52 + 1 + 10 + 4 |
 | **Paridade** | 🟢 100% nos 7 arquivos; `validate-ptbr.ps1` `OK` (02/11/2026) |
-| **Pull Requests** | [#2234](https://github.com/NuvioMedia/NuvioMobile/pull/2234), [#2288](https://github.com/NuvioMedia/NuvioMobile/pull/2288), [#2338](https://github.com/NuvioMedia/NuvioMobile/pull/2338), [#2402](https://github.com/NuvioMedia/NuvioMobile/pull/2402), [#2435](https://github.com/NuvioMedia/NuvioMobile/pull/2435) e [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) — todos **MERGED** |
+| **Pull Requests** | [#2234](https://github.com/NuvioMedia/NuvioMobile/pull/2234), [#2288](https://github.com/NuvioMedia/NuvioMobile/pull/2288), [#2338](https://github.com/NuvioMedia/NuvioMobile/pull/2338), [#2402](https://github.com/NuvioMedia/NuvioMobile/pull/2402), [#2435](https://github.com/NuvioMedia/NuvioMobile/pull/2435) e [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) — todos **MERGED**; [#2506](https://github.com/NuvioMedia/NuvioMobile/pull/2506) **aberto** (pontuação) |
 | **Último merge** | [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) em 01/11/2026 (`cmp-rewrite`) |
 | **Última release** | `0.6.6-beta` (31/10/2026) — inclui o [#2435](https://github.com/NuvioMedia/NuvioMobile/pull/2435); o [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) ainda não saiu em release |
-| **Branch de trabalho** | `cmp-rewrite`, commit `46febb5` (01/11/2026) |
+| **Branch de trabalho** | `fix/pt-br-pontuacao`, commit `5fd3361e` (03/11/2026), a partir de `cmp-rewrite` `0377f86e` |
 | **Upstream** | [`NuvioMedia/NuvioMobile`](https://github.com/NuvioMedia/NuvioMobile) |
 
 A tradução está completa e mergeada. O que resta não é código: é release e verificação em aparelho.
@@ -90,6 +90,10 @@ branch, via PR; o snapshot sobrevive se a branch for fechada ou rebaseada.
 ### [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) — `Minha lista`, Sentence Case e scrobble
 - **Volume:** 3 correções que ficaram fora do [#2435](https://github.com/NuvioMedia/NuvioMobile/pull/2435).
 - **Resultado:** `MERGED` em 01/11/2026; ainda não há release com esse merge.
+
+### [#2506](https://github.com/NuvioMedia/NuvioMobile/pull/2506) — pontuação de duas descrições
+- **Volume:** 2 strings, só o ponto final removido.
+- **Resultado:** `OPEN` em 03/11/2026, base `cmp-rewrite`; `PR Template Check` verde, build em andamento.
 
 ---
 
