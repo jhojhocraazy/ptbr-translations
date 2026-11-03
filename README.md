@@ -36,7 +36,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 | Projeto | Ecossistema | Plataforma | Strings | Status Oficial | Progresso |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.707** | 🟢 **No ar** (`v0.6.6-beta`); [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) mesclado em 01/11 | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**BitChord**](#2-bitchord) | Android / Wear OS | GitHub PRs / XML | **+1.448** | 🚀 **Em Análise** ([PR #1204](https://github.com/kushagrasinghx/BitChord/pull/1204), base `main`, `BLOCKED`) | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**BitChord**](#2-bitchord) | Android / Wear OS | GitHub PRs / XML | **+1.447** | 🚀 **Em Análise** ([PR #1204](https://github.com/kushagrasinghx/BitChord/pull/1204), base `main`, `BLOCKED`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **686** | 🟢 **671/686**; 15 checks são falsos positivos de plural e 5 aguardam sync | ![99%](https://geps.dev/progress/99?color=00c853) |
 | [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **Sincronizado** no Crowdin; 6 chaves ausentes no `master` e PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) `BEHIND` | ![99%](https://geps.dev/progress/99?color=00c853) |
 | [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **18.823** (214 arquivos) | 🟢 **100% traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
@@ -89,7 +89,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 > Cliente moderno de YouTube Music com estética inspirada no Apple Music desenvolvido em **Kotlin Multiplatform (KMP)** para Android e Wear OS.
 
 * **Repositório Oficial:** [`kushagrasinghx/BitChord`](https://github.com/kushagrasinghx/BitChord) (+3.700 stars)
-* **Status:** 🟢 **100% Traduzido** (+1.448 unidades nos 3 módulos ativos: Android, Shared UI e Wear OS).
+* **Status:** 🟢 **100% Traduzido** (+1.447 unidades nos 3 módulos ativos: Android, Shared UI e Wear OS).
 * **Diretório Local:** [`BitChord/`](./BitChord/)
 
 <details>

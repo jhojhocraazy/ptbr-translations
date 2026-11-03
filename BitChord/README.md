@@ -13,12 +13,12 @@
 | **Plataforma** | Kotlin Multiplatform (**KMP** — um código-fonte, vários apps) + Compose Multiplatform |
 | **Catálogos de string** | **3**: `app/` (Android e Android Auto), `sharedUi/` (UI compartilhada) e `wearos/` (relógio) |
 | **Paridade de chaves** | 🟢 **100%** nos 3 catálogos — 0 chaves faltando, 0 sobrando (`validate-ptbr.ps1`, 02/11/2026) |
-| **Unidades verificadas** | **1.448** (1.159 no `app/` + 249 no `sharedUi/` + 40 no `wearos/`) |
+| **Unidades verificadas** | **1.447** (1.158 no `app/` + 249 no `sharedUi/` + 40 no `wearos/`) |
 | **Pull Request** | [#1204](https://github.com/kushagrasinghx/BitChord/pull/1204) — `OPEN`, base `main`, `MERGEABLE` |
 | **CI da PR** | 🟢 `Android`, `Android TV` e `Backend · Go` com `SUCCESS` |
 | **Testes nativos** | 🟢 passaram no CI: o job `Android` roda `./gradlew testDevDebugUnitTest` (`.github/workflows/check.yml:45-46`) |
 | **O que falta para mergear** | Revisão do mantenedor (`mergeState=BLOCKED`, `review=REVIEW_REQUIRED`) |
-| **Branch de trabalho** | `i18n/pt-br-182`, commit `706ccb0` (30/10/2026 18:20) |
+| **Branch de trabalho** | `i18n/pt-br-182`, commit `615672e4` (03/11/2026) |
 | **Versão no clone** | `1.9` / `versionCode 36` (`build.gradle.kts:44-45`) |
 | **Upstream** | [`kushagrasinghx/BitChord`](https://github.com/kushagrasinghx/BitChord) — 5.312 estrelas em 02/11/2026 |
 
@@ -81,7 +81,7 @@ resumo de memória.
 
 | # | O que | Evidência |
 | :---: | :--- | :--- |
-| 1 | **6 commits**, de 30/10/2026 17:15 a 21:20 | `gh pr view 1204 --json commits` |
+| 1 | **7 commits**, de 30/10/2026 17:15 a 03/11/2026 | `gh pr view 1204 --json commits` |
 | 2 | **`app/` reescrito:** 189 linhas adicionadas, 189 removidas | arquivos da PR |
 | 3 | **`sharedUi/` completado:** 106 adicionadas, 27 removidas | arquivos da PR |
 | 4 | **`wearos/` criado:** 43 linhas adicionadas, 0 removidas | arquivos da PR |
@@ -105,7 +105,7 @@ O hub não compila o app. O passo equivalente é o validador, rodado contra o EN
 Resultado de 02/11/2026:
 
 ```text
-OK   bitchord_strings_pt_BR.xml  (1159 strings, perfil=xml, escape=android)
+OK   bitchord_strings_pt_BR.xml  (1158 strings, perfil=xml, escape=android)
      avisos: 38 string(s) idêntica(s) à fonte (nomes próprios/termos mantidos)
 OK   sharedUi_strings_pt_BR.xml  (249 strings, perfil=xml, escape=android)
      avisos: 10 string(s) idêntica(s) à fonte (nomes próprios/termos mantidos)
@@ -113,7 +113,7 @@ OK   wearos_strings_pt_BR.xml    (40 strings, perfil=xml, escape=android)
      avisos: 2 string(s) idêntica(s) à fonte (nomes próprios/termos mantidos)
 ```
 
-As 1.159 "strings" do relatório são **1.112 `<string>` + 47 `<item>` de plural** — o validador conta
+As 1.158 "strings" do relatório são **1.112 `<string>` + 46 `<item>` de plural** — o validador conta
 cada forma de plural como uma unidade.
 
 > **Cuidado:** o validador compara o snapshot com o EN **do clone**. Clone velho, resultado velho.
@@ -145,9 +145,10 @@ troca de base, o diff é o mesmo.
 
 1. **Revisão do mantenedor.** A PR está `MERGEABLE` e com CI verde; falta o `review` exigido pelo
    repositório. Nada mais depende do hub.
-2. **Plurais incompletos.** 22 dos 23 blocos `<plurals>` do `app/` têm só `one` e `other` — falta a
-   forma `many` do pt-BR. O CI não acusa, porque o teste compara nomes de chave, não formas de
-   quantidade (`LocaleStringsTest.kt:38-48`). Decisão pendente: completar as 22 ou aceitar.
+2. **Plurais alinhados ao EN.** Os 23 blocos `<plurals>` do `app/` usam `one`/`other`, como a fonte. O
+   `many` que existia em `uploading_song_count` era redundante (mesmo texto de `other`) e foi removido
+   em 03/11/2026. O CI não verifica formas de quantidade, só nomes de chave
+   (`LocaleStringsTest.kt:38-48`).
 3. **`web/` sem tradução.** O app web e a extensão não têm arquivo de locale. Não há entrega pt-BR
    para eles.
 4. **`tv/` sem catálogo próprio.** Reaproveita o `app/` (`tv/README.md:7-9`), então herda a tradução
@@ -175,11 +176,11 @@ troca de base, o diff é o mesmo.
 
 | Valor | De onde veio |
 | :--- | :--- |
-| 1.112 `<string>` + 23 `<plurals>` (47 itens) no `app/` | `values-pt/strings.xml`, contagem de 02/11/2026 |
+| 1.112 `<string>` + 23 `<plurals>` (46 itens) no `app/` | `values-pt/strings.xml`, contagem de 03/11/2026 |
 | 1.138 `<string>` e 26 `translatable="false"` na fonte | `values/strings.xml`, contagem de 02/11/2026 |
 | 249 `<string>` + 2 arrays (12 itens cada) no `sharedUi/` | `values-pt/strings.xml` |
 | 40 `<string>` no `wearos/` | `values-pt/strings.xml` |
-| 1.159 + 249 + 40 = 1.448 unidades | saída do `validate-ptbr.ps1` em 02/11/2026 |
+| 1.158 + 249 + 40 = 1.447 unidades | saída do `validate-ptbr.ps1` em 03/11/2026 |
 | 145 strings novas entre `v1.8.1` e `v1.8.2` | conteúdo de `values/strings.xml` e `composeResources/values/strings.xml` nas duas tags, via API do GitHub |
 | `v1.8.2` e `main` com catálogo idêntico | comparação byte a byte dos dois arquivos EN em 02/11/2026 |
 | `wearos/values-pt` ausente no upstream | API do GitHub em `v1.8.2` e `main` devolve 404 |
