@@ -16,8 +16,8 @@
 | **Catálogo** | `mods/translations/resources/pt-BR.json` — **198** chaves de interface + `__contributors` |
 | **Paridade** | 🟢 100% — 198/198 chaves do EN, 0 faltando, 0 sobrando |
 | **Validação** | 🟢 `validate-ptbr.ps1 -Format nested`: `OK`, 199 strings, 4 avisos de texto idêntico |
-| **Pull Request** | [#718](https://github.com/reisxd/TizenTube/pull/718) — `OPEN`, base `main`, `CLEAN`, 7 commits |
-| **Branch** | `i18n/portuguese-complete-pt-br`, commit `008f40d` (30/10/2026) |
+| **Pull Request** | [#718](https://github.com/reisxd/TizenTube/pull/718) — `OPEN`, base `main`, `CLEAN`, 9 commits |
+| **Branch** | `i18n/portuguese-complete-pt-br`, commit `187586f` (03/11/2026) |
 | **Última release** | `v2.1.1` (13/09/2026) — anterior ao PR |
 | **Upstream** | [`reisxd/TizenTube`](https://github.com/reisxd/TizenTube) |
 
@@ -70,6 +70,7 @@ O bundle `@foxreis/tizentube` é consumido por Tizen e Cobalt; uma tradução at
 | 5 | **Placeholders preservados** | `{{count}}`, `{{name}}`, `{{version}}`, `{{date}}`, `{{segment}}` |
 | 6 | **Crédito oficial** | `__contributors` inclui `Joseph Alves` |
 | 7 | **4 strings mantidas em inglês** | `GitHub Sponsors`, `Podcasts`, `Shorts` e uma URL de patrocínio |
+| 8 | **5 strings alinhadas ao glossário** | “player de vídeo” (4) e reticência `…` (1), em 03/11/2026 |
 
 ---
 
@@ -142,7 +143,7 @@ A branch padrão do upstream é `main`. O PR [#718](https://github.com/reisxd/Ti
 | Valor | De onde veio |
 | :--- | :--- |
 | 198 chaves de interface + 1 crédito | contagem em `en.json`/`pt-BR.json` em 02/11/2026 |
-| `OK`, 199 strings, 4 avisos | `validate-ptbr.ps1 -Format nested` em 02/11/2026 |
-| PR [#718](https://github.com/reisxd/TizenTube/pull/718): aberto, `CLEAN`, 7 commits, base `main` | `gh pr view 718` em 02/11/2026 |
-| Branch `i18n/portuguese-complete-pt-br`, commit `008f40d` | `git branch` e `git log -1` em 02/11/2026 |
+| `OK`, 199 strings, 4 avisos | `validate-ptbr.ps1 -Format nested` em 03/11/2026 |
+| PR [#718](https://github.com/reisxd/TizenTube/pull/718): aberto, `CLEAN`, 9 commits, base `main` | `gh pr view 718` em 03/11/2026 |
+| Branch `i18n/portuguese-complete-pt-br`, commit `187586f` | `git log -1` em 03/11/2026 |
 | Release `v2.1.1` (13/09/2026) | `gh release view --repo reisxd/TizenTube` |

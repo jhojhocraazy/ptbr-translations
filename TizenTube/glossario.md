@@ -42,7 +42,7 @@ todas as telas.
 | AFR | `AFR` | taxa de quadros automática |
 | Picture-in-Picture (PiP) | `Picture-in-Picture (PiP)` | janela sobreposta |
 | Codec | `Codec` | menu de vídeo |
-| Mini Player | `Mini Player` | player minimizado |
+| Miniplayer | `Miniplayer` | player minimizado |
 | GitHub Sponsors | `GitHub Sponsors` | redes sociais |
 
 ---
@@ -131,8 +131,9 @@ Padrão do YouTube em pt-BR. Não use "Ver depois" nem "Salvar para depois".
 
 1. **`Podcasts`.** Ficou em inglês (idêntico ao EN). O YouTube usa "Podcasts" em pt-BR; falta decidir
    se é termo de domínio ou se vira "Podcasts" mesmo — hoje já é.
-2. **`Mini Player`.** Ficou em inglês; "Player minimizado" é mais longo. Falta decidir se o espaço do
-   canto justifica manter.
+2. **`Miniplayer`.** Ficou em inglês como `Miniplayer` (uma palavra), igual ao YouTube em pt-BR —
+   decisão do commit `a7a9f19` (30/10/2026), mantida em 03/11/2026. "Player minimizado" é mais longo e
+   o espaço do canto é apertado.
 3. **`Cobalt`.** É o nome do container; não se traduz. Mas o app é chamado de "TizenTube Cobalt" e
    "Cobalt" no mesmo texto — padronizar quando aparecer um terceiro contexto.
 
