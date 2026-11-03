@@ -12,9 +12,9 @@
 | :--- | :--- |
 | **Plataforma** | Crowdin — projeto **31** (`crowdin`), idioma `pt-BR` |
 | **Entrega** | 🟢 **Crowdin** — submissão direta na plataforma; não há PR de tradução |
-| **Escopo** | **18.819** strings visíveis em **214** arquivos |
-| **Cobertura** | 🟡 **18.475/18.819 (98,2%)** — **344 pendentes** em 1 arquivo (03/11/2026) |
-| **Pendências por arquivo** | `backend.en_US.csv` 344/4.325 · `auth.php` 69/69 · `workspace.php` 41/41 · `en.json` 3.643/3.643 |
+| **Escopo** | **18.823** strings visíveis em **214** arquivos |
+| **Cobertura** | 🟡 **18.479/18.823 (98,2%)** — **344 pendentes** em 1 arquivo (03/11/2026) |
+| **Pendências por arquivo** | `backend.en_US.csv` 344/4.329 · `auth.php` 69/69 · `workspace.php` 41/41 · `en.json` 3.643/3.643 |
 | **Snapshot local** | `snapshots/crowdin_translations_pt_BR.json` — só `en.json` (3.639 strings, 03/11/2026) |
 | **Auditoria** | **17.542 verificadas, 0 divergências** (03/11/2026); lote de 10 fechou 41+69+3.639 com 0 divergências |
 | **Integração** | Crowdin REST API v2 (`https://api.crowdin.com/api/v2/`) |
@@ -52,7 +52,7 @@ O vocabulário está em [`glossario.md`](./glossario.md); as regras de escrita e
 | **Clone no hub** | **não existe** |
 
 O snapshot é um recorte do `en.json`: 3.639 strings com `source`/`target`, gerado em 03/11/2026. Ele
-**não** representa os 18.819 do projeto; 4 das 3.643 strings não aparecem no backup.
+**não** representa os 18.823 do projeto; 4 das 3.643 strings não aparecem no backup.
 
 ---
 
@@ -65,9 +65,10 @@ O snapshot é um recorte do `en.json`: 3.639 strings com `source`/`target`, gera
 | 28/10/2026 | 55 strings | 27 em `dynamic.csv`, 19 em `backend.csv`, 7 em `en.json`, 2 em `scopes.php` |
 | 30/10/2026 | 62 strings + 17 correções | 27 em `editor.csv`, 11 em `backend.csv`, 10 em `frontend.csv`, 7 em `dynamic.csv`, 1 em `mfa.php`, 6 em `en.json`; TM ≠ MT, AI → IA, workflow → fluxo de trabalho, engines → motores |
 | 03/11/2026 | 10 strings | 2 em `workspace.php`, 6 em `auth.php`, 2 em `en.json`; os três arquivos ficaram com 0 pendentes |
+| 03/11/2026 | 4 strings | 4 erros do DeepL Translator em `backend.en_US.csv` (18.819 → 18.823 strings) |
 
 A auditoria de 30/10/2026 fechou 17.515 strings com 0 divergências. Em 03/11/2026 a plataforma
-mostra 18.819 strings e 344 pendentes; o `Check` completo fechou 17.542 com 0 divergências.
+mostra 18.823 strings e 344 pendentes; o `Check` completo fechou 17.542 com 0 divergências.
 
 A varredura semântica de 03/11/2026 encontrou três problemas graves, **corrigidos via `Push`**:
 `profile.crowdinApps.allUsersIncludeGuests` (“Portuese ”), a headline `alternatives.lokalise.hero.title`
@@ -142,11 +143,11 @@ O commit no hub é documentação, não entrega. Ele não substitui nem antecede
 
 | Valor | De onde veio |
 | :--- | :--- |
-| 18.819 strings, 344 pendentes | `crowdin-sync.ps1 -Action Status -ProjectId 31` em 03/11/2026, após o `Push` das 10 |
-| 344/4.325; 69/69; 41/41; 3.643/3.643 | mesma execução, por arquivo |
+| 18.823 strings, 344 pendentes | `crowdin-sync.ps1 -Action Status -ProjectId 31` em 03/11/2026, após o `Push` das 10 |
+| 344/4.329; 69/69; 41/41; 3.643/3.643 | mesma execução, por arquivo |
 | 3.639 strings no snapshot | `total_submitted` do JSON, gerado em 03/11/2026 04:16 |
 | 214 arquivos | `research/README.md` e dashboard |
-| 17.542 verificadas, 0 divergências; 18.819 exportadas | `Check` + export da API em 03/11/2026 |
+| 17.542 verificadas, 0 divergências; 18.823 exportadas | `Check` + export da API em 03/11/2026 |
 | 41, 69 e 3.639 verificadas com 0 divergências | `crowdin-sync.ps1 -Action Check -FileId 32219/32187/32447` em 03/11/2026 |
 | 9 correções aplicadas (7 efetivas, 2 pendentes) | `crowdin-sync.ps1 -Action Push -ProjectId 31` em 03/11/2026 |
 | 286/51/55/62 strings por lote | histórico do README anterior, mantido |
