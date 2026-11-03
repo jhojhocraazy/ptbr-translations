@@ -39,7 +39,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 | [**BitChord**](#2-bitchord) | Android / Wear OS | GitHub PRs / XML | **+1.448** | 🚀 **Em Análise** ([PR #1204](https://github.com/kushagrasinghx/BitChord/pull/1204), base `main`, `BLOCKED`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **686** | 🟢 **671/686**; 15 checks são falsos positivos de plural e 5 aguardam sync | ![99%](https://geps.dev/progress/99?color=00c853) |
 | [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **Sincronizado** no Crowdin; 6 chaves ausentes no `master` e PR #1019 `BEHIND` | ![99%](https://geps.dev/progress/99?color=00c853) |
-| [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **18.819** (214 arquivos) | 🟡 **354 pendentes** em 4 arquivos | ![98%](https://geps.dev/progress/98?color=ffb300) |
+| [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **18.819** (214 arquivos) | 🟡 **344 pendentes** em 1 arquivo | ![98%](https://geps.dev/progress/98?color=ffb300) |
 | [**TizenTube & Cobalt**](#6-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **198** (+1 crédito) | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718), `CLEAN`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Hosted Weblate | **176 + 39** | 🟢 **No ar** (`v3.0.8`); 2 checks em análise | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**TorBox**](#8-torbox) | Next.js / Web + Desktop | GitHub PRs / JSON | **1.592** (1.466 + 126 herdadas) | 🟡 **PR #125 conflitante** — precisa de rebase | ![100%](https://geps.dev/progress/100?color=00c853) |
@@ -158,17 +158,17 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 * **Projeto Oficial:** [Crowdin Translations (ID: 31)](https://crowdin.com/project/crowdin)
 * **Plataforma de Tradução:** Crowdin API v2
-* **Status:** 🟡 **18.819 strings** em 214 arquivos — **354 pendentes** em 4 arquivos (02/11/2026).
+* **Status:** 🟡 **18.819 strings** em 214 arquivos — **344 pendentes** em 1 arquivo (03/11/2026).
 * **Diretório Local:** [`Crowdin/`](./Crowdin/)
 
 <details>
 <summary><b>🔍 Ver Detalhes do Projeto Crowdin Platform</b></summary>
 <br/>
 
-* **Cobertura Atual:** 18.465 de 18.819 strings traduzidas (**98,1%**); 354 pendentes — `backend.en_US.csv` 344/4.325, `auth.php` 6/69, `workspace.php` 2/41 e `en.json` 2/3.643.
-* **Interface Moderna Web:** 3.641 de 3.643 strings de `src/i18n/locales/en.json` (ID: 32447) concluídas; o snapshot local tem 3.637 e está 6 strings atrás.
-* **Pendência 03/11/2026:** o projeto cresceu para 18.819 strings; 354 estão pendentes em 4 arquivos. O último lote fechado foi o de 30/10/2026.
-* **Auditoria 03/11/2026:** o `Check` completo fechou 17.542 strings com 0 divergências. A varredura semântica achou e **corrigiu** 3 problemas graves: “Portuese ” em `profile.crowdinApps.allUsersIncludeGuests`, headline `alternatives.lokalise.hero.title` em inglês e `generic.integrationTool` em inglês.
+* **Cobertura Atual:** 18.475 de 18.819 strings traduzidas (**98,2%**); 344 pendentes — `backend.en_US.csv` 344/4.325; `auth.php` 69/69, `workspace.php` 41/41 e `en.json` 3.643/3.643.
+* **Interface Moderna Web:** 3.643 de 3.643 strings de `src/i18n/locales/en.json` (ID: 32447) sem pendência; o snapshot local tem 3.639.
+* **Pendência 03/11/2026:** o projeto cresceu para 18.819 strings; restam 344, todas em `backend.en_US.csv`. O último lote fechado foi o de 03/11/2026 (10 strings).
+* **Auditoria 03/11/2026:** o `Check` completo fechou 17.542 strings com 0 divergências; o lote de 10 fechou 41 (`workspace.php`), 69 (`auth.php`) e 3.639 (`en.json`), também com 0 divergências. A varredura semântica achou e **corrigiu** 3 problemas graves: “Portuese ” em `profile.crowdinApps.allUsersIncludeGuests`, headline `alternatives.lokalise.hero.title` em inglês e `generic.integrationTool` em inglês.
 * **Atualização 30/10/2026:** 62 novas strings traduzidas — 27 em `editor.csv`, 11 em `backend.csv`, 10 em `frontend.csv`, 7 em `dynamic.csv`, 1 em `mfa.php` e 6 em `en.json` — e **17 correções de terminologia** no catálogo (TM ≠ MT, AI → IA, workflow → fluxo de trabalho, engines → motores). Auditoria completa em 17.515 strings com **0 divergências**.
 * **Atualização 28/10/2026:** 55 novas strings traduzidas — 27 em `dynamic.csv`, 19 em `backend.csv`, 7 em `en.json` e 2 em `scopes.php`.
 * **Atualização 26/10/2026:** 51 novas strings traduzidas — 18 em `backend.csv`, 14 em `auth.php`, 7 em `dynamic.csv`, 7 em `workspace.php` e 5 em `scopes.php`.

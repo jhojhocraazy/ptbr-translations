@@ -4,8 +4,8 @@
   "target_language": "pt-BR",
   "file_id": 32447,
   "file_name": "en.json",
-  "total_submitted": 3637,
-  "generated_at": "2026-10-30T19:38:54-03:00",
+  "total_submitted": 3639,
+  "generated_at": "2026-11-03T04:16:41-03:00",
   "translations": {
     "7045051": {
       "source": "Go to homepage",
@@ -12477,7 +12477,7 @@
     },
     "7052151": {
       "source": "Crowdin vs. Lokalise:<br /> True Lokalise Alternative",
-      "target": "Crowdin vs. Lokalise:<br /> True Lokalise Alternative"
+      "target": "Crowdin vs. Lokalise:<br /> A verdadeira alternativa ao Lokalise"
     },
     "7052153": {
       "source": "Crowdin is the top Lokalise alternative for agile teams, it starts at $50/month, offers 700+ integrations + leading AI and QA capabilities. Read full comparison.",
@@ -13631,10 +13631,6 @@
       "source": "Dedicated account manager add-on",
       "target": "Complemento de gerente de conta dedicado"
     },
-    "7060298": {
-      "source": "Unlimited activity history and audit log",
-      "target": "Histórico de atividades e registro de auditoria ilimitados"
-    },
     "7060300": {
       "source": "AI Pipeline auto-translation",
       "target": "Tradução automática com Pipeline de IA"
@@ -14554,6 +14550,18 @@
     "7061278": {
       "source": "Can I buy Crowdin through AWS Marketplace?",
       "target": "Posso comprar o Crowdin pelo AWS Marketplace?"
+    },
+    "7062288": {
+      "source": "Unlimited activity history",
+      "target": "Histórico de atividades ilimitado"
+    },
+    "7062290": {
+      "source": "Security log",
+      "target": "Registro de segurança"
+    },
+    "7062292": {
+      "source": "Audit log",
+      "target": "Registro de auditoria"
     }
   }
 }
