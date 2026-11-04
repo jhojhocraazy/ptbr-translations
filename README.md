@@ -38,7 +38,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 | [**Nuvio Mobile**](#1-nuvio-mobile) | Kotlin / Compose Multiplatform | GitHub PRs / XML | **+2.707** | 🟢 **No ar** (`v0.6.6-beta`); [#2455](https://github.com/NuvioMedia/NuvioMobile/pull/2455) mesclado; [#2506](https://github.com/NuvioMedia/NuvioMobile/pull/2506) aberto | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**BitChord**](#2-bitchord) | Android / Wear OS | GitHub PRs / XML | **+1.447** | 🚀 **Em Análise** ([PR #1204](https://github.com/kushagrasinghx/BitChord/pull/1204), base `main`, `BLOCKED`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**YTDLnis**](#3-ytdlnis) | Android (yt-dlp Downloader) | Hosted Weblate / XML | **686** | 🟢 **686/686**; 3 read-only; 5 no `master` = sync | ![100%](https://geps.dev/progress/100?color=00c853) |
-| [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **638/638** no Crowdin; 6 no `master` = sync; PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) `BEHIND` | ![100%](https://geps.dev/progress/100?color=00c853) |
+| [**Better Lyrics**](#4-better-lyrics) | Extensão / YouTube Music | Crowdin (863186) | **638** | 🟢 **638/638** no Crowdin; 5 + 1 em inglês no `master` = sync; PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) `MERGED` | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**Crowdin Platform**](#5-crowdin-platform) | TMS / Web App + Backend | Crowdin API (31) | **18.823** (214 arquivos) | 🟢 **100% traduzido** (0 pendentes) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**TizenTube & Cobalt**](#6-tizentube--tizentube-cobalt) | Smart TV (Tizen OS / Android TV) | GitHub PRs / JSON | **198** (+1 crédito) | 🚀 **Em Análise** ([PR #718](https://github.com/reisxd/TizenTube/pull/718), `CLEAN`) | ![100%](https://geps.dev/progress/100?color=00c853) |
 | [**DNSToggle**](#7-dnstoggle) | Android Quick Settings | Hosted Weblate | **176 + 39** | 🟢 **No ar** (`v3.0.8`); 0 checks | ![100%](https://geps.dev/progress/100?color=00c853) |
@@ -141,7 +141,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 
 * **Repositório Oficial:** [`better-lyrics/better-lyrics`](https://github.com/better-lyrics/better-lyrics)
 * **Plataforma de Tradução:** [Crowdin — Projeto 863186](https://crowdin.com/project/better-lyrics/pt-BR)
-* **Status:** 🟢 **100% Traduzido no Crowdin** (638/638) — as 6 chaves que faltam no `master` são sync do bot.
+* **Status:** 🟢 **100% Traduzido no Crowdin** (638/638) — 5 chaves e 1 em inglês no `master` são sync do bot.
 * **Diretório Local:** [`BetterLyrics/`](./BetterLyrics/)
 
 <details>
@@ -149,7 +149,7 @@ Mantido ativamente por [**Joseph Alves** (@jhojhocraazy)](https://github.com/jho
 <br/>
 
 * **Sincronização Upstream:** automática pela integração GitHub do Crowdin (`_locales/pt_BR/messages.json`); PRs do bot [#1001](https://github.com/better-lyrics/better-lyrics/pull/1001) e [#1010](https://github.com/better-lyrics/better-lyrics/pull/1010) já mesclados pelo mantenedor (15/10 e 20/10/2026), sem PR manual do hub.
-* **Pendência Atual (03/11/2026):** a fonte EN cresceu para **643** chaves e o `pt_BR` do `master` tem 637; o PR de sync [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) (aberto, `BEHIND`) cobre 638. As 6 ausentes são as 5 novas (`options_provider_spicylyrics`, `lyrics_syncedBy`, `lyrics_syncedAndUploadedBy`, `unison_detectedFromLyrics`, `unison_detectedUse`) + `options_display_fullscreenControlsTooltipStates`, que o PR carrega em inglês.
+* **Pendência Atual (03/11/2026):** o `master` está em **638** de **643** chaves. Faltam 5 (`options_provider_spicylyrics`, `lyrics_syncedBy`, `lyrics_syncedAndUploadedBy`, `unison_detectedFromLyrics`, `unison_detectedUse`) e `options_display_fullscreenControlsTooltipStates` está **em inglês**, embora o Crowdin já tenha a tradução. Tudo é sync do bot.
 * **Sincronização Contínua:** Atualização via API oficial do Crowdin, com validação de placeholders (`$VAR$`), tags e termos protegidos antes de cada envio.
 * **Terminologia Musical:** Preservação de termos como *Unison*, *Time-synced*, *Romanization*, *Furigana* e *Picture-in-Picture*.
 </details>

@@ -15,14 +15,15 @@
 | **Catálogo (snapshot)** | **638** chaves EN e **638** pt-BR — 0 faltando, 0 sobrando (02/11/2026) |
 | **Validação** | 🟢 `validate-ptbr.ps1 -Format chrome`: `OK`, 638 strings, 28 avisos de texto idêntico ao EN |
 | **Aprovação formal** | 🟡 **0%** — a conta não tem permissão de *proofreader*; a aprovação depende do mantenedor |
-| **Upstream hoje** | `master` em `f77dcc2` (02/11/2026), com **643** chaves EN e **637** no `pt_BR` |
-| **Sync pendente** | PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019), criado em 20/10/2026 — leva o `pt_BR` a **638** |
-| **Estado da PR** | 🟢 checks verdes · 🟡 `mergeState=BEHIND` (precisa de update) · 🟡 `review=REVIEW_REQUIRED` |
-| **Ainda sem tradução** | **0 na plataforma**; 6 no `master` = sync do bot |
+| **Upstream hoje** | `master` em `2e7200e` (03/11/2026), com **643** chaves EN e **638** no `pt_BR` |
+| **Sync pendente** | PR [#1019](https://github.com/better-lyrics/better-lyrics/pull/1019) **mesclada** em 03/11/2026 — levou o `pt_BR` a **638** |
+| **Estado da PR** | 🟢 **`MERGED`** em 03/11/2026 |
+| **Ainda sem tradução** | **0 na plataforma**; 5 + 1 em inglês no `master` = sync |
 | **Clone no hub** | **não existe** — removido em 02/11/2026 (seção "Por que não há clone") |
 
-O Crowdin está em **638/638** — 100% do traduzível. O `master` tem 643 chaves EN e 637 no `pt_BR`: as
-6 que faltam são **sync do bot**, não pendência nossa (`metodologia.md` §7.2). São elas:
+O Crowdin está em **638/638** — 100% do traduzível. O `master` tem 643 chaves EN e 638 no `pt_BR`:
+faltam **5** e uma está **em inglês**, ambas por sync do bot, não pendência nossa
+(`metodologia.md` §7.2). São elas:
 
 - `options_provider_spicylyrics` = `Spicy Lyrics`
 - `lyrics_syncedBy` = `Synced by`
